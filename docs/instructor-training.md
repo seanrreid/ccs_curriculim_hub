@@ -1,10 +1,7 @@
 ---
 title: Instructor Training
 description: Instructor Training
-pubDate: 2023-12-15T11:22:42-05:00
 ---
-
-# Instructor Training
 
 ## Overview
 
@@ -25,8 +22,6 @@ Whether your students are in the same room as you or miles away, you'll be able 
 - [Teaching for the First Time](/lessons/instructor-training/first-time/)
   - [How to Prep](/lessons/instructor-training/how-to-prepare/)
 - [Giving a Lecture](/lessons/instructor-training/teaching-class/)
-- Utilizing DIRs
-- [Remote and Hybrid Teaching](/lessons/instructor-training/remote-hybrid/)
 
 ## 2. Exercises, Projects & Homework
 
@@ -36,23 +31,6 @@ To help guide your students over the weeks and months, they need individual feed
 
 Every instructor has a distinct teaching style. At the same time, we want our students to benefit from the body of teaching material built up over the years. The Learning Portal is a resource that you can use to orient yourself to unfamiliar topics, assign as reading for students who want to get a head start, and serve as a reference for students looking to catch up.
 
-These lessons will help you empower your students to make the most of their time spent reading, writing, debugging code.
-
-### Lessons
-
-- Guidance and Debugging
-- Recording Feedback
-- Using the Learning Portal
-
 ## 3: Contributing Content
 
 We do our best to tailor our instruction and our materials to best serve our students. If you discover a need for better/additional content, please make them available to other instructors!
-
-Here are some lessons on creating content that is easily shared and in a format that is used by the rest of the instructor team.
-
-### Lessons
-
-- Creating Exercises
-- [Creating Slides](/lessons/instructor-training/creating-slides-demos/)
-- [Creating a New Class](/lessons/instructor-training/contributing/)
-- [Reviewing/Improving Lessons](/lessons/instructor-training/workflow/)
