@@ -1,0 +1,372 @@
+---
+title: Git 101 Exercises
+description: Git 101 Exercises
+pubDate: 2023-12-15T13:49:22-05:00
+---
+
+# Git 101 Exercises
+
+To solidify your knowledge, here are a set of exercises that will require you to use the techniques you've just learned in the lesson.
+
+They are organized into _small_, _medium_, and _large_ sized problems. The small exercises will be very similar to the examples in the lesson. If you get stuck, refer to the relevant section in the lesson. The medium exercises will require you to combine concepts. The lesson may not have a single, specific example for you to reference. The large exercises are more open-ended and may require you to search the web for additional material.
+
+## Small
+
+### 1. Visualizing git
+
+[Visualizing Git](http://git-school.github.io/visualizing-git/) is a tool for visualizing how commits and branches work. Use it to go through the commands used in this lesson and see how they work.
+
+### 2. Hello again, git
+
+In this exercise, you'll create a git repository, add a file, and view the log.
+As you're working, it's a good idea to check the status regularly using `git status`.
+
+Create a new directory and initialize it as a git repository.
+
+Create at least one file to commit.
+
+When you are finished, the output of `git status` should look like this:
+
+```
+On branch master
+nothing to commit, working tree clean
+```
+
+And the `git log` should contain at least one commit:
+
+```
+commit 5973f218e644367487135b828aa271441a90f13f (HEAD -> master)
+Author: Your Name <your@email.com>
+Date:   Mon Nov 16 09:37:19 2020 -0500
+
+    adds cheerful greeting
+```
+
+:::details Solution
+
+This solution only creates a single file and makes one commit. Your solution might have more!
+
+```sh
+# Create a new directory and cd into it
+mkdir hello-again
+cd hello-again
+
+# Create the repo
+git init
+
+# Check the status
+git status
+
+# Create a new file and put some text in it
+touch hello.txt
+echo 'Hi there!' > hello.txt
+
+# Check the status again...
+git status
+
+# Add and commit the file
+git add hello.txt
+git commit -m 'adds cheerful greeting'
+
+# Check the status and the log
+git status
+git log
+```
+
+:::
+
+### 3. The more the merrier
+
+This exercise is similar to the first one. Make sure you create a new directory for the repo. (And **do not** put it inside the other repo!)
+
+Create a new repo. In this repo, you'll create three files. For each one:
+
+1. Put some text in it.
+2. `git add` it to the staging area.
+3. `git commit` it to the repo
+
+Then, delete one of the files and _commit the change_ to the repo.
+
+When you are finished, the output of `git status` should look like this:
+
+```
+On branch master
+nothing to commit, working tree clean
+```
+
+And the log should have at least four commits:
+
+```
+commit f2fa8dccf377182a9bd8a503d04346c447a8c47b (HEAD -> master)
+Author: Your Name <your@email.com>
+Date:   Mon Nov 16 09:58:11 2020 -0500
+
+    deletes file
+
+commit a99c55550f55a2e5cb4fc643f7422a1db9cdd9f4
+Author: Your Name <your@email.com>
+Date:   Mon Nov 16 09:58:11 2020 -0500
+
+    adds third file
+
+commit 05a617c47375c34045b2eca18019a386538f989a
+Author: Your Name <your@email.com>
+Date:   Mon Nov 16 09:58:11 2020 -0500
+
+    adds second file
+
+commit 42931a222cc59ffd1ad968e7d7e3a04c50818181
+Author: Your Name <your@email.com>
+Date:   Mon Nov 16 09:58:11 2020 -0500
+
+    adds first file
+```
+
+As you work, use `ls` and `cat` to confirm that the files exist and contain the text you expect.
+
+:::details Solution
+
+```sh
+# Create a new directory and cd into it
+mkdir the-more-the-merrier
+cd the-more-the-merrier
+
+# Create the repo
+git init
+
+# Check the status
+git status
+
+# Create a new file with some text
+# (echo will create the file if it doesn't exist)
+echo 'testing testing...' > first.txt
+
+# Check the status
+git status
+
+# Add the file
+git add first.txt
+
+# Commit the file
+git commit -m 'adds first file'
+
+# Add another file
+echo 'another file' > second.txt
+git add second.txt
+
+# Check the status
+git status
+
+# Commit the file
+git commit -m 'adds second file'
+
+# Create, add, and commit a third file
+echo 'one more file!' > third.txt
+git add third.txt
+git commit -m 'adds third file'
+
+# Delete a file
+rm second.txt
+
+# Check the status
+git status
+
+# Add the change
+git add second.txt
+
+# Commit the change
+git commit -m 'deletes file'
+
+# Check the status and the log
+git status
+git log
+```
+
+:::
+
+## Medium
+
+### 1. Undo! Undo!
+
+Create a new repo and create three files. Add and commit the files one at a time.
+
+Delete one of the files and commit the change.
+
+_Undo the last commit_ by using the `git revert` command. (Refer to the [Undoing changes](<(/lessons/dev-fundamentals/git-101/#undoing-changes)>) section of the lesson for details.)
+
+When you are finished, you should have a clean working tree and `git log` should show at least four commits. The most recent one should be a revert.
+
+```
+commit 796d9a8e3c66b757d1d77b94d829307a24a8ad2b (HEAD -> master)
+Author: Your Name <your@email.com>
+Date:   Mon Nov 16 10:14:21 2020 -0500
+
+    Revert "removes advice"
+
+    This reverts commit cd3a479ad8208b8681c5749ae9575f95dbf6862f.
+
+commit cd3a479ad8208b8681c5749ae9575f95dbf6862f
+Author: Your Name <your@email.com>
+Date:   Mon Nov 16 10:13:05 2020 -0500
+
+    removes advice
+
+commit 4f5e21cb0a8988be74c3ca5e8dceeb941eb4b2f4
+Author: Your Name <your@email.com>
+Date:   Mon Nov 16 10:12:41 2020 -0500
+
+    reveals a secret
+
+commit bdbebc63d7b7ccb4da01814c6574af31fa4ace56
+Author: Your Name <your@email.com>
+Date:   Mon Nov 16 10:12:27 2020 -0500
+
+    adds good advice
+
+commit e9b43333b66d1a8fe13fc3846444ca0bbffe165f
+Author: Your Name <your@email.com>
+Date:   Mon Nov 16 10:12:09 2020 -0500
+
+    begins a story
+```
+
+:::details Solution
+
+```sh
+# Create the directory and initialize the repo
+mkdir undo-undo
+cd undo-undo/
+git init
+
+# Create, add, and commit three files
+echo 'once upon a time' > one.txt
+git add one.txt
+git commit -m 'begins a story'
+
+echo 'two heads are better than one' > two.txt
+git add two.txt
+git commit -m 'adds good advice'
+
+echo 'three is a magic number' > three.txt
+git add three.txt
+git commit -m 'reveals a secret'
+
+# Check the status and the log
+git status
+git log
+
+# Delete a file...
+rm two.txt
+# And commit the change
+git add two.txt
+git commit -m 'removes advice'
+
+# Undo the last commit
+git revert HEAD --no-edit
+
+# Check the status and the log
+git status
+git log
+
+```
+
+:::
+
+### 2. Different branches, different worlds
+
+Create a new repo. Create, add, and commit a file called `original.txt`.
+
+Then, create a new branch called `alternate-branch`. Switch to the new branch and then:
+
+1. Delete `original.txt`
+2. Commit the change
+3. Create, add, and commit a second file called `new.txt`
+
+When you are finished, `git status` should print "nothing to commit, working tree clean"
+
+When on the `master` branch, the log should look like this:
+
+```
+commit 3def7b4ff3c6079b0833dc1d428963606a899b47 (master)
+Author: Your Name <you@email.com>
+Date:   Mon Nov 16 11:03:32 2020 -0500
+
+    adds original file
+```
+
+On the `alternate` branch, the log should look like this:
+
+```
+commit 0121c0260c633e8b6bec158a2afe778ca82e026d (HEAD -> alternate-branch)
+Author: Your Name <you@email.com>
+Date:   Mon Nov 16 11:04:19 2020 -0500
+
+    adds new file
+
+commit dadeebd254ce6c8f6a4947de917cb89f0d9eed91
+Author: Your Name <you@email.com>
+Date:   Mon Nov 16 11:04:00 2020 -0500
+
+    deletes original file
+
+commit 3def7b4ff3c6079b0833dc1d428963606a899b47 (master)
+Author: Your Name <you@email.com>
+Date:   Mon Nov 16 11:03:32 2020 -0500
+
+    adds original file
+
+```
+
+:::details Solution
+
+```sh
+# Create repo
+mkdir different-worlds
+cd different-worlds
+git init
+
+# Check the status
+git status
+
+# Create, add, and commit original.txt
+echo 'this is the first file' > original.txt
+git add original.txt
+git commit -m 'adds original file'
+
+# Create a new branch
+git branch alternate-branch
+
+# Switch to new branch
+git checkout alternate-branch
+
+# Delete original.txt and commit the change
+rm original.txt
+git add original.txt
+git commit -m 'deletes original file'
+
+# Create, add, and commit new.txt
+echo 'a brand new file' > new.txt
+git add new.txt
+git commit -m 'adds new file'
+
+# Check which branch you are on
+git branch
+
+# Check the status and the log
+git status
+git log
+
+# Switch back to master branch
+git checkout master
+
+# Check the branch, status, and log
+git branch
+git status
+git log
+```
+
+:::
+
+## Large
+
+There are no large exercises for this lesson.
