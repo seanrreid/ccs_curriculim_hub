@@ -4,8 +4,6 @@ description: Full Stack Web Development Curriculum
 pubDate: 2023-12-15T11:22:42-05:00
 ---
 
-# Full Stack Web
-
 ## Graduation Requirements
 
 Throughout the 16-week program, students will be evaluated on their progression and career readiness. Students will undergo at least 2 performance reviews throughout the program to ensure each student is progressing steadily throughout the course and to identify areas of strengths and weaknesses. In order to receive a certificate of completion, students must meet the follow criteria by the end of their cohort.
