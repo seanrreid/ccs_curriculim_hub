@@ -1,7 +1,8 @@
 ---
-title: CCS Winter 2024 Proposed Syllabus
-description: CCS Winter 2024 Proposed Syllabus
-pubDate: 2023-12-19T11:22:42-05:00
+title: Full Stack Web Development
+description: Full Stack Web Development Syllabus
+published: 2023-12-19 15:30:00
+revised: 2023-12-19 15:30:00
 ---
 
 <!-- markdownlint-disable no-duplicate-heading -->
@@ -66,10 +67,10 @@ There are 9 sections. However, it's important to note that each section doesn't 
 ### Lessons
 
 - [Python 101](/lessons/solving-problems-using-code-python/intro-to-python/)
-- [Python 102](/lessons/solving-problems-using-code-python/sequences/)
-- [Functions](/lessons/solving-problems-using-code-python/functions/)
-- [Mapping](/lessons/solving-problems-using-code-python/mapping/)
-- [Object-Oriented Programming](/lessons/solving-problems-using-code-python/oop/)
+- [Python 102](/lessons/solving-problems-using-code-python/python-sequences/)
+- [Functions](/lessons/solving-problems-using-code-python/python-functions/)
+- [Mapping](/lessons/solving-problems-using-code-python/python-mapping/)
+- [Object-Oriented Programming](/lessons/solving-problems-using-code-python/python-oop/)
 
 ## 3. Front-End Foundations
 
