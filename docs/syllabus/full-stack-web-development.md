@@ -36,41 +36,56 @@ There are 9 sections. However, it's important to note that each section doesn't 
 
 ### Lessons
 
-- [Setting up your Dev Environment](/lessons/dev-fundamentals/setup/)
-- [Installing Python3](/lessons/dev-fundamentals/setup-python/)
-- Installed Thonny @TODO
+- [Setting up your Dev Environment](/docs/lessons/dev-fundamentals/setup/)
+- [CLI 101](/docs/lessons/dev-fundamentals/cli-101/)
+- [Git 101](/docs/lessons/dev-fundamentals/git-101/)
+- [Installing Python3](/docs/lessons/dev-fundamentals/setup-python/)
+- Installing Thonny <!-- @TODO -->
   - [Using Thonny to step through Python](https://youtu.be/QQAqQp06nXo?si=5H-MCxL0qlzRiPeN)
-- [CLI 101](/lessons/dev-fundamentals/cli-101/)
-- [Git 101](/lessons/dev-fundamentals/git-101/)
 
 ## 2. Solving Problems Using Code
 
-@TODO - Start with Python, then dip into JS _before_ going into DOM.
-
 ### Learning Objectives
 
-- Create, edit, run, and debug command line programs
+- Create, edit, run, and debug programs
 - Imperative Programming
   - Implement simple algorithms with variables, loops, and conditionals
-  - Use lists and dictionaries
+  - Use collections of data
+    - Python: Lists and Dictionaries
+    - JavaScript: Arrays
 - Modular Programming
   - Organize code into functions and modules
-  - Import modules from the standard 👻️ library and third-party libraries
+  - Import modules from the standard library and third-party libraries
 - Object-Oriented Programming
   - Create classes and instantiate objects
   - Reuse code via inheritance
 
-### Technologies
+### 2a. Solving Problems Using Python
+
+#### Technologies
 
 - Python 3
 
-### Lessons
+#### Lessons
 
-- [Python 101](/lessons/solving-problems-using-code-python/intro-to-python/)
-- [Python 102](/lessons/solving-problems-using-code-python/python-sequences/)
-- [Functions](/lessons/solving-problems-using-code-python/python-functions/)
-- [Mapping](/lessons/solving-problems-using-code-python/python-mapping/)
-- [Object-Oriented Programming](/lessons/solving-problems-using-code-python/python-oop/)
+- [Intro to Python](/docs/lessons/solving-problems-using-code-python/intro-to-python/)
+- [Sequences](/docs/lessons/solving-problems-using-code-python/python-sequences/)
+- [Functions](/docs/lessons/solving-problems-using-code-python/python-functions/)
+- [Mapping](/docs/lessons/solving-problems-using-code-python/python-mapping/)
+- [Object-Oriented Programming](/docs/lessons/solving-problems-using-code-python/python-oop/)
+
+### 2b. Solving Problems Using JavaScript
+
+#### Technologies
+
+- JavaScript
+
+#### Lessons
+
+- [Intro to JavaScript](/docs/lessons/solving-problems-using-code-js/js-101/)
+- [JavaScript Fundamentals](/docs/lessons/solving-problems-using-code-js/functions-variables-values/)
+- [Common JavaScript Patterns](/docs/lessons/solving-problems-using-code-js/common-patterns/)
+- [Callbacks and Anonymous Functins](/docs/lessons/solving-problems-using-code-js/callbacks)
 
 ## 3. Front-End Foundations
 
