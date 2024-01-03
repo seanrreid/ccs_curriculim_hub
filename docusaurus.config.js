@@ -8,108 +8,88 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Web Development Curriculum',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+    title: 'CCS Full Stack Immersive Program',
+    tagline: 'Take charge of your career.',
+    favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+    // Set the production url of your site here
+    url: 'https://your-docusaurus-site.example.com',
+    // Set the /<baseUrl>/ pathname under which your site is served
+    // For GitHub pages deployment, it is often '/<projectName>/'
+    baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'seanrreid', // Usually your GitHub org/user name.
-  projectName: 'web-dev-curriculum', // Usually your repo name.
+    // GitHub pages deployment config.
+    // If you aren't using GitHub pages, you don't need these.
+    organizationName: 'seanrreid', // Usually your GitHub org/user name.
+    projectName: 'web-dev-curriculum', // Usually your repo name.
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+    onBrokenLinks: 'warn',
+    onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+    // Even if you don't use internationalization, you can use this field to set
+    // useful metadata like html lang. For example, if your site is Chinese, you
+    // may want to replace "en" with "zh-Hans".
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en'],
+    },
 
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-      }),
+    presets: [
+        [
+            'classic',
+            /** @type {import('@docusaurus/preset-classic').Options} */
+            ({
+                docs: {
+                    sidebarPath: './sidebars.js',
+                },
+                theme: {
+                    customCss: './src/css/custom.css',
+                },
+            }),
+        ],
     ],
-  ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'Carolina Code School',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/ccs_logo.png',
-        },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Syllabus',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'}
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Get Started',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Sean R Reid, LLC, Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+    themeConfig:
+        /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+        ({
+            // Replace with your project's social card
+            image: 'img/docusaurus-social-card.jpg',
+            navbar: {
+                title: 'Carolina Code School',
+                logo: {
+                    alt: 'Carolina Code School',
+                    src: 'img/ccs_logo.png',
+                },
+                items: [
+                    {
+                        type: 'docSidebar',
+                        sidebarId: 'tutorialSidebar',
+                        position: 'left',
+                        label: 'Syllabus',
+                    },
+                    // { to: '/blog', label: 'Blog', position: 'left' },
+                ],
+            },
+            footer: {
+                style: 'dark',
+                links: [
+                    // {
+                    //     title: 'More',
+                    //     items: [
+                    //         {
+                    //             label: 'Blog',
+                    //             to: '/blog',
+                    //         },
+                    //     ],
+                    // },
+                ],
+                copyright: `Carolina Code School is a program of BC Corp., a South Carolina not-for-profit corporation and a registered 501(c)3 organization. &copy; ${new Date().getFullYear()}`,
+            },
+            prism: {
+                theme: prismThemes.synthwave84,
+                darkTheme: prismThemes.synthwave84,
+            },
+        }),
 };
 
 export default config;

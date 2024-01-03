@@ -7,36 +7,46 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
+    const { siteConfig } = useDocusaurusContext();
+    return (
+        <header className={clsx('hero hero--primary', styles.heroBanner)}>
+            <div className='container'>
+                <img
+                    src='./img/carolina_code_school_full.png'
+                    alt='Carolina Code School'
+                />
+                <Heading as='h1' className='hero__title'>
+                    {siteConfig.title}
+                </Heading>
+            </div>
+        </header>
+    );
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-       <p>Main content goes here</p>
-      </main>
-    </Layout>
-  );
+    const { siteConfig } = useDocusaurusContext();
+    return (
+        <Layout
+            title={`Hello from ${siteConfig.title}`}
+            description='Description will go into a meta tag in <head />'
+        >
+            <HomepageHeader />
+            <main class={clsx('container', styles.main)}>
+                <Heading as='h2'>Our Curriculum 💻</Heading>
+                <p>
+                    Our structured curriculum is designed with input from
+                    Upstate employers to give students a full-stack foundation
+                    and to prepare them for careers in technology - right here
+                    at home, or wherever their career path may go.
+                </p>
+                <Heading as='h2'>Our Instructors 🙋</Heading>
+                <p>
+                    Our instructors are industry experts and passionate
+                    educators who are committed to the success of every single
+                    student. Our courses are structured to provide in-person,
+                    one-on-one mentorship and guidance.
+                </p>
+            </main>
+        </Layout>
+    );
 }

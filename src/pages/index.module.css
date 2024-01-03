@@ -4,20 +4,31 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+    color: var(--ifm-color-primary-white);
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        max-width: 1024px;
+        padding: 0 0 2rem;
+        width: 100vw;
+    }
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+    .heroBanner {
+        padding: 2rem;
+    }
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    padding: 2rem 0;
 }
