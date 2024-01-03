@@ -9,12 +9,12 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+}
 
-    img {
-        max-width: 1024px;
-        padding: 0 0 2rem;
-        width: 100vw;
-    }
+.heroImage {
+    max-width: 1024px;
+    padding: 0 0 2rem;
+    width: 100vw;
 }
 
 @media screen and (max-width: 996px) {

@@ -14,6 +14,7 @@ function HomepageHeader() {
                 <img
                     src='./img/carolina_code_school_full.png'
                     alt='Carolina Code School'
+                    class={styles.heroImage}
                 />
                 <Heading as='h1' className='hero__title'>
                     {siteConfig.title}
