@@ -332,7 +332,7 @@ Using the dictionary from the [Nested dictionaries exercise](#nested-dictionarie
 
 Write a `letter_histogram` program that asks the user for input, and prints a dictionary containing the tally of how many times each letter in the alphabet was used in the word. For example:
 
-```bash
+```sh
 $ python3 letter_histogram.py
 Please enter a word: banana
 {'a': 3, 'b': 1, 'n': 2}
@@ -342,7 +342,7 @@ Please enter a word: banana
 
 Write a `word_histogram` program that asks the user for a sentence as its input, and prints a dictionary containing the tally of how many times each word in the alphabet was used in the text. For example:
 
-```bash
+```sh
 $ python3 word_histogram.py
 Please enter a sentence: To be or not to be
 {'to': 2, 'be': 2, 'or': 1, 'not': 1}

@@ -5,17 +5,13 @@ description: Instructor Training
 
 ## Overview
 
-This guide will help you get started as an instructor with DigitalCrafts. It contains practical information about things like managing a classroom, assigning coding exercises, and how to contribute to our teaching materials.
+This guide is intended to help with presenting topics in the classroom setting. It contains practical information about things like managing a classroom, assigning coding exercises, and how to contribute to our teaching materials.
 
 More importantly, we hope it orients you to our teaching philosophy, which has grown organically over time through our experiences helping hundreds of students change their lives, as well as their careers.
 
 ## 1: Teaching Class
 
-The DigitalCrafts classroom is distinctly different from a traditional classroom. Though a portion of your day is spent lecturing, your primary goal is to prepare your students for hands-on practice. During lecture periods, you'll demonstrate tools and techniques, demystify industry jargon, and break regularly to assign short training activities.
-
-You don't have to do it alone! Your teaching assistants (known throughout DigitalCrafts as Developers in Residence, or DIRs) have been through the program and are the "first responders" when your students need help. Make sure to delegate tasks to them as needed.
-
-Whether your students are in the same room as you or miles away, you'll be able to provide the best training experience for each of them. Recordings, on-screen annotation tools, and private breakout rooms are some of the teaching and collaboration features that you'll master.
+The CCS classroom is distinctly different from a traditional classroom. Though a portion of your day is spent lecturing, your primary goal is to prepare your students for hands-on practice. During lecture periods, you'll demonstrate tools and techniques, demystify industry jargon, and break regularly to assign short training activities.
 
 ### Lessons
 

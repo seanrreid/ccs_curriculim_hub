@@ -26,7 +26,7 @@ To get started, most operating systems have a built in application called "termi
 
 Often, the prompt is a single character, such as the `$` sign:
 
-```
+```sh
 $
 ```
 
@@ -36,9 +36,9 @@ Run your first command by typing `pwd` at the prompt and pressing the `enter` ke
 
 You should see some text printed to the terminal (though your output will be a little different):
 
-```
+```sh
 $ pwd
-/Users/chrisaquino
+/Users/optimusprime
 ```
 
 You just asked your computer to "Print Working Directory". Great! ...what's a working directory?
@@ -62,7 +62,7 @@ _[Source: catonmat.net/why-unix-commands-are-short](https://catonmat.net/why-uni
 
 The next command you're going to learn is `ls`, which is the list command. Run that command and press enter. You will see a list of files in your directory
 
-```bash
+```sh
 $ ls
 Applications Desktop Documents Downloads Library Movies Music Pictures Public
 ```
@@ -71,17 +71,17 @@ You can customize the output by adding command line _arguments_. In computing, a
 
 Let's add an argument to get the _long_ version of the output. Type `ls -l` and press `return`. You will see a vertical list like the following:
 
-```
+```sh
 $ ls -l
-drwx------@  5 chrisaquino  staff   160 Jun  4 10:13 Applications
-drwx------@ 15 chrisaquino  staff   480 Oct 15 17:42 Desktop
-drwx------@ 10 chrisaquino  staff   320 Jun  4 09:48 Documents
-drwx------@ 64 chrisaquino  staff  2048 Oct 15 16:18 Downloads
-drwx------@ 70 chrisaquino  staff  2240 Jun 15 13:54 Library
-drwx------+ 44 chrisaquino  staff  1408 Jun  5 15:37 Movies
-drwx------+  6 chrisaquino  staff   192 May  1 08:40 Music
-drwx------+  7 chrisaquino  staff   224 Nov  7  2019 Pictures
-drwxr-xr-x+  4 chrisaquino  staff   128 Oct  9  2019 Public
+drwx------@  5 optimusprime  staff   160 Jun  4 10:13 Applications
+drwx------@ 15 optimusprime  staff   480 Oct 15 17:42 Desktop
+drwx------@ 10 optimusprime  staff   320 Jun  4 09:48 Documents
+drwx------@ 64 optimusprime  staff  2048 Oct 15 16:18 Downloads
+drwx------@ 70 optimusprime  staff  2240 Jun 15 13:54 Library
+drwx------+ 44 optimusprime  staff  1408 Jun  5 15:37 Movies
+drwx------+  6 optimusprime  staff   192 May  1 08:40 Music
+drwx------+  7 optimusprime  staff   224 Nov  7  2019 Pictures
+drwxr-xr-x+  4 optimusprime  staff   128 Oct  9  2019 Public
 ```
 
 This is where the CLI is more powerful than a GUI. You didn't have to change your app preferences or run a different program to get customized output. You simply ask `ls` for more information.
@@ -90,16 +90,16 @@ The output from `ls -l` shows quite a lot of information. Though it looks crypti
 
 Another useful argument is `-a`, which shows _hidden files_. Try it, and you'll see output like this:
 
-```
+```sh
 $ ls -a
-.bash_history		Documents
-.bash_profile		Downloads
-.bash_sessions		Library
-.bashrc				Movies
-.gitconfig			Music
-.ssh				Pictures
-.vscode				Projects
-Applications		Public
+.bash_history   Documents
+.bash_profile   Downloads
+.bash_sessions  Library
+.bashrc         Movies
+.gitconfig      Music
+.ssh            Pictures
+.vscode         Projects
+Applications    Public
 Desktop
 ```
 
@@ -128,7 +128,7 @@ The output should contain one of these two words:
 
 Each of those is a _shell_ program. The purpose of a shell is to interpret and run your commands. Your terminal will likely be configured to use one of those two.
 
-###### For `bash` Users:
+###### For `bash` Users
 
 If your shell is `bash`, use this command:
 
@@ -138,13 +138,13 @@ code .bash_profile
 
 At the end of the file, add a new line with this text:
 
-```bash
+```sh
 PS1='[\w]$ '
 ```
 
 Now skip to the [All Users](#for-all-users) section below.
 
-###### For `zsh` Users:
+###### For `zsh` Users
 
 If your shell is `zsh`, this command is for you:
 
@@ -176,48 +176,48 @@ The `~` is the "tilde" character and it is shorthand for your "home directory".
 
 What if you wanted to see a long listing that includes hidden files? You could pass multiple arguments to the `ls` command:
 
-```
+```sh
 [~]$ ls -l -a
--rw-------    1 chrisaquino  staff  10937 Oct 16 15:41 .bash_history
--rw-r--r--    1 chrisaquino  staff    208 Oct 13 14:24 .bash_profile
-drwx------  108 chrisaquino  staff   3456 Oct 16 11:31 .bash_sessions
--rw-r--r--    1 chrisaquino  staff    695 Sep 21 12:47 .bashrc
--rw-r--r--    1 chrisaquino  staff    464 May  8 16:02 .gitconfig
-drwx------   12 chrisaquino  staff    384 Oct 15 11:00 .ssh
-drwxr-xr-x    4 chrisaquino  staff    128 Nov 18  2019 .vscode
-drwx------@   5 chrisaquino  staff    160 Jun  4 10:13 Applications
-drwx------@  15 chrisaquino  staff    480 Oct 15 17:42 Desktop
-drwx------@  10 chrisaquino  staff    320 Jun  4 09:48 Documents
-drwx------@  64 chrisaquino  staff   2048 Oct 15 16:18 Downloads
-drwx------@  70 chrisaquino  staff   2240 Jun 15 13:54 Library
-drwx------+  44 chrisaquino  staff   1408 Jun  5 15:37 Movies
-drwx------+   6 chrisaquino  staff    192 May  1 08:40 Music
-drwx------+   7 chrisaquino  staff    224 Nov  7  2019 Pictures
-drwxr-xr-x   16 chrisaquino  staff    512 Oct  7 16:31 Projects
-drwxr-xr-x+   4 chrisaquino  staff    128 Oct  9  2019 Public
+-rw-------    1 optimusprime  staff  10937 Oct 16 15:41 .bash_history
+-rw-r--r--    1 optimusprime  staff    208 Oct 13 14:24 .bash_profile
+drwx------  108 optimusprime  staff   3456 Oct 16 11:31 .bash_sessions
+-rw-r--r--    1 optimusprime  staff    695 Sep 21 12:47 .bashrc
+-rw-r--r--    1 optimusprime  staff    464 May  8 16:02 .gitconfig
+drwx------   12 optimusprime  staff    384 Oct 15 11:00 .ssh
+drwxr-xr-x    4 optimusprime  staff    128 Nov 18  2019 .vscode
+drwx------@   5 optimusprime  staff    160 Jun  4 10:13 Applications
+drwx------@  15 optimusprime  staff    480 Oct 15 17:42 Desktop
+drwx------@  10 optimusprime  staff    320 Jun  4 09:48 Documents
+drwx------@  64 optimusprime  staff   2048 Oct 15 16:18 Downloads
+drwx------@  70 optimusprime  staff   2240 Jun 15 13:54 Library
+drwx------+  44 optimusprime  staff   1408 Jun  5 15:37 Movies
+drwx------+   6 optimusprime  staff    192 May  1 08:40 Music
+drwx------+   7 optimusprime  staff    224 Nov  7  2019 Pictures
+drwxr-xr-x   16 optimusprime  staff    512 Oct  7 16:31 Projects
+drwxr-xr-x+   4 optimusprime  staff    128 Oct  9  2019 Public
 ```
 
 However, it's easier to write it like this:
 
-```
+```sh
 [~]$ ls -la
--rw-------    1 chrisaquino  staff  10937 Oct 16 15:41 .bash_history
--rw-r--r--    1 chrisaquino  staff    208 Oct 13 14:24 .bash_profile
-drwx------  108 chrisaquino  staff   3456 Oct 16 11:31 .bash_sessions
--rw-r--r--    1 chrisaquino  staff    695 Sep 21 12:47 .bashrc
--rw-r--r--    1 chrisaquino  staff    464 May  8 16:02 .gitconfig
-drwx------   12 chrisaquino  staff    384 Oct 15 11:00 .ssh
-drwxr-xr-x    4 chrisaquino  staff    128 Nov 18  2019 .vscode
-drwx------@   5 chrisaquino  staff    160 Jun  4 10:13 Applications
-drwx------@  15 chrisaquino  staff    480 Oct 15 17:42 Desktop
-drwx------@  10 chrisaquino  staff    320 Jun  4 09:48 Documents
-drwx------@  64 chrisaquino  staff   2048 Oct 15 16:18 Downloads
-drwx------@  70 chrisaquino  staff   2240 Jun 15 13:54 Library
-drwx------+  44 chrisaquino  staff   1408 Jun  5 15:37 Movies
-drwx------+   6 chrisaquino  staff    192 May  1 08:40 Music
-drwx------+   7 chrisaquino  staff    224 Nov  7  2019 Pictures
-drwxr-xr-x   16 chrisaquino  staff    512 Oct  7 16:31 Projects
-drwxr-xr-x+   4 chrisaquino  staff    128 Oct  9  2019 Public
+-rw-------    1 optimusprime  staff  10937 Oct 16 15:41 .bash_history
+-rw-r--r--    1 optimusprime  staff    208 Oct 13 14:24 .bash_profile
+drwx------  108 optimusprime  staff   3456 Oct 16 11:31 .bash_sessions
+-rw-r--r--    1 optimusprime  staff    695 Sep 21 12:47 .bashrc
+-rw-r--r--    1 optimusprime  staff    464 May  8 16:02 .gitconfig
+drwx------   12 optimusprime  staff    384 Oct 15 11:00 .ssh
+drwxr-xr-x    4 optimusprime  staff    128 Nov 18  2019 .vscode
+drwx------@   5 optimusprime  staff    160 Jun  4 10:13 Applications
+drwx------@  15 optimusprime  staff    480 Oct 15 17:42 Desktop
+drwx------@  10 optimusprime  staff    320 Jun  4 09:48 Documents
+drwx------@  64 optimusprime  staff   2048 Oct 15 16:18 Downloads
+drwx------@  70 optimusprime  staff   2240 Jun 15 13:54 Library
+drwx------+  44 optimusprime  staff   1408 Jun  5 15:37 Movies
+drwx------+   6 optimusprime  staff    192 May  1 08:40 Music
+drwx------+   7 optimusprime  staff    224 Nov  7  2019 Pictures
+drwxr-xr-x   16 optimusprime  staff    512 Oct  7 16:31 Projects
+drwxr-xr-x+   4 optimusprime  staff    128 Oct  9  2019 Public
 ```
 
 Arguments will always be specific to the command. To find out how to use a command, there's a special argument built into many commands: `--help`. To see the help text, you would type `ls --help`. (The output is usually pretty long. You can scroll in the terminal just like you do a web page.)
@@ -232,13 +232,13 @@ In order to change directories, you have to tell the system which directory you 
 
 For example. to go from your home directory to your `Downloads` directory, you type:
 
-```
+```sh
 cd Downloads
 ```
 
 If you followed along earlier and customized your prompt, it should look like this:
 
-```
+```sh
 [~/Downloads]$
 ```
 
@@ -271,10 +271,6 @@ Here are the basics you learned:
 - How to add modifiers to a command with `cd Downloads`
 - How to navigate the file system with `cd`
 - How to create files and folders with `mkdir` and `touch`
-
-## Exercises
-
-[Click here for the CLI exercises](./exercises.md)
 
 ## Interview Questions
 

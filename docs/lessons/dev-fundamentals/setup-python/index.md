@@ -4,8 +4,6 @@ description: Installing Python3
 sidebar_position: 4
 ---
 
-# Installing Python3
-
 Python is one of the most popular languages in the world. It is used by web developers, scientists, digital artists, and security experts.
 
 It originated as a language for teaching beginners, but designed to be a powerful tool in the hands of a professional. We use it in class because:
@@ -22,7 +20,7 @@ which python3
 
 You might see output similar to the following:
 
-```
+```sh
 /usr/local/bin/python3
 ```
 
@@ -38,25 +36,11 @@ Though you can run many (but not all) of the code samples using Python2, it is n
 If you choose to use Python2, you won't be able to follow all of the code examples as shown in the Learning Portal. There will be times you'll need to translate from Python3 to Python2. (Be prepared to do some extra debugging!)
 :::
 
-## macOS
+## Installing Python
 
-To install the latest Python3, open a terminal and use Homebrew. Make sure to specify that it should install version `3.9`:
+There are a few different ways to install Python, and a few specific options for various operating systems (MacOS, Windows, Linux). However, for our purposes, the easiest solution is to use the default Python installer.
 
-```sh
-brew install python@3.9
-```
-
-If you chose not to install Homebrew, you can download an installer from [the python.org website](https://www.python.org/downloads/).
-
-## Windows
-
-Open an Administrator PowerShell window and use `choco` to install Python3:
-
-```sh
-choco install python3
-```
-
-If you chose not to install Chocolatey, you can download an installer from [the python.org website](https://www.python.org/downloads/).
+That can be [downloaded here](https://www.python.org/downloads/). Download the file to your local machine and run the installer.
 
 ### Creating the File Alias
 

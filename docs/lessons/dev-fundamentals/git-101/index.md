@@ -556,10 +556,6 @@ Finally, you can view the log to see that master contains the new commit from `d
 
 In this lesson, you learned how to create a local git repo using `git init`. You created new files and tracked changes to these files by using `git add` and `git commit`. You switched to older revisions using `git revert` and `git reset`, and you created parallel versions of your code using `git branch` and `git checkout`.
 
-## Exercises
-
-[Click here for the Git 101 exercises](./exercises.md)
-
 ## Interview Questions
 
 ### Fundamentals

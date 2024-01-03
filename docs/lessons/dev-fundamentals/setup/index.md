@@ -4,11 +4,9 @@ description: Setting Up Your Dev Environment
 sidebar_position: 1
 ---
 
-# Setting Up Your Dev Environment
-
 ## Overview
 
-There are five primary tools you'll use during your time at DigitalCrafts:
+There are five primary tools you'll use:
 
 - The Visual Studio Code text editor
 - The Google Chrome web browser
@@ -100,7 +98,7 @@ It's going to take a while, so get a cup of coffee -- or better yet! Help anothe
 
 Once it's finished, let's try installing a program. The `tldr` program (which is short for ["too long; didn't read"](https://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn%27t_read)) gives you a cheat sheet for common terminal commands.
 
-```bash
+```sh
 brew install tldr
 ```
 
@@ -156,7 +154,7 @@ Though it seems more complicated than it needs to be, that's how it is is the so
 
 Install nvm by pasting in this command into your terminal:
 
-```bash
+```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | $SHELL
 ```
 
@@ -186,7 +184,7 @@ Download and install Rectangle for your Mac. It's free and lets you position and
 
 You can also install via homebrew:
 
-```bash
+```sh
 brew cask install rectangle
 ```
 
@@ -195,167 +193,3 @@ brew cask install rectangle
 [Download iTerm2](https://iterm2.com/)
 
 Download and install iTerm2 for your Mac. It's like a supercharged Terminal program that allows you to split screen your terminal windows, easily load tabs, and loads of other cool stuff!
-
-### Windows 10
-
-#### Package Manager: Chocolatey
-
-[Chocolatey](https://chocolatey.org/) is community-driven package manager for Windows 10.
-
-![Chocolatey website](./choco-site.png)
-
-[To install](https://chocolatey.org/install), open a `PowerShell` window as Administrator.
-
-![Animation of opening an Administrator PowerShell](./win10-admin-ps.gif)
-
-Then, paste in the following command:
-
-```
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-```
-
-At the prompt, press `y` and then `Enter`.
-
-:::tip Always use an Administrator PowerShell to use `choco`
-
-In the next step, you'll install `Git Bash`, which you'll use when working on exercises and projects.
-
-But any time you need to run `choco install`, you must do it from an Administrator PowerShell.
-
-Then, after you install a package in an Administrator PowerShell, you can use the newly installed commands from `Git Bash`.
-:::
-
-#### Git Client and Bash Terminal
-
-Most of the lessons in the Learning Portal show commands made for `bash`-style terminals. The main reason for this is that it is ubiquitous across macOS and Linux (including the vast majority of servers on the internet).
-
-To get the same experience on Windows 10, you'll install the `Git Bash` terminal, along with the `git` program.
-
-In your Administrator PowerShell, run the following command to install both Git and Git Bash:
-
-```sh
-choco install git -y
-```
-
-After a few minutes, you'll have a `Git` folder in the Start Menu. Inside, you'll find a `Git Bash` program. We recommend you pin it to the Taskbar so you can quickly open it at any time.
-
-#### Node.js
-
-In an Administrator PowerShell, run the following command:
-
-```sh
-choco install nodejs-lts
-```
-
-##### Configuring the Bash Terminal
-
-Open Git Bash from the Taskbar (or the Start Menu) and run the following command:
-
-```sh
-code .bash_profile
-```
-
-This will open VS Code and allow you to access the Node.js installation from Git Bash.
-
-Add the following line in VS Code:
-
-```sh
-export PATH=$PATH:/c/Program\ Files/nodejs/
-```
-
-Save the file and close the tab in VS Code.
-
-You'll need to close any open `Git Bash` tabs and open a new one to access the aliases.
-
-### Linux
-
-#### Package Manager
-
-On Linux, you've already got a package manager installed by default. However, _which_ package manager depends on which [Linux distribution](https://en.wikipedia.org/wiki/Linux_distribution) you're using,
-
-In the terminal, enter the following command:
-
-```sh
-cat /etc/os-release
-```
-
-You might see one of the following names:
-
-- Ubuntu
-- Debian
-- Arch Linux
-- Fedora
-
-(If you don't see yours here, and you installed Linux yourself, you probably already know how to use your package manager.)
-
-We'll list installation commands for the following package managers:
-
-- `apt` (Debian or Ubuntu)
-- `pacman` (Arch Linux)
-- `dnf` (Fedora)
-
-**Make sure to use the command that matches your package manager!**
-
-To update your installed packages:
-
-- `sudo apt update && sudo apt upgrade -y`
-- `sudo pacman -Syu`
-- `sudo dnf upgrade`
-
-#### Git
-
-To install git:
-
-- `sudo apt install git`
-- `sudo pacman -S git`
-- `sudo dnf install git`
-
-Confirm that the installation was successful by running:
-
-```sh
-which git
-```
-
-It was successful if it prints something like:
-
-```
-/bin/git
-```
-
-#### nvm and Node.js
-
-In order to install Node.js, you'll need to first install `nvm`. nvm is a Node.js version manager, which is the way we recommend you install Node.js. It allows you to install and use different versions of Node.js. This is important when you need to maintain projects that rely on a specific version of Node.js.
-
-Though it seems more complicated than it needs to be, that's how it is is the software world. Let's walk through it step by step.
-
-Install nvm by pasting in this command into your terminal:
-
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | $SHELL
-```
-
-and then press the `return` key.
-
-**Close this terminal** and open a new one.
-
-In the new terminal window, run this command:
-
-```sh
-nvm install --lts
-```
-
-Press the `return` key to run the command.
-
-You should see that nvm is downloading and installing the latest version of node!
-
-Confirm that the installation was successful by running:
-
-```sh
-which node
-```
-
-It was successful if it prints something like:
-
-```
-/home/radishmouse/.nvm/versions/node/v12.19.0/bin/node
-```

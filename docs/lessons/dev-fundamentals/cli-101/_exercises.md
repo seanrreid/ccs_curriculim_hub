@@ -4,8 +4,6 @@ description: CLI 101
 pubDate: 2023-12-15T13:49:22-05:00
 ---
 
-# CLI 101
-
 ## Training Exercises
 
 To solidify your knowledge, here are a set of exercises that will require you to use the techniques you've just learned in the lesson above.
@@ -18,17 +16,17 @@ They are organized into _small_, _medium_, and _large_ sized problems. The small
 
 Decompose the following commands by identifying the command, arguments and modifiers for each command.
 
-```bash
+```sh
 git status
 ```
 
-:::details Solution
-
+:::details
+Solution
 - `git` is the command
 - `status` is a modifier
-  :::
+:::
 
-```bash
+```sh
 rm -rf ./Sample
 ```
 
@@ -39,7 +37,7 @@ rm -rf ./Sample
 - `./Sample` is a modifer for the `f` argument
   :::
 
-```bash
+```sh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
@@ -64,7 +62,7 @@ Create directories to hold your a few of your favorite music albums. (Don't worr
 
 For example, you might organize the songs and albums into genre and artist directories:
 
-```
+```sh
 my-music/
 ├── classic-rock
 │   └── david-bowie
@@ -79,7 +77,7 @@ my-music/
 
 Use the `touch` command to create a few (empty) song files:
 
-```{6,7}
+```sh
 my-music/
 ├── classic-rock
 │   └── david-bowie
@@ -131,7 +129,7 @@ mkdir blackstar
 
 Create the following directories and files in the following items:
 
-```
+```sh
 project/
 ├── assets
 │   ├── logo.svg
@@ -182,7 +180,7 @@ cfe my-project
 
 And produces a new tree of directories and files that looks like this:
 
-```
+```sh
 my-project/
 ├── assets
 ├── css
