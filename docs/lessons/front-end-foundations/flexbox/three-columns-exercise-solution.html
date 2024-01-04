@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Three Columns Exercise Solution</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        /* The fixed height is to create the column layout */
+        height: 700px;
+      }
+      .column {
+        /*
+         * Flex grow is for the parent flex container to
+         * evenly distribute the columns
+         */
+        flex-grow: 1;
+        /*
+         * The column element is also a flex container so the following
+         * properties can center the number
+         */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .red {
+        background-color: #ff5f5f;
+      }
+      .blue {
+        background-color: #5fafff;
+      }
+      .yellow {
+        background-color: #ffff5f;
+      }
+      .number {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="red column"><div class="number">1</div></div>
+      <div class="blue column"><div class="number">2</div></div>
+      <div class="yellow column"><div class="number">3</div></div>
+    </div>
+  </body>
+</html>

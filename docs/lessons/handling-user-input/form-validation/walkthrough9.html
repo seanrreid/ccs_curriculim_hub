@@ -1,0 +1,25 @@
+<form>
+  <fieldset>
+    <legend>User Information</legend>
+    <label for="name">Name: </label>
+    <input id="name" name="name" type="text" />
+  </fieldset>
+  <button type="submit">Submit</button>
+</form>
+<script>
+  const form = document.querySelector("form");
+
+  function checkName(name) {
+    myRegex = /[A-Za-z]+/;
+    return myRegex.test(name);
+  }
+  
+  form.addEventListener("submit", event => {
+    const nameInput = document.querySelector("#name");
+    if (!checkName(nameInput.value)) {
+      event.preventDefault();
+      alert("Please use only lowercase or uppercase letters");
+      return;
+    }
+  });
+</script>

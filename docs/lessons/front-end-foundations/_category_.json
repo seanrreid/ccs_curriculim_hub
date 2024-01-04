@@ -1,0 +1,8 @@
+{
+    "label": "Front-End Foundations",
+    "position": 2,
+    "link": {
+        "type": "generated-index",
+        "description": "HTML and CSS, aka \"the front of the front-end\"."
+    }
+}

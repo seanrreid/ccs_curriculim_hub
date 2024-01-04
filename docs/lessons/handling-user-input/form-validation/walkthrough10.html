@@ -1,0 +1,20 @@
+<script>
+  const form = document.querySelector("form");
+
+  function checkName(name) {
+    if (name == "") {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  form.addEventListener("submit", event => {
+    const nameInput = document.querySelector("#name");
+    if (!checkName(nameInput.value)) {
+      event.preventDefault();
+      alert("Name is required");
+      return;
+    }
+  });
+</script>
