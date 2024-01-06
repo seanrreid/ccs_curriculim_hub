@@ -1,8 +1,8 @@
 {
-    "label": "Previous Cohorts",
-    "position": 4,
+    "label": "Cohorts",
+    "position": 3,
     "link": {
         "type": "generated-index",
-        "description": "Information related to previous cohorts."
+        "description": "Notes, lectures, resources relevant for each cohort."
     }
 }
