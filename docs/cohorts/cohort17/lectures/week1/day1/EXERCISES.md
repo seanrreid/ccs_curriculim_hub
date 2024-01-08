@@ -1,4 +1,8 @@
-# Terminal Exercises
+---
+title: Day 1 Exercises
+sidebar_position: 2
+sidebar_label: Exercises
+---
 
 ## Command Line Crash Course
 
@@ -26,9 +30,13 @@ Download the proper version for your OS (mostly likely OSX, aka MacOS). If you'r
 
 ## GIT Exercises
 
-> Interested in learning Git? Well you've come to the right place! "Learn Git Branching" is the most visual and interactive way to learn Git on the web; you'll be challenged with exciting levels, given step-by-step demonstrations of powerful features, and maybe even have a bit of fun along the way.
+[Git How To](https://githowto.com/setup)
+
+> Git How To is a guided tour that walks through the fundamentals of Git, inspired by the premise that to know a thing is to do it.
 
 [Welcome to Learn Git Branching](https://learngitbranching.js.org/)
+
+> Interested in learning Git? Well you've come to the right place! "Learn Git Branching" is the most visual and interactive way to learn Git on the web; you'll be challenged with exciting levels, given step-by-step demonstrations of powerful features, and maybe even have a bit of fun along the way.
 
 ## Make a Folder
 
@@ -36,4 +44,4 @@ Download the proper version for your OS (mostly likely OSX, aka MacOS). If you'r
 * In your home directory, create a folder called `Repos` or `Repositories`.
 * Change into that folder and create a folder called `week1`.
 * Change into your `week1` folder and run `git init`
-* Hold that until tomorrow, we'll pick up from there tomorrow.
+* Hold that until tomorrow, we'll pick up from there.

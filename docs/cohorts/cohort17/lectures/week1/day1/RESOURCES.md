@@ -1,4 +1,8 @@
-# Addtional Resources
+---
+sidebar_position: 3
+sidebar_label: Resources
+title: Additional Resources
+---
 
 ## Developer Life
 
@@ -10,6 +14,7 @@
 
 * [Approaching Life with Beginner’s Mind](https://zenhabits.net/beginner/)
 * [To Be a Successful Web Developer You Need to Learn How to Learn](https://medium.com/age-of-awareness/to-be-a-successful-web-developer-you-need-to-learn-how-to-learn-f4bd55dd68d3)
+* [Practical Guide to Solving Hard Problems](https://praeclarum.org/2022/02/19/hard-problems.html)
 * [Reading Code is a Skill](https://trishagee.com/2020/09/07/reading-code-is-a-skill/)
 * [3 Methods to Actually Remember What You Learn in Coding Tutorials](https://carlanderson.xyz/3-methods-to-remember-what-you-learn-in-coding-tutorials/)
 
