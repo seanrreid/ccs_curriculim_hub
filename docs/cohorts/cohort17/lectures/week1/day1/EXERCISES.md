@@ -30,6 +30,9 @@ Download the proper version for your OS (mostly likely OSX, aka MacOS). If you'r
 
 ## GIT Exercises
 
+_Tomorrow!_
+
+<!--
 ### Git How To
 
 [Git How To](https://githowto.com/setup)
@@ -40,14 +43,21 @@ Download the proper version for your OS (mostly likely OSX, aka MacOS). If you'r
 
 [Welcome to Learn Git Branching](https://learngitbranching.js.org/)
 
-> Interested in learning Git? Well you've come to the right place! "Learn Git Branching" is the most visual and interactive way to learn Git on the web; you'll be challenged with exciting levels, given step-by-step demonstrations of powerful features, and maybe even have a bit of fun along the way.
+> Interested in learning Git? Well you've come to the right place! "Learn Git Branching" is the most visual and interactive way to learn Git on the web; you'll be challenged with exciting levels, given step-by-step demonstrations of powerful features, and maybe even have a bit of fun along the way. -->
 
-### On your own...
+## On your own...
 
-#### Make a Folder
+### Make a Folder
 
 * Open your termingl, and make sure you are in your home directory. Remember, you can use `pwd` to see your current directory. It should say something like `/Users/yourUsernam`
 * In your home directory, create a folder called `Repos` or `Repositories`.
 * Change into that folder and create a folder called `week1`.
 * Change into your `week1` folder and run `git init`
 * Hold that until tomorrow, we'll pick up from there.
+
+### Write a Week 1, Day 1 Journal
+
+* Move into the `repositories` folder we created in class
+* Make a new folder called `journal`
+* Make a file named `week1day1.md` (this is a Markdown file, you can treat it like a text file!)
+* Edit the file and write about Day 1, i.e. how are you feeling after the first morning?
