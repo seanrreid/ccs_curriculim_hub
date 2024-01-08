@@ -1,12 +1,14 @@
 ---
-title: Resources
-description: Videos, blog posts, podcasts, that students have found helpful.
-sidebar_position: 4
+title: Sites, Videos, Blog Posts, etc..
+sidebar_position: 1
+sidebar_label: Helpful Links
 published: 2024-01-03 15:30:00
 revised: 2024-01-03 15:30:00
 ---
 
-## Podcasts
+## Here are a variety of resources that students have found helpful
+
+### Podcasts
 
 * [Syntax.FM](https://syntax.fm/)
 * [The ChangeLog](https://changelog.com/podcast)
@@ -15,7 +17,7 @@ revised: 2024-01-03 15:30:00
 * [Shop Talk Show](https://shoptalkshow.com/)
 * [Frontend Happy Hour](https://www.frontendhappyhour.com/)
 
-## Linka
+### Sites
 
 * [CSS Tricks](https://css-tricks.com/)
 * [Smashing Magazine](https://www.smashingmagazine.com/)
@@ -24,7 +26,7 @@ revised: 2024-01-03 15:30:00
 * [Level Up Video](https://levelup.video/)
 * [Overreacted - Dan Abramov](https://overreacted.io/)
 
-## Quotables
+### Quotables
 
 > This is the hard work of your life in the world, to make it all up as you go along, to acknowledge the introvert, the clown, the artist, the reserved, the distraught, the goofball, the thinker,” [...] Look inside. That way lies dancing to the melodies spun out by your own heart. This is a symphony. All the rest are jingles.
 
