@@ -8,7 +8,8 @@ Welcome to Day 1!
 
 ## Presentations
 
-* [Getting Started - Command Line](https://docs.google.com/presentation/d/1EK_npTGzTjIph8FJe-isghegqn7NyPMG/edit?usp=sharing&ouid=110079887532608677386&rtpof=true&sd=true)
+* [Getting Started - Command Line](https://docs.google.com/presentation/d/1rC4OemlUsO05vNy4NT1bNJfomWL_Y0f_-EYqywnKP4Q/edit?usp=sharing)
+* [Intro to Python](https://docs.google.com/presentation/d/14Drxtr0UZMxOcl_MqoxzwJ4jOlgkAnKYf6uva6bVrxs/edit?usp=sharing)
 
 ## Helpful Links
 
