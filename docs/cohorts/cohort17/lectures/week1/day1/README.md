@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
+sidebar_label: Day 1
+title: Day 1 - Intro to `git` and the command line interface (CLI)
 ---
-
-# Day 1 - Intro to `git` and the command line interface (CLI)
 
 Welcome to Day 1!
 

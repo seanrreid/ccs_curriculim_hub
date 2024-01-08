@@ -1,5 +1,7 @@
 # Terminal Exercises
 
+## Command Line Crash Course
+
 Please go to [The Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html) (Appendix A of "Learn Python the Hard Way") and
 
 * Task 1: Review Exercise 1.
@@ -9,12 +11,18 @@ Please go to [The Command Line Crash Course](https://learnpythonthehardway.org/b
 
 They'll help reinforce the concepts and (more importantly) your muscle memory for using the Terminal.
 
---
+## Terminus
 
 Please run through the Terminus command-line game. You play in the browser using terminal commands. It limits you to a very few commands, but it's a good exercise.
 [http://web.mit.edu/mprat/Public/web/Terminus/Web/main.html](http://web.mit.edu/mprat/Public/web/Terminus/Web/main.html)
 
---
+## Dungeons and Directories
+
+> Dungeons and Directories is a short text adventure game that you play in your file browser.
+
+[Dungeons and Directories](https://wheybags.com/dungeons_and_directories/)
+
+Download the proper version for your OS (mostly likely OSX, aka MacOS). If you're on a Mac you might need to right-click (2 finger click) and select "Open" from the menu and verify you want to run the app. MacOS will block the app by default otherwise.
 
 ## GIT Exercises
 
@@ -29,4 +37,3 @@ Please run through the Terminus command-line game. You play in the browser using
 * Change into that folder and create a folder called `week1`.
 * Change into your `week1` folder and run `git init`
 * Hold that until tomorrow, we'll pick up from there tomorrow.
-

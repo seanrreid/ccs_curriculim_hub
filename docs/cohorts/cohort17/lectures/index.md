@@ -25,4 +25,4 @@ There might be other related files in any given day for extra reading, practice,
 
 ## Important Links
 
-- [The Debug Process](https://docs.google.com/document/d/19xjZ3n9WHFqJXMsEEcLnJycQT-_MhInFY_AkHyeAMRg/edit?usp=sharing)
+- [The Debug Process](https://docs.google.com/document/d/1Uu37ZpR4fGIDEQKrx286JdWxdRNSxGQTCXbUFws2LD4/edit?usp=sharing)

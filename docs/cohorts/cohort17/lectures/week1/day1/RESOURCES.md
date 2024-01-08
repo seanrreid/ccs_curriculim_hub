@@ -29,9 +29,3 @@
 ## Progamming
 
 * [The History of Hello World](https://www.thesoftwareguild.com/blog/the-history-of-hello-world/)
-
-## JavaScript
-
-* [Should You Truly Never Use var?](https://dev.to/johnwolfe820/should-you-never-truly-use-var-bdi)<br/>Definitely recommend reading the discussion following this article as well!
-* [MDN: Strict Mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
-* [JavaScript — The difference between ForEach, and For…In](https://codeburst.io/javascript-the-difference-between-foreach-and-for-in-992db038e4c2)
