@@ -30,15 +30,21 @@ Download the proper version for your OS (mostly likely OSX, aka MacOS). If you'r
 
 ## GIT Exercises
 
+### Git How To
+
 [Git How To](https://githowto.com/setup)
 
 > Git How To is a guided tour that walks through the fundamentals of Git, inspired by the premise that to know a thing is to do it.
+
+### Learn Git Branching
 
 [Welcome to Learn Git Branching](https://learngitbranching.js.org/)
 
 > Interested in learning Git? Well you've come to the right place! "Learn Git Branching" is the most visual and interactive way to learn Git on the web; you'll be challenged with exciting levels, given step-by-step demonstrations of powerful features, and maybe even have a bit of fun along the way.
 
-## Make a Folder
+### On your own...
+
+#### Make a Folder
 
 * Open your termingl, and make sure you are in your home directory. Remember, you can use `pwd` to see your current directory. It should say something like `/Users/yourUsernam`
 * In your home directory, create a folder called `Repos` or `Repositories`.
