@@ -80,17 +80,11 @@ As a developer, you'll be spending quite a lot of time using a terminal. There's
 The first of these tools is a _package manager_. You can think of it like an App Store, but for command line programs.
 To get started, go to the section matching your Operating System:
 
-- [macOS](#macos)
-- [Windows 10](#windows-10)
-- [Linux](#linux)
-
-### macOS
-
-#### Package Manager: Homebrew
+### Package Manager: Homebrew
 
 Paste this command into a terminal and press the `enter` (or `return`) key:
 
-```
+```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
@@ -122,7 +116,7 @@ There are a lot of commands to get familiar with, and it's easy to forget how to
 
 Your Mac should already have the `git` command installed. To check, run this command in the terminal:
 
-```
+```sh
 which git
 ```
 
@@ -136,7 +130,7 @@ If so, that's great! Move on to the next step.
 
 If it didn't print anything at all, it means that you'll need to install git. You can do that with Homebrew by running this command:
 
-```
+```sh
 brew install git
 ```
 
@@ -175,18 +169,6 @@ You should see that nvm is downloading and installing the latest version of node
 #### Bonus Software
 
 Here are two more programs that you might find useful.
-
-##### Window Manager: Rectangle
-
-[Download Rectangle](https://rectangleapp.com/)
-
-Download and install Rectangle for your Mac. It's free and lets you position and rearrange windows via keyboard shortcuts.
-
-You can also install via homebrew:
-
-```sh
-brew cask install rectangle
-```
 
 ##### Terminal Emulator: iTerm2
 

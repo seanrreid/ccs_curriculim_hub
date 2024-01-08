@@ -1,8 +1,9 @@
 ---
-title: Full Stack Web Development
-description: Full Stack Web Development Syllabus
+title: Full Stack Web Development Syllabus
+sidebar_label: Syllabus
+sidebar_position: 1
 published: 2023-12-19 15:30:00
-revised: 2023-12-19 15:30:00
+revised: 2024-01-07 21:57:00
 ---
 
 <!-- markdownlint-disable no-duplicate-heading -->
