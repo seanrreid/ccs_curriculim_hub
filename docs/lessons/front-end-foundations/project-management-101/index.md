@@ -183,29 +183,6 @@ There are many tools and processes when using the Agile principles. It is up to 
 
 Hopefully this introduction to project management and Agile will help you in your next group project. It's also can help you stand out in the hiring process if you have a grasp of these concepts, experience is even better.
 
-## Training Exercises
-
-There are no specific exercises for this lesson. During your next project, choose a project management platform to help you organize and execute your work.
-
-## Interview Questions
-
-### Fundamentals
-
-- What is agile software development?
-- What are the advantages/disadvantages of the waterfall process?
-
-### Bugfix
-
-None
-
-### Conceptual
-
-None
-
-### Architect
-
-None
-
 ## Additional Resources
 
 - [What's the Difference? Agile vs Scrum vs Waterfall vs Kanban](https://www.smartsheet.com/agile-vs-scrum-vs-waterfall-vs-kanban)

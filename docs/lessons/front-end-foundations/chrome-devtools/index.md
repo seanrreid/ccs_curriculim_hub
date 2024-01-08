@@ -109,42 +109,6 @@ Now you are introduced to Google's Chrome DevTools and many of the tools it offe
 
 DevTools continues to be developed and is constantly making improvements for the developers using it. Take the time to continue using and learning more about this tool.
 
-## Training Exercises
-
-To solidify your knowledge, here are a set of exercises that will require you to use the techniques you've just learned in the lesson above.
-
-They are organized into _small_, _medium_, and _large_ sized problems. The small exercises will be very similar to the examples in the lesson. If you get stuck, refer to the relevant section above. The medium exercises will require you to combine concepts. The lesson may not have a single, specific example for you to reference. The large exercises are more open-ended and may require you to search the web for additional material.
-
-### Small
-
-#### Source Code
-
-View the source code of your favorite website. Pay attention to their class names and look for what frameworks they are using by the JavaScript file names.
-
-### Medium
-
-#### Change the News
-
-Using the Elements view, find your favorite news website and change the headline and photo of the top article, have fun with it and make it silly or contradictory to the other articles.
-
-![news-exercise](./news-exercise.png)
-
-### Large
-
-There are no large exercises.
-
-## Interview Questions
-
-### Fundamentals
-
-- What is the Chrome DevTools?
-- What feature(s) do you find most helpful in Chrome DevTools?
-- Are you able to throttle the network speed with Chrome DevTools? Explain why.
-
-### Bugfix
-
-- How would you use Chrome DevTools to fix a responsive layout issue?
-
 ### Conceptual
 
 - How does Chrome DevTools improve your developer experience?

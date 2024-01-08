@@ -146,33 +146,6 @@ Any Element or Node in the DOM can receive events. This includes the `window` ob
 
 It is best practice to use `addEventListener()` on the target node objects. While HTML attributes are useful if you only need to call a single event handler on a node object, they can clutter the HTML and are limited in their use.
 
-## Training Exercises
-
-View the training exercises here: [Training Exercises](./exercises/index.md)
-
-## Interview Questions
-
-### Fundamentals
-
-- What is Asynchronous programming and how do you deal with asynchronous browser events?
-
-### Bugfix
-
-Take a look at the following code and rewrite to make this code run properly.
-
-@/lessons/handling-user-input/handling-browser-events/bugfixProblem.html
-
-:::details Solution
-Solution 1
-
-So If we try to run the problem our `alert()` function will run as soon as the page loads as we are assigning a function call to our on `onclick` property which is returning `undefined` and running the function right away.
-
-We can fix this by assigning an anonymous function to our `onclick` assignment. This way the anonymous function will be executed when the button is clicked and call the `alert()` function.
-
-@/lessons/handling-user-input/handling-browser-events/bugfix1.html
-
-:::
-
 ### Conceptual
 
 - What is the difference in using a HTML attribute and `addEventListener()`?

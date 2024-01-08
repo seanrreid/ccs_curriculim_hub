@@ -534,10 +534,6 @@ Then you learned how to crate reusable functions so that you could run a series 
 Though we used JavaScript as the programming language in this lesson, these concepts are transferable to languages like C, C#, Python, Ruby, Java, and others. This style of programming is called _Imperative Programming_ because you are giving explicit instructions on how to carry out a process.
 :::
 
-<!-- ## Training Exercises
-
-[Click here for the Intro to JavaScript Exercises](./exercises.md) -->
-
 ## Additional Resources
 
 What follows are links to tutorials and videos to help you reinforce and deepen your knowledge.

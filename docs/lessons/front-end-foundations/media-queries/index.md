@@ -118,15 +118,6 @@ Below are some media queries for common devices:
 
 > [CSS Media Queries - tutorialrepublic.com](https://www.tutorialrepublic.com/css-tutorial/css3-media-queries.php)
 
-<!--
-### Summary
-
-## Training Exercises
-
-To solidify your knowledge, here are a set of exercises that will require you to use the techniques you've just learned in the lesson above.
-
-[Media Queries Exercises](./exercises/index.md) -->
-
 ## Interview Questions
 
 ### Fundamentals
