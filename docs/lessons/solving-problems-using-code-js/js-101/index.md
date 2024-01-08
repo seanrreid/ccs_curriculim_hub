@@ -976,7 +976,3 @@ todos[0] = 'go to sleep';
 ```
 
 :::
-
-<!-- ## Exercises
-
-[Click here for the JS 101 Exercises](./exercises.md) -->
