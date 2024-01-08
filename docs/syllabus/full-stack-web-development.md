@@ -160,11 +160,7 @@ Here are some examples things you've likely already encountered.
 - [HTML 101](/lessons/front-end-foundations/html-101/)
 - [HTML Forms](/lessons/front-end-foundations/html-forms/)
 - [CSS 101](/lessons/front-end-foundations/css-101/)
-- [CSS Floats](/lessons/front-end-foundations/css-floats/)
 - [Media Queries](/lessons/front-end-foundations/media-queries/)
-- [CSS Position](/lessons/front-end-foundations/css-position/)
-- [Flexbox](/lessons/front-end-foundations/flexbox/)
-- [Grid Layout](/lessons/front-end-foundations/grid-layout/)
 - [Chrome DevTools](/lessons/front-end-foundations/chrome-devtools/)
 
 ## 4. Handling User Input
