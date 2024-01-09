@@ -122,7 +122,7 @@ Click on the link and install from the Visual Studio Marketplace.
 4.  Code Spell Checker\
     [![Code-Spell-Checker](https://img.shields.io/badge/download-blue?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
-        ![](./img/spelling_nemesis.jpg) Great tool to help defend against the Spelling Nemesis!
+        ![](./img/Spelling_Nemesis.jpg) Great tool to help defend against the Spelling Nemesis!
         Look for the light blue word linter for misspelled (or what it thinks is misspelled).
 
 5.  Indent-Rainbow\
