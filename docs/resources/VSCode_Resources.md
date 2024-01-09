@@ -74,7 +74,7 @@ For the most part, you can leave everything at it's default settings. But from h
 
 2. Font and Size\
    We will talk more about this in Theme's in Extensions, but you can change the font size and Font type here if you like.
-   ![VSCode Font](./img/VSCode-Font.png)
+   ![VSCode Font](./img/VSCode-font.png)
 
 3. Tab Indention: 2 vs 4\
     Ok, this is a war that has been ragging in programming since the beginning of time, like Jedi vs Sith. (just do a Google search)\
