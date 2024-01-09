@@ -134,7 +134,7 @@ Click on the link and install from the Visual Studio Marketplace.
     [![Live Share](https://img.shields.io/badge/download-blue?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 
         We will use this in class, so get it.  This will let you pair program.  It creates a secure link that you can share with another teammate and they can access your VS Code.  You must have it to access a teammate's URL Link.  Very useful.  Once installed, you will have this icon.\
-        ![LiveShare](./img/VSCode-liveshare.png)
+        ![LiveShare](./img/VSCode-LiveShare.png)
 
 7.  Live Server\
     [![Live Server](https://img.shields.io/badge/download-blue?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
