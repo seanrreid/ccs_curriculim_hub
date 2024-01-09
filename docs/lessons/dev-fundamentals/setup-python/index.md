@@ -108,20 +108,3 @@ which python3
 It should echo the path (though it will be formatted like a UNIX path, not a Windows path):
 
 ![Git Bash showing the path to the python3 command](./git-bash-which-python.png)
-
-## Linux
-
-Python3 is installed by default on most Linux systems.
-To check, run the following command:
-
-```sh
-which python3
-```
-
-If there is no output, use your package manager to install it. Here are the commands for `apt` (for Debian and Ubuntu), `pacman` (Arch), and `dnf` (Fedora):
-
-- `sudo apt install python3`
-- `sudo pacman -S python`
-- `sudo dnf install python3`
-
-Note that in Arch Linux, the package name is `python` and not `python3`.
