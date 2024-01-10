@@ -113,41 +113,6 @@ siderbar_position: 2
     23 F
     ```
 
-### 7. Looping from 1 to 10
-
-Using a while loop, print out the numbers between 1 and 10 inclusive, one on a line. Example output:
-
-```py
-$ python3 1_to_10.py
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-```
-
-### 8. n to m
-
-Same as the previous problem, except you will prompt the user for the number to start on and the number to end on. Example session:
-
-```py
-$ python3 n_to_m.py
-Start from: 2
-End on: 8
-2
-3
-4
-5
-6
-7
-8
-```
-
 ## Level 2
 
 1. Tip Calculator
@@ -215,6 +180,41 @@ End on: 8
     You have 2 coins.
     Do you want another? no
     Bye
+    ```
+
+4. Looping from 1 to 10
+
+    Using a while loop, print out the numbers between 1 and 10 inclusive, one on a line. Example output:
+
+    ```py
+    $ python3 1_to_10.py
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    ```
+
+5. n to m
+
+    Same as the previous problem, except you will prompt the user for the number to start on and the number to end on. Example session:
+
+    ```py
+    $ python3 n_to_m.py
+    Start from: 2
+    End on: 8
+    2
+    3
+    4
+    5
+    6
+    7
+    8
     ```
 
 ## Level 9000
