@@ -1,4 +1,7 @@
-# Resources
+---
+title: Resources
+sidebar_position: 3
+---
 
 ## Naming Conventions
 

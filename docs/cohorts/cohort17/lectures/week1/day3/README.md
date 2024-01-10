@@ -1,7 +1,7 @@
 ---
 title: Day 3 - Python 102
 sidebar_label: Day 3
-sidebar_position: 2
+sidebar_position: 3
 keywords:
  - python
  - variables
