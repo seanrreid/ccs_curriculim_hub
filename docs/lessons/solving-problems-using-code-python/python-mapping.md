@@ -1,6 +1,6 @@
 ---
-title: Dictionaries and File I/O
-description: Dictionaries and File I/O
+title: Dictionaries
+description: Dictionaries
 pubDate: 2023-12-15T13:49:22-05:00
 ---
 
@@ -155,118 +155,11 @@ You can also iterate over a list inside of a dictionary:
 
 // @TODO - embed this/lessons/solving-problems-using-code/mapping/nested_3.py
 
-### How do I save to a file?
-
-Imagine that you're using a word processor program to update your resume.
-
-You probably opened the file, typed a few words, formatted the headings and bulleted lists, and then saved the file.
-
-When working with files in Python, the workflow is similar.
-
-Python includes built-in functions to `open()` a file so that you can read from it or write to it.
-
-Here is an example of reading from a file:
-
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/read_file_0.py{2,3}
-
-Line 2 shows an example of how to `open()` a file. You pass it two arguments:
-
-- The name of the file, as a string
-- A "mode" that specifies if you intend to read or write to the file
-
-The `with-as` syntax lets us create a variable (which we've named `file_handle`) that we can use to access what's inside the file.
-
-Line 3 demonstrates how to `read()` the plain text contents from our file. When we `print()` the contents, we see the following:
-
-```
-1. Sand the floor
-2. Wax on, wax off
-3. Paint the fence
-4. Paint the house
-```
-
-But working with anything other than plain text requires some extra steps, namely converting it to a format that can be written to a file.
-
-To format your Python variables so that they can be saved to a file requires a helper _module_. Python comes with a lot of modules, but they are not all loaded by default. (If they were, using Python make your computer run very slowly.)
-
-:::tip
-Formatting or encoding data for saving to a file or transmitting over a network is also known as **serialization**.
-
-The act of decoding data that has been saved to a file or transmitted over a network is known as **deserialization**.
-:::
-
-#### What is `pickle`?
-
-The `pickle` module can encode your Python variables so that they can be stored to a file. `pickle` can also decode the data and convert it back into Python values.
-
-To use the `pickle` module, you must include this at the top of your program:
-
-```py
-import pickle
-```
-
-This creates a new variable `pickle` that has access to functions for serializing and deserializing data. Those functions are:
-
-- `pickle.dump()` serializes
-- `pickle.load()` deserializes
-
-#### How do I use `pickle.dump()`?
-
-The following is an example of using `pickle.dump()` to encode a list of dictionaries. You pass `pickle.dump()` two arguments:
-
-- The data to serialize
-- A file handle to write to
-
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/pickle_0.py{25,26}
-
-On line 25, we `open()` the file using the mode `"wb"`, which lets us *w*rite *b*inary information to the file.
-
-Line 26 shows the call to `pickle.dump()`. Because we wrote it in binary, the file itself isn't completely human-readable. Here are the contents of our `to-do-list.pickle` file:
-
-#### `pickle.load()`
-
-In order to retrieve the data, we will use another `pickle` function.
-
-`pickle.load()` only expects a single argument: the file handle where it can find the pickled data.
-
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/pickle_1.py{6,7}
-
-On line 6, we use the mode `"rb"` because we want to *r*ead *b*inary.
-
-Line 7 puts the call to `pickle.load()` on the RHS. The `todos` variable is now a list of dictionaries, just as in the previous example.
-
-### What is JSON?
-
-JSON stands for JavaScript Object Notation. Though technically the syntax comes from the JavaScript programming language, the format has been adopted as the standard for exchanging plain text data on the internet.
-
-For serializing and deserializing plain text data, the `json` module is an alternative to `pickle`.
-
-The `json` module can be used in the same way as the `pickle` module. The main difference is that you do _not_ open the file in *b*inary.
-
-#### `json.dump()` and `json.load()`
-
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/json_0.py{17-23}
-
-Here are the contents of the file we wrote:
-
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/ww.json
-
-And this is the result of doing a `json.load()` and `print()`:
-
-```
-{'name': 'Wonder Woman', 'alias': 'Diana Prince', 'gear': ['Lasso of Truth', 'Bracelets of Submission'], 'vehicle': {'title': 'Invisible Jet', 'speed': '2000 mph'}}
-```
-
 ### Summary
 
 In this lesson, you learned how to create and manipulate dictionaries, Python's mapping data type. Using key/value pairs, you can now create custom records for organizing your data.
-
-In addition, you learned techniques for serializing and deserializing binary and plain text data to files, using the `pickle` and `json` modules.
 
 ## Additional Resources
 
 - [Understanding Dictionaries in Python 3](https://www.digitalocean.com/community/tutorials/understanding-dictionaries-in-python-3)
 - [Dictionaries in Python](https://realpython.com/courses/dictionaries-python/)
-- [Using Pickle](https://wiki.python.org/moin/UsingPickle)
-- [Official Python Documentation on the `pickle` module](https://docs.python.org/3/library/pickle.html)
-- [Working with JSON Data in Python](https://realpython.com/python-json/)
