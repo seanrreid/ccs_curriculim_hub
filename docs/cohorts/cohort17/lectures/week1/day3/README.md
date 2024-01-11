@@ -20,8 +20,8 @@ Download Python here: [Python.org Downloads](https://www.python.org/downloads/)
 
 ### Presentations
 
-* [Python 101](https://docs.google.com/presentation/d/14Drxtr0UZMxOcl_MqoxzwJ4jOlgkAnKYf6uva6bVrxs/edit?usp=sharing)
-* [Python 102](https://docs.google.com/presentation/d/173QzrRJCEDrv5224uDiJZ3d8xQ9H1UOVnlAbcniBjas/edit?usp=sharing)
+* [Python 1](https://docs.google.com/presentation/d/14Drxtr0UZMxOcl_MqoxzwJ4jOlgkAnKYf6uva6bVrxs/edit?usp=sharing)
+* [Python 2](https://docs.google.com/presentation/d/173QzrRJCEDrv5224uDiJZ3d8xQ9H1UOVnlAbcniBjas/edit?usp=sharing)
 
 ## READ THIS
 
