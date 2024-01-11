@@ -55,6 +55,9 @@ sidebar_position: 2
     - Write a python expression that gets the email address of Jasmine.
     - Write a python expression that gets the second of Jan's two interests.
 
+    **NOTE:**
+    "Python expression" just means something like `print(dictionary[key])`. Although, in two of the above, using a `for` loop will be helpfu!
+
 3. Friend counter
 
     Using the dictionary from the Nested dictionaries exercise above, write a function `countFriends()` that accepts a dictionary as an argument and returns a new dictionary that includes a new key `friends_count`:
