@@ -1,6 +1,7 @@
 ---
-title: Resources
 sidebar_position: 3
+sidebar_label: Resources
+title: Additional Resources
 ---
 
 * [30 Simple Tricks to Level Up Your Python Coding](https://betterprogramming.pub/30-simple-tricks-to-level-up-your-python-coding-5b625c15b79a)
