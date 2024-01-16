@@ -17,5 +17,4 @@ There are videos you can watch to go deeper into any particular area. There are 
 
 ### Git + Github
 
-
 Flavio Copes [Valley of Code](https://thevalleyofcode.com/) has some great resources to reviewing [how to use `git`](https://thevalleyofcode.com/git) and [working with Github](https://thevalleyofcode.com/github).
