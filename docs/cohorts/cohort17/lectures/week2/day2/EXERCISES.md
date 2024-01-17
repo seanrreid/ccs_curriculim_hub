@@ -21,8 +21,8 @@ class Person:
 
 Write code to:
 
-* Instantiate an instance object of Person with name of 'Sonny', email of '<sonny@hotmail.com>', and phone of '483-485-4948', store it in the variable `sonny`.
-* Instantiate another person with the name of 'Jordan', email of '<jordan@aol.com>', and phone of '495-586-3456', store it in the variable `jordan`.
+* Instantiate an instance object of Person with name of 'Sonny', email of `sonny@hotmail.com`, and phone of '483-485-4948', store it in the variable `sonny`.
+* Instantiate another person with the name of 'Jordan', email of `jordan@aol.com`, and phone of '495-586-3456', store it in the variable `jordan`.
 * Have `sonny` greet `jordan` using the greet method.
 * Have `jordan` greet `sonny` using the greet method.
 * Write a print statement to print the contact info (email and phone) of Sonny.
@@ -30,7 +30,7 @@ Write code to:
 
 ---
 
-### Make your own class
+## Make your own class
 
 Create a class `Vehicle`. A `Vehicle` object will have 3 attributes:
 
@@ -169,7 +169,7 @@ You may notice that when you are working with a person object, it's representati
 Adding the `__str__` method to the `Person` class and have it return a string. Whatever you return there will be used to "represent" your person object.
 
 For example, say I want a `Person` to be represented like this:
-Jordan <jordan@aol.com> 495-586-3456
+Jordan `jordan@aol.com` 495-586-3456
 
 I could implement __str__ like this:
 
@@ -200,7 +200,7 @@ Keep track of the number of unique people a person has greeted, and be able to r
 2
 ```
 
-### Cuddly Pet
+## Cuddly Pet
 
 Start with these classes:
 
@@ -280,7 +280,7 @@ class CuddlyPet(Pet):
     Modify the `while` loop of your `Pet` simulator so that it uses a `Menu` instance to handle user interaction.
     For each additional prompt (such as choosing which kind of `Pet` subclass to adopt), use additional `Menu` instances.
 
-### Level 9000
+## Level 9000
 
 1. Garden simulator
 
@@ -291,7 +291,7 @@ class CuddlyPet(Pet):
     * `Woodchuck` - creates a `5%` chance of a `Tree` disappearing
     * `Garden` - has separate lists for instances of `Tree`, `Gnome`, and `Woodchuck`
 
-    Create a main `while` loop that runs your simulator. During each turn, your `Garden` may experience rain, or may have a `Woodchuck` move in. For each of its lists, tally up the various percents that an event will occur and use the built-in `random` module to decide what happens during that turn. (See <https://docs.python.org/3.5/library/random.html> for more information)
+    Create a main `while` loop that runs your simulator. During each turn, your `Garden` may experience rain, or may have a `Woodchuck` move in. For each of its lists, tally up the various percents that an event will occur and use the built-in `random` module to decide what happens during that turn. (See [https://docs.python.org/3.5/library/random.html](https://docs.python.org/3.5/library/random.html) for more information)
 
     Every 10th turn, you have a random chance of earning another `Tree` or `Gnome`.
 

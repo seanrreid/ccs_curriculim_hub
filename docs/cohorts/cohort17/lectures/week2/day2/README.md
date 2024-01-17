@@ -9,6 +9,11 @@ keywords:
  - class keyword
 ---
 
+## Morning Review
+
+* Review the previous night's work
+* Code along with the [previous Level 9000 exercise](/docs/cohorts/cohort17/lectures/week2/day1/EXERCISES#level-9000)
+
 ## Continuing with OOP
 
 Today will be a mix of demo + code along. I'm sharing the presentation link again for reference, but most of our information will be pulled from the lesson link.
