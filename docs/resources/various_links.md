@@ -8,6 +8,8 @@ revised: 2024-01-03 15:30:00
 
 ## Here are a variety of resources that students have found helpful
 
+* [Boomkarks (Sean's Bookmark Tracker)](https://boomkarks-remix.netlify.app/)
+
 ### Podcasts
 
 * [Syntax.FM](https://syntax.fm/)
