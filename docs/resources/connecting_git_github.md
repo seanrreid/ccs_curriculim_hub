@@ -7,6 +7,8 @@ sidebar_position: 3
 <!-- markdownlint-disable no-inline-html -->
 <iframe src="https://drive.google.com/file/d/1ktQbf8JyOiXMG2K749ZmuaexfZhy54s9/preview" width="640" height="480" allow="autoplay"></iframe>
 
+## Transcript
+
 First things first, make sure that you have GitHub open on your computer. We're gonna be synchronizing our local Git repos with GitHub remotely. Those two don't inherently know about each other. Your machine doesn't know what's on GitHub and vice versa. Caveat to all of that is that GitHub has released a command line tool, GitHub desktop, that I have not used. You are more than welcome to experiment with it, and it does make some of these steps a little bit easier. But we're gonna do it the old school way.
 
 Go to [GitHub.com](https://github.com), and when you're logged in, click on the repositories link. You get something that looks kind of like what I've got here on the screen. This is a list of all of my repositories. Yours will obviously, unless you've already done this, not have anything there. The button we want to do is click on new, because we're gonna create a new repository.  Yours will look a little different than mine because I belong to a bunch of different organizations. Your owner should just be your account. I've got all of these different organizations, but I'm gonna switch to me because I am the owner of this particular repository.
