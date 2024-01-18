@@ -239,7 +239,7 @@ class CuddlyPet(Pet):
             other_pet.get_love()
 ```
 
-#### Level 1
+### Level 1
 
 1. Overriding `__str__()` in `CuddlyPet`
 
@@ -255,7 +255,7 @@ class CuddlyPet(Pet):
 
     One solution is for `CuddlyPet` to call `Pet.be_alive()` and then increase its `self.happiness`.  Modify `CuddlyPet.be_alive()` so that it calls `super()` to invoke `Pet`'s version of `be_alive()`.
 
-#### Level 2
+### Level 2
 
 1. Add a `Treat` class to your `Pet` simulator.
 
