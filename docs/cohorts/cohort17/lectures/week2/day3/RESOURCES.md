@@ -16,6 +16,7 @@ title: Additional Resources
 ## Python
 
 * [Python OOPs Concepts](https://www.youtube.com/watch?v=SRu1GAfr3LA)
+* [Python's F-String for String Interpolation and Formatting](https://realpython.com/python-f-strings/)
 
 ## Videos
 
