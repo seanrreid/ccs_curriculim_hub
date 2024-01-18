@@ -20,7 +20,7 @@ title: Additional Resources
 
 ## Videos
 
-The foloowing are videos from my friend Azam Sharp. Azam is a former co-worker of mine, an excellent instructor, and a prolific video producer. I'm sharing a couple videos that I think are relevant for your current experience solving problems with code.
+The following are videos from my friend Azam Sharp. Azam is a former co-worker of mine, an excellent instructor, and a prolific video producer. I'm sharing a couple videos that I think are relevant for your current experience solving problems with code.
 
 * [Azam Sharp: Writing Clean Code - Functions](https://www.youtube.com/watch?v=X3PiBx9jO88)
     <br/>This tutorial is using the Swift programming language, but the principles he's covering apply to programming in general.
