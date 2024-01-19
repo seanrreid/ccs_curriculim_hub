@@ -89,13 +89,13 @@ const config = {
                 theme: prismThemes.synthwave84,
                 darkTheme: prismThemes.synthwave84,
             },
-            // algolia: {
-            //     appId: 'GHPIGFN134',
-            //     apiKey: '1278fcca2d56250a2da260e399846d65',
-            //     indexName: 'ccs-full-stack-web-dev',
-            //     contextualSearch: true,
-            //     searchPagePath: 'search',
-            // },
+            algolia: {
+                appId: 'GHPIGFN134',
+                apiKey: '1278fcca2d56250a2da260e399846d65',
+                indexName: 'ccs-full-stack-web-dev',
+                contextualSearch: true,
+                searchPagePath: 'search',
+            },
         }),
 };
 
