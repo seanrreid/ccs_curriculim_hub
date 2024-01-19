@@ -12,7 +12,6 @@ title: Additional Resources
 * [Acronyms in Web Development](https://flaviocopes.com/acronyms-web-development/)
 * [Thinking About Glue: The code that holds our systems together](https://www.oreilly.com/radar/thinking-about-glue/)
 
-
 ## Python
 
 * [Python OOPs Concepts](https://www.youtube.com/watch?v=SRu1GAfr3LA)
