@@ -1,14 +1,16 @@
 ---
-title: Warrior Part 2 (RPG Game)
+title: Choose your own adventure
 sidebar_label: Exercise
 sidebar_position: 3
 ---
+
+## Warrior Part 2
 
 Continuing from [the work done in part 1](/docs/cohorts/cohort17/lectures/week2/day3/EXERCISES) , update your code to reflect the changes to each class as noted below.
 
 __NOTE__: Doing this work on a new branch and/or new file is recommended!
 
-## Update Characters
+### Update Characters
 
 ### Hero
 
@@ -28,7 +30,7 @@ __NOTE__: Doing this work on a new branch and/or new file is recommended!
 
 * Come up with at least two other characters with their individual characteristics, and implement them (i.e. Wizard, Archer, Scribe)
 
-## Go Shopping
+### Go Shopping
 
 ### The Store
 
@@ -48,9 +50,28 @@ __NOTE__: Doing this work on a new branch and/or new file is recommended!
 * Add a `Sword` class that is available via the the `Items` class variable on the store object.
   * The sword's `apply` mehtod will add 2 to the hero's power.
 
-## Level 9000
+### Level 9000
 
 * Create a `Battle` class with a `do_battle` method. Move the game logic into that class. (i.e. asking the user what they want to do, and acting accordingly)
 * Allow items to be used on the battle field. The hero can carry the items with them, and you have the option of choosing to use a tonic at any turn in a battle.
 * Make a `swap_power` method and add it to a character (or the `Character` class). This method can be used on the battle field to swap the power values of the two characters for one turn.
 * There is a bug in the store that allows the hero to buy items even if he has no coins. Fix this bug.
+
+## To quote Fleetwood Mac: You can go your own way!
+
+Using the Warrior RPG as a guide, create a brand new RPG game.
+
+Here are some possible ideas based on previous students' work:
+
+* Murder mystery (ala the game/movie "Clue", or tv show "How to Get Away with Murder")
+* Race across the country (ala "Twisted Metal," "Death Race 2000," "Cannonball Run")
+* Sports! (literally, football, basketball, baseball, golf)
+
+## Level 10K - PyGame
+
+In the past I've had students use the PyGame framework to generate their own "platformer" games (think old school video games).
+
+Here are a couple links to tutorials that students have found helpful:
+
+* [Kids Can Code: PyGame](https://kidscancode.org/lessons/)
+* [PyGame Tutorials (Official Docs)](https://www.pygame.org/wiki/tutorials)
