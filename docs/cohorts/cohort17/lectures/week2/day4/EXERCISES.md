@@ -80,4 +80,4 @@ Here are a couple links to tutorials that students have found helpful:
 ## Examples
 
 * [The Keating Four: RPG Murder Mystery](https://github.com/seanrreid/the_keating_4)
-* [MoonSdg: PyGame](https://github.com/seanrreid/MoonSet)
+* [MoonSet: PyGame](https://github.com/seanrreid/MoonSet)
