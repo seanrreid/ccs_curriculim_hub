@@ -75,3 +75,9 @@ Here are a couple links to tutorials that students have found helpful:
 
 * [Kids Can Code: PyGame](https://kidscancode.org/lessons/)
 * [PyGame Tutorials (Official Docs)](https://www.pygame.org/wiki/tutorials)
+* [YouTube: PyGame in 10 minutes](https://www.youtube.com/watch?v=y9VG3Pztok8&t=430s)
+
+## Examples
+
+* [The Keating Four: RPG Murder Mystery](https://github.com/seanrreid/the_keating_4)
+* [MoonSdg: PyGame](https://github.com/seanrreid/MoonSet)
