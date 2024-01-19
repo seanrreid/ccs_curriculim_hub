@@ -11,7 +11,7 @@ keywords:
 ## Goals
 
 * Review the [Warrior RPG 1](/docs/cohorts/cohort17/lectures/week2/day3/EXERCISES)
-* Continue to build out the Warrior RPG, [Warrior RPG 2]((/docs/cohorts/cohort17/lectures/week2/day4/EXERCISES))
+* Continue to build out the Warrior RPG, [Warrior RPG 2](/docs/cohorts/cohort17/lectures/week2/day4/EXERCISES)
 
 ## Lessons
 
