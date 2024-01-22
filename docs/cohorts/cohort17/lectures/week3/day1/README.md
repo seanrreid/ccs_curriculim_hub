@@ -64,3 +64,11 @@ Here's the presentation order (courtesy of [Random Lists](https://www.randomlist
 > I see a lot of people with talent but the one thing they don’t have is that just love of doing it for the sake of it.
 
 —- Rodney Mullen, pro skateboarder
+
+> Competence is often less of a problem than confidence.
+> An underrated aspect of doing anything hard is believing in yourself. Action creates both confidence and momentum.
+> When action seems hard, narrow the gap between where you are and what you focus on.
+> A marathoner who hits a wall running at mile 5 doesn't focus on the end of the race; they focus on getting around the next corner. Then, the next corner.
+> What's the smallest step you can take right now to make progress?
+
+[Brain Food #560 Tiny Thoughts #1](https://fs.blog/brain-food/january-21-2024/)
