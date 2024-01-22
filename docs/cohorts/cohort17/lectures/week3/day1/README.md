@@ -41,6 +41,7 @@ Here's the presentation order (courtesy of [Random Lists](https://www.randomlist
 
 ## OOP Review
 
+* [Completed RPG Game with `Store` class](https://github.com/seanrreid/python-rpg-game/blob/solution/rpg-3.py)
 * [Repo examining Static vs Instance Methods in Python](https://github.com/seanrreid/python_oop_card_demo)
 
 ## Presentations
