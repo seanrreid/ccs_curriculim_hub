@@ -54,3 +54,13 @@ Here's the presentation order (courtesy of [Random Lists](https://www.randomlist
     > "Hey, Computer, if a user gives you value [x] then perform action [y]."
 2. **Decalartive programming** is writing code that tell the computer _what_ you want to see.
     > "Hey, Computer, this content needs to look like this..."
+
+## Random, but relevant, thoughts
+
+> “You’re only as good as you’re willing to be bad…The fact that you’re not going to be good at something or that you’re going to fail at something—that’s OK. Because you’re never going to get good unless you’re willing to be bad.”
+
+-- Randall Stutman PhD, speech communication professor
+
+> I see a lot of people with talent but the one thing they don’t have is that just love of doing it for the sake of it.
+
+—- Rodney Mullen, pro skateboarder
