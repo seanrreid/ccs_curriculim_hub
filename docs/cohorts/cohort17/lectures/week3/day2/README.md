@@ -9,9 +9,6 @@ keywords:
     - information architecture
     - semantic markup
     - selectors
-    - specificity
-    - classes
-    - box model
 ---
 <!-- markdownlint-disable no-inline-html -->
 

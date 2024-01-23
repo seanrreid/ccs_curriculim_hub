@@ -12,15 +12,13 @@ After completing this lesson, you will be able to:
 2. Write HTML
 3. Use a handful of most-used HTML elements
 
-## Lesson
-
-### Overview
+## Overview
 
 **Hypertext Markup Language (HTML)** is a markup language used for creating content to be displayed by a web browser. A markup language is a way to create structure and annotate each piece of a document. Think about a newspaper, it has columns, headings, images, quotes and more. Each piece of the newspaper page needs to clearly define hierarchy and structure to help the user make sense of the content.
 
 The same way a newspaper uses different elements to create a clear way for the reader, HTML is a foundation for creating digital structure for content on the web.
 
-#### HTML Basics
+### HTML Basics
 
 Here is a sample of a basic HTML document:
 
@@ -41,7 +39,7 @@ Here is how that document is rendered with a browser:
 
 ![html preview](./html-sample-preview.png)
 
-#### HTML Syntax
+### HTML Syntax
 
 "Syntax" is a term used for describing how a programming langues uses the order of characters to define structure and meaning.
 
@@ -51,7 +49,7 @@ An opening tag supports attributes to add more detailed annotation to the elemen
 
 There are many attributes, some are global (ex: `class`) and can be put on any element, while others are specific to the element (ex: `href` attribute on `<a>`). As you begin to write HTML you will learn about more attributes and how to use them.
 
-#### Creating a Valid HTML Document
+### Creating a Valid HTML Document
 
 To create a valid HTML document, browsers require specific elements:
 
@@ -66,7 +64,7 @@ To create a valid HTML document, browsers require specific elements:
 
 The `<html>` element is the top parent, then `<head>` and `<body>` are direct children. A `<title>` tag goes inside the `<head>` and will populate the browser's tab. All of the content of the page will go in the `<body>` element.
 
-### Summary
+## Summary
 
 - HTML creates **structure** for the web (think newspapers)
 - HTML is made up of **elements**

@@ -13,13 +13,11 @@ After completing this lesson, you will be able to:
 3. Create simple CSS selectors for styling an HTML page
 4. Link HTML to CSS inline and with an external file
 
-## Lesson
-
-### Overview
+## Overview
 
 **Cascading Style Sheet (CSS)** is a style language used to adjust colors, fonts, layout, and other styles for a markup language like HTML. Just like the toolbar in Microsoft Word, CSS allows you to change the look and feel of a web page.
 
-#### CSS Basics
+### CSS Basics
 
 Here is a basic sample of CSS:
 
@@ -43,7 +41,7 @@ Here is what that CSS will look like if applied to an HTML document:
 
 ![Preview of CSS](./css-preview.jpg)
 
-#### CSS Syntax
+### CSS Syntax
 
 The select the area of the HTML you want to style, you use a CSS selector. You can select an element by writing the name of the tag.
 
@@ -72,7 +70,7 @@ Finally, every HTML element is made up of the box model (see picture below). The
 
 ![CSS box model](./css-box.png)
 
-#### Classes
+### Classes
 
 The most common way to select an element for reusability in CSS is an HTML class.
 
@@ -93,7 +91,7 @@ This can be helpful when wanting to define styles for an element that isn't alre
 
 Overall, classes are used for reusability and flexible since you can mix and match them.
 
-#### Connecting CSS to HTML
+### Connecting CSS to HTML
 
 There are two methods for connecting your CSS to your HTML. First, you can include a `<style>` element in your HTML file and write the CSS inside it:
 
@@ -144,20 +142,7 @@ h1 {
 }
 ```
 
-#### Exercise - Styling Your HTML Document
-
-Now it's time to style your first HTML document. Make sure to include the following:
-
-- Create a `styles.css` file in the same directory as your `sample.html` file
-- Link the CSS file to the HTML file with a `<link>` tag
-- In your styles file update the styling of the page:
-  - Change the background of the body
-  - Change the font size and color of header 1
-  - Change the font family of the paragraph.
-
-Open your HTML with your web browser and look at your results, your styles should have changed!
-
-### Summary
+## Summary
 
 - CSS creates **style** for the web (think Word)
 - CSS is made up of **selectors**
@@ -165,16 +150,10 @@ Open your HTML with your web browser and look at your results, your styles shoul
 - CSS declarations have **properties** and **values**
 - CSS works in a **box**
 
-### Conceptual
+## Conceptual
 
 - What does "pixel perfect" mean? What would you need to know to accomplish it?
 - When is the appropriate time to use the `!important` tag? Why would you avoid it?
-
-### Architect
-
-- What is a CSS framework? Give some examples
-- What is a CSS naming convention? Describe one or two of them and they're advantages
-- What is a utility class?
 
 [Additional questions](https://www.javatpoint.com/css-interview-questions)
 
