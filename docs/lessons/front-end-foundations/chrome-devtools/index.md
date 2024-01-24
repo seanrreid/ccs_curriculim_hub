@@ -109,15 +109,6 @@ Now you are introduced to Google's Chrome DevTools and many of the tools it offe
 
 DevTools continues to be developed and is constantly making improvements for the developers using it. Take the time to continue using and learning more about this tool.
 
-### Conceptual
-
-- How does Chrome DevTools improve your developer experience?
-- What feature(s) would you like to see added to Chrome DevTools?
-
-### Architect
-
-None available.
-
 ## Additional Resources
 
 - [Chrome DevTools - Official Docs](https://developers.google.com/web/tools/chrome-devtools)

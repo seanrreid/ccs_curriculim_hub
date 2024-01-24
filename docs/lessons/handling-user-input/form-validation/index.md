@@ -184,14 +184,6 @@ Regular expressions are a useful tool for ensuring that valid data is entered in
 
 JavaScript's Constraint Validation API allows you to create your own custom validation error messages and customize how you form validates the information.
 
-### Conceptual
-
-- What is the difference between the regex methods `test()` and `exec()`?
-
-### Architect
-
-- How would you validate a postal code field if you served customers across multiple countries?
-
 ## Additional Resources
 
 - [Client-side form validation - MDN web docs](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)

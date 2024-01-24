@@ -50,15 +50,13 @@ There are alot of events that can happen on a webpage check out a full list visi
 | _'play'_ | media starts playing |
 | _'ended'_ | media has finished playing |
 
-
-
 ### How to use HTML attribute?
 
 In our first example we used a HTML attribute called `onclick` so that when the button is clicked, our handler is then executed. Notice the prefix 'on' before the name of the event. This is the key to this attribute that lets the browser know that it needs to execute the handler in case of the stated event. Of course for practical purposes we want to keep our HTML as clean as possible. In that case we can use **dot notation** to access our HTML attribute inside of our javascript.
 
 Either in a separate javascript file that has been linked or in a script tag, we can give the `onclick` attribute to our button and then we can execute the same function.
 
-```html{1,3,5-7}
+```html
 <button id="myButton">Click Me!</button>
 <script>
   const button = document.querySelector('#myButton')
@@ -92,8 +90,6 @@ Only the second would execute because the `onclick` property of `button` has bee
 
 For this reason `addEventListener()` method has become the standard. You are able to call multiple handlers to the same node.
 
-@/lessons/handling-user-input/handling-browser-events/example3b.js
-
 ### Why use addEventListener()?
 
 The `addEventListener()` method allows you to add any number of event handlers so that it is safe to add handlers even if there is already another handler on the element. Let's revisit our previous example of a button and refactor it to use the `addEventListener()` method.
@@ -102,7 +98,7 @@ The `addEventListener()` method allows you to add any number of event handlers s
 
 `addEventListener()` takes 2 required arguements, the first is a string specifying the type of event such as `click`, and the second argument is the handler function. one of the advantages of using this method is that there is another method we can use that will remove the event listener, properly named `removeEventListener()`. So let's make it to where we only get an alert the first time we click the button.
 
-@/lessons/handling-user-input/handling-browser-events/example4b.html
+![@/lessons/handling-user-input/handling-browser-events/example4b.html]('./example4b.html')
 
 Testing our new example, on the first click the button is pressed and you are given the alert. once you close the alert and click the button again, the button no longer works.
 
@@ -115,6 +111,7 @@ You can `console.log(event)` inside of the handler to dive in to all the informa
 :::
 
 #### The Window Object and Events
+
 The `window` object has the majority of the properties like `length`, `innerWidth`, `innerHeight`, `name`, if it has been closed, its parents, and more. It is the first thing that is loaded into the browser. Some event types can be access through the `window` object such as `resize`. To quickly take a look at this action let's take a look at a quick example.
 
 @/lessons/handling-user-input/handling-browser-events/example5.html
