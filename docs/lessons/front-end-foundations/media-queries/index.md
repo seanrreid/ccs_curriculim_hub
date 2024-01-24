@@ -118,57 +118,6 @@ Below are some media queries for common devices:
 
 > [CSS Media Queries - tutorialrepublic.com](https://www.tutorialrepublic.com/css-tutorial/css3-media-queries.php)
 
-## Interview Questions
-
-### Fundamentals
-
-- What are Media Types?
-- Why is a responsive design important when building a website?
-- What does 'Mobile First' mean?
-
-### Bugfix
-
-Fix the following code:
-
-```css
-
-@media only screen and (min-width: 720px) and @media screen (max-width: 1220px) {
-    heading {
-        color: red;
-    }
-
-    body {
-        background-color: white;
-    }
-
-```
-
-:::details Solution
-
-```css
-@media only screen and (min-width: 720px) and (max-width: 1220px) {
-    heading {
-        color: red;
-    }
-
-    body {
-        background-color: white;
-    }
-```
-
-You don't need to declare `@media screen` again in the media query. You can continue to add media features with the keywords `and` and `or`.
-
-:::
-
-### Conceptual
-
-- How does a media query decide when to applied the CSS styles contained within?
-- What happens when multiple media queries are applicable? (For example, when using a screen that is 1000 pixels wide, what happens if your CSS contains two media queries, one for `min-width: 600px` and another for `min-width: 800px`?)
-
-### Architect
-
-- How would you use a media query use to create a navigation bar that is responsive.
-
 ## Additional Resources
 
 - [MDN Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
