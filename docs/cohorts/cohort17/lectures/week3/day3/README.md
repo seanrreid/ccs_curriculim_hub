@@ -10,6 +10,9 @@ keywords:
     - specificity
     - classes
     - box model
+    - media queries
+    - responsive web development
+    - mobile-first
 ---
 <!-- markdownlint-disable no-inline-html -->
 
