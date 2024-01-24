@@ -32,3 +32,7 @@ title: Additional Resources
 
 * [Kevin Powell CSS Articles](https://www.kevinpowell.co/articles/)
 * [State of CSS 2023 Survey Results](https://2023.stateofcss.com/en-US/features/)
+* [Three modern CSS properties your website must have](https://bejamas.io/blog/modern-css-properties-your-website-must-have/)
+  <br/>Note that the "must have" in the title is more of a request than a necessity. But, it's likely a phrase "you should use these" wouldn't convert clicks as well 😂
+* [Container Style Queries](https://12daysofweb.dev/2023/container-style-queries/)
+  <br/>These are relatively new, but have a _lot_ of potential!
