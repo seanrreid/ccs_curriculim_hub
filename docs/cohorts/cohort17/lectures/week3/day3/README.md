@@ -30,6 +30,9 @@ Then we'll go deeper into CSS, particularly CSS positioning and responsive-desig
 
 * [HTML 101](/docs/lessons/front-end-foundations/html-101/)
 * [CSS 101](/docs/lessons/front-end-foundations/css-101/)
+* [HTML Forms](/docs/lessons/front-end-foundations/html-forms/)
+* [The DOM](/docs/lessons/handling-user-input/dom/)
+* [Media Queries](/docs/lessons/front-end-foundations/media-queries/)
 
 ### Review
 
