@@ -1,8 +1,8 @@
 ---
-sidebar: auto
+title: Handling Browser Events
+sidebar_label: Browser Events
+sidebar_position: 4
 ---
-
-# Handling Browser Events
 
 ## Learning Objectives
 
@@ -12,7 +12,7 @@ After completing this lesson, you will be able to:
 - Run functions when an event occurs.
 - Attach event listening functions to elements using HTML attributes, JS dot notation, and the DOM API
 
-## Lesson
+## Overview
 
 ### What is an event?
 
@@ -26,15 +26,24 @@ Let's quickly take a look at an example of a `click` event and see what they do 
 
 Here is some HTML with a `button` element.
 
-@/lessons/handling-user-input/handling-browser-events/example1a.html{2}
+```html
+<div>
+    <button>Click me!</button>
+</div>
+```
 
 Right now, nothing will happen if we click this button. Let's add an _event handler_ to our button and tell it to call `alert()` when the button is pressed.
 
-@/lessons/handling-user-input/handling-browser-events/example1b.html{5-9}
+```html
+<div>
+    <button onclick="alert('clicked')" >Click me!</button>
+</div>
+```
 
 Now you should see a pop up alert stating that the button has been clicked.
 
 ### Commonly used events
+
 There are alot of events that can happen on a webpage check out a full list visit [MDN Event reference](https://developer.mozilla.org/en-US/docs/Web/Events). Lets take a look at a few events that are commonly used and what triggers them.
 
 | Event | Triggered when |
@@ -73,10 +82,6 @@ We can now use **dot notation** to assign the button's `onclick` property to cal
 
 `onclick` is essentially a property like any other available on the button node, just like `button.textContent`, or `button.style`, but it is a special type. When you set a handler to it will run that code.
 
-You can even set it to be equal to a named function. For Example:
-
-@/lessons/handling-user-input/handling-browser-events/example2b.html{6}
-
 :::warning
 The function should be assigned as `beenClicked`, not `beenClicked()`.
 If we add parentheses, `beenClicked()` -- is a function call. So the assignment actually takes the result of the function execution, which would be `undefined` since the function returns nothing.
@@ -84,7 +89,10 @@ If we add parentheses, `beenClicked()` -- is a function call. So the assignment 
 
 But a node can only have one `onclick` attribute, so you can only register one _event handler_ this way. So, for example, if we were to do something like this:
 
-@/lessons/handling-user-input/handling-browser-events/example3a.js
+```js
+button.onclick = beenClicked
+button.onclick = beenClickedAgain
+```
 
 Only the second would execute because the `onclick` property of `button` has been reassigned.
 
@@ -94,7 +102,14 @@ For this reason `addEventListener()` method has become the standard. You are abl
 
 The `addEventListener()` method allows you to add any number of event handlers so that it is safe to add handlers even if there is already another handler on the element. Let's revisit our previous example of a button and refactor it to use the `addEventListener()` method.
 
-@/lessons/handling-user-input/handling-browser-events/example4a.html
+```html
+<script>
+    const button = document.querySelector('#myButton')
+        button.addEventListener('click', function() {
+        alert('click')
+    })
+</script>
+```
 
 `addEventListener()` takes 2 required arguements, the first is a string specifying the type of event such as `click`, and the second argument is the handler function. one of the advantages of using this method is that there is another method we can use that will remove the event listener, properly named `removeEventListener()`. So let's make it to where we only get an alert the first time we click the button.
 
@@ -110,45 +125,23 @@ You can `console.log(event)` inside of the handler to dive in to all the informa
 
 The `window` object has the majority of the properties like `length`, `innerWidth`, `innerHeight`, `name`, if it has been closed, its parents, and more. It is the first thing that is loaded into the browser. Some event types can be access through the `window` object such as `resize`. To quickly take a look at this action let's take a look at a quick example.
 
-@/lessons/handling-user-input/handling-browser-events/example5.html
+```html
+<script>
+  window.addEventListener('resize', function(){
+    console.log(window.innerWidth);
+  })
+</script>
+```
 
 This handler is executed when there is a change in the `window` size. When this event happens it will `console.log()` the current the browser's width. There are many `window` specific that can be used such as `orientationchange`, `devicemotion`, and `storage`.
 
-#### What can I do with the event object??
-
-There is one more key to events and event objects that we have yet to discuss in full. This is the parameter that is passed from DOM and `window` Objects into the event handlers. Let's take a close look at it through an example.
-
-@/lessons/handling-user-input/handling-browser-events/example6a.html
-
-![Boxes-Example](./boxesEventListener.jpg)
-
-In this example we have 5 boxes colored red. We are going to add an `addEventListener()` to the script that will change the color of the box that is clicked using the event object. One of the property that we can access is the _target_ property. It contains a reference to the element where the event took place. In this case it will be on our boxes.
-
-@/lessons/handling-user-input/handling-browser-events/example6b.html
-
-We use the `event.target` property several ways in this instance. First we are checking the _target_ of the click event and seeing it contains the class 'box'. If it does then we add a style property with `background-color` of grey. We can also change the DOM access the `innerText` property of the element and add text of our target.
-
-![Clicked-Boxes](./clickedBoxes.jpg)
-
-
-### Summary
+## Summary
 
 Event handlers make it possible to detect and react to events happening in our web page. The `addEventListener()` method is used to register such a handler. Each event has a type(`click`, `focus`, `submit`, etc) that identifies it.
 
 Any Element or Node in the DOM can receive events. This includes the `window` object. Certain events can only happen on the `window` object, such as 'resize'.
 
 It is best practice to use `addEventListener()` on the target node objects. While HTML attributes are useful if you only need to call a single event handler on a node object, they can clutter the HTML and are limited in their use.
-
-### Conceptual
-
-- What is the difference in using a HTML attribute and `addEventListener()`?
-- What is a Event Handler?
-- What is an Event Object and what information is stored and accessible through it?
-
-### Architect
-
-- How would you use events to build a form that would open a sidebar menu when a button is pressed?
-- How would you use events to change a form's submit action?
 
 ## Additional Resources
 
