@@ -25,8 +25,9 @@ We'll spend a few minutes resolving some merge conflicts.
 
 ## HTML Forms + Intro to JS
 
-* First: Intro to JavaScript
-* Then: The revenge of MAD LIBS (HTML Form + JS Edition)
+* Prequel: Let's talk links!
+* Episode 1: Intro to JavaScript
+* Episode 2: Revenge of the MADLIB (HTML Form + JS Edition)
 
 ## Presentations
 

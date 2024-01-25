@@ -1,7 +1,7 @@
 ---
 title: HTML + CSS Review
 sidebar_label: Review
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 ## HTML

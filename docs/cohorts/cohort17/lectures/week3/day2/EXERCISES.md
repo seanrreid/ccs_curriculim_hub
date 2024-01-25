@@ -1,6 +1,6 @@
 ---
 title: Homepage
-sidebar_label: Exercise
+sidebar_label: Exercises
 sidebar_position: 3
 ---
 

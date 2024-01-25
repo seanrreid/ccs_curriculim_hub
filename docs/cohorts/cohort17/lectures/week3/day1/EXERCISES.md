@@ -1,6 +1,6 @@
 ---
 title: Music App Kickoff
-sidebar_label: Exercise
+sidebar_label: Exercises
 sidebar_position: 3
 ---
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
