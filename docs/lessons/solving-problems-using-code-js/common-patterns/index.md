@@ -12,9 +12,7 @@ After completing this lesson, you will be able to:
 3. Search for values in an Array
 4. Count number of occurrences in an Array
 
-## Lesson
-
-### Overview
+## Overview
 
 In this lesson, you'll put together the techniques you've learned so far. Using Numbers, Strings, Objects, and Arrays, you'll solve problems that come up frequently when programming. This will involve inspecting, comparing, and modifying variables with loops and functions.
 
@@ -32,7 +30,7 @@ while (n < 10) {
 
 Instead of printing while the loop is running, we could wait until after the loop is finished:
 
-```js{5}
+```js
 let n = 1;
 while (n < 10) {
   n++;
@@ -55,9 +53,7 @@ However, our goal isn't really to add numbers. Our goal is to uncover ways of us
 Imagine you're sharing a plate of cookies with a friend. The conversation may go as follows (assuming there are 5 cookies):
 
 > One for me, one for you.
-
 > One for me, one for you.
-
 > One for me, none for you.
 
 How would you generate the text of that conversation?
@@ -80,7 +76,7 @@ while (n > 0) {
 
 So far, we're still printing. Instead of printing, let's create a `conversation` variable and "add" the String `"one for me"` to it every time the loop runs (making sure to put the `\n` escape character at the end to create the line break).
 
-```js{2,5,8}
+```js
 let n = 5;
 let conversation = '';
 while (n > 0) {
@@ -98,7 +94,7 @@ console.log(conversation);
 
 Behaving like this will leave you with a bellyache and no friends. Let's try sharing:
 
-```js{6,7,13,14}
+```js
 let n = 5;
 let conversation = '';
 while (n > 0) {
@@ -149,7 +145,7 @@ Here's what we know:
 
 Inside of our loop, we can check to see if we're currently on an odd numbered cookie or not (using the Boolean expression `n % 2 !== 0`). Based on that, we can decide who gets the cookie.
 
-```js{4,7,12}
+```js
 let n = 5;
 let conversation = '';
 while (n > 0) {
@@ -169,7 +165,7 @@ On line 4, we've added our `if` statement that checks if `n` is an odd number, a
 
 On line 12, we make sure to decrement `n` _outside_ of our conditionals. This ensures that we don't have an infinite loop and that there is no cookie #0. Here's the new output:
 
-```
+```sh
 5 cookie: me
 4 cookie: you
 3 cookie: me
@@ -179,7 +175,7 @@ On line 12, we make sure to decrement `n` _outside_ of our conditionals. This en
 
 We can safely remove our `console.log()` statements inside the loop.
 
-```js{4,7,12}
+```js
 let n = 5;
 let conversation = '';
 while (n > 0) {
@@ -196,7 +192,7 @@ console.log(conversation);
 
 The output is now:
 
-```
+```sh
 one for me. one for you
 one for me. one for you
 one for me.
@@ -206,7 +202,7 @@ There's one more step. We still want to know when there are no cookies left so w
 
 How will we know when someone is given the last cookie? We can check if the current cookie is cookie #1:
 
-```js{7-9,13-15}
+```js
 let n = 5;
 let conversation = '';
 while (n > 0) {
@@ -229,7 +225,7 @@ console.log(conversation);
 
 Here is the final output for our program:
 
-```
+```sh
 one for me. one for you
 one for me. one for you
 one for me. none for you.
@@ -267,7 +263,7 @@ If it prints successfully, you know that the loop is able to access each item in
 
 Next, add a conditional so that it only prints the 5-star ratings:
 
-```js{3}
+```js
 const ratings = [3, 1, 5, 2, 5, 2, 1, 4, 2, 3, 2, 5, 4, 3, 2, 4, 2, 4, 1, 5];
 for (let i=0; i<ratings.length; i++) {
   if (ratings[i] === 5) {
@@ -278,7 +274,7 @@ for (let i=0; i<ratings.length; i++) {
 
 Our code is getting a little cluttered, so we'll introduce some additional variables:
 
-```js{2,4}
+```js
 const ratings = [3, 1, 5, 2, 5, 2, 1, 4, 2, 3, 2, 5, 4, 3, 2, 4, 2, 4, 1, 5];
 const max = ratings.length;
 for (let i=0; i<max; i++) {
@@ -293,7 +289,7 @@ Each time the body of the loop runs, we assign `ratings[i]` to the `stars` varia
 
 After that, add a `count` variable that you increment every time you print.
 
-```js{3,7}
+```js
 const ratings = [3, 1, 5, 2, 5, 2, 1, 4, 2, 3, 2, 5, 4, 3, 2, 4, 2, 4, 1, 5];
 const max = ratings.length;
 const count = 0;
@@ -308,7 +304,7 @@ for (let i=0; i<max; i++) {
 
 It's OK to comment out the `console.log()` at this point:
 
-```js{3,7}
+```js
 const ratings = [3, 1, 5, 2, 5, 2, 1, 4, 2, 3, 2, 5, 4, 3, 2, 4, 2, 4, 1, 5];
 const max = ratings.length;
 const count = 0;
@@ -323,7 +319,7 @@ for (let i=0; i<max; i++) {
 
 Finally, check the value of `count` to see if it is at least 6:
 
-```js{10}
+```js
 const ratings = [3, 1, 5, 2, 5, 2, 1, 4, 2, 3, 2, 5, 4, 3, 2, 4, 2, 4, 1, 5];
 const max = ratings.length;
 const count = 0;
@@ -342,7 +338,7 @@ if (count >= 6) {
 
 Sadly, this product needs some work:
 
-```
+```sh
 Sorry, no homepage for you.
 ```
 
@@ -361,7 +357,7 @@ Which candidate won the election?
 
 As before, we start with a simple for-loop. In this example, the Arrays are the same length, so we can use a single loop. This loop prints the number of votes for a candidate from each polling station (`c1Votes[i]` and `c2Votes[i]`):
 
-```js{4}
+```js
 const c1Votes = [996, 139, 80, 591, 217, 817, 235, 846, 141, 60];
 const c2Votes = [746, 154, 366, 515, 523, 846, 590, 806, 446, 23];
 const max = c1Votes.length; // c2Votes.length is the same
@@ -375,7 +371,7 @@ For very long Arrays, printing each item in the Array with `console.log()` isn't
 
 Add variables to hold the total votes for each candidate. Inside the loop, add the number of votes for that candidate.
 
-```js{4,5,8,10}
+```js
 const c1Votes = [996, 139, 80, 591, 217, 817, 235, 846, 141, 60];
 const c2Votes = [746, 154, 366, 515, 523, 846, 590, 806, 446, 23];
 const max = c1Votes.length; // c2Votes.length is the same
@@ -391,7 +387,7 @@ for (let i=0; i<max; i++) {
 
 Then compare the totals:
 
-```js{13}
+```js
 const c1Votes = [996, 139, 80, 591, 217, 817, 235, 846, 141, 60];
 const c2Votes = [746, 154, 366, 515, 523, 846, 590, 806, 446, 23];
 const max = c1Votes.length; // c2Votes.length is the same
@@ -415,7 +411,7 @@ if (c1Total > c2Total) {
 
 The results are in:
 
-```
+```sh
 Candidate 2 is the winner!
 ```
 
@@ -442,7 +438,7 @@ The thing to keep in mind that the information in the two tables correspond: the
 
 The first version will look similar to the loops you've already written. For now, our program will find what table `Mustard` is assigned to.
 
-```js{6,7}
+```js
 const guests = ['Scarlett', 'Plum', 'Peacock', 'Green', 'Mustard', 'White'];
 const tables = [3, 1, 1, 2, 3, 2];
 
@@ -459,7 +455,7 @@ Line 6 sets up our loop for iterating through the `guests` list. Line 7 makes su
 
 The second version makes sure to stop the loop once it is found:
 
-```js{9}
+```js
 const guests = ['Scarlett', 'Plum', 'Peacock', 'Green', 'Mustard', 'White'];
 const tables = [3, 1, 1, 2, 3, 2];
 
@@ -477,7 +473,7 @@ The `break` keyword stops a loop immediately.
 
 Though we have found the correct table, it might be useful to save the index, instead of doing our work (printing) inside the loop. Let's add a `foundIndex` variable, initialized to `-1`, which can never be a valid index. (If we do not find the guest's name in the Array, we can use the value `-1` to tell our program to print an appropriate error message.
 
-```js{5,8,12}
+```js
 const guests = ['Scarlett', 'Plum', 'Peacock', 'Green', 'Mustard', 'White'];
 const tables = [3, 1, 1, 2, 3, 2];
 
@@ -498,7 +494,7 @@ if (foundIndex !== -1) {
 
 The main reason for doing this is so that we can move our searching algorithm into its own function:
 
-```js{4-13}
+```js
 const guests = ['Scarlett', 'Plum', 'Peacock', 'Green', 'Mustard', 'White'];
 const tables = [3, 1, 1, 2, 3, 2];
 
@@ -525,7 +521,7 @@ if (index !== -1) {
 
 Taking this a step further, we could create a second function that handles our conditional `console.log():
 
-```js{15-23}
+```js
 const guests = ['Scarlett', 'Plum', 'Peacock', 'Green', 'Mustard', 'White'];
 const tables = [3, 1, 1, 2, 3, 2];
 
@@ -556,7 +552,7 @@ printTableFor('Batman');
 
 The output is now:
 
-```
+```sh
 Mustard sits at table 3
 Batman is not on the guest list.
 ```
@@ -571,13 +567,13 @@ The next example is a little sci-fi: you're programming a DNA-repair bot. (Don't
 
 Your DNA-repair bot has a copy of a healthy version of the sequence, consisting only of the letters `G`, `A`, `T`, and `C`:
 
-```
+```sh
 'GCTGGGTGGGACACTGTCGTTCCTTACCGCACCGCCACATCATTCACCCTTGGGCAACCC'
 ```
 
 But it may encounter a damaged version that contains the letter `Z`:
 
-```
+```sh
 'GCTZGGTGGGZCACTGTCGTTCCTTACCGCACCGCCACATCATTCACCCTTGGGCAACCC'
 ```
 
@@ -607,7 +603,7 @@ sequence = sequence.join("");
 
 Next, before we copy the letter into the `sequence` Array, we should check if that letter is `Z`:
 
-```js{4,5,7}
+```js
 let sequence = [];
 for (let i = 0; i<sample1.length; i++) {
   const letter = sample1[i];
@@ -663,7 +659,7 @@ for (let i = 0; i < max; i++) {
 
 Next, we'll create our `ratingsCount` Object (which we initialize as an empty Object):
 
-```js{3}
+```js
 const ratings = [3, 1, 5, 2, 5, 2, 1, 4, 2, 3, 2, 5, 4, 3, 2, 4, 2, 4, 1, 5];
 const max = ratings.length;
 const ratingsCount = {};
@@ -723,7 +719,7 @@ Notice that we incremented the value for `5` because the loop has encountered tw
 
 Before we write any more code, let's make some notes as comments:
 
-```js{6-8}
+```js
 const ratings = [3, 1, 5, 2, 5, 2, 1, 4, 2, 3, 2, 5, 4, 3, 2, 4, 2, 4, 1, 5];
 const max = ratings.length;
 const ratingsCount = {};
@@ -785,7 +781,7 @@ Remember: dot notation is just a convenience. Whatever word you use after the do
 
 Because the value of a non-existent key is Falsy and a Number is Truthy, we can write our if-condition like so:
 
-```js{7}
+```js
 const ratings = [3, 1, 5, 2, 5, 2, 1, 4, 2, 3, 2, 5, 4, 3, 2, 4, 2, 4, 1, 5];
 const max = ratings.length;
 const ratingsCount = {};
@@ -802,7 +798,7 @@ for (let i=0; i<max; i++) {
 
 Now, we can increment if it exists:
 
-```js{9}
+```js
 const ratings = [3, 1, 5, 2, 5, 2, 1, 4, 2, 3, 2, 5, 4, 3, 2, 4, 2, 4, 1, 5];
 const max = ratings.length;
 const ratingsCount = {};
@@ -820,7 +816,7 @@ for (let i=0; i<max; i++) {
 
 Or set it to `1` because it's the first time we're "seeing" this rating:
 
-```js{12}
+```js
 const ratings = [3, 1, 5, 2, 5, 2, 1, 4, 2, 3, 2, 5, 4, 3, 2, 4, 2, 4, 1, 5];
 const max = ratings.length;
 const ratingsCount = {};
@@ -839,7 +835,7 @@ for (let i=0; i<max; i++) {
 
 JavaScript Objects can help you "keep score" as you process Arrays. We could have used a similar approach to the voting example. But it is even more powerful for the ratings problem. With the voting example, you know that there are only two candidates. With the ratings problem, you don't know how many different star-ratings exist. You can add new keys to Objects at any time, without knowing ahead of time what those keys will be.
 
-### Summary
+## Summary
 
 In this lesson you learned how to use Objects, Arrays, Strings, and Numbers to solve a number of common programming problems. Iterating, counting, and accumulating are a few of the techniques you learned. In future lessons, you will learn to solve larger problems. But many of them will be variations of the ones in this lesson.
 

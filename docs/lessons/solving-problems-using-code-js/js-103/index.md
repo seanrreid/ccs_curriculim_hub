@@ -1,6 +1,7 @@
 ---
-title: JavaScript Callbacks and Anonymous Functions
-description: Callbacks and Anonymous Functions
+title: JavaScript 103 - Callbacks and Anonymous Functions
+sidebar_label: JavaScript 103
+sidbar_position: 3
 ---
 
 ## Learning Objectives
@@ -11,9 +12,7 @@ After completing this lesson, you will be able to:
 2. Pass anonymous functions as callbacks
 3. Write functions that accept functions as arguments
 
-## Lesson
-
-### Overview
+## Overview
 
 You have learned to use a number of programming techniques:
 
@@ -520,7 +519,7 @@ console.log(greetings);
 // ['hello', 'how are you?', 'good to see you!']
 ```
 
-### Summary
+## Summary
 
 In this lesson you learned a different way to approach problem solving. Taking what you've already learned, you saw that you can break your algorithms into two parts: a function that works with a single value, and another that applies the function to each value in an Array.
 

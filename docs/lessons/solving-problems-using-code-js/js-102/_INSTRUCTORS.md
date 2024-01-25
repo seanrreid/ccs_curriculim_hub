@@ -4,8 +4,6 @@ description: Goals
 pubDate: 2023-12-15T13:49:22-05:00
 ---
 
-    # Goals
-
 - Does the student understand how to create and access items in Arrays and Objects?
 - Can they use if/else statements to choose what code to run?
 - Can they write a loop?

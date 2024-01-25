@@ -98,10 +98,6 @@ The `addEventListener()` method allows you to add any number of event handlers s
 
 `addEventListener()` takes 2 required arguements, the first is a string specifying the type of event such as `click`, and the second argument is the handler function. one of the advantages of using this method is that there is another method we can use that will remove the event listener, properly named `removeEventListener()`. So let's make it to where we only get an alert the first time we click the button.
 
-![@/lessons/handling-user-input/handling-browser-events/example4b.html]('./example4b.html')
-
-Testing our new example, on the first click the button is pressed and you are given the alert. once you close the alert and click the button again, the button no longer works.
-
 ### Event Objects
 
 When the event happens, the event object is created. It then travels with the event on its journey through the DOM. The event object is passed as an argument to our event handler function. We can use this object to access a wealth of information about the event that has occurred.
