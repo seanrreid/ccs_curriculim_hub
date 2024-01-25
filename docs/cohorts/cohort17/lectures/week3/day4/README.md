@@ -32,6 +32,7 @@ We'll spend a few minutes resolving some merge conflicts.
 ## Presentations
 
 * [Getting Started - JavaScript](https://docs.google.com/presentation/d/1XoKLzPLyBXxe1pHMqmazhhL3AALrMDqhur-biTGC548/edit?usp=sharing)
+* [HTML Links Demo](https://github.com/seanrreid/html-links-demo)
 
 ## Lessons
 
