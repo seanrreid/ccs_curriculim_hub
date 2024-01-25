@@ -1,6 +1,6 @@
 ---
-title: Introductory Concepts in JavaScript
-sidebar_label: Intro Concepts
+title: Introductory Programming Concepts with JavaScript
+sidebar_label: Programming Concepts
 sidebar_position: 1
 ---
 

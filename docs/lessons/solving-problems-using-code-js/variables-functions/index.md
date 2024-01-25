@@ -1,7 +1,7 @@
 ---
-title: JavaScript 101 - Variables & Functions
-sidebar_label: JavaScript 101
-sidebar_position: 2
+title: JavaScript Variables & Functions
+sidebar_label: Variables & Functions
+sidebar_position: 3
 ---
 
 ## Learning Objectives
@@ -22,7 +22,6 @@ Your programs will run in the Terminal, storing and printing numbers and text. Y
 Afterwards, you'll create and use _functions_. In the same way that variables are labels for values, functions are labels for groups of instructions.
 
 Variables and functions will be the primary tools you'll use for solving problems, no matter what programming language you're using.
-
 
 ### How do I save values for later use?
 

@@ -1,7 +1,7 @@
 ---
-title: JavaScript 102 - Objects, Arrays, Booleans, Loops
-sidebar_label: JavaScript 102
-sidebar_position: 3
+title: JavaScript Objects, Arrays, Booleans, Loops
+sidebar_label: Objects, Arrays, Booleans, Loops
+sidebar_position: 4
 ---
 
 ## Learning Objectives
@@ -15,12 +15,6 @@ After completing this lesson, you will be able to:
 5. Automatically repeat code using loops
 
 ## Overview
-
-In the previous lesson, you learned how to assign values to variables and how to create and use functions.
-
-Continuing from those fundamental building blocks, you'll learn about two of JavaScript's _collection types_. Arrays are used to store sequences of values, while Objects are used to store a group of related values.
-
-As you write larger programs, your code will need to run different functions and statements based on certain conditions. (e.g., _Did the user type "yes" or "no"?_, _Has the timer reached 0?_)
 
 ### Objects
 

@@ -1,6 +1,6 @@
 ---
-title: JavaScript 103 - Callbacks and Anonymous Functions
-sidebar_label: JavaScript 103
+title: JavaScript Callbacks & Anonymous Functions
+sidebar_label: Callbacks & Anonymous Functions
 sidbar_position: 3
 ---
 

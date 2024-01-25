@@ -1,8 +1,8 @@
 ---
-sidebar: auto
+title: JavaScript Objects
+sidebar_label: JavaScript Objects
+sidebar_position: 2
 ---
-
-# JavaScript Objects
 
 ## Learning Objectives
 
@@ -15,7 +15,7 @@ After completing this lesson, you will be able to:
 - Define object's function properties
 - Create reusable constructor functions
 
-## Lesson
+## Overview
 
 ### JavaScript's Objects
 
@@ -78,7 +78,6 @@ Bracket notation and dot notation are equivalent, but most developers prefer dot
 Object property names are strings. You can use anything that can be converted to a _String_, including numbers or booleans.
 
 However, any property name that is not also valid JavaScript variable name (for example, a property name that has a space or a hyphen, or that starts with a number) must be wraped in quotes. They can only be accessed using the bracket notation `[]`.
-
 
 ```js
 const anotherPerson = {
@@ -172,7 +171,7 @@ for (property in person) {
 
 Running this loop would show the object's property names in the console:
 
-```
+```sh
 firstName
 lastName
 age
@@ -188,8 +187,7 @@ for (property in person) {
 }
 ```
 
-
-```
+```sh
 firstName: John
 lastName: Doe
 age: 31
@@ -282,7 +280,6 @@ const jane = new Person("Jane", "Doe", 29, false);
 
 In the example, we are creating `john` and `jane` objects using the same `Person` constructor function. We pass the values that will be assigned to our new objects. We can then access those properties:
 
-
 ```js
 console.log(john.firstName)
 // John
@@ -296,7 +293,6 @@ console.log(jane.greet())
 ```
 
 Note that we do not need to pass in a value for `status` or `greet`. Those will be the same for each new object created using the `Person` constructor.
-
 
 :::tip
 An object created using a constructor function is an *instance* of that constructor.
@@ -316,6 +312,7 @@ console.log(john);
 console.log(john.firstName);
 // TypeError: john is undefined
 ```
+
 :::
 
 
@@ -337,8 +334,7 @@ Likewise, if we call `john.greet()`, the console would show `Hello, I'm John Doe
 
 Though there is no change to the output in our simple example, you will learn much more advanced uses of the keyword `this` in upcoming lessons.
 
-
-### Summary
+## Summary
 
 Objects are the building block of all data structures in JavaScript. The properties and methods of objects can be accessed using [dot or bracket notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors)
 

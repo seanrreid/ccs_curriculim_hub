@@ -1,8 +1,8 @@
 ---
-sidebar: auto
+title: Introduction to JavaScript
+sidebar_label: JavaScript Intro
+sidebar_position: 2
 ---
-
-# JavaScript 101
 
 ## Learning Objectives
 
@@ -16,9 +16,7 @@ After completing this lesson, you will be able to:
 - Create, modify, and delete JavaScript object items
 - Create JavaScript functions
 
-## Lesson
-
-### Overview
+## Overview
 
 JavaScript is a programming language that offers interactivity for websites. All major web browsers have a JavaScript engine and is defined by the ECMAScript specification. It is the core technology, along with HTML & CSS, for how the web works. JavaScript has quickly become one of the most popular programming languages on the planet and is now used for lots of technologies beyond the web!
 
@@ -70,30 +68,12 @@ Lastly, every major browser has a built-in console that can execute JavaScript. 
 
 Similar to a terminal, you can run JavaScript code one line at a time and the console will immediately provide output.
 
-### Logging
+#### Logging
 
 When working with JavaScript, there is a console built into the browser. This console allows you to evaluate JavaScript code and log messages for debugging. To log a message use the following code in your JavaScript:
 
 ```js
 console.log("Hello World");
-```
-
-### Comments
-
-Every programming language typically has a way of writing comments in your code that aren't evaluated or compiled when the code runs. In JavaScript, you prefix `//` to the line. You can also use the `/** */`. It can also break comments into multiple lines. Here are some examples:
-
-```js
-// Sample comment
-
-/*
-Here's another way to
-write comments across multiple lines
-*/
-
-/**
- * Sample comment
- * This is a description of this section of code as a sample
- */
 ```
 
 ### Data Types
@@ -305,7 +285,7 @@ while (x < 10) {
 Memory leaks are common in JavaScript, one way this can happen is creating an infinite loop by a `while` loop always evaluating to `true`. Some browsers will crash and others will kill the specific page causing the memory leak. When working with loops be careful and make sure to double check your loops!
 :::
 
-### Summary
+## Summary
 
 JavaScript is a powerful programming language for the web. We covered data types, variables, functions, logging, operators, loops, and more. This was a long lesson, but was meant to just introduce all the of major programming concepts offered with JavaScript.
 
