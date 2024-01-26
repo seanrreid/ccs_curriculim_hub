@@ -82,7 +82,31 @@ But this is because `fetch()` is primarily for making network requests, and it a
 
 This design choice makes working with Promises flexible. Here is a modified version of the code that creates individual functions for retrieving the JSON from the `response` and for outputting the data to the Console. In addition, it adds functions that get the value of the `aliases` key and print each alias to the Console.
 
-@/lessons/building-interactive-uis/intro-to-promises/walkthrough-3.js
+```js
+const getJSON = response => response.json();
+
+const logData = data => {
+  console.log(data);
+  return data;
+};
+
+const extractAliases = character => {
+  const {aliases} = character;
+  return aliases;
+};
+
+const printAliases = aliases => {
+  for (let a of aliases) {
+    console.log(a);
+  }
+};
+
+fetch(`https://anapioficeandfire.com/api/characters/583`)
+  .then(getJSON)
+  .then(logData)
+  .then(extractAliases)
+  .then(printAliases)
+```
 
 It starts by defining helper functions, each of which does a small part of the processing of the data returned by the server. It culminates in a "Promise chain" that uses each function as part of a series of `.then()` calls.
 

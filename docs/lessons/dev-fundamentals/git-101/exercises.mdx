@@ -1,10 +1,7 @@
 ---
 title: Git 101 Exercises
 description: Git 101 Exercises
-pubDate: 2023-12-15T13:49:22-05:00
 ---
-
-# Git 101 Exercises
 
 To solidify your knowledge, here are a set of exercises that will require you to use the techniques you've just learned in the lesson.
 
@@ -27,53 +24,52 @@ Create at least one file to commit.
 
 When you are finished, the output of `git status` should look like this:
 
-```
+```sh
 On branch master
 nothing to commit, working tree clean
 ```
 
 And the `git log` should contain at least one commit:
 
-```
+```sh
 commit 5973f218e644367487135b828aa271441a90f13f (HEAD -> master)
 Author: Your Name <your@email.com>
 Date:   Mon Nov 16 09:37:19 2020 -0500
 
     adds cheerful greeting
 ```
+<details>
+    <summary>
+        This solution only creates a single file and makes one commit. Your solution might have more!
+    </summary>
 
-:::details Solution
+    ```sh
+    # Create a new directory and cd into it
+    mkdir hello-again
+    cd hello-again
 
-This solution only creates a single file and makes one commit. Your solution might have more!
+    # Create the repo
+    git init
 
-```sh
-# Create a new directory and cd into it
-mkdir hello-again
-cd hello-again
+    # Check the status
+    git status
 
-# Create the repo
-git init
+    # Create a new file and put some text in it
+    touch hello.txt
+    echo 'Hi there!' > hello.txt
 
-# Check the status
-git status
+    # Check the status again...
+    git status
 
-# Create a new file and put some text in it
-touch hello.txt
-echo 'Hi there!' > hello.txt
+    # Add and commit the file
+    git add hello.txt
+    git commit -m 'adds cheerful greeting'
 
-# Check the status again...
-git status
-
-# Add and commit the file
-git add hello.txt
-git commit -m 'adds cheerful greeting'
-
-# Check the status and the log
-git status
-git log
-```
-
-:::
+    # Check the status and the log
+    git status
+    git log
+    ```
+</details>
 
 ### 3. The more the merrier
 
