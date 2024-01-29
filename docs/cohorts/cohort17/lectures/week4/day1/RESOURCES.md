@@ -3,7 +3,7 @@ sidebar_position: 3
 sidebar_label: Resources
 title: Additional Resources
 ---
-
+<!-- markdownlint-disable no-inline-html -->
 ## History
 
 ### The Mac
@@ -22,8 +22,8 @@ title: Additional Resources
 * [Eloquent JavaScript](https://eloquentjavascript.net/)
 * [Vanilla JS Guides](https://vanillajsguides.com/)
 * [Callback Hell](http://callbackhell.com/)
-
-* [Callback vs Promises vs Async Await](https://www.loginradius.com/blog/async/callback-vs-promises-vs-async-await/)<br/>We haven't covered `async`/`await` yet, but this is both a solid review of Callbacks and Promises, and a nice intro to `async`/`await` (we'll get to them during Backend).
+* [Callback vs Promises vs Async Await](https://www.loginradius.com/blog/async/callback-vs-promises-vs-async-await/)
+  <br/>We haven't covered `async`/`await` yet, but this is both a solid review of Callbacks and Promises, and a nice intro to `async`/`await` (we'll get to them during Backend).
 
 ## Career Help
 
