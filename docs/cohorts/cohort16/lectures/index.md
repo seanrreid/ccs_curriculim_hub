@@ -1,8 +1,8 @@
 ---
+title: Lectures for Carolina Code School Fall 2023
+sidebar_label: Fall 2023 Lectures
 sidebar_position: 1
 ---
-
-# Lectures for Carolina Code School Fall 2023
 
 This is your field guide to your Full Time Web Development cohort, and should provide you with information you need about what to expect in class week to week.
 
