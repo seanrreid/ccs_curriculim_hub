@@ -4,12 +4,12 @@ sidebar_label: Winter 2024 Lectures
 sidebar_position: 1
 ---
 
-## Class Structure
+## Course Structure
 
-- Weeks 1-3 Intro to Programming
-- Weeks 4-6 Programming for the Web
-- Weeks 6-9 Building Applications
-- Weeks 10-12 Final Project
+- Weeks 1-3 Intro to Programming (Python + HTML + CSS + JavaScript Intro)
+- Weeks 4-6 Programming for the Web (JavaScript + DOM + APIs + FastAPI + SQL)
+- Weeks 7-9 Building Applications (Frontend + Backend)
+- Weeks 10-12 Final Project (Details TBA)
 
 This is your field guide to your Full Time Web Development cohort, and should provide you with information you need about what to expect in class week to week.
 
