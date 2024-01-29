@@ -3,9 +3,14 @@ sidebar_position: 3
 sidebar_label: Resources
 title: Additional Resources
 ---
-<!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
-## History of JavaScript
+## History
+
+### The Mac
+
+* [Stephen Fry's story about using one of the first Macintosh computers](https://stephenfry.substack.com/p/40-years-on)
+
+### JavaScript
 
 * [JavaScript: Designing a Language in 10 Days](https://www.computer.org/csdl/magazine/co/2012/02/mco2012020007/13rRUy08MzA)
 * [What is Javascript Made Of?](https://overreacted.io/what-is-javascript-made-of/)
