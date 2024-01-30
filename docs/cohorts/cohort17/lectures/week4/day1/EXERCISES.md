@@ -1,5 +1,5 @@
 ---
-title: Homepage Exercise
+title: Music Website Exercise
 sidebar_label: Exercises
 sidebar_position: 3
 ---

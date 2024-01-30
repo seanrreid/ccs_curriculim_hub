@@ -26,7 +26,6 @@ keywords:
 
 * [Handling Browser Events](/docs/lessons/handling-user-input/handling-browser-events/)
 * [Callbacks and Anonymous Functions](/docs/lessons/solving-problems-using-code-js/callbacks/)
-* [What users want vs what technologists think is important](https://substack.com/@gregorojstersek/note/c-48140406?r=1g0l)
 
 ## Presentations
 
@@ -38,6 +37,7 @@ keywords:
 
 * [Things I Don't Know as of 2018](https://overreacted.io/things-i-dont-know-as-of-2018/)
 * [The Promise JS Explained in Burger Party](https://fullstackjournal.wordpress.com/2018/07/06/the-promise-js-explained-i-burger-party/)
+* [What users want vs what technologists think is important](https://substack.com/@gregorojstersek/note/c-48140406?r=1g0l)
 
 ## Other
 
