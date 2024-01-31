@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 sidebar_label: Day 2
 title: Week 4 - Day 2 - Working with External Data
 keywords:

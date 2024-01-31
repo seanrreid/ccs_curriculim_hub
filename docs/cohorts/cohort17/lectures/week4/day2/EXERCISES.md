@@ -1,7 +1,7 @@
 ---
 title: Website Exercises
 sidebar_label: Exercises
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 ## Todo List Review
