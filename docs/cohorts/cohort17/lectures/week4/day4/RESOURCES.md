@@ -23,6 +23,9 @@ title: Additional Resources
 ## JavaScript
 
 * [JavaScript.info: Destructuring assignment](https://javascript.info/destructuring-assignment)
+* [What is {} + {} in JavaScript?](https://2ality.com/2012/01/object-plus-object.html)
+* [MDN: Trailing Commas](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Trailing_commas)
+* [WTFS JavaScript](https://github.com/denysdovhan/wtfjs)
 
 ## CSS
 

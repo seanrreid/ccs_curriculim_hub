@@ -19,6 +19,7 @@ keywords:
 ### JS is Weird
 
 * [_JS is Weird_: The JavaScript Quiz You'll Love to Hate](https://jsisweird.com/)
+* Answers from our quiz are here -> [JS Is Weird Answers](./JS_Is_Weird_answers.pdf)
 
 ## In Class
 
