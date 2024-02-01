@@ -20,6 +20,10 @@ title: Additional Resources
 
 * [The unreasonable effectiveness of simple HTML](https://shkspr.mobi/blog/2021/01/the-unreasonable-effectiveness-of-simple-html/)
 
+## JavaScript
+
+* [JavaScript.info: Destructuring assignment](https://javascript.info/destructuring-assignment)
+
 ## CSS
 
 * [A guide to CSS units — pt. 1: look at these absolute units!](https://www.peerigon.com/en/blog/complete-guide-to-css-units-series-part-1-absolute-units)
