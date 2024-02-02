@@ -28,6 +28,10 @@ Today we'll be adding more interactive elements to the music app.
 * Fork this repo: [Discogs Starter v2](https://github.com/carolinacodeschool/discogs-v2-starter)
 * Clone it to your local machine
 
+### Sean's Version
+
+* Here is [the link to my Discogs Playlist](https://github.com/seanrreid/ccs-winter-24-discogs-demo/tree/feature/generate-playlist) branch that I was using as my "cheat sheet" during the code-along.
+
 ## Lessons
 
 * [AJAX 101](/docs/lessons/building-interactive-uis/ajax-101/)
