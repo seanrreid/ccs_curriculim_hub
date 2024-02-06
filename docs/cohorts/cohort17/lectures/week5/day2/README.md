@@ -30,6 +30,8 @@ SOMETHING IS BUSTED (again)
 | Cameron | Eddie   | Sean    | Grant   | Kyra    |
 | Fields  | Derek   | Jaclyn  | Jonathon| McG     |
 
+The solution is in [this repo](https://github.com/seanrreid/working_chuck_norris)
+
 ## Hours 2 - 3
 
 * Upgrading with `async/await`
