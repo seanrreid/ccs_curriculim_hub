@@ -14,8 +14,8 @@ Create a simple stopwatch app that starts the timer and shows the stopped time.
 - When the stopwatch stops, display the time it took
 
 <details>
-<summary>Solution</summary>
-```
+<summary>Stopwatch Solution</summary>
+```js
 const between1and10secs = Math.floor(Math.random() * 10 + 1);
 console.log(between1and10secs);
 
@@ -41,12 +41,72 @@ Create two animals (a tortoise and a hare) that race each other.
 - Display the winner (or determine if it's a tie)
 - Display the total time it took for each animal
 
+<details>
+<summary>Tortoise and the Hare Solution</summary>
+```js
+// Off to the races!
+function race(animal) {
+    // Build the random time in the scope of this function
+    // This insures that we get a new random length each time this is run
+    console.log(`${animal} has started the race!`);
+    const between1and10secs = Math.floor(Math.random() * 10 + 1);
+    // We want to return a promise...
+    return new Promise((resolve) => {
+        // ...that will resolve between 1-10 seconds
+        setTimeout(
+            () =>
+                resolve(
+                    `${animal} finished in ${between1and10secs} seconds`
+                ),
+            // multiply teh random value by 1000
+            // because setTimeout() uses milliseconds
+            between1and10secs * 1000
+        );
+    });
+}
+
+const tortoisePromise = race('Tortoise');
+const harePromise = race('Hare');
+
+Promise.race([tortoisePromise, harePromise])
+    .then((winner) => {
+        // the `winner` variable is assigned to whichever promise finishes first...
+        // it's the value that is returned via onfullfilled
+        // ...so we can tell the user who won.
+        console.log(`Winner: ${winner}\n`);
+    })
+    .catch((error) => {
+        // Just in case something busted, let's log it
+        console.error(`Error: ${error}`);
+    })
+    .finally(() => {
+        // Once all the promises are done, we return the times
+        Promise.all([tortoisePromise, harePromise]).then(
+            ([tortoiseResult, hareResult]) => {
+                console.log(tortoiseResult);
+                console.log(hareResult);
+            }
+        );
+    });
+```
+</details>
+
 ## Large
 
 ### Movie search
+
+:::tip
+You may need an API Key for some of these API requests. Read the docs first!
+:::
 
 Create a new app that lets the user search for movies by title. Sign up for an API key and use the data from the [Open Movie Database](http://www.omdbapi.com/) or from [The Movie DB](https://www.themoviedb.org/faq/api).
 
 Provide the user with a form so that they can enter a movie title. On submit, make the `fetch()` request to the API. Add a `Reset` button that clears the form and the movie information on the page.
 
-After you have confirmed that you can successfully `fetch()` data and `.catch()` errors, cache the data to `localStorage` so that your app doesn't need to make a network request for any locally stored movie data.
+#### Level 9000
+
+:::tip
+This bonus exercise will be much easider if you read/review the [Intro to Promises lesson](/docs/lessons/building-interactive-uis/intro-to-promises/#how-do-you-write-a-function-that-returns-a-promise)
+:::
+
+See if you can cache the data to `localStorage` so that your app doesn't need to make a network request for any locally stored movie data.
