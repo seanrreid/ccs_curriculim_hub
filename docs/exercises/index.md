@@ -6,7 +6,7 @@ title: Full Stack Web Develop Practice
 
 These exercises are provided to give the student the opportunity to do focused exercises on a particular topic.
 
-Generally, each set of exercises are broken up into "Small," "Medium," and "Large" according to their respective difficulty levels.
+When applicable, exercises are broken up into "Small," "Medium," and "Large" according to their respective difficulty levels.
 
 In many cases there are solutions provided. However, these are examples of _possible_ solutions. It is entirely possible, and likely, that your solution will look slightly different. Use the solutions as a guide to check _your_ work.
 

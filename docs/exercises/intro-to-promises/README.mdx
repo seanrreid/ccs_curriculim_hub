@@ -1,11 +1,12 @@
 ---
-title: Working with Promises
-sidebar: auto
+title: Practice with Promises
+sidebar_label: Promises
+sidebar_position: 3
 ---
 
-## Small
+Use these exercises to practice working with JavaScript Promises.
 
-### Stopwatch
+## Stopwatch
 
 Create a simple stopwatch app that starts the timer and shows the stopped time.
 
@@ -30,9 +31,7 @@ startPromise.then((value) => console.log(value));
 ```
 </details>
 
-## Medium
-
-### The Tortoise and the Hare
+## The Tortoise and the Hare
 
 Create two animals (a tortoise and a hare) that race each other.
 
@@ -91,22 +90,7 @@ Promise.race([tortoisePromise, harePromise])
 ```
 </details>
 
-## Large
+## Associated Lesson(s)
 
-### Movie search
-
-:::tip
-You may need an API Key for some of these API requests. Read the docs first!
-:::
-
-Create a new app that lets the user search for movies by title. Sign up for an API key and use the data from the [Open Movie Database](http://www.omdbapi.com/) or from [The Movie DB](https://www.themoviedb.org/faq/api).
-
-Provide the user with a form so that they can enter a movie title. On submit, make the `fetch()` request to the API. Add a `Reset` button that clears the form and the movie information on the page.
-
-#### Level 9000
-
-:::tip
-This bonus exercise will be much easider if you read/review the [Intro to Promises lesson](/docs/lessons/building-interactive-uis/intro-to-promises/#how-do-you-write-a-function-that-returns-a-promise)
-:::
-
-See if you can cache the data to `localStorage` so that your app doesn't need to make a network request for any locally stored movie data.
+| :memo: Lesson |[Intro to Promises](/docs/lessons/building-interactive-uis/intro-to-promises/)|
+|---------------|:------------------------|
