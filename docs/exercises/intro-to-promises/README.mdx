@@ -1,0 +1,52 @@
+---
+title: Working with Promises
+sidebar: auto
+---
+
+## Small
+
+### Stopwatch
+
+Create a simple stopwatch app that starts the timer and shows the stopped time.
+
+- Start the stopwatch with a promise
+- End the stopwatch on a random time between 1-10 seconds
+- When the stopwatch stops, display the time it took
+
+<details>
+<summary>Solution</summary>
+```
+const between1and10secs = Math.floor(Math.random() * 10 + 1);
+console.log(between1and10secs);
+
+const startPromise = new Promise((resolve, reject) => {
+    setTimeout(
+        () => resolve(`resolved after ${between1and10secs} seconds`),
+        between1and10secs * 1000
+    );
+});
+
+startPromise.then((value) => console.log(value));
+```
+</details>
+
+## Medium
+
+### The Tortoise and the Hare
+
+Create two animals (a tortoise and a hare) that race each other.
+
+- Start each animals with a separate promise
+- End each promise on a random time between 1-10 seconds
+- Display the winner (or determine if it's a tie)
+- Display the total time it took for each animal
+
+## Large
+
+### Movie search
+
+Create a new app that lets the user search for movies by title. Sign up for an API key and use the data from the [Open Movie Database](http://www.omdbapi.com/) or from [The Movie DB](https://www.themoviedb.org/faq/api).
+
+Provide the user with a form so that they can enter a movie title. On submit, make the `fetch()` request to the API. Add a `Reset` button that clears the form and the movie information on the page.
+
+After you have confirmed that you can successfully `fetch()` data and `.catch()` errors, cache the data to `localStorage` so that your app doesn't need to make a network request for any locally stored movie data.
