@@ -1,0 +1,156 @@
+---
+title: JavaScript Functions, Parameters, Variables
+sidebar_label: JavaScript Fundamentals
+sidebar_position: 2
+---
+
+## Writing a recipe
+
+- Write out a function definition called `marinaraSauce()`. Be sure to be mindful of your syntax!
+- Inside this function, write a series of `console.log();` statements that will print the following marinara sauce recipe:
+    ```sh
+    - Heat a medium-large saucepan over medium heat.
+    - Add 2 tspns of oil and 5 carlic cloves, cook until golden, about 2 minutes
+    - Add 1/4 cup water, 2 cans of crushed tomates, and salt and season with black pepper to taste.
+    - Cover the pot, bring to a boil, reduce the heat to medium low, and simmer until the sauce is heated, about 10 minutes
+    - Stir in 1/4 cup roughly chopped fresh basil, salt and pepper as needed.
+    ```
+- After your function definition, write the line of code that will invoke your function
+
+<details>
+<summary>Solution</summary>
+```js
+// Define the marinaraSauce() function
+function marinaraSauce() {
+    console.log("- Heat a medium-large saucepan over medium heat.");
+    console.log();
+    console.log("- Add 2 tspns of oil and 5 carlic cloves, cook until golden, about 2 minutes");
+    console.log();
+    console.log("- Add 1/4 cup water, 2 cans of crushed tomates, and salt and season with black pepper to taste.");
+    console.log();
+    console.log("- Cover the pot, bring to a boil, reduce the heat to medium low, and simmer until the sauce is heated, about 10 minutes");
+    console.log();
+    console.log("- Stir in 1/4 cup roughly chopped fresh basil, salt and pepper as needed.");
+}
+
+// Call the marinaraSauce() function
+marinaraSauce();
+```
+</details>
+
+### Using Parameters
+
+- In your function definition, change `marinaraSauce()` to take one parameter called `cookName`.
+- Use `cookName` to print "Hey, cookName! This is my marinara sauce recipe!" before the recipe.
+
+<details>
+<summary>Solution</summary>
+
+You can concatenate strings and variables using the `+` operator:
+
+```js
+// Define the marinaraSauce() function
+function marinaraSauce(cookName) {
+    console.log("Hey, " + cookName + "! This is my marinara sauce recipe!");
+    console.log("- Heat a medium-large saucepan over medium heat.");
+    console.log();
+    console.log("- Add 2 tspns of oil and 5 carlic cloves, cook until golden, about 2 minutes");
+    console.log();
+    console.log("- Add 1/4 cup water, 2 cans of crushed tomates, and salt and season with black pepper to taste.");
+    console.log();
+    console.log("- Cover the pot, bring to a boil, reduce the heat to medium low, and simmer until the sauce is heated, about 10 minutes");
+    console.log();
+    console.log("- Stir in 1/4 cup roughly chopped fresh basil, salt and pepper as needed.");
+}
+
+// Call the marinaraSauce() function
+marinaraSauce();
+```
+---
+This version uses the [Template literal syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+```js
+// Define the marinaraSauce() function
+function marinaraSauce(cookName) {
+    console.log(`Hey, ${cookName}! This is my marinara sauce recipe!`);
+    console.log("- Heat a medium-large saucepan over medium heat.");
+    console.log();
+    console.log("- Add 2 tspns of oil and 5 carlic cloves, cook until golden, about 2 minutes");
+    console.log();
+    console.log("- Add 1/4 cup water, 2 cans of crushed tomates, and salt and season with black pepper to taste.");
+    console.log();
+    console.log("- Cover the pot, bring to a boil, reduce the heat to medium low, and simmer until the sauce is heated, about 10 minutes");
+    console.log();
+    console.log("- Stir in 1/4 cup roughly chopped fresh basil, salt and pepper as needed.");
+}
+
+// Call the marinaraSauce() function
+marinaraSauce();
+```
+</details>
+
+
+- Change your function invocation to take "Adam" as a `cookName`
+- When you run your script, you should see  "Hey, Adam! This is my marinara sauce recipe!", followed by the recipe
+
+<details>
+<summary>Solution</summary>
+
+```js
+// Define the marinaraSauce() function
+function marinaraSauce(cookName) {
+    console.log("Hey, " + cookName + "! This is my marinara sauce recipe!");
+    console.log("- Heat a medium-large saucepan over medium heat.");
+    console.log();
+    console.log("- Add 2 tspns of oil and 5 carlic cloves, cook until golden, about 2 minutes");
+    console.log();
+    console.log("- Add 1/4 cup water, 2 cans of crushed tomates, and salt and season with black pepper to taste.");
+    console.log();
+    console.log("- Cover the pot, bring to a boil, reduce the heat to medium low, and simmer until the sauce is heated, about 10 minutes");
+    console.log();
+    console.log("- Stir in 1/4 cup roughly chopped fresh basil, salt and pepper as needed.");
+}
+
+// Call the marinaraSauce() function
+marinaraSauce("Adam");
+```
+</details>
+
+
+### Using Variables
+
+- At the top of your function definition, define a variable called `two`, and assign it the number value `2`
+- Define another variable called "oneFourth", and assign it the string value `"1/4"`
+- Use string concatenation (i.e. the "+" sign) to replace any instance of 2 or 1/4 that occurs in the recipe
+
+<details>
+<summary>Solution</summary>
+```js
+// Define the marinaraSauce() function
+function marinaraSauce(cookName) {
+    var two = 2;
+    var oneFourth = "1/4";
+    console.log("Hey, " + cookName + "! This is my marinara sauce recipe!");
+    console.log("- Heat a medium-large saucepan over medium heat.");
+    console.log();
+    console.log("- Add " + two + " tspns of oil and 5 carlic cloves, cook until golden, about " + two + " minutes");
+    console.log();
+    console.log("- Add " + oneFourth + " cup water, " + two + " cans of crushed tomates, and salt and season with black pepper to taste.");
+    console.log();
+    console.log("- Cover the pot, bring to a boil, reduce the heat to medium low, and simmer until the sauce is heated, about 10 minutes");
+    console.log();
+    console.log("- Stir in " + oneFourth + " cup roughly chopped fresh basil, salt and pepper as needed.");
+}
+
+// Call the marinaraSauce() function
+marinaraSauce("Adam");
+```
+</details>
+
+
+## Associated Lessons
+
+| :memo: Lesson |[JavaScript Intro](/docs/lessons/solving-problems-using-code-js/javascript-intro/)|
+|---------------|:------------------------|
+| :memo: Lesson |[JavaScript Variables & Functions](/docs/lessons/solving-problems-using-code-js/variables-functions/)|
+
