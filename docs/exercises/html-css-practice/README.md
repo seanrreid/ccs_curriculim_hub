@@ -47,6 +47,7 @@ Examples: https://creativemarket.com/blog/90s-web-designs
 
 ## Associated Lessons
 
+|        | Lesson Topic |
+|--------|:------------------------|
 | :memo: |[HTML 101](/docs/lessons/front-end-foundations/html-101/)|
-|---------------|------------------------|
 | :memo: |[CSS 101](/docs/lessons/front-end-foundations/css-101/)|
