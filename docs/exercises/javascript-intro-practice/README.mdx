@@ -1,0 +1,795 @@
+---
+title: JavaScript Introduction
+sidebar_label: JavaScript Intro
+sidebar_position: 3
+---
+
+## Numbers
+
+### Numbers
+
+- Define a function called `makeANumber()`
+- Declare a variable `myNum` and assign any number to it, then return `myNum`
+
+:::tip
+`myNum` can be _any_ valid JavaScript number
+:::
+
+<details>
+<summary>Solution</summary>
+```js
+function makeANumber () {
+    var myNum = 42;
+    return myNum;
+}
+```
+</details>
+
+### Integers
+
+- Define a function called `makeAnInteger()`
+- Declare a variable `myInt` and assign an integer to it, then return `myInt`
+
+<details>
+<summary>Solution</summary>
+```js
+function makeAnInteger() {
+    var myInt = 42;
+    return myInt;
+}
+```
+</details>
+
+### Floats
+
+- Define a function called `makeAFloat`
+- Declare a variable `myFloat` and assign a floating point number to it, then return `myFloat`
+
+<details>
+<summary>Solution</summary>
+```js
+function makeAFloat() {
+    var myFloat = 3.14159;
+    return myFloat;
+}
+```
+</details>
+
+### Zero, zilch, nada
+
+- Define a function called `makeZero()`.
+- Declare a variable `zilch` and assign the number 0 to it, then return `zilch`.
+
+<details>
+<summary>Solution</summary>
+```js
+function makeZero () {
+    const zilch = 0;
+    return zilch;
+}
+```
+</details>
+
+## `undefined`, booleans, and `null`
+
+### `undefined`
+
+:::tip
+The value `undefined` means "lack of assignment", which is what this function should return.
+:::
+
+- Define a function called `makeNothing()`
+- Declare a variable `huh` and assign nothing to it, then return `huh`.
+
+<details>
+<summary>Solution</summary>
+```js
+function makeNothing() {
+    const huh;
+    return huh;
+}
+```
+</details>
+
+### Booleans
+
+:::tip
+Remember that the string `"true"` (surrounded by quotes) is not the same thing as boolean `true` (no quotes).
+:::
+
+- Define a function called `makeBoolean()`
+- Declare a variable `myBool` and assign it either `true` or `false`, then return `myBool`.
+
+<details>
+<summary>Solution</summary>
+```js
+function makeBoolean() {
+    var myBool = true;
+    return myBool;
+}
+```
+
+OR:
+
+```js
+function makeBoolean() {
+    var myBool = false;
+    return myBool;
+}
+```
+</details>
+
+- Define a function called `makeTrue()`
+- Declare a variable `yep` and assign boolean `true`, then return `yep`.
+
+<details>
+<summary>Solution</summary>
+```js
+function makeTrue() {
+    var yep = true;
+    return yep;
+}
+```
+</details>
+
+- Define a function called `makeFalse()`
+- Declare a variable `nope` and assign boolean `false`, then return `nope`.
+
+<details>
+<summary>Solution</summary>
+```js
+function makeFalse() {
+    var nope = false;
+    return nope;
+}
+```
+</details>
+
+### `null`
+
+- Define a function called `makeNull()`
+- Declare a variable `nothingMuch` and assign `null` to it, then return `nothingMuch`.
+
+<details>
+<summary>Solution</summary>
+```js
+function makeNull() {
+    var nothingMuch = null;
+    return null;
+}
+```
+</details>
+
+## Strings
+
+:::tip
+Some of these functions will have parameters!
+:::
+
+### `helloWorld()`
+
+Define a function called `helloWorld()`. Return the string `"Hello, world!"`.
+
+<details>
+<summary>Solution</summary>
+```js
+function helloWorld() {
+    return "Hello, world!";
+}
+```
+</details>
+
+### `helloName()`
+
+- Define a function called `helloName()` that accepts 1 parameter ([arity](https://en.wikipedia.org/wiki/Arity) of 1).
+- Use the symbol "name" for the parameter name.
+- Return the string `"Hello, [name]!"` where `[name]` is the value passed to the function.
+
+<details>
+<summary>Solution</summary>
+```js
+function helloName(name) {
+    return "Hello, " + name + "!";
+}
+```
+
+Or, with [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+```js
+function helloName(name) {
+    return `Hello, ${name}!`;
+}
+```
+</details>
+
+### `abstractLength()`
+
+- Return the length of the string "tarPitAbstract" defined below. You may copy and paste the code into your text editor.
+
+:::tip
+Use the [.length property](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
+:::
+
+```js
+function abstractLength() {
+  const tarPitAbstract = 'Complexity is the single major difficulty in the successful development of large-scale software systems. ' +
+    'Following Brooks we distinguish accidental from essential difficulty, but disagree with his premise that most complexity remaining in contemporary systems is essential. ' +
+    'We identify common causes of complexity and discuss general approaches which can be taken to eliminate them where they are accidental in nature. ' +
+    'To make things more concrete we then give an outline for a potential complexity-minimizing approach based on functional programming and Codd’s relational model of data.'
+
+}
+```
+
+<details>
+<summary>Solution</summary>
+
+```js{7}
+function abstractLength() {
+    var tarPitAbstract = 'Complexity is the single major difficulty in the successful development of large-scale software systems. ' +
+    'Following Brooks we distinguish accidental from essential difficulty, but disagree with his premise that most complexity remaining in contemporary systems is essential. ' +
+    'We identify common causes of complexity and discuss general approaches which can be taken to eliminate them where they are accidental in nature. ' +
+    'To make things more concrete we then give an outline for a potential complexity-minimizing approach based on functional programming and Codd’s relational model of data.'
+
+    return tarPitAbstract.length;
+}
+```
+</details>
+
+
+### `makeLoud()`
+
+- Modify the following function, returning the string `chorus` in all capital letters.
+
+:::tip
+Use the [.toUpperCase method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
+:::
+
+```js
+function makeLoud() {
+  var chorus = 'Who let the dogs out?';
+
+}
+```
+
+<details>
+<summary>Solution</summary>
+```js{3}
+function makeLoud() {
+  var chorus = 'Who let the dogs out?';
+  return chorus.toUpperCase();
+}
+```
+</details>
+
+### `makeQuiet()`
+
+- In the following `makeQuiet()` function, assume that a string is passed as the parameter `str`.
+- Return the value of `str` in all lower case letters.
+
+> HINT: use the [.toLowerCase method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
+
+```js
+function makeQuiet(str) {
+
+}
+```
+
+<details>
+<summary>Solution</summary>
+```js{2}
+function makeQuiet(str) {
+    return str.toLowerCase();
+}
+```
+</details>
+
+## Math
+
+:::tip
+This MDN article may be helpful: [MDN: Arithmetic Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
+:::
+
+### `add99()`
+
+- Create a function called `add99()` that takes one argument and adds the number 99 to it.
+- You can assume that the argument passed in will be a number value.
+
+
+<details>
+<summary>Solution</summary>
+```js
+function add99(n) {
+    return 99 + n;
+}
+```
+</details>
+
+### `add()`
+
+- Create a function `add()` that takes 2 arguments and sums them together.
+- Assume that both arguments are numbers.
+
+<details>
+<summary>Solution</summary>
+```js
+function add(n, m) {
+    return n + m;
+}
+```
+</details>
+
+### `subtract()`
+
+- Create a function `subtract()` that takes 2 number arguments and returns their difference (i.e., the second number substracted from the first number).
+
+<details>
+<summary>Solution</summary>
+```js
+function subtract(n, m) {
+    return n - m;
+}
+```
+</details>
+
+### `multiply()`
+
+- Create a function `multiply()` that takes 2 number arguments and returns their product.
+
+<details>
+<summary>Solution</summary>
+```js
+function multiply(n, m) {
+    return n * m;
+}
+```
+</details>
+
+### `divide()`
+
+- Create a function `divide()` that takes 2 number arguments. Divide the first argument by the second and return the result.
+
+<details>
+<summary>Solution</summary>
+```js
+function division(n, m) {
+    return n/m;
+}
+```
+</details>
+
+### `mod()`
+
+- The modulus operator (`%`) finds the remainder from division.
+- Create a function `mod()` that takes 2 number arguments and returns the remainder of the first divided by the second.
+
+<details>
+<summary>Solution</summary>
+```js
+funciton mod(n, m) {
+    return n % m;
+}
+```
+</details>
+
+## Arrays
+
+- [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) are ordered lists of values
+- They share quite a few similarities to Lists in Python
+- You can create an Array using the `[]` characters, with commas separating the individual values
+- An Array can contain multiple types. ie: strings, numbers, boolean, etc...
+- You can access individual values of an array using bracket notation, `array[0]`
+
+### `threeFruits()`
+
+- Define a function called `threeFruits()`
+- Declare a `fruits` variable whose value is the Array `['Apple', 'Banana', 'Cherry']`
+- Return the array of fruit strings.
+
+<details>
+<summary>Solution</summary>
+```js
+function threeFruits() {
+  var fruits = ['Apple', 'Banana', 'Cherry']
+  return fruits;
+}
+```
+</details>
+
+### `multipleTypes()`
+
+- Define a function called `multipleTypes()`
+- Declare a `diverseArray` variable whose value is the Array `['Skateboard', null, 8.75, 'Eiffel Tower', 44, 7, true, null]`.
+- Return the array of values.
+
+<details>
+<summary>Solution</summary>
+```js
+function multipleTypes() {
+    var diverseArray = ['Skateboard', null, 8.75, 'Eiffel Tower', 44, 7, true, null]
+    return diverseArray;
+}
+```
+</details>
+
+#### 23. `indexAccess()`
+
+:::tip
+Remember that arrays start at index 0. So for an array `myArray` the *first* item can be accessed at `myArray[0]`.
+:::
+
+- Define a function called `indexAccess()`
+- In the function, create a `people` array with the names of 6 people.
+  <br/>(_These names should be strings!_)
+- Return the third item from the `people` array.
+
+<details>
+<summary>Solution</summary>
+
+```js
+function indexAccess () {
+  var people = ['Jenny', 'James', 'Jimmy', 'Jonny', 'Julia', 'Jessica'];
+  return people[2];
+}
+```
+</details>
+
+### `useLength()`
+
+- Define a function called `useLength()`
+- In the function, create an `arr` array that contains the strings `'a'`, `'b'`, and `'c'`
+- Return the [length of the array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length).
+
+<details>
+<summary>Solution</summary>
+```js
+function useLength () {
+  const arr = ['a', 'b', 'c'];
+  return arr.length;
+}
+```
+</details>
+
+### `usePush()`
+
+ -Define a function called `usePush()` with an `arr` variable
+- `arr` is an array that contains the strings `'a'`, `'b'`, and `'c'`.
+- Add the string `'d'` to the end of an array using the [.push() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push).
+- Return the array.
+
+<details>
+<summary>Solution</summary>
+```js
+function usePush() {
+    const arr = ['a', 'b', 'c'];
+    arr.push('d');
+
+    return arr;
+}
+```
+</details>
+
+### `useIndefOf()`
+
+:::tip
+You can search an array for an item using the [.indexOf() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf). This method accepts a value as an argument.
+
+It returns either:
+
+- the *first* index of an item that matches the argument
+- or `-1` if there are no matching items
+:::
+
+- Create a function called `useIndexOf()` with an array `arr`
+- The array contains the values `'C'`, `'A'`, `'G'`, `'T'`, `'A'`, `'A'`, `'G'`, `'T'`.
+- Return the index of `'T'`.
+
+<details>
+<summary>Solution</summary>
+```js
+function useIndexOf () {
+    const arr = ['C', 'A', 'G', 'T', 'A', 'A', 'G', 'T']
+
+    return arr.indexOf('T');
+}
+```
+</details>
+
+
+### `useJoin()`
+
+:::tip
+You can convert an Array into a string using the [.join() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join).
+:::
+
+- Define a `useJoin()` function with an array containing the strings `'a'`, `'b'`, `'c'`, `'d'`, `'e'`, `'f'`.
+- Return the string `'a-b-c-d-e-f'`.
+
+<details>
+<summary>Solution</summary>
+```js
+function useJoin() {
+    const arr = ['a', 'b', 'c', 'd', 'e', 'f'];
+    return arr.join('-');
+
+}
+```
+</details>
+
+## Objects
+
+- Objects are collections of key/value pairs. They are similar (not the same!) to Dictionaries in Python
+- You can create an Object using the `{}` brackets
+- An Object can contain any type for each property. ie: strings, numbers, boolean, etc
+- You can access individual values of an object using bracket notation, `myObject['key']`
+- All Object keys are strings
+- You can add properties to an Object by assigning a value to a new key
+
+Useful reference:
+[MDN: Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+### Get value
+
+- Return the `fruitName` of the `bestFruit` Object below.
+
+```js
+function keyAccess () {
+  const bestFruit = { fruitName: 'Granny Smith Apple', count: 42, isDelicious: true }
+
+  // console.assert() allows you to declare things that should be true; it's like
+  // a sanity-check for your code.
+  // Here we are confirming that object access works like we expect:
+  console.assert(bestFruit['fruitName'] === 'Granny Smith Apple')
+  console.assert(bestFruit['count'] === 42)
+  console.assert(bestFruit['isDelicious'] === true)
+
+  // return the fruitName of the bestFruit Object here.
+
+}
+```
+
+<details>
+<summary>Solution</summary>
+
+The answer was hidden in the question!
+
+```js
+function keyAccess () {
+  const bestFruit = { fruitName: 'Granny Smith Apple', count: 42, isDelicious: true }
+
+  // console.assert() allows you to declare things that should be true; it's like
+  // a sanity-check for your code.
+  // Here we are confirming that object access works like we expect:
+  console.assert(bestFruit['fruitName'] === 'Granny Smith Apple')
+  console.assert(bestFruit['count'] === 42)
+  console.assert(bestFruit['isDelicious'] === true)
+
+  // return the name of the bestFruit Object here.
+  return bestFruit['fruitName'];
+}
+```
+
+</details>
+
+### Add a key
+
+- Add the property 'color' and assign it the string 'yellow' in the bestFruit object below.
+- Then return the object.
+
+```js
+function addKey () {
+  const bestFruit = { name: 'Granny Smith Apple', count: 42 }
+
+  // Note that before a key is assigned it will always return `undefined`
+  console.assert(bestFruit['isDelicious'] === undefined)
+  bestFruit['isDelicious'] = true
+  console.assert(bestFruit['isDelicious'] === true)
+
+  // Assign 'green' to the key 'color' of bestFruit here and return bestFruit
+
+}
+```
+
+<details>
+<summary>Solution</summary>
+```js
+function addKey () {
+  const bestFruit = { name: 'Granny Smith Apple', count: 42 }
+
+  // Note that before a key is assigned it will always return `undefined`
+  console.assert(bestFruit['isDelicious'] === undefined)
+  bestFruit['isDelicious'] = true
+  console.assert(bestFruit['isDelicious'] === true)
+
+  // Assign 'green' to the key 'color' of bestFruit here and return bestFruit
+  bestFruit['color'] = 'green';
+}
+```
+</details>
+
+### Large Objects
+
+:::tip
+When an Object gets large, it is normal to define its properties one-per-line as shown below
+:::
+
+- Create your own object named `bootcampStudent` and give it 8 properties similar to the `bootcampInstructor` object.
+- Return your bootcampStudent object.
+
+```js
+function largeObject () {
+    const bootcampInstructor = {
+        name: 'Sean',
+        email: 'sean@buildcarolina.org',
+        age: 48,
+        heightFeet: 5.9,
+        favoriteColor: 'green',
+        homeTown: 'Pittsburgh',
+        pet: 'cats',
+        ownsCar: true
+    }
+  // create a bootcampStudent object here similar to bootcampInstructor and return it
+
+}
+```
+
+<details>
+<summary>Solution</summary>
+```js
+function largeObject () {
+    const bootcampInstructor = {
+        name: 'Sean',
+        email: 'sean@buildcarolina.org',
+        age: 48,
+        heightFeet: 5.9,
+        favoriteColor: 'green',
+        homeTown: 'Pittsburgh',
+        pet: 'cats',
+        ownsCar: true
+    }
+    // create a bootcampStudent object here similar to bootcampInstructor and return it
+    const bootcampStudent = {
+        name: 'Bruce',
+        email: 'bruce@waynecorp.co',
+        age: 44,
+        heightFeet: 6.2,
+        favoriteColor: 'black',
+        homeTown: 'Gotham',
+        pet: 'dog',
+        ownsCar: true
+    }
+}
+```
+</details>
+
+### Notation
+
+:::tip
+Q: How do I decide whether to use dot or bracket notation?
+
+A: It depends, :grinnning:
+Bracket notation is more flexible, but dot notation is a more convenient, readable syntax.
+
+This MDN article is helpful: [MDN: Property Accessors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors)
+
+:::
+
+#### Bracket Notation
+
+- Here is an object which contains a nested array
+- Return the second item in the array `favoriteFoods`
+
+```js
+function nestedArray () {
+    const bootcampInstructor = {
+        name: 'Sean',
+        favoriteColor: 'green',
+        favoriteFoods: [
+            'tacos',
+            'pierogi',
+            'waffles'
+        ]
+    }
+
+    // Note that you can chain the bracket notation to reach into the Object AND into the Array.
+    console.assert(bootcampInstructor['favoriteFoods'][0] === 'tacos')
+
+    // Return the second item of the nested array favoriteFoods
+
+}
+```
+
+<details>
+<summary>Solution</summary>
+
+```js
+function nestedArray () {
+    const bootcampInstructor = {
+        name: 'Sean',
+        favoriteColor: 'green',
+        favoriteFoods: [
+            'tacos',
+            'pierogi',
+            'waffles'
+        ]
+    }
+
+    // Note that you can chain the bracket notation to reach into the Object AND into the Array.
+    console.assert(bootcampInstructor['favoriteFoods'][0] === 'tacos')
+
+    // Return the second item of the nested array favoriteFoods
+    return bootcampInstructor['favoriteFoods'][1];
+}
+```
+</details>
+
+#### Dot Notation
+
+- Return the name of the `bootcampInstructor` Object below using dot notation
+
+```js
+function dotNotation () {
+    const bootcampInstructor = {
+        name: 'Sean',
+        favoriteColor: 'green',
+        favoriteFoods: [
+            'tacos',
+            'pierogi',
+            'waffles'
+        ]
+    }
+
+    // Some examples of using dot notation vs bracket notation:
+    console.assert(bootcampInstructor.name === 'Susan')
+    console.assert(bootcampInstructor['name'] === 'Susan')
+    const nameString = 'name'
+    console.assert(bootcampInstructor[nameString] === 'Susan')
+
+    console.assert(bootcampInstructor.favoriteColor === 'green')
+    console.assert(bootcampInstructor['favoriteColor'] === 'green')
+    console.assert(bootcampInstructor['favorite' + 'Color'] === 'green')
+
+    console.assert(bootcampInstructor['favoriteFoods'][0] === 'chicken pot pie')
+    console.assert(bootcampInstructor.favoriteFoods[0] === 'chicken pot pie')
+
+    // Return the name of the bootcampInstructor Object using dot notation
+
+}
+```
+
+<details>
+<summary>Solution</summary>
+```js
+function dotNotation () {
+   const bootcampInstructor = {
+        name: 'Sean',
+        favoriteColor: 'green',
+        favoriteFoods: [
+            'tacos',
+            'pierogi',
+            'waffles'
+        ]
+    }
+
+    // Some examples of using dot notation vs bracket notation:
+    console.assert(bootcampInstructor.name === 'Sean')
+    console.assert(bootcampInstructor['name'] === 'Sean')
+
+    console.assert(bootcampInstructor.favoriteColor === 'green')
+    console.assert(bootcampInstructor['favoriteColor'] === 'green')
+
+    console.assert(bootcampInstructor['favoriteFoods'][0] === 'tacos')
+    console.assert(bootcampInstructor.favoriteFoods[0] === 'tacos')
+
+    // Return the name of the bootcampInstructor Object using dot notation
+    return bootcampInstructor.name;
+}
+```
+</details>
+
+## Associated Lessons
+
+|        | Lesson Topic |
+|--------|:------------------------|
+| :memo: |[JavaScript Intro](/docs/lessons/solving-problems-using-code-js/javascript-intro/)|
+| :memo: |[JavaScript Variables & Functions](/docs/lessons/solving-problems-using-code-js/variables-functions/)|
+| :memo: |[JavaScript Variables & Functions](/docs/lessons/solving-problems-using-code-js/objects-loops/)\
