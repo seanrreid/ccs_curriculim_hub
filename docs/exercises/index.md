@@ -14,4 +14,4 @@ In many cases there are solutions provided. However, these are examples of _poss
 
 ## Thanks
 
-Many thanks to [Chris Aquino](https://github.com/radishmouse) for his input these lessons. Many of these were done by, or in collaboration with, Chris.
+Many thanks to [Chris Aquino](https://github.com/radishmouse) for his input these lessons. Many of these were done alongside, or by, Chris.
