@@ -35,6 +35,8 @@ Let's group program an interface!
 - Let's talk about [Toy Programs](https://en.wikipedia.org/wiki/Toy_program)
 - You decide what interactions to code and we'll code it together!
 
+**SPOILER**: Here's the repo for what we did in class -> [Why Not Exercise (aka Dark Mode Toggle)](https://github.com/seanrreid/why_not_exercise)
+
 ## Listen
 
 - [Syntax.FM: Potluck: Is Virtual Dom Bad?](https://syntax.fm/show/724/potluck-is-virtual-dom-bad)
