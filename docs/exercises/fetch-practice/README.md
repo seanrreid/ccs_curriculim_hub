@@ -12,7 +12,7 @@ Use these exercises to practice working with the `fetch()` APIs, promises, and u
 - Create an `index.html` file (remember the shortcut to generate the boilerplate)
 - Create a `scripts` or `js` folder and add your JavaScript file (i.e. a file named `scripts.js`, `main.js`, or `index.js`)
 - Create a `styles` or `css` folder and add your Stylesheet (i.e. a file named `styles.css`, or `index.css`)
-- **[OPTIONANL]** Use a CSS framework for added styling (i.e. [Bulma](https://bulma.io/documentation/overview/start/) or [Tailwind](https://tailwindcss.com/docs/installation/play-cdn))
+- **[OPTIONAL]** Use a CSS framework for added styling (i.e. [Bulma](https://bulma.io/documentation/overview/start/) or [Tailwind](https://tailwindcss.com/docs/installation/play-cdn))
 
 ## Choose Your Own Adventure
 
@@ -272,7 +272,7 @@ Provide the user with a form so that they can enter a movie title. On submit, ma
 ## Level 9000
 
 :::tip
-This bonus exercise will be much easider if you read/review the [Intro to Promises lesson](/docs/lessons/building-interactive-uis/intro-to-promises/#how-do-you-write-a-function-that-returns-a-promise)
+This bonus exercise will be much easier if you read/review the [Intro to Promises lesson](/docs/lessons/building-interactive-uis/intro-to-promises/#how-do-you-write-a-function-that-returns-a-promise)
 :::
 
 Choose one of the above exercises and see if you can cache the data from  to `localStorage` so that your app doesn't need to make a network request for any locally stored data.
