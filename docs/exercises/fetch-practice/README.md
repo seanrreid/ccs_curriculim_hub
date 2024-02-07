@@ -6,7 +6,7 @@ sidebar_position: 6
 
 Use these exercises to practice working with the `fetch()` APIs, promises, and updating the DOM.
 
-## Must Haves:
+## Must Haves
 
 - Create a new folder, initialize a git repository
 - Create an `index.html` file (remember the shortcut to generate the boilerplate)
