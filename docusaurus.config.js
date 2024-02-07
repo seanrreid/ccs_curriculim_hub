@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'CCS Full Stack Immersive Program',
+    title: 'Carolina Code School Curriculum Hub',
     tagline: 'Take charge of your career.',
     favicon: 'img/favicon.ico',
 
@@ -21,7 +21,7 @@ const config = {
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
     organizationName: 'seanrreid', // Usually your GitHub org/user name.
-    projectName: 'web-dev-curriculum', // Usually your repo name.
+    projectName: 'ccs_curriculum_hub', // Usually your repo name.
 
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
@@ -65,7 +65,7 @@ const config = {
                         type: 'docSidebar',
                         sidebarId: 'tutorialSidebar',
                         position: 'left',
-                        label: 'Overview',
+                        label: 'Curriculum Hub',
                     },
                     // { to: '/blog', label: 'Blog', position: 'left' },
                 ],

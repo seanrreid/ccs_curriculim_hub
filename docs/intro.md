@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
-title: Carolina Code School Course Overview
+sidebar_label: Curriculum Hub
+title: Carolina Code School Curriculum Hub
 ---
 
 Our Web Development Immersive course is a 12-week in-person coding course designed to prepare students with the skills they need to meet the needs of employers right here in the Carolinas.
