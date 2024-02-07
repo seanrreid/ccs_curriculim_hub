@@ -23,6 +23,10 @@ We're going to do a [retrospective](/docs/lessons/front-end-foundations/project-
   - Do More Of
   - Start Doing
   - Stop Doing
+- You'll add any relevant thoughts for the various columns (it's fine if you don't have a thought for a column)
+- You can vote for items that resonate with you (1 vote per item per person)
+
+You can read about how EasyRetro recommends [running a retrospective](https://easyretro.io/blog/how-to-run-a-basic-retrospective-using-funretro/).
 
 ### Dealer's Choice
 
