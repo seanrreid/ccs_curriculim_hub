@@ -1,0 +1,36 @@
+---
+title: Python Lists - Write Your Own Madlib
+sidebar_label: Python List - Madlibs
+sidebar_position: 4
+---
+
+Use this exercises to practice working with Lists and string interpolation in Python.
+
+## Must Haves
+
+- Create a new folder, initialize a git repository
+- Create a file called `madlibs.py`
+
+## String interpolation + Lists
+
+- Define the necessary word types, i.e. "noun, verb, adjective," using a list.
+- The words will be the `key`, the initial `value` for each `key` will be blank
+- Using the list, prompt the user for input to update the `value` for each `key`
+- Using String Interpolation, print a silly sentence with those words.
+
+<details>
+<summary>Solution</summary>
+```python
+madlib_word_choices = {
+    "noun": "",
+    "verb": "",
+    "adjective": ""
+}
+
+madlib_word_choices["noun"] = input("Enter a noun: ")
+madlib_word_choices["verb"] = input("Enter a verb: ")
+madlib_word_choices["adjective"] = input("Enter an adjective: ")
+
+print("The %s %s is %s" % (madlib_word_choices['adjective'], madlib_word_choices['noun'], madlib_word_choices['verb']))
+```
+</details>
