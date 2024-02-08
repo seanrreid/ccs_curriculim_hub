@@ -4,20 +4,21 @@ sidebar_label: Day 4
 title: Week 5 - Day 4
 keywords:
     - javascript
+    - arrays
 ---
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
-## Web Components
+### Why Not? Exercise
 
-* We're going to spend a little time looking at [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)
+* This [Codepen Toggle Demo](https://codepen.io/whitep4nth3r/pen/VwEqrQL) offers another, similar, approach to toggling the dark/light themes
 
 ## Code Along
 
-### Why Not?
+### Going deeper into JSON arrays
 
-* Continue work on [Why Not Exercise (aka Dark Mode Toggle)](https://github.com/seanrreid/why_not_exercise) repo
-* This [Codepen Toggle Demo](https://codepen.io/whitep4nth3r/pen/VwEqrQL) offers another, similar, approach to toggling the dark/light themes
+* Fork and clone this repo ->  [JS Flight Array](https://github.com/seanrreid/js_flight_array)
+* We'll answer the questions as a code along in class
 
 ### Mood Ring
 
