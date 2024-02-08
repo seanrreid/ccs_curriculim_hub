@@ -1,0 +1,130 @@
+---
+title: Python Conditionals and Lists
+sidebar_label: Python Conditionals & Lists
+sidebar_position: 1
+---
+
+Use these exercises to practice working with conditional statements, `while` loops, and Lists in Python.
+
+## Must Haves
+
+- Create a new folder, initialize a git repository
+- Create a separate file for each section (file names are listed per section)
+
+## Conditionals
+
+Save these in a file called `conditionals.py`.
+
+### Magic Number
+
+- First, import the [`random()` module](https://www.pythoncheatsheet.org/modules/random-module)
+  - `import random` (It's built in to Python, it just needs to be imported!)
+- Ask the user to guess a number between a certain range, i.e. between 1-10
+- Make a variable called `magic_number`
+- Assign a value to `magic_number` using the `random()` module, have it select an integer between the same range.
+- Print the value of the `magic_number`
+- Respond to the user based on their guess:
+  - If they're correct give a victory message, i.e. "ARE YOU A MIND READER!?!?!"
+  - If they're out of the range, i.e. they guess 12, reply with: "YOU'RE OUT OF RANGE!!"
+  - If they're incorrect, tell them to try again.
+
+<details>
+<summary>Solution</summary>
+```python
+import random
+user_input = int(input("Guess a number between 5-50: "))
+magic_number = random.randint(5, 50)
+
+print(magic_number)
+rint("Sorry. Try again.")
+
+if user_input == magic_number:
+    print("ARE YOU A MIND READER!?!?!")
+elif (user_input < 5) or (user_input > 50):
+    print("YOU'RE OUT OF RANGE!!")
+else:
+    print("Sorry. Try again.")
+```
+</details>
+
+## Lists
+
+Save these in a file called `lists.py`.
+
+### Part 1 - Change a List
+
+- Use the following list: `numbers = [1, 2, 3, 4, 5, 99, 2600, 300]`
+- There is a Python method that will [reverse a list](https://realpython.com/python-reverse-list/).
+- Create a new variable called `reversed_list` and assign it the reversed value of `numbers`.
+- Print the values of each list.
+
+<details>
+<summary>Solution</summary>
+```python
+numbers = [1, 2, 3, 4, 5, 99, 2600, 300]
+
+print(numbers)
+numbers.reverse()
+print(numbers)
+```
+</details>
+
+### Part 2 - String to List
+
+- Make a string with at least 6 characters.
+- Make an empty list (hint: create a variable, it's value will look like an empty array in JavaScript)
+- Loop through each letter in your string and for each letter in the string, append it to the empty list.
+- Revese the list.
+- Create a new variable that is an empty string (just like in JavaScript).
+- Loop through the list, for each letter in the list, add it to the new string your created.
+- Print out the new string. It should be the reversed version of the string you created. i.e. "sean" -> "neas".
+
+<details>
+<summary>Solution</summary>
+```python
+test_stuff = "Do rad stuff."
+
+string_list = []
+for letter in test_stuff:
+    string_list.append(letter)
+print(string_list)
+string_list.reverse()
+print(string_list)
+
+new_string = ""
+for letter in string_list:
+    new_string += letter
+print(new_string)
+```
+</details>
+
+### Part 3 - List + Conditional
+
+- Make a new list containing members of your favorite band/sports team/television show.
+- Write a conditional statement to check if a specific person is in that list.
+  - If they are in the list, remove them.
+  - If they're not in the list, add them.
+- Can you write a condition that does _both_ of these checks.
+  - **HINT:** Think like this: "If the person exists, then remove them. Otherwise, if they don't, add them.
+- Print the updated list.
+
+<details>
+<summary>Solution</summary>
+```python
+power_rangers = [
+    "Jason",
+    "Trini",
+    "Zack",
+    "Kim",
+    "Billy",
+    "Tommy"
+]
+
+print(power_rangers)
+if "Tommy" in power_rangers:
+    power_rangers.remove("Tommy")
+    print(power_rangers)
+else:
+    print("IT'S MORPHIN TIME!")
+```
+</details>
