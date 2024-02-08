@@ -1,7 +1,7 @@
 ---
 title: Practice with Fetch
-sidebar_label: Fetch API
-sidebar_position: 6
+sidebar_label: JS Fetch API
+sidebar_position: 9
 ---
 
 Use these exercises to practice working with the `fetch()` APIs, promises, and updating the DOM.
