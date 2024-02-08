@@ -1,0 +1,121 @@
+---
+title: Welcome to JavaScript Air - Array Edition
+sidebar_label: JS Arrays - Flight Log
+sidebar_position: 10
+---
+
+This is starter code to practice working with getting data you need from JSON.
+These exercises will apply whether it's your own API, or data provided by a third party.
+
+## Must Haves
+
+- Fork and clone this repo -> [https://github.com/seanrreid/js_flight_array](https://github.com/seanrreid/js_flight_array)
+- Run the `serve` command in the folder to load the `index.html` file.
+- Check the console for output
+
+## Level 1
+
+- Sort and return the data based on the airline
+  <br/>Hint: Review [MDN `array.sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#sorting_array_of_objects)
+
+Sort and return the data based on the arrival airport
+
+## Level 2
+
+- Filter out everything but the flights made by Delta, return the new data
+  <br/>Hint: Review [MDN `array.filter()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter#filtering_invalid_entries_from_json)
+
+## Level 3
+
+- Do the same as before, but try doing it with reduce() instead of filter
+  <br/>Hint: Review [MDN `array.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce#sum_of_values_in_an_object_array)
+
+<details>
+<summary>Solutions</summary>
+```js
+// sort() will mutate the array, so let's make a shallow copy first.
+const sortedArray = myArray.slice();
+
+// Sort based on airline
+sortedArray.sort((a, b) => {
+    // Converting the case can normalize them for comparison
+    const airlineA = a.airline.toUpperCase();
+    const airlineB = b.airline.toUpperCase();
+    if (airlineA < airlineB) {
+        return -1;
+    }
+    if (airlineA > airlineB) {
+        return 1;
+    }
+
+    return 0;
+});
+
+// We can use a map() to print the results to the console
+sortedArray.map((flight) => console.log(flight.airline));
+
+// Sort based on arrival airport
+const sortedArrivalArray = myArray.slice();
+sortedArrivalArray.sort((a, b) => {
+    const arrivalA = a.arrival_airport;
+    const arrivalB = b.arrival_airport;
+
+    if (arrivalA < arrivalB) {
+        return -1;
+    }
+    if (arrivalA > arrivalB) {
+        return 1;
+    }
+    return 0;
+});
+
+sortedArrivalArray.map((airport) => console.log(airport.arrival_airport));
+
+
+// filter for Delta
+const filteredArray = myArray.filter((flight) => {
+    if (flight.airline === 'United') {
+        return true;
+    }
+    return false;
+});
+
+filteredArray.map((flight) => console.log(flight.airline));
+
+// reduce()
+
+// EXAMPLE: Take an array of number and return their sum
+const foo = [1, 2, 3, 4];
+
+const sum = foo.reduce((accumulator, currentValue) => {
+    console.log("ACCUMLATOR VALUE:", accumulator);
+    console.log("CURRENT VALUE:", currentValue);
+    return accumulator + currentValue;
+});
+
+console.log(sum);
+
+// Let's start with an empty array,
+// this will give us something to add new values into
+const initialValue = [];
+// Then call the reduce(),starting with the empty array...
+const reducedArray = myArray.reduce((accumlator, currentValue) => {
+    // ...and updating when it finds a match
+    if (currentValue.airline === 'Delta') {
+        // Use the spread (...) operator
+        // to add the new entry to the current array
+        return [currentValue, ...accumlator];
+    }
+    // If no match, just return whatever is in the accumlator
+    return accumlator;
+}, initialValue);
+
+console.log(reducedArray);
+```
+</details>
+
+## Associated Lessons
+
+|        | Lesson Topic |
+|--------|:------------------------|
+| :memo: |[JS Objects, Loops, Arrays](/docs/lessons/solving-problems-using-code-js/objects-loops/)|

@@ -1,7 +1,7 @@
 ---
 title: Welcome to JavaScript Air
 sidebar_label: JS Airlines
-sidebar_position: 10
+sidebar_position: 11
 ---
 <!-- markdownlint-disable no-inline-html -->
 Use a mock data API with Flight Data to create an airport flight dashboard.
@@ -75,7 +75,7 @@ The [Intro to Promises lesson](/docs/lessons/building-interactive-uis/intro-to-p
 Look into CSS Animation, like [this Codepen demo](https://codepen.io/edeesims/pen/wvpYWW), to find options for switching the boards.
 :::
 
----
+## Associated Lessons
 
 |        | Lesson Topic |
 |--------|:------------------------|
