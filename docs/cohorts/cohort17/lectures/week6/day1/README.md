@@ -35,6 +35,6 @@ keywords:
 
     (_emphasis added_)
 
-- [Why Learning to Code is So Damn Hard](https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/)
+- [Why Learning to Code is So Damn Hard](https://medium.com/@andrewlatta/why-learning-to-code-is-so-damn-hard-303eae632820)
 
     > [Quincy] was convinced that the seemingly normal programmers I ran into were actually sociopaths who had experienced, then repressed, the trauma of learning to code.
