@@ -12,3 +12,8 @@ sidebar_position: 2
 - Lastly, based on your work with the Apple CEOs exercise, write a `schema.sql` for your Music App.
   - What kind of data do you want to store?
   - What are the relationships for that data?
+
+
+
+
+/docs/lessons/databases/

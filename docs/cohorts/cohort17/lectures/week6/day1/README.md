@@ -15,7 +15,7 @@ keywords:
 
 ## Lessons
 
-- [SQL Databases](/docs/lessons/databases/)
+- [SQL Databases](/docs/lessons/databases/sql/)
 
 ## Tools
 
