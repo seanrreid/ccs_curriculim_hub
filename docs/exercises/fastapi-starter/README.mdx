@@ -1,0 +1,122 @@
+---
+title: FastAPI Starter Exercise
+sidebar_label: FastAPI - Exercise 1
+sidebar_position: 20
+---
+
+## Must Haves
+
+### Setup your enviroment
+
+1. Initialize a new environment -> `python -m venv env`
+2. Don't forget to activate it  -> `source env/bin/activate`
+
+### Install the required libraries for FastAPI
+
+- Option one: Normal install
+  - `pip install fastapi uvicorn`
+- Option two: `requirements.txt`
+  - `pip install -r requirements.txt`
+
+## Step 1 - Root Route
+
+- Make a root route, have it return `Hello World'
+
+eg. `http://127.0.0.1:8000/`
+
+## Step 2 - New endpoint
+
+- Make GET endpoint, call it `items`
+
+eg. `http://127.0.0.1:8000/items/`
+
+## Step 3 - Path parameter
+
+- Have the new endpoint accept a path parameter called `item_id
+- Have it return the item ID value
+
+eg. `http://127.0.0.1:8000/items/1`
+
+## Step 4 - Query parameters
+
+- Have the `items` route accept query parameters `skip` and `limit`
+- These parameters are integers, let Python know this when you define the function
+- Return the value of these parameters
+
+eg. `http://127.0.0.1:8000/items/?skip=5&limit=20`
+
+## Step 4 - Query parameters continued...
+
+- Add another query parameter `q`, it will expect a string value
+
+### Step 4.5
+
+- If `q` exists, return the value of `q`, `skip` and `limit`
+- If `q` doesn't exist, return _only_ `skip` and `limit`
+
+eg. `http://127.0.0.1:8000/items/?q=some search string`
+eg. `http://127.0.0.1:8000/items/?skip=1&limit=5&q=some search`
+
+## Step 5 - Another endppoint
+
+- Add another route called `users`
+- It will accept a path parameter for `user_id`
+- Return the user ID
+
+eg. `http://127.0.0.1:8000/users/42`
+
+## Step 5 - A combined endpoint
+
+- Add an endpoint to `users` called `items`
+- `items` will be called _after_ the `user_id` value is passed
+- Combine the earlier `skip` and `limit` query parameters with this new endpoint
+- Return the `user_id`, `skip`, and `limit` values.
+
+eg. `http://127.0.0.1:8000/users/42/items/?skip=5&limit=10`
+
+<details>
+<summary>Solution</summary>
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+# Create our root route
+@app.get("/")
+def read_root():
+    return {"message": "Hello, World!"}
+
+# Add a new GET endpoint
+# It will accept a path parameter
+@app.get("/items/{item_id}")
+# Define the data type to return the proper data
+# int will return an integer
+def read_item(item_id: int):
+    return {"item_id": item_id}
+
+# Query Parameters? Sure!
+@app.get("/items/")
+# Define multiple data types
+# We can also setup for query parameters
+def read_items(skip: int = 0, limit: int = 10, q: str = None):
+    if q:
+        return {"skip": skip, "limit": limit, "q": q}
+    else:
+        return {"skip": skip, "limit": limit}
+
+# Can this route take path parameters too? Yep!
+@app.get("/users/{user_id}")
+def read_user_items(user_id):
+    return {"user_id": user_id}
+
+# Path & Query Parameters? Why not!
+@app.get("/users/{user_id}/items/")
+def read_user_items(user_id, skip, limit):
+    return {"user_id": user_id, "skip": skip, "limit": limit}
+
+# Use this command to run the api locally
+# uvicorn main:app --reload
+
+```
+</details>
