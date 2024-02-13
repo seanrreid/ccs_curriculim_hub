@@ -1,7 +1,7 @@
 ---
-title: The Web
-description: How do websites work?
-sidebar: auto
+sidebar_label: The Web
+title: How do websites work?
+sidebar_position: 3
 ---
 
 ## Learning Objectives

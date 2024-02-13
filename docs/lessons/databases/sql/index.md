@@ -1,6 +1,6 @@
 ---
 title: SQL Databases
-sidebar: auto
+sidebar_position: 1
 ---
 
 ### Overview
