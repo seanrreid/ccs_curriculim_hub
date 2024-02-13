@@ -37,6 +37,9 @@ We're going to look at `JOIN` statements, and a many-to-many relationship.
 ```sql
 CREATE DATABASE some_school_name;
 
+-- REMEMBER TO CONNECT TO THE DATABASE
+\c some_school_name
+
 CREATE TABLE students (
     id serial PRIMARY KEY,
     name VARCHAR(50)
@@ -76,7 +79,7 @@ Today, we'll get started with [FastAPI](https://fastapi.tiangolo.com/tutorial/fi
 ### Helpful Resources
 
 - [10 Tips for adding SQLAlchemy to FastAPI](https://bitestreams.com/blog/fastapi-sqlalchemy/)
-- [https://levelup.gitconnected.com/5-advance-features-of-fastapi-you-should-try-7c0ac7eebb3e](https://levelup.gitconnected.com/5-advance-features-of-fastapi-you-should-try-7c0ac7eebb3e)
+- [5 Advanced Features of FastAPI You Should Try](https://levelup.gitconnected.com/5-advance-features-of-fastapi-you-should-try-7c0ac7eebb3e)
 
 ## Comparing CRUD, Routes, and SQL Commands
 
