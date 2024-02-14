@@ -14,7 +14,7 @@ sidebar_position: 21
 ### Install the required libraries for FastAPI
 
 - Option one: Normal install
-  - `pip install fastapi uvicorn`
+  - `pip install fastapi uvicorn psycopg2`
 - Option two: `requirements.txt`
   - `pip install -r requirements.txt`
 
@@ -171,10 +171,10 @@ def get_ceos():
 
 @app.get('/ceos/{slug}')
 def get_ceos(slug: str):
-    # This will return any value that is "like" the slug
-    ceo = session.query(CEO).filter(CEO.slug.like(f'%{slug}%'))
-    # This will return all entries
-    return ceo.all()
+    # This will return any value that matches the slug
+    ceo = session.query(CEO).filter(CEO.slug == slug)
+    # This will return a single record
+    return ceo.one()
 
 # U
 @app.put('/ceos/{id}/update')
