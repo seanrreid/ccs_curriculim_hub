@@ -36,11 +36,6 @@ We're not at this point yet, but will be soon enough!
 
 - [https://hackernoon.com/explore-how-to-effectively-use-jwt-with-fastapi](https://hackernoon.com/explore-how-to-effectively-use-jwt-with-fastapi)
 
-## Backend Design Patterns MVT/MVC
-
-- [MVC vs MVT Architectural Pattern](https://medium.com/dsc-umit/mvc-vs-mvt-architectural-pattern-d306a56dce55)
-- [Geeks for Geeks: Difference between MVC and MVT design patterns](https://www.geeksforgeeks.org/difference-between-mvc-and-mvt-design-patterns/)
-
 ## Culture
 
 - [Visual Studio Code: How Microsoft's 'any OS, any programming language, any software' plan is paying off](https://www.zdnet.com/article/visual-studio-code-how-microsofts-any-os-any-programming-language-any-software-plan-is-paying-off/)
