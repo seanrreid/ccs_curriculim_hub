@@ -15,6 +15,13 @@ title: Additional Resources
 - [12 Modern CSS One-Line Upgrades](https://moderncss.dev/12-modern-css-one-line-upgrades/)
     <br/>This was written this year (2024), so these are really current and _definitely_ helpful.
 
+## Object Relational Mapper (ORM)
+
+- [Object Relational Mapping (ORM) for Beginners](https://medium.com/@karen_olson/object-relational-mapping-orm-for-beginners-1e88f5a22aff)
+- [Prisma.io: What is an ORM?](https://www.prisma.io/dataguide/types/relational/what-is-an-orm)
+- [Full Stack Python: Object-relational Mappers (ORMs)](https://www.fullstackpython.com/object-relational-mappers-orms.html)
+- [SqlAlchemy Tutorial](https://docs.sqlalchemy.org/en/20/tutorial/)
+
 ## FastAPI
 
 - [10 Tips for adding SQLAlchemy to FastAPI](https://bitestreams.com/blog/fastapi-sqlalchemy/)

@@ -14,7 +14,9 @@ keywords:
 
 ## FastAPI + PSQL
 
-We'll do a code along to connect the Apple CEOs database to FastAPI.
+Today we'll do a code along to connect the Apple CEOs database to FastAPI.
+
+We're going to use this starter -> [Apple CEOs Starter](https://github.com/seanrreid/apple_ceos_starter)
 
 ## Helpful Resources
 
