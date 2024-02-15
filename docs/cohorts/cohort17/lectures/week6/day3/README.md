@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 sidebar_label: Day 3
-title: Week 6 - Day 3
+title: Week 6 - Day 3 - FastAPI x PSQL
 keywords:
     - FastAPI
     - PostgreSQL
