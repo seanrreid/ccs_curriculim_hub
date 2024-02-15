@@ -1,0 +1,202 @@
+---
+title: FastAPI/PSQL - Apple CEOs
+sidebar_label: FastAPI - Apple CEOS
+sidebar_position: 21
+---
+
+## Must Haves
+
+### Setup your enviroment
+
+1. Initialize a new environment -> `python -m venv env`
+2. Don't forget to activate it  -> `source env/bin/activate`
+
+### Install the required libraries for FastAPI
+
+- Option one: Normal install
+  - `pip install fastapi uvicorn psycopg2`
+- Option two: `requirements.txt`
+  - `pip install -r requirements.txt`
+
+## Create your Database
+
+### Make a schema
+
+Create a table that will contain the following columns:
+
+- Name
+- Slug (_lowercase version of the name without spaces_)
+- First Year Active
+
+Make sure to use the appropriate data types for each column to represent the info it will recieve.
+
+### Seed the database
+
+Use the following information to populate the columns you defined above:
+
+| CEO Name         | Year |
+| ---------------- | ---- |
+| Michael Spindler | 1993 |
+| Gil Amelio       | 1996 |
+| Mike Markkula    | 1977 |
+| Tim Cook         | 2011 |
+| Mike Scott       | 1978 |
+| John Sculley     | 1983 |
+| Steve Jobs       | 1976 |
+| Steve Jobs       | 1997 |
+
+## The API
+
+### Setup all the necessary CRUD routes
+
+- Create
+  - POST `/create/ceo`
+- Read
+  - GET `/`
+  - GET `/ceos`
+  - GET `/ceos/{slug}`
+- Update
+  - PUT `/update/ceo/{id}`
+- Delete
+  - PUT `/delete/ceo/{id}`
+
+### Test your routes
+
+- Test your routes using the Swagger docs, or POSTMan (or both!)
+
+### Bonus
+
+- Write a webpage to `fetch()` the `GET` routes
+- Show the results on the page
+
+<details>
+<summary>Apple CEOS Example Reference</summary>
+
+```python
+# db.py
+from sqlalchemy import create_engine
+from sqlalchemy.engine import URL
+from sqlalchemy.orm import sessionmaker
+
+
+url = URL.create(
+    drivername="postgresql",
+    username=[your username],
+    password=[your password, or empty string],
+    host="localhost",
+    database=[your database name],
+    port=5432
+)
+
+engine = create_engine(url)
+Session = sessionmaker(bind=engine)
+session = Session()
+
+# models.py
+from sqlalchemy import Column, Integer, String, Boolean
+from sqlalchemy.orm import declarative_base
+from db_connect import engine
+
+Base = declarative_base()
+
+class CEOS(Base):
+    __tablename__ = "apple_ceos"
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    slug = Column(String)
+    year = Column(Integer)
+
+
+Base.metadata.create_all(engine)
+
+# main
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+# Import our tools
+# This is the database connection file
+from db_connect import session
+
+# These are our models
+from models import CEO
+
+app = FastAPI()
+
+# Setup our origins...
+# ...for now it's just our local environments
+origins = [
+    "http://localhost",
+    "http://localhost:3000",
+]
+
+# Add the CORS middleware...
+# ...this will pass the proper CORS headers
+# https://fastapi.tiangolo.com/tutorial/middleware/
+# https://fastapi.tiangolo.com/tutorial/cors/
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/")
+def home():
+    return {"message": "Root Route"}
+
+# C
+@app.post("/create")
+async def create_ceo(name: str, slug: str, year: int):
+    ceo = CEO(name=name, slug=slug, year=year)
+    session.add(ceo)
+    session.commit()
+    return {"CEO added": ceo.name}
+
+# R
+@app.get('/ceos')
+def get_ceos():
+    ceos = session.query(CEO)
+    return ceos.all()
+
+
+@app.get('/ceos/{slug}')
+def get_ceos(slug: str):
+    # This will return any value that matches the slug
+    ceo = session.query(CEO).filter(CEO.slug == slug)
+    # This will return a single record
+    return ceo.one()
+
+# U
+@app.put('/ceos/{id}/update')
+async def update_ceo(id: int, name: str = None, slug: str = None, year: int = None):
+    ceo = session.query(CEO).filter(CEO.id == id).first()
+    if ceo is not None:
+        if name:
+            ceo.name = name
+        if slug:
+            ceo.slug = slug
+        if year:
+            ceo.year = year
+        session.add(ceo)
+        session.commit()
+        return {"Updated CEO": ceo.name}
+    else:
+        return {"message": "User ID not found"}
+
+# D
+@app.delete('/ceos/{id}/delete')
+async def remove_ceo(id: int):
+    ceo = session.query(CEO).filter(CEO.id == id).first()
+    if ceo is not None:
+        session.delete(ceo)
+        session.commit()
+        return {"Deleted CEO": ceo.name}
+    else:
+        return {"message": "User ID not found"}
+
+# Use this command to run the api locally
+# uvicorn main:app --reload
+```
+</details>

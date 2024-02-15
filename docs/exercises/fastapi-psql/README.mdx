@@ -1,6 +1,6 @@
 ---
-title: FastAPI + PostgreSQL
-sidebar_label: FastAPI - PSQL
+title: FastAPI/PSQL - School Exercise
+sidebar_label: FastAPI - School Exercise
 sidebar_position: 21
 ---
 
@@ -23,6 +23,7 @@ sidebar_position: 21
 Create a CRUD backend to manage a school.
 
 :star: [This article](https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_orm_working_with_joins.htm) might be helpful for some of the `GET` routes that require a `JOIN` statement.
+
 :star: [This documentation about `ForeignKey` types](https://docs.sqlalchemy.org/en/20/core/constraints.html#defining-foreign-keys) will also be helpful.
 
 ### Create your database
@@ -81,10 +82,9 @@ Create the following tables/fields:
 - Write a form that accepts input to make updates via `Update` routes.
 
 <details>
-<summary>Apple CEOS Example Reference</summary>
-
+<summary>Solution</summary>
 ```python
-# db_connect.py
+# db.py
 from sqlalchemy import create_engine
 from sqlalchemy.engine import URL
 from sqlalchemy.orm import sessionmaker
@@ -104,33 +104,49 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 # models.py
-from sqlalchemy import Column, Integer, String, Boolean
+from sqlalchemy import Column, Integer, String, Date, ForeignKey
 from sqlalchemy.orm import declarative_base
-from db_connect import engine
+from db import engine
 
 Base = declarative_base()
 
-class CEOS(Base):
-    __tablename__ = "apple_ceos"
+
+class Students(Base):
+    __tablename__ = "students"
 
     id = Column(Integer, primary_key=True)
     name = Column(String)
-    slug = Column(String)
-    year = Column(Integer)
+
+
+class Courses(Base):
+    __tablename__ = "courses"
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+
+class Enrollments(Base):
+    __tablename__ = "enrollments"
+
+    id = Column(Integer, primary_key=True)
+    student_id = Column(ForeignKey("students.id"))
+    course_id = Column(ForeignKey("courses.id"))
+    enrollment_date = Column(Date)
 
 
 Base.metadata.create_all(engine)
 
-# main
+# main.py
 from fastapi import FastAPI
+from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
+from datetime import date
 
 # Import our tools
 # This is the database connection file
-from db_connect import session
+from db import session
 
 # These are our models
-from models import CEO
+from models import Students, Enrollments, Courses
 
 app = FastAPI()
 
@@ -153,61 +169,105 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.get("/")
 def home():
     return {"message": "Root Route"}
 
-# C
-@app.post("/create")
-async def create_ceo(name: str, slug: str, year: int):
-    ceo = CEO(name=name, slug=slug, year=year)
-    session.add(ceo)
+
+@app.get('/courses')
+def get_courses():
+    courses = session.query(Courses)
+    return courses.all()
+
+
+@app.get('/students')
+def get_students():
+    students = session.query(Students)
+    return students.all()
+
+
+@app.get('/enrollments')
+def get_enrollments():
+    enrollments = session.query(Enrollments, Students, Courses).join(
+        Students, Students.id == Enrollments.student_id).join(Courses, Courses.id == Enrollments.course_id)
+
+    # We can't just return the all() value...
+    # ...all() will return a series of tuples, containing a instance of each class.
+    # But, we can assign it to a variable...
+    all_enrollments = enrollments.all()
+
+    # ...then we can use a for loop to make a list
+    # conventional syntax
+    enrollments_list = []
+    for enrollment in all_enrollments:
+        enrollment_dict = {
+            "enrollment_id": enrollment.Enrollments.id,
+            "student_name": enrollment.Students.name,
+            "course_name": enrollment.Courses.name,
+        }
+        enrollments_list.append(enrollment_dict)
+
+    # alternative method, using list comprehension syntax
+    # enrollments_list = [
+    #     {
+    #         "enrollment_id": enrollment.Enrollments.id,
+    #         "student_name": enrollment.Students.name,
+    #         "course_name": enrollment.Courses.name,
+    #     }
+    #     for enrollment in enrollments
+    # ]
+
+    # We can return the list we built above
+    return enrollments_list
+
+
+@app.post('/students/add')
+async def add_student(name: str):
+    student = Students(name=name)
+    session.add(student)
     session.commit()
-    return {"CEO added": ceo.name}
-
-# R
-@app.get('/ceos')
-def get_ceos():
-    ceos = session.query(CEO)
-    return ceos.all()
+    return {"Student Added": student.name}
 
 
-@app.get('/ceos/{slug}')
-def get_ceos(slug: str):
-    # This will return any value that matches the slug
-    ceo = session.query(CEO).filter(CEO.slug == slug)
-    # This will return a single record
-    return ceo.one()
+@app.post('/courses/add')
+async def add_course(name: str):
+    course = Courses(name=name)
+    session.add(course)
+    session.commit()
+    return {"Course Added": course.name}
 
-# U
-@app.put('/ceos/{id}/update')
-async def update_ceo(id: int, name: str = None, slug: str = None, year: int = None):
-    ceo = session.query(CEO).filter(CEO.id == id).first()
-    if ceo is not None:
-        if name:
-            ceo.name = name
-        if slug:
-            ceo.slug = slug
-        if year:
-            ceo.year = year
-        session.add(ceo)
+
+@app.post('/enrollments/add')
+async def add_enrollment(student_id: int, course_id: int, enrollment_date: date):
+    enrollment = Enrollments(student_id=student_id, course_id=course_id, enrollment_date=enrollment_date)
+    session.add(enrollment)
+    session.commit()
+    return {"message": "Enrollment Added"}
+
+
+@app.put('/students/update')
+async def add_student(id: int, name: str):
+    student = session.query(Student).filter(Student.id == id).first()
+    if student is not None:
+        student.name = name
+        session.add(student)
         session.commit()
-        return {"Updated CEO": ceo.name}
+        return {"Student Updated": student.name}
     else:
         return {"message": "User ID not found"}
 
-# D
-@app.delete('/ceos/{id}/delete')
-async def remove_ceo(id: int):
-    ceo = session.query(CEO).filter(CEO.id == id).first()
-    if ceo is not None:
-        session.delete(ceo)
-        session.commit()
-        return {"Deleted CEO": ceo.name}
-    else:
-        return {"message": "User ID not found"}
 
-# Use this command to run the api locally
-# uvicorn main:app --reload
+@app.put('/courses/update')
+async def add_course(id: int, name: str):
+    course = session.query(Courses).filter(Courses.id == id).first()
+    if course is not None:
+        course.name = name
+        session.add(course)
+        session.commit()
+        return {"Course Updated": course.name}
+    else:
+        return {"message": "Course ID not found"}
+
 ```
 </details>
