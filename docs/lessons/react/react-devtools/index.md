@@ -1,8 +1,8 @@
 ---
-sidebar: auto
+title: React - React DevTools
+sidebar_label: React - DevTools
+sidebar_position: 2
 ---
-
-# React DevTools
 
 React Developer Tools is a set of tools designed to help inspect and debug React components. It is made available through extensions to Chrome and Firefox, as well as a standalone app via `npm`
 
@@ -56,7 +56,6 @@ Firefox will briefly explain the permissions requested and ask you to confirm th
 Once installed, Firefox will let you know that the install was successful and provide additional information on using the extension.
 
 ![Firefox Install Complete](./firefox-react-devtools-install-complete.png)
-
 
 ### Inspecting Components
 

@@ -1,8 +1,13 @@
 ---
-sidebar: auto
+title: React - Building Stateful Components DEPRECATED
+sidebar_label: React - Stateful Components
+sidebar_position: 4
 ---
 
-# Building Stateful Components
+<!-- markdownlint-disable no-inline-html -->
+
+:warning: THIS HAS BEEN DEPRECATED IN CURRENT VERSIONS OF REACT :warning:
+<br/> We're keeping it here for as historical reference.
 
 ## Learning Objectives
 
@@ -29,9 +34,9 @@ React's is optimized to redraw the UI when data changes in response to user inte
 
 Three parts to state in a React Component:
 
--   A constructor that sets up initial state
--   A helper function that updates state
--   An event handler that triggers the helper function
+- A constructor that sets up initial state
+- A helper function that updates state
+- An event handler that triggers the helper function
 
 In this lesson, we'll build the "Hello World" of managing state in a React Component: a simple counter.
 
@@ -92,8 +97,8 @@ export default App;
 
 React provides two ways of managing state:
 
--   Classes
--   Hooks
+- Classes
+- Hooks
 
 When learning React, it's best to learn how to manage state with classes first. It will give you a clear picture of how information is flowing through your code and when that information is updating.
 
@@ -250,8 +255,8 @@ This is newer JavaScript syntax that you can use in React (because it compiles i
 
 The `_incrementCounter()` method is different from the others because:
 
--   It's defined as an arrow function.
--   It has an underscore `_` prefix.
+- It's defined as an arrow function.
+- It has an underscore `_` prefix.
 
 An [arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) will always retain the correct value of `this`, making sure we can call `this.setState()` under any circumstances. (This will become apparent when writing more complex event handling.)
 
@@ -445,8 +450,8 @@ Putting everything in `Counter` is fine for an app this size. However, let's exp
 
 We'll create `Increment` and `Decrement` Components that:
 
--   Expect to receive a `handleClick` prop
--   Use `this.props.handleClick` as an `onClick` handler.
+- Expect to receive a `handleClick` prop
+- Use `this.props.handleClick` as an `onClick` handler.
 
 And, we'll display the current count using an `Output` Component.
 
