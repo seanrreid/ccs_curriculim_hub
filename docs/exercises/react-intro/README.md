@@ -8,8 +8,10 @@ sidebar_position: 22
 
 ## Must Haves
 
-- Create a new folder, initialize a git repository
-- Use `vite` to generate a new React app
+- Create two new folders named the following
+  - `react-tic-tac-toe`
+  - `react-todo-app`
+- Initialize a git repository
 
 ## Learning Objectives
 
@@ -17,6 +19,45 @@ After completing this assignment, you should…
 
 - Know how to create React components
 - Use event listeners in React
+
+## Getting Started
+
+- Use `vite` to generate a new React app:
+
+```sh
+npm create vite@latest [your app name]
+```
+
+Then answer the following questions:
+
+```sh
+? Select a framework: › - Use arrow-keys. Return to submit.
+    Vanilla
+    Vue
+>   React
+    Preact
+    Lit
+    Svelte
+    Solid
+    Qwik
+    Others
+
+? Select a variant: › - Use arrow-keys. Return to submit.
+    TypeScript
+    TypeScript + SWC
+❯   JavaScript
+    JavaScript + SWC
+```
+
+Once it's done installing you'll see:
+
+```sh
+Done. Now run:
+
+cd [your app name]
+npm install
+npm run dev
+```
 
 ## Part 1
 
@@ -34,8 +75,6 @@ You'll create a tic tac toe game with React that has at least three components: 
 
 ## Part 2
 
-### Mozilla Developer Network: React TODO List
-
-:note: The instructions use local files, but you should use CodeSandbox.  Hint: typing `react.new` into a browser is your friend!
+### Mozilla Developer Network:  TODO List
 
 - [MDN: React TODO App](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_todo_list_beginning)
