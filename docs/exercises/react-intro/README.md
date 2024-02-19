@@ -8,10 +8,10 @@ sidebar_position: 22
 
 ## Must Haves
 
-- Create two new folders named the following
-  - `react-tic-tac-toe`
+- Create a new folder named the following
   - `react-todo-app`
-- Initialize a git repository in each folder
+- Initialize a git repository in that folder
+- Fork and clone this repo to your local machine: [Tic Tac Toe Starter](https://github.com/seanrreid/tic-tac-toe-starter)
 
 ## Learning Objectives
 
@@ -22,7 +22,15 @@ After completing this assignment, you should…
 
 ## Getting Started
 
-- Use `vite` to generate a new React app:
+:::info
+:loudspeaker: The Tic-Tac-Toe app needs to be cloned locally. You'll need to `npm i` run in the folder after you've cloned it.
+
+:loudspeaker: The ToDo app requires Vite to scaffold a _new_ React App. The steps are below.
+
+Remember: You need to run `npm run dev` after you've setup your folders to run your app
+:::
+
+### Using `vite` to generate a new React app
 
 ```sh
 npm create vite@latest [your app name]
@@ -63,26 +71,11 @@ npm run dev
 
 You'll create a tic tac toe game with React that has at least three components: Game, Board, and Square.
 
+- Make sure you've cloned the [Starter Repo](https://github.com/seanrreid/tic-tac-toe-starter)
 - Use the official React Tutorial to walk you through the process: [Tutorial: Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe)
-
-### Setup
-
-:warning: Skip the instructions for _Setup for the tutorial_ section. :warning:
-
-:memo: Instead of forking the Codesandbox, do the following:
-
-- In your local `react-tic-tac-to` folder, open `App.js` and delete everything
-- Put the following code into App.js:
-
-```jsx
-export default function Square() {
-  return <button className="square">X</button>;
-}
-```
-
-Complete the tutorial up through _Completing the Game_. When you see this below, you're finished.
-
-> Congratulations! You now have a working tic-tac-toe game. And you’ve just learned the basics of React too. So you are the real winner here
+- Complete the tutorial up through _Completing the Game_.
+- When you see this below, you're finished:
+  > Congratulations! You now have a working tic-tac-toe game. And you’ve just learned the basics of React too. So you are the real winner here
 
 ## Mozilla Developer Network:  TODO List
 
