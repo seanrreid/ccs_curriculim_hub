@@ -6,7 +6,7 @@ title: Additional Resources
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
-## Bookmark this blog!
+## Bookmark This
 
 - [Overreacted (Dan Abramov Blog)](https://overreacted.io/)
 
@@ -20,13 +20,20 @@ title: Additional Resources
 - [Learning React? Start Small.](https://daveceddia.com/learning-react-start-small/)
 - [Mistakes Junior React Developers Make](https://medium.com/frontend-digest/mistakes-junior-react-developers-make-c546b1af187d)
 - [Overreacted: A Chain Reaction](https://overreacted.io/a-chain-reaction/)
-  <br/>This is a really interesting deep(ish) dive into JSX
+    <br/>This is a really interesting deep(ish) dive into JSX
 - [React 18 Release: A Deep Dive Into New Features and Updates](https://www.scalablepath.com/react/react-18-release-features)
 
 ## State
 
 - [Immutable State](https://www.bekk.christmas/post/2023/18/immutable-state)
 - [The Evolution of Signals in JavaScript](https://dev.to/this-is-learning/the-evolution-of-signals-in-javascript-8ob)
+
+## Web Performance
+
+- [Why do reflows negatively affect performance?](https://frontendmasters.com/blog/why-do-reflows-negatively-affect-performance/)
+  <br/>This one is particularly relevant given that we're about to start working with Single Page Apps. A potential drawback with SPAs is "Layout Thrashing." (see next link)
+- [Layout Thrashing and Forced Reflows](https://webperf.tips/tip/layout-thrashing/)
+- [What causes layout thrashing? (Forked from Paul Irish)](https://gist.github.com/seanrreid/63d15f60d24d1d742715)
 
 ## PostgreSQL
 

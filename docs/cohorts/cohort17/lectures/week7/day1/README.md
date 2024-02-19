@@ -10,7 +10,33 @@ keywords:
     - single-page-application (SPA)
 ---
 
-<!-- markdownlint-disable no-inline-html -->
+<!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
+
+## General thoughts
+
+> AI will make “how” easy. Knowing “what” and “why” will remain difficult. - [@MDS on X](https://twitter.com/mds/status/1757762934061588885)
+
+## The story so far...
+
+### Where we've been:
+
+- We've learned how to work with variables, functions, and solving problems with code (Python & JavaScript)
+- We built Object Oriented Programs with Python
+- We've built and styled HTML pages
+- We've included external data in HTML via `fetch()` requests
+- We've used Python to create our own APIs, and dipped back into OOP just a bit
+- We've looked at the Model-View-Controller pattern, and how it, an others, influence server architecture
+- We've added content to SQL databases, and used FastAPI to make that content available via an API
+
+### Where we're going:
+
+- It's time to move into frontend frameworks by learning React.
+- We'll continue building out our own APIs and working in with Python
+- We'll continue working with databases to store data
+
+The next 3 weeks will be the culmination of where we've been. It's putting all the pieces together, backend -> frontend.
+
+Welcome to full-stack web development!
 
 ## Getting Started
 
@@ -50,3 +76,7 @@ Notably, we're moving in the realm of "Single Page Applications" aka "SPA."
 ## Resources
 
 - [Vite docs](https://vitejs.dev/)
+- [Using Vite to create a new React app](https://flaviocopes.com/vite-react-app/)
+- [React.js for Beginners — Props and State Explained](https://www.freecodecamp.org/news/react-js-for-beginners-props-state-explained/)
+- [React 'Aha' Moments](https://ui.dev/react-aha-moments/)
+    This one is 🤌, even still today (it was published in 2016)
