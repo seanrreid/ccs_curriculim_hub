@@ -12,29 +12,25 @@ After completing this lesson, you will be able to:
 1. Create and manage state variables with `useState()`
 1. Trigger custom code at specific stages of a Function Component's life via `useEffect()`
 
-## Lesson
-
-### The Component Lifecycle
+## The Component Lifecycle
 
 React moves your Component through a specific sequence of steps when it draws (and redraws) it to the DOM. You have an opportunity to run your own code during each of these steps to perform tasks like setting up your Component's `state` variables, choose what to `render()` to the DOM, or stopping an animation timer.
 
-#### "If it walks like a duck, and talks like a duck"
+### "If it walks like a duck, and talks like a duck"
 
-While learning React, you may have wondered how React knows to:
-
-- Call my `constructor()` and `render()` methods
-- Update my Component when `state` or `props` updates
+Starting with version 15.5, React used the `Class` keyword to create components.
+These were extensions of the `React.Component` class, and included a `constructor` method and intial `state` values.
 
 When defining a class Component, you always do these two things:
 
 - Declare a class with `extend React.Component`
 - Define a `render()` method
 
-React knows how to work with your Components because it knows that it is a kind of `React.Component`. The `React.Component` class has a set of methods that the React library expects to call. By default, your class inherits all of these methods.
+React knew how to work with your Components because it knows that it is a kind of `React.Component`. The `React.Component` class has a set of methods that the React library expects to call. By default, your class inherits all of these methods.
 
 To customize the behavior of your Component, you override these methods. That is, you define methods in your class that have the same name as the inherited ones. React will look at your class first to see if it has its own version of the method. If not, it will use the inherited one.
 
-For example, React calls your Component's `render()` method to find out what to draw to the DOM. This was the first method you learned to customize. After that, you defined a `constructor()` to set up the initial values for `state`. There are other methods, which we'll look at in this lesson.
+For example, React calls your Component's `render()` method to find out what to draw to the DOM. This was the first method you learned to customize. After that, you defined a `constructor()` to set up the initial values for `state`.
 
 React calls these methods in a specific order based on whether React is preparing to draw your Component, is updating and redrawing your Component, or is about to remove your Component from the DOM.
 
@@ -100,7 +96,7 @@ class LifecycleDemo extends React.Component {
 }
 ```
 
-### Lifecycle for Function Components
+## Lifecycle for Function Components
 
 You can think of Function Components as just the `render()` method of a class Component. They have access to `props` and the `return` the JSX to draw to the DOM.
 
@@ -127,7 +123,7 @@ To manage state with a class, you write the following:
 
 Here is the relevant code from the `LifecycleDemo` class:
 
-```js
+```jsx
 class LifecycleDemo extends React.Component {
     constructor(props) {
         super(props);
@@ -167,7 +163,7 @@ class LifecycleDemo extends React.Component {
 
 Here is the equivalent Function Component:
 
-```js{5}
+```jsx
 import React, { useState } from 'react'
 
 export default (props) => {
@@ -202,13 +198,13 @@ The short answer is that it doesn't matter. Our advice is to give these the same
 
 What does matter is the order of the variables. Consider the following example:
 
-```js
+```jsx
 const [koala, setKoala] = useState('');
 ```
 
 It is equivalent to:
 
-```js
+```jsx
 const arrayOfStateManagementGoodies = useState('');
 const koala = arrayOfStateManagementGoodies[0];
 const setKoala = arrayOfStateManagementGoodies[1];
@@ -219,7 +215,7 @@ The first version is simply [syntactic sugar](https://en.wikipedia.org/wiki/Synt
 
 On line 11, we display the current value of the `count`, followed on line 12 by a `button` whose `onClick` calls a helper function.
 
-```js{11,12}
+```jsx
 import React, { useState } from 'react'
 
 export default (props) => {
@@ -256,7 +252,7 @@ The easiest Lifecycle method to duplicate with a hook is `componentDidUpdate()`,
 
 First, we import `useEffect` from `react`. Then, we call `useEffect()` and pass it a callback function.
 
-```js{1,9-11}
+```jsx
 import React, { useState, useEffect } from 'react';
 export default (props) => {
     console.log('render()');
@@ -287,7 +283,7 @@ A class Component's `componentDidMount()` runs exactly once, during the mounting
 
 `useEffect()` accepts an Array as an optional second argument. This Array serves as a list of variables to watch for changes. If one of the variables in the Array does change from one render to the next, `useEffect()` will call the callback.
 
-```js{9-11}
+```jsx
 import React, { useState, useEffect } from 'react';
 export default (props) => {
     console.log('render()');
@@ -321,7 +317,7 @@ When you try this out in the browser, you'll see that the `console.log()` shows 
 
 To run a callback only once, after the first render, you can pass `useEffect()` an empty Array as the second argument.
 
-```js{9-11}
+```jsx
 import React, { useState, useEffect } from 'react';
 export default (props) => {
     console.log('render()');
@@ -364,7 +360,7 @@ export default (props) => {
 
 React knows that if you return a function from the callback, it should call the function to do "clean up". Passing the empty Array ensures that the clean up function will only run once (when the Component is unmounting).
 
-```js{23-28}
+```jsx
 import React, { useState, useEffect } from 'react';
 export default (props) => {
     console.log('render()');
@@ -404,13 +400,13 @@ export default (props) => {
 }
 ```
 
-### async `useEffect()`
+## async `useEffect()`
 
 As a final note, you cannot pass an `async` function directly to `useEffect()`.
 
 The following will not run and a warning will be printed to the Console:
 
-```js
+```jsx
 useEffect(async () => {
     const val = await fetch(someAPI).then((r) => r.json());
     console.log(`API returned ${val}`);
@@ -419,7 +415,7 @@ useEffect(async () => {
 
 However, you can define an `async` function _inside_ the callback, and it will work as expected:
 
-```js
+```jsx
 useEffect(() => {
     const asyncFn = async () => {
         const val = await fetch(someAPI).then((r) => r.json());
@@ -429,7 +425,7 @@ useEffect(() => {
 });
 ```
 
-### Summary
+## Summary
 
 With version 16.8.0, hooks provide a way for Function Components to manage state and access the Component Lifecycle. You learned how to manage state with `useState()`, which returns an Array with your state variable and a function that can set the state variable.
 

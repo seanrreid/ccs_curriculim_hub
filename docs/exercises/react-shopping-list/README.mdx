@@ -1,0 +1,188 @@
+---
+title: React - Let's Go Shopping
+sidebar_label: React - Shopping List
+sidebar_position: 26
+---
+
+:::info
+You've done this before in HTML/CSS/JS, now it's time to try it in React!
+:::
+
+## Must Haves
+
+- Create a new folder named the following
+  - `react-shopping-list`
+- Initialize a git repository in that folder
+
+## Learning Objectives
+
+After completing this assignment, you should…
+
+- Know how to create React components
+- Use controlled inputs in forms
+- Use event listeners in React
+
+## Requirements
+
+- A repo containing a Vite project
+- A component called `ShoppingForm` to render the form
+- A component called `ShoppingList` to render the list of items
+
+## App Architecture
+
+`App.jsx` Component
+
+- Loads both shopping related components
+- Stores `shoppingListItems` in its state
+  - Initial state is an empty object: `{}`
+- Has a function called `generateList` to update `shoppingListItems`
+
+ `ShoppingForm` Component
+
+- Take a function called `generateList` as a prop
+- Stores an object with all of the items from the inputs
+  - Initial state is an object containing keys that correspond to your inputs,
+  - eg. `const [myList, setMyList] = useState({ firstGroceryItem: '' })`
+- Inputs are bound to the items in the obect and named accordinly
+  - eg. `<input type='text' name='firstGroceryItem' value={myList.firstGroceryItem}/>`
+- Start with a _single_ input and then add more once that works
+- Clicking the `button` triggers the `generateList`
+  - :exclamation: Remember, this function is passed down via `props`
+  - This will send the updated array of items to the `App.jsx` component
+
+`ShoppingList`
+
+- Takes a prop called `items`
+- If there are items in the `items`object, render a `<ul>` with each item in an `<li>`
+- :star: Level up: Conditionally render the `<li>` so it's only rendered if the item is not blank
+
+## User Interface
+
+- A user fills out the form in the `ShoppingForm` component
+- The user clicks the "Make My List" button
+- Items from the form populate inside the `ShoppingList` component
+
+## Hints
+
+- You'll want to use controlled inputs!
+- Start with a _single_ input, then work on adding more
+- You'll want to `useState` to keep track of what the user adds to their list.
+
+---
+
+As always this is _a_ solution, but not necessarily _the_ solution.
+You're solution will likely look different.
+
+<details>
+<summary>Solution</summary>
+```jsx
+
+// App.jsx
+import { useState } from 'react';
+import ShoppingForm from './components/ShoppingForm';
+import ShoppingList from './components/ShoppingList';
+
+function App() {
+    const [shoppingListItems, setShoppingListItems] = useState({})
+
+    // Yep, we can pass functions as props!
+    const generateList = (listItems) => {
+        setShoppingListItems(listItems)
+     };
+
+    return (
+        <>
+            <h1>Time to go Shopping</h1>
+            <ShoppingForm generateList={generateList} />
+            <ShoppingList items={shoppingListItems}/>
+        </>
+    );
+}
+
+export default App;
+
+// ShoppingForm.jsx
+import { useState } from 'react';
+
+const ShoppingForm = ({ generateList }) => {
+    // Start with a state object that holds our blank items
+    const [groceryItems, setGroceryItems] = useState({
+        item1: '',
+        item2: '',
+        item3: '',
+    });
+
+    const handleSubmit = (e) => {
+        // We shouldn't need to prevent default...
+        // ...but we're going to, just in case
+        e.preventDefault();
+        generateList(groceryItems);
+    };
+
+    // This will control our inputs and save values into state
+    const handleChange = (e) => {
+        // Destructure the values we want from the input
+        const { name, value } = e.target;
+        // Update the state object with the changes using: [name]:value
+        // This syntax will dynamically update the key that matches the 'name' with new 'value'
+        setGroceryItems((currentItems) => ({
+            ...currentItems,
+            [name]: value,
+        }));
+    };
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <label>
+                Item 1
+                <input
+                    type='text'
+                    name='item1'
+                    onChange={handleChange}
+                    value={groceryItems.item1}
+                />
+            </label>
+            <label>
+                Item 2
+                <input
+                    type='text'
+                    name='item2'
+                    onChange={handleChange}
+                    value={groceryItems.item2}
+                />
+            </label>
+            <label>
+                Item 3
+                <input
+                    type='text'
+                    name='item3'
+                    onChange={handleChange}
+                    value={groceryItems.item3}
+                />
+            </label>
+            <button type='submit'>Generate List</button>
+        </form>
+    );
+};
+
+export default ShoppingForm;
+
+// ShoppingList.jsx
+const ShoppingList = ({ items }) => {
+    const { item1, item2, item3 } = items;
+    return (
+        <>
+            <h2>Shopping list</h2>
+
+            <ul>
+                {!!item1 && <li>{item1}</li>}
+                {!!item2 && <li>{item2}</li>}
+                {!!item3 && <li>{item3}</li>}
+            </ul>
+        </>
+    );
+};
+
+export default ShoppingList;
+```
+</details>
