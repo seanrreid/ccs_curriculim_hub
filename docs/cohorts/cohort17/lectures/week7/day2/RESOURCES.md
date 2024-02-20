@@ -21,6 +21,7 @@ title: Additional Resources
 - [Eloquent JavaScript](https://eloquentjavascript.net/)
 - [JavaScript Modules: From IIFEs to CommonJS to ES6 Modules](https://ui.dev/javascript-modules-iifes-commonjs-esmodules/)
 - [Getting Under The Hood To Understand JavaScript Prototypes: Part I](https://www.wwt.com/article/getting-under-the-hood-to-understand-javascript-prototypes-part-i)
+- [Understanding Prototypal Inheritance in JS](https://javascript.plainenglish.io/understanding-prototypical-inheritance-in-js-3c24e8bd74ce)
 - [What is JavaScript Made of?](https://overreacted.io/what-is-javascript-made-of/)
   <br/> I want to specifically call out this part:
   > Prototype: What happens if we read a property that doesn’t exist? For example, iceCream.taste (but our property is called flavor). The simple answer is we’ll get the special undefined value. The more nuanced answer is that most objects in JavaScript have a “prototype”. You can think of a prototype as a “hidden” property on every object that determines “where to look next”. So if there’s no taste property on iceCream, JavaScript will look for a taste property on its prototype, then on that object’s prototype, and so on, and will only give us undefined if it reaches the end of this “prototype chain” without finding .taste. You will rarely interact with this mechanism directly, but it explains why our iceCream object has a toString method that we never defined — it comes from the prototype.
