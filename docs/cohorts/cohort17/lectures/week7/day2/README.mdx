@@ -49,3 +49,102 @@ This article, [All your mainstream UI frameworks are lying to you](https://moont
 I don't agree with all of the points the author makes. I also think the author's proposed solution is...not great? But, there are some valid criticisms with regards to the ecosystem of frameworks.
 
 In addtition, there is a fascinating [discussion on Hacker News](https://news.ycombinator.com/item?id=37656257) about the article.
+
+## In Class Demo Code
+
+<details>
+<summary>Expand the view the code from our in class demo</summary>
+```jsx
+
+// App.jsx
+import { useState } from 'react'
+
+import MyForm from './components/MyForm';
+import './App.css';
+
+function App() {
+    const [someText, setSomeText] = useState('');
+
+    // This function will be passed down as a prop to the Form component
+    const getFormData = (text) => {
+        setSomeText(text);
+    }
+
+    // This is a dummy array for demo purposes
+    const myArray = ['foo', 'bar', 'baz'];
+
+    return (
+        <>
+            <h1>Form Demo</h1>
+            <MyForm action={getFormData} />
+            // This will be populated when the `getFormData` function
+            // is called from the child component...
+            <p>{someText}</p>
+            // This is how we map through an array in jsx
+            // NOTE: You need to have a `key` property when mapping!
+            // We'll discuss why soon
+            {myArray.map(item => {
+                return (<p key={item}>{item}</p>)
+            })}
+        </>
+    );
+}
+
+export default App;
+
+// MyForm.jsx
+import { useState } from 'react';
+
+const MyForm = ({ action }) => {
+    const [myInput, setMyInput] = useState({
+        "item1": '',
+        "item2": ''
+    });
+
+    const handleChange = (e) => {
+        // This is updating the object we created in state
+        // the e.target.name is going to be our key,
+        // the e.target.value will be the value
+        setMyInput(currentState => ({
+            ...currentState,
+            [e.target.name]: e.target.value
+        }))
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // call the function that was passed donw
+        // this will send the data back up to the parent App.jsx
+        action(myInput)
+    };
+
+    return (
+        <>
+            <form onSubmit={handleSubmit}>
+                <label>
+                    My Input
+                    <input
+                        type='text'
+                        name='item1'
+                        value={myInput.item1}
+                        onChange={handleChange}
+                    />
+                </label>
+                <label>
+                    My Second Input
+                    <input
+                        type='text'
+                        name='item2'
+                        value={myInput.item2}
+                        onChange={handleChange}
+                    />
+                </label>
+                <button type='submit'>Submit stuff</button>
+            </form>
+        </>
+    );
+};
+
+export default MyForm;
+```
+</details>
