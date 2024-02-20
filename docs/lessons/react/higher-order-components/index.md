@@ -1,76 +1,39 @@
 ---
-sidebar: auto
+title: Higher Order Components
+sidebar_label: Higher Order Components
+sidebar_position: 5
 ---
 
-# Higher Order Components
+## Sidequest: Higher Order Functions
 
-:::danger Tell Chris to DELETE THIS before publishing
+Higher Order Functions either take one or more functions as arguments, _or_ returns a function as its result, without mutating data.
+This makes them ideal for Functional Programming. They follow the principles of encapuslation (think: scope), modularity (able to be reused) and immutablity (they don't change any data in place).
 
-This is more theoretical and sets them up for understanding React Router
+While not _specific_ to React, you'll see the Higher Order Function (HOF) pattern mentioned throughout React. There are even [Higher Order Components (HOC)](https://blog.logrocket.com/understanding-react-higher-order-components/#creating-using-hoc-function) that can be used to return new components.
 
-It comes back to what a Component actually is:
+<details>
+<summary>Example</summary>
+```js
+// Object with methods using the prototype chain
+const calculator = {
+  add: function (x, y) {
+    return x + y;
+  },
+  subtract: function (x, y) {
+    return x - y;
+  },
+};
 
-- It's a "renderable"
-- It can be a function or an instance of React.Component
-    - if a function, it returns a React Element
-    - if instanceof React.Component, has a render() that returns a React Element
+// Higher-order function that takes an object method as an argument
+function applyOperation(x, y, operation) {
+  return operation(x, y);
+}
 
-What's a React Element?
+// Using the higher-order function with object methods
+const resultAddition = applyOperation(5, 3, calculator.add);
+console.log(resultAddition); // Outputs: 8
 
-- it's different from a DOM Element.
-- it's a plain Object (key-value pairs) that describe a DOM Element.
-    - it has a `type`
-    - it has props
-
-Examples of Higher Order Components include:
-
-- a Component that receives and renders a Component
-    - no changes
-    - maybe it just logs the props nicely
-- a Component that adds or modifies props
-- 
-:::
-
-## Learning Objectives
-
-After completing this lesson, you will be able to:
-
-1. Receive Components as props
-1. Render Components received as props
-1. Pass modified props to Components
-
-## Lesson
-
-### Overview
-
-### Summary
-
-## Interview Questions
-
-### Fundamentals
-
-Examples:
-
-- Define a term (i.e., "ORM", "Component Lifecycle")
-- Explain when a particular technology or technique is applicable
-
-### Bugfix
-
-Show them code and ask them what they would change to make it exhibit the correct behavior.
-
-### Conceptual
-
-Ask them how a technique or technology works.
-
-### Architect
-
-Ask them how they would build a particular feature or set of features.
-
-## Additional Resources
-
-URLs to external resources, such as:
-
-- videos
-- blog posts
-- official docs
-- useful tools
+const resultSubtraction = applyOperation(5, 3, calculator.subtract);
+console.log(resultSubtraction); // Outputs: 2
+```
+</details>
