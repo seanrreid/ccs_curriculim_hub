@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Start here:
 
-* [React Shopping List](/docs/exercises/react-grocery-list)
+* [React Shopping List](/docs/exercises/react-shopping-list)
 
 Then, move on to this:
 
