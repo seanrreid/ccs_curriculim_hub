@@ -1,0 +1,46 @@
+---
+sidebar_position: 1
+sidebar_label: Day 4
+title: Week 7 - Day 4
+keywords:
+    - ternary
+    - Conditional Rendering
+    - Styled Components
+---
+
+## Code Along: Styling
+
+:::tip
+There are positives and negatives to all of the approaches/libraries that I list below.
+
+Frameworks and proceses like this come and go regularly (eg. the path I used to recommend is no longer recommended, and [another popular library, that started in 2020, is no longer being maintained](https://github.com/stitchesjs/stitches/discussions/1149#discussioncomment-6223090)).
+
+Before going deep into any specific _tool_, make sure you understand the core of the _language!_ Tailwind could disappear tomorrow, but CSS has been relatively stable as a language for decades.
+:::
+
+We're going to continue with our Store exercise, but look at styling options. We'll be using [CSS Modules](https://github.com/css-modules/css-modules), primarily because it allows us to focus on just writing CSS.
+
+Previously, I've recommended [Styled Components](https://styled-components.com/), however, since React 18, this approach isn't recommended.
+
+An updated recommendation would be something like [Vanilla Extract](https://vanilla-extract.style/documentation/getting-started/). It's  a ["zero runtime"](https://dev.to/mk668a/what-is-zero-runtime-css-in-js-which-library-should-you-pick-3npf) CSS framework.  It requires some additional configuration to get setup, but the behavior is simmilar to CSS Modules.
+
+Another option would be [Tailwind CSS](https://tailwindcss.com/docs/guides/vite). This is a framework that generates CSS based on classes applied to elements.
+
+## Conditional Rendering
+
+Well, this is confusing as hell!
+
+- Old React says: [If-Else in JSX](https://react-cn.github.io/react/tips/if-else-in-JSX.html)
+    > if-else statements don't work inside JSX. This is because JSX is just syntactic sugar for function calls and object construction.
+- But new React says: [Conditional Rendering](https://react.dev/learn/conditional-rendering)
+    > Your components will often need to display different things depending on different conditions. In React, you can conditionally render JSX using JavaScript syntax like if statements, &&, and ? : operators.
+
+Let's [take a look](https://stackblitz.com/edit/ccs-ternary-demo?file=src%2FApp.jsx)
+
+<iframe src='https://stackblitz.com/edit/ccs-ternary-demo?embed=1&file=src%2Fcomponents%2fToggleComponent.jsx' width='100%' style={{display: 'flex', aspectRatio: '16/9'}} />
+
+---
+
+How about [Dealing with empty arrays](https://stackblitz.com/edit/ccs-edit-arrays?file=src%2FApp.jsx)
+
+<iframe src='https://stackblitz.com/edit/ccs-edit-arrays?embed=1&file=src%2FApp.jsx' width='100%' style={{display: 'flex', aspectRatio: '16/9'}} />
