@@ -33,3 +33,7 @@ Which will lead us to...
 
 - We'll do a code along exercise where we'll connect to our Apple CEOs API.
 - Wel'll discuss an approach to building modern React apps with React Router 6.x.
+
+:::info
+Here's a link to the code from today's code along: [https://github.com/seanrreid/ccs_react_apple_ceos](https://github.com/seanrreid/ccs_react_apple_ceos)
+:::
