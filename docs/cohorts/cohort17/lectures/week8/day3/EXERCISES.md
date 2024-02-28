@@ -6,4 +6,9 @@ sidebar_position: 2
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
-- Continue to work on the Apple CEOs exercise or [ecommerce store](/docs/exercises/react-ecommerce/) exercise
+- Map out what you think the data models will be for CRUDCo.
+  - Users?
+  - Links?
+- Continue to work on the Apple CEOs exercise.
+  - We can add a new CEO, how about editing an _existing_ CEO?
+- Keep working on the [ecommerce store](/docs/exercises/react-ecommerce/) exercise
