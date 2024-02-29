@@ -9,7 +9,7 @@ title: Week 8 - Day 4
 ## Music App Retro
 
 - It's time for another retrospective, this time regarding the Music App (both HTML and Reactified versions)
-- Use this link for the Retro Board -> [https://prbl.in/E5LNKY2JONU9](https://prbl.in/E5LNKY2JONU9)
+- Use this link for the Retro Board -> [https://prbl.in/5DJRXKFQ4U18](https://prbl.in/5DJRXKFQ4U18)
 - Give anonymous feedback to the following 4 questions:
   1. What went well? (Liked)
   2. What did you learn? (Learned)
