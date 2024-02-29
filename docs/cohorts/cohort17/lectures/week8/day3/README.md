@@ -17,7 +17,7 @@ keywords:
 
 CRUDCo Inc has been hired to write a URL shortening service for a client.
 
-### Requirments
+### Requirements
 
 - Users can submit a long URL.
 - URLs are saved in a database.

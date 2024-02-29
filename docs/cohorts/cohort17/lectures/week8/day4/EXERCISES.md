@@ -35,7 +35,7 @@ Don't copy/paste the tutorial verbatim!
 
 :::info
 
-The columns wull store the following data
+The columns will store the following data
 
 - Title
 - Original URL
@@ -47,6 +47,10 @@ Name the columns accordingly.
 Reminder: _Use lowercase names, no dashes_.
 
 :::
+
+#### In Class Whiteboard
+
+![Class Whiteboard](./img/mvp_whiteboard.jpg)
 
 ### Step 3
 
