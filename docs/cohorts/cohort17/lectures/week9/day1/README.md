@@ -34,3 +34,7 @@ We're going to keep working on the CRUDCo URL Shortening App.
 - [Patterns and Practices for using SQLAlchemy 2.0 with FastAPI](https://chaoticengineer.hashnode.dev/fastapi-sqlalchemy#heading-api-with-the-orm)
 - [Integrating FastAPI with Supabase Auth](https://dev.to/j0/integrating-fastapi-with-supabase-auth-780)
     <br/>If I were rolling out a new app today, this :point_up: is how I would handle user authentication
+
+## RELEVENT XKCD
+
+- [Once again, XKCD says it better than me: Password Strength](https://xkcd.com/936/)
