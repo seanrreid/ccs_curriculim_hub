@@ -1,12 +1,12 @@
 ---
 title: Final Project Guidelines
-sidebar_position: 1
+sidebar_position: 2
 description: "Go build something RAD!"
 ---
 
 ## Interjection by Sean
 
-✨ **GO BUILD SOMETHING RAD!** 🌈
+:sparkles: **GO BUILD SOMETHING RAD!** :rainbow:
 
 In my (Sean's) opinion, apps should either be:
 
@@ -47,7 +47,7 @@ For example, if you have a graphic design background, you should nail the graphi
 1. Build a project with both user authentication and authorization
 2. Use data stored in a persistent database _(an RDBMS like Postgres or MySQL is preferred)_
 3. Build a RESTful API.
-    * Django REST Framework is recommended.
+    * Django FastAPI is recommended.
     * You can try others, but know that time is limited so you'll need to account for learning time!
 4. Include at least one image or file upload
 
@@ -60,11 +60,11 @@ For example, if you have a graphic design background, you should nail the graphi
 
 ### Level Up
 
-1. Integrate at least one 3rd-party API
+1. Integrate at least one 3rd-party API (_not required_)
 2. Use at least one technology or package we haven't covered in class
-3. Your application must be deployed (consider [Render](https://render.com/), [Heroku](https://heroku.com), or [Fly.io](https://fly.io/))
+3. Your application must be deployed (we'll use [Platform.sh](https://platform.sh))
 4. The URL for the deployed site should be in your README and in your repo description
-5. All code should conform to best practices ([PEP-8](https://peps.python.org/pep-0008/), [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html), [Airbnb React Style Guide](https://github.com/airbnb/javascript/tree/master/react)) and be DRY
+5. All code should conform to best practices ([PEP-8](https://peps.python.org/pep-0008/), [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html), [Airbnb React Style Guide](https://github.com/airbnb/javascript/tree/master/react)) and be as DRY (Don't Repeat Yourself) as possible.
 
 ### Special considerations
 
