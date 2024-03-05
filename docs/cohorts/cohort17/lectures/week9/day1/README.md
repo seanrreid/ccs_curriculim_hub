@@ -22,12 +22,6 @@ We're going to keep working on the CRUDCo URL Shortening App.
 - Do some refactoring (Surely you didn't assume things wouldn't change??)
 - Test our API to add/update URLs via Swagger
 
-### New Features
-
-- Add in JWT and Authentication
-- Test our API to register/login a user via Swagger
-- Prepare for some design work on the frontend
-
 ## Helpful Resources
 
 - [10 Tips for adding SQLAlchemy to FastAPI](https://bitestreams.com/blog/fastapi-sqlalchemy/)
@@ -35,6 +29,6 @@ We're going to keep working on the CRUDCo URL Shortening App.
 - [Integrating FastAPI with Supabase Auth](https://dev.to/j0/integrating-fastapi-with-supabase-auth-780)
     <br/>If I were rolling out a new app today, this :point_up: is how I would handle user authentication
 
-## RELEVENT XKCD
+## Relevant XKCD Comic
 
 - [Once again, XKCD says it better than me: Password Strength](https://xkcd.com/936/)
