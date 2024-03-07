@@ -24,7 +24,7 @@ Let's have our user's _actually_ be able to login.
 - Add in JWT and Authentication
 - Protect `POST` requests
   - Protect `GET` requests as well? Or allow "read only?"
-- Added some users and data
+- Add some users and data
 - Continue work on frontend
   - Build forms to login
   - Build forms to submit a new URL
