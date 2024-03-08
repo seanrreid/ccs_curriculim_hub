@@ -47,3 +47,9 @@ Time to wrap up the CRUDCo URL Shortening App.
 ## Final Projects
 
 Details for the [Final Project are here](/docs/cohorts/cohort17/final-project/)
+
+:::tip
+
+Here is a handy reminder of how to debug -> [Debug Process](https://docs.google.com/document/d/1Uu37ZpR4fGIDEQKrx286JdWxdRNSxGQTCXbUFws2LD4/edit?usp=sharing)
+
+:::
