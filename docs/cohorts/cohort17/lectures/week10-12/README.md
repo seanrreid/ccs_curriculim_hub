@@ -30,6 +30,8 @@ You can review the [final project guidelines here](/docs/cohorts/cohort17/final-
 ## Helpful Resources
 
 - [Building a CRUD API with FastAPI and Supabase: A Step-by-Step Guide](https://blog.theinfosecguy.xyz/building-a-crud-api-with-fastapi-and-supabase-a-step-by-step-guide#heading-integrating-fastapi-with-supabase)
+  <br/>NOTE: This tutorial uses `apt` to install `pipenv`, that's a Linux based installer (it's like `brew` on a Mac).
+  <br/>Those steps won't work on a Macbook or Windows machine.
 - [Implementing Supabase Auth in FastAPI](https://phillyharper.medium.com/implementing-supabase-auth-in-fastapi-63d9d8272c7b)
 
 ### FastAPI Users
