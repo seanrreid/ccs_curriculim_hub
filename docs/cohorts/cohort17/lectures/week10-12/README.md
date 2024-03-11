@@ -45,6 +45,10 @@ You can review the [final project guidelines here](/docs/cohorts/cohort17/final-
   <br/>:point_up: is my build following from the [FastAPI Users docs/example](https://fastapi-users.github.io/fastapi-users/latest/configuration/full-example/)
   <br/>My repo follows more closely with the other FastAPI directory structure we followed in class. _Note_ Look for the **patterns**.
 
+### Supabase
+
+- [freeCodeCamp: Learn Supabase (Firebase Alternative)](https://www.youtube.com/watch?v=dU7GwCOgvNY)
+
 ### Remix JS
 
 - If you want to use RemixJS, check out [this tutorial](https://remix.run/docs/en/main/start/tutorial)
