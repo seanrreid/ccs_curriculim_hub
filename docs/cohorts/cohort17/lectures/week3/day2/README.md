@@ -22,7 +22,7 @@ So many things with `git` and Github!
 
 If we think of HTML as our "architecture," then we can consider CSS the "interior design."
 
-This [Anatomy of HTML PDF](./anatomy-of-html.pdf) from a University of Pittsburgh CS Course is a solid overview of an HTML document.
+This [Anatomy of HTML PDF](anatomy-of-html.pdf) from a University of Pittsburgh CS Course is a solid overview of an HTML document.
 
 ## Presentations
 
@@ -36,7 +36,7 @@ Let's break down a design and build it out in HTML
 
 |![Awesome Tunes courtesy of https://dribbble.com/shots/23271135-Landing-page-design](./img/site_design.png)|
 |:--:|
-| *[Via Dribbble: Landing page design by Daniella for heartbeat](https://dribbble.com/shots/23271135-Landing-page-design)*|
+| _[Via Dribbble: Landing page design by Daniella for heartbeat](https://dribbble.com/shots/23271135-Landing-page-design)_ |
 
 ## Reading
 

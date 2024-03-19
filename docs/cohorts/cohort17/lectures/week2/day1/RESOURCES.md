@@ -6,7 +6,7 @@ title: Additional Resources
 
 ## Python Functions
 
-NOTE: These are also linked in the ["Additional Resources" section of the Python Functions Lesson](/docs/cohorts/cohort17/lectures/week2/day1/docs/lessons/solving-problems-using-code-python/python-functions#additional-resources))
+NOTE: These are also linked in the ["Additional Resources" section of the Python Functions Lesson](/docs/lessons/solving-problems-using-code-python/python-functions#additional-resources)
 
 - [Effective Python: 4 Best Practices for Function Arguments](http://www.informit.com/articles/article.aspx?p=2314818)
 - [Scope of Variables in Python Tutorial](https://www.datacamp.com/community/tutorials/scope-of-variables-python)
