@@ -1,7 +1,7 @@
 ---
 sidebar_label: The Web
 title: How do websites work?
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 ## Learning Objectives

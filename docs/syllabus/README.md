@@ -3,7 +3,7 @@ title: Full Stack Web Development Syllabus
 sidebar_label: Syllabus
 sidebar_position: 1
 published: 2023-12-19 15:30:00
-revised: 2024-01-07 21:57:00
+revised: 2024-03-19 16:15:00
 ---
 
 <!-- markdownlint-disable no-duplicate-heading -->
@@ -28,12 +28,9 @@ There are 9 sections. However, it's important to note that each section doesn't 
 
 - Unix Terminal
 - Shell Commands (Bash or ZSH)
-  - [Dungeons and Directories](https://wheybags.com/dungeons_and_directories/)
 - Git
 - GitHub
 - Python 3
-  - [Python Sandbox](https://pythonsandbox.dev/)
-  - [Thonny](https://thonny.org/)
 
 ### Lessons
 
@@ -41,8 +38,7 @@ There are 9 sections. However, it's important to note that each section doesn't 
 - [CLI 101](/docs/lessons/dev-fundamentals/cli-101/)
 - [Git 101](/docs/lessons/dev-fundamentals/git-101/)
 - [Installing Python3](/docs/lessons/dev-fundamentals/setup-python/)
-- Installing Thonny <!-- @TODO -->
-  - [Using Thonny to step through Python](https://youtu.be/QQAqQp06nXo?si=5H-MCxL0qlzRiPeN)
+- [Using Thonny to step through Python](https://youtu.be/QQAqQp06nXo?si=5H-MCxL0qlzRiPeN)
 
 ## 2. Solving Problems Using Code
 
@@ -83,12 +79,13 @@ There are 9 sections. However, it's important to note that each section doesn't 
 
 #### Lessons
 
-- [Intro to JavaScript](/docs/lessons/solving-problems-using-code-js/js-101/)
-- [JavaScript Fundamentals](/docs/lessons/solving-problems-using-code-js/functions-variables-values/)
+- [Intro to JavaScript](/docs/lessons/solving-problems-using-code-js/javascript-intro/)
+- [JavaScript Objects](/docs/lessons/solving-problems-using-code-js/javascript-objects/)
+- [JavaScript Variables & Functions](docs/lessons/solving-problems-using-code-js/variables-functions/)
 - [Common JavaScript Patterns](/docs/lessons/solving-problems-using-code-js/common-patterns/)
 - [Callbacks and Anonymous Functins](/docs/lessons/solving-problems-using-code-js/callbacks)
 
-### Patterns
+### Programming Patterns
 
 You'll notice there are some similarities between JavaScript and Python.
 Here are some examples things you've likely already encountered.
@@ -126,7 +123,25 @@ Here are some examples things you've likely already encountered.
 
 <sup>1</sup> There is alternate syntax in JavaScript that doesn't explicitly use the `function` keyword, but we'll get to that later.
 
-## 3. Front-End Foundations
+## 3. The Web
+
+### Learning Objects
+
+- What does it mean when a client makes a request?
+- What is a server response?
+- What does it mean to render a site?
+- How are requests and responses received?
+- What is the Domain Name System (DNS)?
+
+### Technologies
+
+- Google Chrome
+
+### Lessons
+
+- [How do websites work?](/docs/lessons/the-web/)
+
+## 4. Front-End Foundations
 
 ### Learning Objectives
 
@@ -158,13 +173,13 @@ Here are some examples things you've likely already encountered.
 
 ### Lessons
 
-- [HTML 101](/lessons/front-end-foundations/html-101/)
-- [HTML Forms](/lessons/front-end-foundations/html-forms/)
-- [CSS 101](/lessons/front-end-foundations/css-101/)
-- [Media Queries](/lessons/front-end-foundations/media-queries/)
-- [Chrome DevTools](/lessons/front-end-foundations/chrome-devtools/)
+- [HTML 101](/docs/lessons/front-end-foundations/html-101/)
+- [HTML Forms](/docs/lessons/front-end-foundations/html-forms/)
+- [CSS 101](/docs/lessons/front-end-foundations/css-101/)
+- [Media Queries](/docs/lessons/front-end-foundations/media-queries/)
+- [Chrome DevTools](/docs/lessons/front-end-foundations/chrome-devtools/)
 
-## 4. Handling User Input
+## 5. Handling User Input
 
 ### Learning Objectives
 
@@ -199,11 +214,11 @@ Here are some examples things you've likely already encountered.
 
 ### Lessons
 
-- [JavaScript 101](/lessons/handling-user-input/javascript-101/)
-- [DOM 101](/lessons/handling-user-input/dom-101/)
-- [Handling Browser Events](/lessons/handling-user-input/handling-browser-events/)
+- [JavaScript 101](/docs/lessons/handling-user-input/javascript-101/)
+- [DOM 101](/docs/lessons/handling-user-input/dom-101/)
+- [Handling Browser Events](/docs/lessons/handling-user-input/handling-browser-events/)
 
-## 5. Building Interactive UIs
+## 6. Building Interactive UIs
 
 ### Learning Objectives
 
@@ -222,10 +237,10 @@ Here are some examples things you've likely already encountered.
 
 ### Lessons
 
-- [AJAX 101](/lessons/building-interactive-uis/ajax-101/)
-- [Intro to Promises](/lessons/building-interactive-uis/intro-to-promises/)
+- [AJAX 101](/docs/lessons/building-interactive-uis/ajax-101/)
+- [Intro to Promises](/docs/lessons/building-interactive-uis/intro-to-promises/)
 
-## 6. Backend Foundations
+## 7. Backend Foundations
 
 ### Learning Objectives
 
@@ -239,7 +254,7 @@ Here are some examples things you've likely already encountered.
 
 @TODO
 
-## 7. Databases
+## 8. Databases
 
 ### Presentations
 
@@ -264,12 +279,13 @@ Here are some examples things you've likely already encountered.
 
 - PostgreSQL 11
 - [SQLAlchemy](https://www.sqlalchemy.org/)
+- [Supabase](https://supabase.com/docs)
 
 ### Lessons
 
-- [Data Modeling](/lessons/databases/data-modeling/)
+- [Data Modeling](/docs/lessons/databases/data-modeling/)
 
-## 8. React
+## 9. UI Frameworks
 
 ### Learning Objectives
 
@@ -291,22 +307,23 @@ Here are some examples things you've likely already encountered.
 ### Technologies
 
 - React 18
-- React Router 6
-- Remix/Next(?)
+- React Router v6.x
+- Full stack metaframeworks
+  - Remix JS
+  - Next JS
 
 ### Lessons
 
-- [Intro to React](/lessons/full-stack-frameworks/intro-to-react/)
-- Comparison to Web Components
-- [Installing and Using the React Dev Tools](/lessons/full-stack-frameworks/react-devtools/)
-- [Handling Events](/lessons/full-stack-frameworks/handling-events/)
-- [Forms with React](/lessons/full-stack-frameworks/forms-with-react/)
-- [Ajax with React](/lessons/full-stack-frameworks/ajax-with-react/)
-- [Function Components](/lessons/full-stack-frameworks/function-components/)
-- [Component Lifecycle and Hooks](/lessons/full-stack-frameworks/react-hooks/)
-- [Intro to React Router](/lessons/full-stack-frameworks/react-router/)
+- [Intro to React](/docs/lessons/ui-frameworks/react/intro-to-react/)
+- [Installing and Using the React Dev Tools](/docs/lessons/ui-frameworks/react/react-devtools/)
+- [Handling Events](/docs/lessons/ui-frameworks/react/handling-events/)
+- [Forms with React](/docs/lessons/ui-frameworks/react/forms-with-react/)
+- [Ajax with React](/docs/lessons/ui-frameworks/react/ajax-with-react/)
+- [Function Components](/docs/lessons/ui-frameworks/react/function-components/)
+- [Component Lifecycle and Hooks](/docs/lessons/ui-frameworks/react/react-hooks/)
+<!-- @TODO [Intro to React Router] -->
 
-## 9. Full Stack
+## 10. Full Stack
 
 ### Put it all together
 
