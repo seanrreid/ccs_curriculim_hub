@@ -1,7 +1,7 @@
 ---
 title: Instructor Training
 description: Instructor Training
-sidebar_position: 5
+sidebar_position: 2
 ---
 
 ## Overview
