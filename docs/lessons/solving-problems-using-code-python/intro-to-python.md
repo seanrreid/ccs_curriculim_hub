@@ -3,7 +3,7 @@ title: Intro to Python
 description: Programming Fundamentals
 pubDate: 2023-12-15T13:49:22-05:00
 ---
-
+<!-- markdownlint-disable no-inline-html -->
 ## Learning Objectives
 
 After completing this section, you'll be able to:
@@ -15,16 +15,14 @@ After completing this section, you'll be able to:
 - Use conditionals to choose what blocks of code to run
 - Handle errors and exceptions
 
-## Lesson
-
-### Overview
+## Overview
 
 In this lesson, you will build two different programs:
 
 - Greeter: the user enters their name and the program prints a greeting
 - Counter: the user enters a number and the program prints the numbers from 0 up to that number
 
-#### Why do we write in a programming language?
+### Why do we write in a programming language?
 
 Your computer is really just a collection of on/off switches, some labeled storage boxes, and wires that run between the switches and the boxes.
 
@@ -40,7 +38,7 @@ Since the 1950s, computer scientists have developed different kinds of short-han
 
 Essentially, programmers write code because programming the hardware of a computer would be too complex a task otherwise.
 
-#### What write programs that run in the terminal?
+### What write programs that run in the terminal?
 
 Even if your eventual goal is to build 3D games, one of the best ways to get started with programming is to build programs that only run in the terminal.
 
@@ -58,7 +56,7 @@ When planning, developing, and debugging programs it is best to focus on the mos
 
 We will begin exploring these essentials with the most basic of programs.
 
-#### What is "Hello World"?
+### What is "Hello World"?
 
 "Hello World" is a short program that prints out "Hello World" to the screen.
 
@@ -76,7 +74,7 @@ You will use it regularly as you test an idea or debug your larger programs.
 
 Luckily, your code does not need to have any concept of the "screen" - Python comes with a built-in function that handles that for you. You will see this in the upcoming code sample for the Hello World program.
 
-#### What's an expression?
+### What's an expression?
 
 An expression is a piece of code that results in a single value.
 
@@ -84,7 +82,7 @@ An example of an expression is the String `"Hello World"`. It's a sequence of te
 
 Another example of an expression is `23 + 19`. It can be reduced to the integer (whole number) `42` but is still considered a single expression.
 
-#### What's a statement?
+### What's a statement?
 
 A statement is a general term for a single instruction that uses or manipulates values.
 
@@ -104,11 +102,11 @@ python3 hello_world.py
 
 You should see the following printed to the screen:
 
-```
+```sh
 Hello World
 ```
 
-#### How do I leave notes for myself in my code?
+### How do I leave notes for myself in my code?
 
 Programming languages let you put notes, or **comments** in your code. Comments can help you remember how a complex piece of code works and can help your team members understand the reasoning and purpose of your code.
 
@@ -125,13 +123,13 @@ You will often _comment out_ a piece of buggy code so that it is ignored. Progra
 Once you've fixed the bug, you'll _uncomment_ the code so that it is part of the running program once again.
 :::
 
-#### How do I save values for later use?
+### How do I save values for later use?
 
 In Python, you can give a value an easy-to-remember label and use it again and again. This is especially useful if the value itself is long and tricky to type out.
 
 Programmers refer to these labels as **variables**.
 
-```py{1}
+```py
 friendly_greeting = "Hello World"
 print(friendly_greeting)
 ```
@@ -189,7 +187,7 @@ The following are "reserved words", meaning they are part of the Python language
 
 You will learn the meaning of many of these reserved words as you learn more Python.
 
-#### What are the basic data types in Python?
+### What are the basic data types in Python?
 
 In computer programming, a data type is a specific kind of value. (Often, programmers just call them "types" instead of saying "data types".)
 
@@ -250,7 +248,7 @@ print(friendly_greeting)
 
 You can also concatenate String literals with variables
 
-```py{2}
+```py
 friendly_greeting = "Hello"
 print(friendly_greeting + " " + "World")
 ```
@@ -270,7 +268,7 @@ print(special_characters)
 
 When you run that program, it prints the following:
 
-```
+```sh
 This is tabbed!
 
 
@@ -305,7 +303,7 @@ Here are a some of the escape sequences you can use in Python:
 
 While printing, Python "decodes" the escape sequences, displaying the meaning of these special characters. But otherwise, the escape sequences remain part of the String, even when assigned to a variable.
 
-#### Which side of the assignment is handled first?
+### Which side of the assignment is handled first?
 
 The `=` is more formally known as the **assignment operator**. It always appears between the Left Hand Side (LHS) and the Right Hand Side (RHS) of the assignment.
 
@@ -346,7 +344,7 @@ print("Even though the second number is now", second_number)
 
 In this code sample, this is what is prints to the terminal:
 
-```
+```sh
 The answer is 42
 The answer is still 42
 Even though the second number is now 100
@@ -371,7 +369,7 @@ Python takes the following steps when you assign a value to a variable:
 
 Now that you have the basics of variables and printing, it's time to learn how to prompt a user for input.
 
-#### How do I get values entered by the user?
+### How do I get values entered by the user?
 
 The next step to creating interactive programs is to get input from the user. The built-in `input()` function allows you to prompt the user with some text and save whatever value they type into the terminal.
 
@@ -384,7 +382,7 @@ print("Hello", name_of_user)
 
 When you run this program with `python3 greeter-1.py`, you might see the following:
 
-```
+```sh
 What is your name? Oakley the Cat
 Hello Oakley the Cat
 ```
@@ -393,7 +391,7 @@ Hello Oakley the Cat
 
 Up to now, we have passed the `print()` function multiple values, separated by commas. If we wanted to do something more complicated with the output, we might need to use the string interpolation syntax.
 
-```py{2}
+```py
 name_of_user = input("What is your name? ")
 print("Hello %s, it is very nice to meet you!" % name_of_user)
 ```
@@ -406,12 +404,12 @@ Line 2 of this code sample shows an example of string interpolation. It consists
 
 Here is the result of running the new version of the program:
 
-```
+```sh
 What is your name? Oakley the Cat
 Hello Oakley the Cat, it is very nice to meet you!
 ```
 
-#### How do I interpolate multiple values into a String?
+### How do I interpolate multiple values into a String?
 
 Interpolating a single value into another String may not be worth the effort. When dealing with multiple values, interpolation may make more sense.
 
@@ -428,7 +426,7 @@ Here we are prompting the for two separate values, each assigned to different va
 
 Here's an example of running that code:
 
-```
+```sh
 What is your name? Oakley the Cat
 What is your friend's name? Milla the Other Cat
 Hello Oakley the Cat, it is very nice to meet you and your friend Milla the Other Cat!
@@ -436,7 +434,7 @@ Hello Oakley the Cat, it is very nice to meet you and your friend Milla the Othe
 
 Interpolation also works when a variable is used for the String with placeholders:
 
-```py{1,5}
+```py
 greeting = "Hello %s, it is very nice to meet you and your friend %s!"
 
 name_of_user = input("What is your name? ")
@@ -460,7 +458,7 @@ print("%.2f is the 2014 version of Planck's constant" % plancks_constant)
 
 The result is:
 
-```
+```sh
 6.63 is the 2014 version of Planck's constant
 ```
 
@@ -493,7 +491,7 @@ Here are some of the other interpolation placeholders and the types associated:
 </tbody>
 </table>
 
-#### What are some other math operators?
+### What are some other math operators?
 
 <table>
 <thead>
@@ -620,7 +618,7 @@ else:
 
 :::
 
-#### Can I put an `if` inside another `if`?
+### Can I put an `if` inside another `if`?
 
 The code block (indented body) inside the `if` can contain any valid Python code. There's nothing special about a code block, it's just "protected" by the if-condition.
 
@@ -640,7 +638,7 @@ else:
     print("OK, I'll ask again some other time.")
 ```
 
-#### Can I check for more than one condition?
+### Can I check for more than one condition?
 
 An `if` and an `else` lets you decide whether to run one code block or another code block. But what if you wanted more than two options?
 
@@ -664,7 +662,7 @@ else:
 
 An `elif` works exactly like an `if`, but must appear after an `if` (since it serves as an alternate condition).
 
-#### What are some other conditionals?
+### What are some other conditionals?
 
 The previous code samples showed a conditional operator that checked if one value was greater than a second value.
 
@@ -690,13 +688,13 @@ When used as a conditional, the following are the same as `False`:
 
 Though we won't encounter them until the next lesson `List`s and `Set`s are sequences of data, the same way that a `String` is a sequence of characters.
 
-#### What is the result of a comparison?
+### What is the result of a comparison?
 
 When you add two numbers, you can substitute in the resulting value.
 
 And just like addition and subtraction, a comparison has a result which is either `True` or `False`. These are known as Boolean values. Python provides the keywords `True` and `False` when you need to refer the Boolean values without having to make a comparison.
 
-#### How do I check multiple conditions at the same time?
+### How do I check multiple conditions at the same time?
 
 Our `greeter` program might benefit from combining the conditionals instead of nesting them. We can modify our program so that we prompt the user for both names, and then `print()` different messages based on what they typed. The following code sample uses the `and` operator.
 
@@ -767,7 +765,7 @@ The power of programming comes from the fact that a computer does not get bored 
 
 As a programmer, you can use that to your advantage to do massive amounts of work in a short period of time. Let's begin exploring some of the syntax and techniques for working with _loops_.
 
-#### How do I increment a number?
+### How do I increment a number?
 
 When programming, you frequently have a variable that holds a number, and you will need to increase this number again and again.
 
@@ -788,7 +786,7 @@ After the expression on the RHS has been reduced to a single value, the variable
 
 Here is the result of running this program:
 
-```
+```sh
 You have eaten 0 donuts.
 You have eaten 1 donuts.
 You have eaten 2 donuts.
@@ -801,7 +799,7 @@ It is only valid to use a variable on the RHS if the variable already exists.
 
 The variable `donuts_consumed` is being added to and reassigned. This process is so common that there is shorthand for it:
 
-```py{1,3,5,7}
+```py
 donuts_consumed = 0
 print("You have eaten %d donuts." % donuts_consumed)
 donuts_consumed += 1
@@ -814,7 +812,7 @@ print("You have eaten %d donuts." % donuts_consumed)
 
 `+=` is the increment operator. There is a corresponding decrement operator that subtracts and reassigns: `-=`. Multiplication and division follow the same pattern: `*=` and `/=`
 
-#### What are the three parts of a loop?
+### What are the three parts of a loop?
 
 The previous code sample was highly repetitive. In fact, other than the first line, the rest of the program is the same two lines over and over.
 
@@ -845,7 +843,7 @@ If it does not, the loop would run forever, resulting in an "infinite loop" (whi
 
 From running the program, you know that it eventually finishes. In the body of the loop, the `donuts_consumed` variable is incremented by `1`. Eventually the value of `donuts_consumed` reaches `4`. The conditional check is equivalent to `4 < 4`, which results in a `False`. At this point, the loop stops running and the program finishes.
 
-#### How do I stop a program with an infinite loop?
+### How do I stop a program with an infinite loop?
 
 For example, if you wanted to write an infinite loop, you could do the following:
 
@@ -860,7 +858,7 @@ If you need to stop a program stuck in an infinite loop, press the `Control` and
 You will often see this abbreviated as `Ctrl-C`.
 :::
 
-#### What are loops good for?
+### What are loops good for?
 
 Some examples of when you will need to repeat an indented body of code include:
 
@@ -868,7 +866,7 @@ Some examples of when you will need to repeat an indented body of code include:
 - Concatenating letters or words onto an existing String
 - A game loop
 
-#### What is an example of incrementing a number in a loop?
+### What is an example of incrementing a number in a loop?
 
 Here is a simple example of counting until a maximum value:
 
@@ -884,7 +882,7 @@ On line 2, the variable name `MAX` is in uppercase. This is a convention denotin
 
 Inside the body of our loop, we can include any Python code, including an `if`-`elif`-`else`. We'll modify the code so that it prints a slightly different message based on whether the value of `count` is below, equal to, or greater than `MAX/2`:
 
-```py{4-9}
+```py
 count = 0
 MAX = 10
 while (count < MAX):
@@ -900,7 +898,7 @@ while (count < MAX):
 
 Notice that the increment (`count += 1`) is at the same level of indentation as the keywords `if`, `elif`, and `else` - meaning that it is part of the `while` and will run each time the body of the `while` runs.
 
-#### How do I convert a String to a number?
+### How do I convert a String to a number?
 
 Next, we'll modify our code so that we ask the user how high they would like the counter to go. To do that, we'll add an `input()` as we've done before.
 
@@ -927,7 +925,7 @@ What happens if we type something other than numbers when prompted?
 
 Try it and you will see something like this:
 
-```
+```sh
 How high should we count? five
 Traceback (most recent call last):
   File "counter-3.py", line 3, in <module>
@@ -943,7 +941,7 @@ In most programming languages, it is common to say that an "exception was thrown
 
 Let's use Python's `try/except` syntax to catch any `ValueError` exceptions:
 
-```py{3,8}
+```py
 count = 0
 input_string = input("How high should we count? ")
 try:
@@ -957,7 +955,7 @@ except ValueError:
 
 When we run our code again and give it bad input, our program gracefully handles the exception and prints an informative message for the user:
 
-```
+```sh
 How high should we count? five
 Please run the program again and type a number!
 ```
@@ -967,7 +965,7 @@ The body of a `try` should have as few lines of code as possible.
 Because the `try` will catch _any_ exceptions, you want to make sure you're targeting a specific one.
 :::
 
-#### How do I determine if a number is even or odd?
+### How do I determine if a number is even or odd?
 
 Let's add another modification to our counter by making it only print even numbers. To determine if a number is even, we'll use the _modulo_ operator, which performs division, but produces the remainder.
 
@@ -979,7 +977,7 @@ An even number is one that has a remainder of `0` when it is divided by `2`. Her
 
 We'll add a new variable `is_even` which will hold the result of that expression.
 
-```py{6-8}
+```py
 count = 0
 input_string = input("How high should we count? ")
 try:
@@ -1001,7 +999,7 @@ When a variable holds a Boolean value, you should start the variable's name with
 
 Alternatively, if our code should only print odd numbers, we simply modify the modulo expression:
 
-```py{6}
+```py
 count = 0
 input_string = input("How high should we count? ")
 try:
@@ -1017,7 +1015,7 @@ except ValueError:
 
 For good measure, we've also updated our variable's name to `is_odd` so that it reflects the change to the logic in our code.
 
-### Summary
+## Summary
 
 In this lesson, you learned how to:
 
@@ -1054,7 +1052,6 @@ Check out the [How do Programming Languages work?](#how-do-programming-languages
 Interpreted languages require no compilation step - you run them using an **interpreter** program. The interpreter reads the source code line-by-line and immediately runs the program.
 
 Interpreters do not produce an executable and remain in their human readable code (though tools exist to [intentionally make the code unreadable](<https://en.wikipedia.org/wiki/Obfuscation_(software)>)).
-:::
 
 ## Additional Resources
 
@@ -1065,6 +1062,8 @@ The following articles offer an alternate explanation of some of the material fr
 - [Variables](http://greenteapress.com/thinkpython2/html/thinkpython2003.html)
 - [Strings](http://greenteapress.com/thinkpython2/html/thinkpython2009.html)
 - [Loops](http://greenteapress.com/thinkpython2/html/thinkpython2008.html)
+
+### How do Programming Languages Work
 
 This video is part of a [high quality series that covers the history of computing and how computers work from the ground up](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo).
 
