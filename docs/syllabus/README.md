@@ -81,7 +81,7 @@ There are 9 sections. However, it's important to note that each section doesn't 
 
 - [Intro to JavaScript](/docs/lessons/solving-problems-using-code-js/javascript-intro/)
 - [JavaScript Objects](/docs/lessons/solving-problems-using-code-js/javascript-objects/)
-- [JavaScript Variables & Functions](docs/lessons/solving-problems-using-code-js/variables-functions/)
+- [JavaScript Variables & Functions](/docs/lessons/solving-problems-using-code-js/variables-functions/)
 - [Common JavaScript Patterns](/docs/lessons/solving-problems-using-code-js/common-patterns/)
 - [Callbacks and Anonymous Functins](/docs/lessons/solving-problems-using-code-js/callbacks)
 
@@ -214,9 +214,9 @@ Here are some examples things you've likely already encountered.
 
 ### Lessons
 
-- [JavaScript 101](/docs/lessons/handling-user-input/javascript-101/)
-- [DOM 101](/docs/lessons/handling-user-input/dom-101/)
+- [The Document Object Model](/docs/lessons/handling-user-input/dom/)
 - [Handling Browser Events](/docs/lessons/handling-user-input/handling-browser-events/)
+- JavaScript Event Loop   <!-- @TODO -->
 
 ## 6. Building Interactive UIs
 
@@ -244,15 +244,17 @@ Here are some examples things you've likely already encountered.
 
 ### Learning Objectives
 
-- FastAPI @TODO
+<!-- @TODO -->
 
 ### Technologies
 
 - FastAPI
+- Django
+- Express JS
 
 ### Lessons
 
-@TODO
+<!-- @TODO -->
 
 ## 8. Databases
 
@@ -283,7 +285,7 @@ Here are some examples things you've likely already encountered.
 
 ### Lessons
 
-- [Data Modeling](/docs/lessons/databases/data-modeling/)
+- [SQL Databases](/docs/lessons/databases/sql/)
 
 ## 9. UI Frameworks
 

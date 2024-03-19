@@ -62,9 +62,9 @@ Notably, we're moving in the realm of "Single Page Applications" aka "SPA."
 
 ## Lessons
 
-- [Intro to React](/docs/lessons/react/intro-to-react/)
-- [React DevTools](/docs/lessons/react/react-devtools/)
-- [React Function Components](/docs/lessons/react/function-components/)
+- [Intro to React](/docs/lessons/ui-frameworks/react/intro-to-react/)
+- [React DevTools](/docs/lessons/ui-frameworks/react/react-devtools/)
+- [React Function Components](/docs/lessons/ui-frameworks/react/function-components/)
 
 ## Guides
 

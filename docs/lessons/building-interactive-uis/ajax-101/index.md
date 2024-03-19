@@ -1,7 +1,8 @@
 ---
-title: AJAX 101
+title: Introduction to AJAX
+sidebar_label: AJAX
+sidebar_position: 1
 description: Ajax is a set of web development techniques that uses various web technologies on the client-side to create asynchronous web applications.
-sidebar: auto
 ---
 
 ## Learning Objectives
@@ -10,7 +11,7 @@ sidebar: auto
 - How do you send an AJAX request in JavaScript?
 - List advantages and disadvantages of using AJAX
 
-### Overview
+## Overview
 
 AJAX stands for **A**synchronous **J**avaScript **A**nd **X**ML. It's a way of retrieving data from a server after a webpage has loaded. Asynchronous means the process that triggers the request runs independently from the source code. Because of that, you have to track and manage the request and its subsequent response.
 
@@ -157,7 +158,7 @@ By default, `fetch()` makes `GET` requests. You pass in the URL to the resource 
 
 What took 8 lines before only takes 3 with `fetch()`! Because it uses promises you also have more control of when and how you use the request data.
 
-### Summary
+## Summary
 
 AJAX is a powerful technique. It allows you to request data from the server without reloading the page. When combined with DOM manipulation, you can transform your static web pages into dynamic web applications with rich interactivity.
 
