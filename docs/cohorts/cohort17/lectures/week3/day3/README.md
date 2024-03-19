@@ -43,7 +43,7 @@ Yesterday, we took this...
 
 |![Awesome Tunes courtesy of https://dribbble.com/shots/23271135-Landing-page-design](./img/site_design.png)|
 |:--:|
-| *[Via Dribbble: Landing page design by Daniella for heartbeat](https://dribbble.com/shots/23271135-Landing-page-design)*|
+|_[Via Dribbble: Landing page design by Daniella for heartbeat](https://dribbble.com/shots/23271135-Landing-page-design)_|
 
 and marked it up like this...
 
@@ -51,7 +51,7 @@ and marked it up like this...
 
 ## Recommended Reading
 
-* [Anatomy of an HTML document](./anatomy-of-html.pdf) - PDF from University of Pittsburgh CS Course
+* [Anatomy of an HTML document](/docs/cohorts/cohort17/lectures/week3/day2/anatomy-of-html.pdf) - PDF from University of Pittsburgh CS Course
 * [Media Queries (Examples of Responsive Designs)](https://mediaqueri.es/)
 * [THE CASSETTE TAPE AS RESPONSIVE DESIGN](https://needmoredesigns.com/early-responsive-design/)
 * [Old CSS, new CSS](https://eev.ee/blog/2020/02/01/old-css-new-css/)

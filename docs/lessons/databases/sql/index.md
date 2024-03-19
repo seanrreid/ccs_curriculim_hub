@@ -1,6 +1,7 @@
 ---
-title: SQL Databases
+sidebar_label: SQL Databases
 sidebar_position: 1
+title: SQL Databases/PostgreSQL
 ---
 
 ### Overview
@@ -27,6 +28,7 @@ Either is fine, as there is no single, correct pronounciation. In this lesson, w
 > "We create a SQL database using the following command."
 
 Check out [this discussion on stackexchange.com](https://softwareengineering.stackexchange.com/questions/8588/whats-the-history-of-the-non-official-pronunciation-of-sql) for more details.
+
 :::
 
 In this lesson, we'll use PostgreSQL, an extremely popular, [open source](https://en.wikipedia.org/wiki/Open_source) DBMS.

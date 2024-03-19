@@ -42,4 +42,4 @@ They were selected to give you a "sandboxed" (not live) environment to practice 
 
 |        | Lesson Topic                              |
 | ------ | :---------------------------------------- |
-| :memo: | [SQL Databases](/docs/lessons/databases/) |
+| :memo: | [SQL Databases](/docs/lessons/databases/sql) |

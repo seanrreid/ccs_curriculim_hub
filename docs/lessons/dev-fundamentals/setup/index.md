@@ -30,15 +30,15 @@ Make sure you're downloading "Visual Studio Code" and not "Visual Studio"
 Though they are named similarly, Visual Studio is a much larger program and uses more resources. It will not run as well as VS Code for the kinds of projects we'll build during the bootcamp.
 :::
 
-:::details macOS Additional Steps
+### :bangbang: macOS Additional Steps
 
-**1. Move VS Code to your Applications folder**
+#### Move VS Code to your Applications folder
 
 Be sure to move VS Code from your Downloads folder into the Applications folder! VS Code will not work properly if you run it from your Downloads folder.
 
-**2. Install the Shell Command**
+#### Install the Shell Command
 
-While working on a project, you'll open VS Code from the command line to edit files. To do so, you'll first need to install the VS Code command line tool.
+ While working on a project, you'll open VS Code from the command line to edit files. To do so, you'll first need to install the VS Code command line tool.
 
 Open VS Code and press `Command + Shift + p` (that is, press these three keys at the same time: `Command`, `Shift`, and `p`) to open the Command Palette.
 
@@ -75,7 +75,7 @@ You (and other developers) use the _terminal_.
 
 ![Animation of a terminal in use](./terminal-cowsay.gif)
 
-As a developer, you'll be spending quite a lot of time using a terminal. There's a separate [introduction to the command line](/lessons/dev-fundamentals/cli-101/#learning-objectives), but this part of the lesson will walk you using the terminal to install some necessary development tools.
+As a developer, you'll be spending quite a lot of time using a terminal. There's a separate [introduction to the command line](/docs/lessons/dev-fundamentals/cli-101/), but this part of the lesson will walk you using the terminal to install some necessary development tools.
 
 The first of these tools is a _package manager_. You can think of it like an App Store, but for command line programs.
 To get started, go to the section matching your Operating System:
@@ -110,7 +110,7 @@ There are a lot of commands to get familiar with, and it's easy to forget how to
 - `tldr cd`
 - `tldr mv`
 - `tldr mkdir`
-  :::
+:::
 
 #### git
 

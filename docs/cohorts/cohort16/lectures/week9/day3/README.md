@@ -12,7 +12,7 @@ We're going to keep working on the CRUDCo URL Shortening App.
 
 ![It's More URL Shortening!](./img/shortening2.png)
 
-OH, BTW, [here are the details for the final project!](../../final-project/)
+OH, BTW, [here are the details for the final project!](/docs/cohorts/cohort16/lectures/final-project/)
 
 ### Review
 

@@ -51,4 +51,4 @@ This file will use the following information to populate the columns you defined
 
 |        | Lesson Topic |
 |--------|:------------------------|
-| :memo: | [SQL Databases](/docs/lessons/databases/) |
+| :memo: | [SQL Databases](/docs/lessons/databases/sql) |

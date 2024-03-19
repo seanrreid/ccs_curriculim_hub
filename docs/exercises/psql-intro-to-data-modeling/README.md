@@ -35,4 +35,4 @@ This is a pen and paper exercise! :pen: :page_facing_up:
 
 |        | Lesson Topic |
 |--------|:------------------------|
-| :memo: | [SQL Databases](/docs/lessons/databases/) |
+| :memo: | [SQL Databases](/docs/lessons/databases/sql) |
