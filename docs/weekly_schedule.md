@@ -1,6 +1,6 @@
 ---
-title:  Web Development Immersive - Weekly Breakdown
-sidebar_label: Weekly Breakdown
+title:  Web Development Immersive - Approximate Weekly Schedule
+sidebar_label: Weekly Schedule
 sidebar_position: 2
 ---
 
@@ -26,9 +26,9 @@ This is a rough guide covering all the topics discussed in the 12 week immersive
 
 - HTML/CSS
 
-### Project: Fairy Tales/Portfolio start
+### Project: Magic 8 Ball
 
-## Weeks 4 - Programming for the Web / Frontend
+## Week 4 - Programming for the Web / Frontend
 
 - JavaScript DOM
 - Query Parameters
@@ -39,7 +39,7 @@ This is a rough guide covering all the topics discussed in the 12 week immersive
 ## Weeks 5-6 - Programming for the Web / Backend Dev
 
 - FastAPI
-- PSQL
+- PSQL + Supabase
 
 ### Project: Class Topic Overview (API + HTML Forms frontend)
 
