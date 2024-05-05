@@ -6,7 +6,7 @@ published: 2023-12-19 15:30:00
 revised: 2024-03-19 16:15:00
 ---
 
-<!-- markdownlint-disable no-duplicate-heading -->
+<!-- markdownlint-disable no-duplicate-heading no-inline-html -->
 
 This is loosely structured to line up for 9 weeks of lecture, followed by 3 weeks for the Capstone Project.
 There are 9 sections. However, it's important to note that each section doesn't necessarily correspond to a week. Some content will be shorter than one week, others will be longer.
@@ -279,8 +279,9 @@ Here are some examples things you've likely already encountered.
 
 ### Technologies
 
-- PostgreSQL 11
-- [SQLAlchemy](https://www.sqlalchemy.org/)
+- PostgreSQL
+- [SQLModel](https://sqlmodel.tiangolo.com/)
+- [Alembic](https://alembic.sqlalchemy.org/)
 - [Supabase](https://supabase.com/docs)
 
 ### Lessons

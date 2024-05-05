@@ -260,7 +260,7 @@ You can begin to combine these concepts to do some powerful things with the CLI.
 
 Creating new files and directories are two different commands in the CLI. You create directories with `mkdir` and create new files with the `touch` commands. Keep in mind that new files are just plain text files, so when you want to create a new file for a graphical user interface program (ex: Microsoft Word) you have to create the new file from within the application. But as a computer programmer, code files are all stored in plain text, which makes it easy to setup a project's file and directory from inside the CLI.
 
-### Summary
+## Summary
 
 The command line interface (CLI) is a powerful tool for the user to interact with the computer directly without needing a graphical user interface (GUI). Typically computer programmers use the CLI to be more efficient, access areas of the computer that aren't accessible from a GUI, and configure your computer to do things for programming needs (start servers, modify access rights, ect...).
 
@@ -271,24 +271,6 @@ Here are the basics you learned:
 - How to add modifiers to a command with `cd Downloads`
 - How to navigate the file system with `cd`
 - How to create files and folders with `mkdir` and `touch`
-
-## Interview Questions
-
-### Fundamentals
-
-- What is UNIX?
-
-### Bugfix
-
-None available.
-
-### Conceptual
-
-None available.
-
-### Architect
-
-None available.
 
 ## Additional Resources
 

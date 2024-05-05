@@ -286,7 +286,7 @@ You can see that git adds a new commit that makes the _opposite_ changes of the 
 
 ![Diagram of commits, including revert](./master-3-commits-revert.png)
 
-:::tip HEAD~n
+:::tip
 `HEAD` always refers to the current commit and you can use it as a reference point.
 
 The commit prior the current one is `HEAD~1`. The commit before that one is `HEAD~2`.
@@ -552,7 +552,7 @@ Finally, you can view the log to see that master contains the new commit from `d
 
 ![Diagram of commits after resolving conflict](./master-conflict-resolved.png)
 
-### Summary
+## Summary
 
 In this lesson, you learned how to create a local git repo using `git init`. You created new files and tracked changes to these files by using `git add` and `git commit`. You switched to older revisions using `git revert` and `git reset`, and you created parallel versions of your code using `git branch` and `git checkout`.
 
@@ -575,11 +575,7 @@ This screenshot shows a sequence of commands that ends up in a failure to commit
 
 ### Conceptual
 
-- How is git different from GitHub?
-
-### Architect
-
-None for this lesson.
+- How is `git` different from GitHub?
 
 ## Additional Resources
 
