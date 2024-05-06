@@ -7,7 +7,6 @@ keywords:
  - CLI
  - git
  - repository
- - python
 ---
 
 Welcome to Day 1!
@@ -15,7 +14,6 @@ Welcome to Day 1!
 ## Presentations
 
 * [Getting Started - Command Line](https://docs.google.com/presentation/d/1aHnRox94IKTcYWrPo7SK6fk3bvf2UhFkTCl1ipCs4-c/edit?usp=sharing)
-* [Intro to Python](https://docs.google.com/presentation/d/1uN2LJoPtZZCNPeuVX2nPUpEYE-q7Ce1o1CVMZDhtG8A/edit?usp=sharing)
 
 ## Helpful Links
 
