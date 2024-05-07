@@ -6,10 +6,10 @@ sidebar_position: 3
 
 > The name "git" was given by Linus Torvalds when he wrote the very first version. He described the tool as "the stupid content tracker" and the name as (depending on your mood):
 >
-> * random three-letter combination that is pronounceable, and not actually used by any common UNIX command. The fact that it is a > * mispronunciation of "get" may or may not be relevant.
-> * stupid. contemptible and despicable. simple. Take your pick from the dictionary of slang.
-> * "global information tracker": you're in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.
-> * "goddamn idiotic truckload of sh*t": when it breaks
+> - random three-letter combination that is pronounceable, and not actually used by any common UNIX command. The fact that it is a > \* mispronunciation of "get" may or may not be relevant.
+> - stupid. contemptible and despicable. simple. Take your pick from the dictionary of slang.
+> - "global information tracker": you're in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.
+> - "goddamn idiotic truckload of sh\*t": when it breaks
 
 [Source](https://github.com/git/git/blob/68812df3100aa5b2cbdd9ee72b1e8bbee8e8a0b1/README.md#git---fast-scalable-distributed-revision-control-system)
 
@@ -138,7 +138,7 @@ For example:
 - adds username and password fields to database
 - displays login form instead of protected content
 - creates login form in HTML
-  :::
+:::
 
 Now that you've committed those changes, check the status of your git repo:
 
@@ -592,3 +592,8 @@ This screenshot shows a sequence of commands that ends up in a failure to commit
 - [Learn Git Branching](https://learngitbranching.js.org/) - a visual tutorial for common tasks, including advanced topics.
 - [Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up/) - a free book about git, starting from first principles.
 - [Dangit, Git!?!](https://dangitgit.com/) - a cheatsheet for solving common mistakes with git
+
+### Develop Yourself Podcast
+
+<!-- markdownlint-disable no-inline-html -->
+<iframe style={{ borderRadius:"12px" }} src="https://open.spotify.com/embed/episode/2HpNy3CgwQgj49spwzNvMl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
