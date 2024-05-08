@@ -1,0 +1,565 @@
+---
+title: Python 101 Exercises
+sidebar_label: Python 101
+sidebar_position: 2
+---
+
+## Level 1
+
+1. Hello You
+
+    Prompt the user for his name using the input function. Example:
+
+    ```py
+    name = input('What is your name? ')
+    ```
+
+    Upon receiving their name, you will say hello to them. Example session:
+
+    ```sh
+    $ python3 hello.py
+    What is your name? Alice
+    Hello, Alice!
+    ```
+
+    <details>
+    <summary>Solution</summary>
+    ```py
+    user_input = input('What is your name? ')
+    print('Hello  %s' % (user_input))
+    ```
+    </details>
+
+2. HELLO YOU
+
+    Same as the first exercise, but this time print the user's name in ALL CAPS, and also tell them the number of letters in their name.
+
+    (Hint: You'll want to search for documentation on how to uppercase a string.)
+
+    Example session:
+
+    ```sh
+    $ python3 hello2.py
+    WHAT IS YOUR NAME? Alice
+    HELLO, ALICE!
+    YOUR NAME HAS 5 LETTERS IN IT! AWESOME!
+    ```
+
+    <details>
+    <summary>SolutionM</summary>
+    ```py
+    # capitalize all the things
+    text = input("Give me a string, please: ")
+    print(text.upper())
+
+    # capitalize only the first letter, print any remaining characters
+    text = input("Give me a string, please: ")
+    print(text[0].upper() + text[1:])
+    ```
+    </details>
+
+3. Madlib
+
+    Prompt the user for the missing words to a Madlib sentence using the input function. You can make up your own Madlib sentence, but here's an example:
+
+    ```py
+    ____(name)____'s favorite subject in school is ____(subject)____.
+    ```
+
+    With the above given sentence, this is what a user session might look like:
+
+    ```sh
+    $ python3 madlib.py
+    Please fill in the blanks below:
+    ____(name)____'s favorite subject in school is ____(subject)____.
+    What is name? Marty
+    What is subject? time travel
+    Marty's favorite subject in school is time travel.
+    ```
+
+    <details>
+    <summary>Solution</summary>
+    ```py
+    person = input("What is your name? ")
+    subject = input("what is your favorite subject? ")
+
+    print ('your name is %s and your favorite subject is %s' % (person, subject))
+    ```
+    </details>
+
+4. Day of the Week
+
+    Given the following code that prompts the user for a day number (Remember that the `int` function converts a numeric string to a number):
+
+    ```py
+    day = int(input('Day (0-6)? '))
+    # Fill in your code here
+    ```
+
+    The user will enter a number from 0 to 6. Given this number, print a day of the week. 0 for Sunday, 1 for Monday, 2 for Tuesday, and so on. Here's an example user session (this assumes you've named the file `day_of_week.py`):
+
+    ```py
+    $ python3 day_of_week.py
+    Day (0-6)? 5
+    Friday
+    $ python day_of_week.py
+    Day (0-6)? 0
+    Sunday
+    ```
+
+    <details>
+    <summary>Solution</summary>
+    ```py
+    day = int(input('Day (0-6)? '))
+
+    day_name = ''
+
+    if day == 0:
+        day_name = 'Sunday'
+    if day == 1:
+        day_name = 'Monday'
+    if day == 2:
+        day_name = 'Tuesday'
+    if day == 3:
+        day_name = 'Wednesday'
+    if day == 4:
+        day_name = 'Thursday'
+    if day == 5:
+        day_name = 'Friday'
+    if day == 6:
+        day_name = 'Saturday'
+
+    print(day_name)
+    ```
+    </details>
+
+5. Work or Sleep In?
+
+    Prompt the user for a day of the week just like the previous problem. But this time, print "Go to work" if it's a work day and "Sleep in" if it's a weekend day. Example session:
+
+    ```py
+    $ python3 work_or_sleep_in.py
+    Day (0-6)? 5
+    Go to work
+    $ python work_or_sleep_in.py
+    Day (0-6)? 6
+    Sleep in
+    ```
+
+    <details>
+    <summary>Solution</summary>
+    ```py
+    # Version 1
+    day = int(input('Day (0-6)? '))
+
+    what_to_do = ''
+
+    if day == 0:
+        what_to_do = 'Sleep in'
+    if day == 1:
+        what_to_do = 'Go to work'
+    if day == 2:
+        what_to_do = 'Go to work'
+    if day == 3:
+        what_to_do = 'Go to work'
+    if day == 4:
+        what_to_do = 'Go to work'
+    if day == 5:
+        what_to_do = 'Go to work'
+    if day == 6:
+        what_to_do = 'Sleep in'
+
+    print(what_to_do)
+
+    # Alternate Version
+    day = int(input('Day (0-6)? '))
+
+    sleep = False
+
+    if day == 0:
+        sleep = True
+    if day == 6:
+        sleep = True
+
+    if sleep:
+        print('Sleep in')
+    else:
+        print('Go to work')
+    ```
+    </details>
+
+6. Celsius to Fahrenheit
+
+    Prompt the user for a number in degrees Celsius, and convert the value to degrees in Fahrenheit and display it to the user.
+
+    Use the following formula:
+
+    ```py
+    F = (C * 9/5) + 32
+    ```
+
+    Example sessions:
+
+    ```sh
+    $ python3 degree_conversion.py
+    Temperature in C? 28
+    82.4 F
+    ```
+
+    ```sh
+    $ python3 degree_conversion.py
+    Temperature in C? -5
+    23 F
+    ```
+
+    <details>
+    <summary>Solutions</summary>
+    ```py
+    temp_in_c = int(input('Temperature in C? '))
+    temp_in_f = (temp_in_c * 1.8) + 32
+
+    print(temp_in_f)
+    ```
+    </details>
+
+## Level 2
+
+1. Tip Calculator
+
+    Your task is to write a program that calculates how much of a tip to leave at a restaurant.
+
+    Prompt the user for two things:
+
+    - The total bill amount
+    - The level of service, which can be one of the following: good, fair, or bad
+
+    Calculate the tip amount and the total amount (bill amount + tip amount). The tip percentage based on the level of service is based on:
+
+    - good -> 20%
+    - fair -> 15%
+    - bad -> 10%
+
+    Example session:
+
+    ```py
+    $ python3 tip_calc.py
+    Total bill amount? 100
+    Level of service? good
+    Tip amount: $20.00
+    Total amount: $120.00
+    ```
+
+    ```py
+    $ python3 tip_calc.py
+    Total bill amount? 48
+    Level of service? bad
+    Tip amount: $4.80
+    Total amount: $52.80
+    ```
+
+    Hints:
+
+    - Remember that you need to convert the input from the user input to floats instead of ints. Use the `float` function instead of the `int` function.
+    - To format a float number as a dollar value, use Python's formatting syntax: `"%.2f" % amount`
+
+    <details>
+    <summary>Solution</summary>
+    ```py
+    prompt_total = 'Total bill amount? '
+    prompt_service = 'Level of service? '
+
+    tip_text = 'Tip amount: %.2f'
+    total_text = 'Total amount: %.2f'
+
+    LEVEL_GOOD = 'good'
+    LEVEL_FAIR = 'fair'
+    LEVEL_BAD = 'bad'
+
+    TIP_GOOD = 0.2
+    TIP_FAIR = 0.15
+    TIP_BAD = 0.1
+
+    tip = 0.0
+
+    # process
+
+    total_bill = float(input(prompt_total))
+    level_of_service = input(prompt_service).lower()
+
+    if level_of_service == LEVEL_GOOD:
+        tip = total_bill * TIP_GOOD
+    elif level_of_service == LEVEL_FAIR:
+        tip = total_bill * TIP_FAIR
+    elif level_of_service == LEVEL_BAD:
+        tip = total_bill * TIP_BAD
+    else:
+        print("Invalid input. They can't be that bad.")
+
+    # result
+    print(tip_text % tip)
+    print(total_text % (total_bill + tip))
+    ```
+    </details>
+
+
+2. Tip Calculator 2
+
+    Allow the ability to divide the check into a equal parts amount a number of people. The user will enter the number of people to be divided amongst. Example session:
+
+    ```py
+    $ python3 tip_calc2.py
+    Total bill amount? 100
+    Level of service? good
+    Split how many ways? 5
+    Tip amount: $20.00
+    Total amount: $120.00
+    Amount per person: $24.00
+    ```
+
+    <details>
+    <summary>Solution</summary>
+    ```py
+
+    total_bill = int(input('Total bill amount? '))
+    level_of_service = input('Level of service? ')
+    split_how_many = int(input('Split how many ways? '))
+
+    tip_text = 'Tip amount: %.2f'
+    tip = 0.0
+
+    total_text = 'Total amount: %.2f'
+
+    if level_of_service == 'good':
+        tip = total_bill * 0.2
+    elif level_of_service == 'fair':
+        tip = total_bill * 0.15
+    elif level_of_service == 'bad':
+        tip = total_bill * 0.1
+
+    grand_total = total_bill + tip
+    per_person = grand_total / split_how_many
+    per_person_text = 'Amount per person: %.2f'
+
+    print(tip_text % tip)
+    print(total_text % grand_total)
+    print(per_person_text % per_person)
+    ```
+    </details>
+
+3. How many coins?
+
+    Write a program that will prompt you for how many coins you want. Initially you have no coins. It will ask you if you want a coin? If you type "yes", it will give you one coin, and print out the current tally. If you type no, it will stop the program. Example run:
+
+    ```py
+    $ python3 coins.py
+    You have 0 coins.
+    Do you want another? yes
+    You have 1 coins.
+    Do you want another? yes
+    You have 2 coins.
+    Do you want another? no
+    Bye
+    ```
+
+    <details>
+    <summary>Solution</summary>
+    ```py
+    another = 'yes'
+    count = -1
+    while another == 'yes':
+        count = count + 1
+        print('You have %d coins.' % count)
+        another = input('Do you want another? ')
+    print('Bye')
+    ```
+    </details>
+
+
+4. Looping from 1 to 10
+
+    Using a while loop, print out the numbers between 1 and 10 inclusive, one on a line. Example output:
+
+    ```py
+    $ python3 1_to_10.py
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    ```
+
+    <details>
+    <summary>Solution</summary>
+    ```py
+    count = 0
+    while count < 10:
+        count = count + 1
+        print(count)
+    ```
+    </details>
+
+5. n to m
+
+    Same as the previous problem, except you will prompt the user for the number to start on and the number to end on. Example session:
+
+    ```py
+    $ python3 n_to_m.py
+    Start from: 2
+    End on: 8
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    ```
+
+    <details>
+    <summary>Solution</summary>
+    ```py
+    # User input is a `string` type,
+    # so we need to convert it to `int`...
+    start = int(input('What is the starting number? '))
+    end = int(input ('What is the ending number? '))
+    # We're going to print all the numbers,
+    # so we'll need to go with less than OR equal...
+    while start <= end:
+        # We want to print the first number, so we print BEFORE we increment
+        print(start)
+        start = start + 1
+    ```
+    </details>
+
+## Level 9000
+
+### Triangle Numbers
+
+Print the first 100 triangle numbers. What is a triangle number? Read
+[this article to find out what triangle numbers are](https://www.mathsisfun.com/algebra/triangular-numbers.html).
+
+<details>
+<summary>Solution</summary>
+```py
+STOP = 100
+triangle_num = 0
+counter_row = 0
+while counter_row < STOP:
+    counter_row = counter_row + 1
+    triangle_num = triangle_num + counter_row
+    print("Triangle #%d is %d" % (counter_row, triangle_num))
+```
+</details>
+
+### Guess a Number
+
+#### Version 1
+
+You will implement a guess-the-number game where the player has to try guessing a secret number until they gets it right. For now, you will "hard code" the secret number to 5 (just set it to five like secret_number = 5). You will prompt the player to enter a number again and again, each time comparing their input to the secret number. To to that, you will need to write a while loop. If they guess correctly, you will print "You win!", otherwise, you will prompt for a number again.
+
+Example session:
+
+```py
+$ python3 guess_the_number.py
+I am thinking of a number between 1 and 10.
+What's the number? 3
+Nope, try again.
+What's the number? 9
+Nope, try again.
+What's the number? 5
+Yes! You win!
+```
+
+<details>
+<summary>Solution</summary>
+```py
+import random
+user_input = int(input("Guess a number between 5-50: "))
+magic_number = random.randint(5, 50)
+
+print(magic_number)
+
+if user_input == magic_number:
+    print("ARE YOU A MIND READER!?!?")
+elif user_input > 50:
+    print("Guess was too high!")
+elif user_input < 5:
+    print("Guess was too low")
+else:
+    print("Sorry. Try again.")
+```
+</details>
+
+#### Version 2: Give High-Low Hint
+
+Improve your game to provide the player with a high-or-low hint. Example session:
+
+```py
+$ python3 guess_the_number.py
+I am thinking of a number between 1 and 10.
+What's the number? 3
+3 is too low.
+What's the number? 9
+9 is too high.
+What's the number? 5
+Yes! You win!
+```
+
+<details>
+<summary>Solution</summary>
+```py
+import random
+user_input = int(input("Guess a number between 5-50: "))
+magic_number = random.randint(5, 50)
+
+print(magic_number)
+
+if user_input == magic_number:
+    print("ARE YOU A MIND READER!?!?!")
+elif (user_input < 5) or (user_input > 50):
+    print("YOU'RE OUT OF RANGE!!")
+else:
+    print("Sorry. Try again.")
+```
+</details>
+
+#### Version 3: Randomly Generated Secret Number
+
+Instead of hard-coding the secret number to 5 now, you will generate the secret number using a random number generator provided by Python, so that even you, the programmer, cannot know the secret number before hand. To generate a random number between 1 and 10, inclusive, do this:
+
+```py
+import random
+my_random_number = random.randint(1, 10)
+```
+
+Use this same method to generate your secret number for the game. Play the game a couple of times to see that the secret number is different each time.
+
+Version 4: Limit Number of Guesses
+
+Limit the number of guesses the player has to 5. If he cannot guess the number within 5 guesses, he losses. Example session:
+
+```py
+$ python3 guess_the_number.py
+I am thinking of a number between 1 and 10.
+You have 5 guesses left.
+What's the number? 1
+1 is too low.
+You have 4 guesses left.
+What's the number? 10
+10 is too high.
+You have 3 guesses left.
+What's the number? 2
+2 is too low.
+You have 2 guesses left.
+What's the number? 7
+7 is too high.
+You have 1 guesses left.
+What's the number? 4
+4 is too low.
+You ran out of guesses!
+```
