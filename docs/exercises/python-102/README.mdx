@@ -1,0 +1,294 @@
+---
+title: Python List/Dictionary Exercises
+sidebar_label: Python 102
+sidebar_position: 2
+---
+
+## Level 1
+
+1. Phonebook dictionary
+
+    Given the following dictionary, representing a mapping from names to phone numbers:
+
+    ```py
+    phonebook_dict = {
+        'Alice': '703-493-1834',
+        'Bob': '857-384-1234',
+        'Elizabeth': '484-584-2923'
+    }
+    ```
+
+    Write code to do the following:
+
+    - Print Elizabeth's phone number.
+    - Add an entry to the dictionary: Kareem's number is 938-489-1234.
+    - Delete Alice's phone entry.
+    - Change Bob's phone number to '968-345-2345'.
+    - Print all the phone entries.
+
+
+<details>
+    <summary>Solution</summary>
+    ```py
+    # Print Elizabeth's phone number.
+
+    print(phonebook_dict['Elizabeth'])
+
+    # Add an entry to the dictionary: Kareem's number is 938-489-1234.
+    phonebook_dict['Kareem'] = '938-489-1234'
+
+    # #Delete Alice's phone entry.
+    del phonebook_dict['Alice']
+
+    # Change Bob's phone number to '968-345-2345'.
+    phonebook_dict['Bob'] = '968-345-2345'
+
+    # Print all the phone entries.
+    for person in phonebook_dict:
+        print('%s: %s' % (person, phonebook_dict[person]))
+
+    # #Print all the phone entries, alternative version
+    for person, phone in phonebook_dict.items():
+        print("%s: %s" % (person, phone))
+    ```
+</details>
+
+2. Nested dictionaries
+
+    Given the following dictionary:
+
+    ```py
+    ramit = {
+        'name': 'Ramit',
+        'email': 'ramit@gmail.com',
+        'interests': ['movies', 'tennis'],
+        'friends': [
+            {
+            'name': 'Jasmine',
+            'email': 'jasmine@yahoo.com',
+            'interests': ['photography', 'tennis']
+            },
+            {
+            'name': 'Jan',
+            'email': 'jan@hotmail.com',
+            'interests': ['movies', 'tv']
+            }
+        ]
+    }
+    ```
+
+    - Write a python expression that gets the email address of Ramit.
+    - Write a python expression that gets the first of Ramit's interests.
+    - Write a python expression that gets the email address of Jasmine.
+    - Write a python expression that gets the second of Jan's two interests.
+
+    **NOTE:**
+    "Python expression" just means something like `print(dictionary[key])`. Although, in two of the above, using a `for` loop will be helpfu!
+
+<details>
+    <summary>Solution</summary>
+    ```py
+
+    # Write a python expression that gets the email address of Ramit.
+    print(ramit['email'])
+
+    # Write a python expression that gets the first of Ramit's interests.
+    print(ramit['interests'][0])
+
+    # Write a python expression that gets the email address of Jasmine.
+    for f in ramit['friends']:
+        if f['name'] == 'Jasmine':
+            print(f['email'])
+
+    # Write a python expression that gets the second of Jan's two interests.
+    for f in ramit['friends']:
+        if f['name'] == 'Jan':
+            print(f['interests'][1])
+    ```
+</details>
+
+
+3. Friend counter
+
+    Using the dictionary from the Nested dictionaries exercise above, write a function `countFriends()` that accepts a dictionary as an argument and returns a new dictionary that includes a new key `friends_count`:
+
+<details>
+<summary>Solution</summary>
+    ```py
+    # Solution 1
+    def countFriends2(someDictionary):
+        newDictionary = someDictionary.copy()
+        newDictionary["friends_count"] = len(newDictionary['friends'])
+        return newDictionary
+
+    # Printing the result is optional,
+    # but is the easiest way to verify the update
+    print(countFriends2(ramit))
+    ```
+</details>
+
+## Level 2
+
+1. Letter Summary
+
+    Write a `letter_histogram` program that asks the user for input, and prints a dictionary containing the tally of how many times each letter in the alphabet was used in the word. For example:
+
+    ```sh
+    $ python3 letter_histogram.py
+    Please enter a word: banana
+    {'a': 3, 'b': 1, 'n': 2}
+    ```
+
+<details>
+    <summary>Solution</summary>
+    ```py
+    def letter_histogram(word):
+        histogram = {}
+        for l in word:
+            if l in histogram:
+                histogram[l] = histogram[l] + 1
+            else:
+                histogram[l] = 1
+        return histogram
+
+    print(letter_histogram('abracadabrabarracuda'))
+    ```
+</details>
+
+2. Word Summary
+
+    Write a `word_histogram` program that asks the user for a sentence as its input, and prints a dictionary containing the tally of how many times each word in the alphabet was used in the text. For example:
+
+    ```sh
+    $ python3 word_histogram.py
+    Please enter a sentence: To be or not to be
+    {'to': 2, 'be': 2, 'or': 1, 'not': 1}
+    ```
+
+<details>
+    <summary>Solution</summary>
+    ```py
+    def word_histogram(paragraph):
+        histogram = {}
+        word_list = paragraph.split()
+        for word in word_list:
+            if word in histogram:
+                histogram[word] = histogram[word] + 1
+            else:
+                histogram[word] = 1
+        return histogram
+
+    print(word_histogram('to be or not to be'))
+    ```
+</details>
+
+## Level 9000
+
+#### Phone Book App
+
+You will write a command line program to manage a phone book. When you start the `phonebook.py` program, it will print out a menu and ask the user to enter a choice:
+
+```sh
+$ python3 phonebook.py
+Electronic Phone Book
+=====================
+1. Look up an entry
+2. Set an entry
+3. Delete an entry
+4. List all entries
+5. Quit
+
+What do you want to do (1-5)?
+```
+
+- If they choose to look up an entry, you will ask them for the person's name, and then look up the person's phone number by the given name and print it to the screen.
+- If they choose to set an entry, you will prompt them for the person's name and the person's phone number,
+- If they choose to delete an entry, you will prompt them for the person's name and delete the given person's entry.
+- If they choose to list all entries, you will go through all entries in the dictionary and print each out to the terminal.
+- If they choose to quit, end the program.
+
+Example session:
+
+```sh
+$ python3 phonebook.py
+
+Electronic Phone Book
+=====================
+1. Look up an entry
+2. Set an entry
+3. Delete an entry
+4. List all entries
+5. Quit
+What do you want to do (1-5)? 2
+
+Name: Melissa
+Phone Number: 584-394-5857
+Entry stored for Melissa.
+
+Electronic Phone Book
+=====================
+1. Look up an entry
+2. Set an entry
+3. Delete an entry
+4. List all entries
+5. Quit What do you want to do (1-5)? 2
+
+Name: Igor
+Phone Number: 857-485-2935
+Entry stored for Igor.
+
+Electronic Phone Book
+=====================
+1. Look up an entry
+2. Set an entry
+3. Delete an entry
+4. List all entries
+5. Quit What do you want to do (1-5)? 2
+
+Name: Jazz
+Phone Number: 334-584-2345
+Entry stored for Jazz.
+
+Electronic Phone Book
+=====================
+1. Look up an entry
+2. Set an entry
+3. Delete an entry
+4. List all entries
+5. Quit
+What do you want to do (1-5)? 1
+
+Name: Melissa
+Found entry for Melissa: 584-394-5857
+
+Electronic Phone Book
+=====================
+1. Look up an entry
+2. Set an entry
+3. Delete an entry
+4. List all entries
+5. Quit What do you want to do (1-5)? 3
+
+Name: Melissa
+Deleted entry for Melissa
+
+Electronic Phone Book
+=====================
+1. Look up an entry
+2. Set an entry
+3. Delete an entry
+4. List all entries
+5. Quit What do you want to do (1-5)? 4
+
+Found entry for Igor: 857-485-2935
+Found entry for Jazz: 334-584-2345
+
+Electronic Phone Book =====================
+1. Look up an entry
+2. Set an entry
+3. Delete an entry
+4. List all entries
+5. Quit What do you want to do (1-5)? 5
+
+Bye.
+```
