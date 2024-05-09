@@ -28,6 +28,12 @@ keywords:
 - [Dictionaries in Python](https://realpython.com/courses/dictionaries-python/)
 - [Understanding Dictionaries in Python 3](https://www.digitalocean.com/community/tutorials/understanding-dictionaries-in-python-3)
 
+## Read this
+
+[37 Tips from a Senior Frontend Developer](https://dev.to/_ndeyefatoudiop/37-tips-from-a-senior-frontend-developer-251b)
+
+I can confirm, these are pretty much all on :dart:
+
 ## Things I wish I heard 20 years ago
 
 **NOTE** The podcast is auto-transcibed, so some of it reads differently than it was spoken. I've shared the relevant quote below, but the entire show is worth a listen!
@@ -36,3 +42,4 @@ keywords:
 > A tuple is a very scary sounding name for an array where you the length and the item types are known. So if you have an array of an ID and a person, and the 1st item is the ID and 2nd item is a person. That's a tuple.
 
 - [SyntaxFM 709 Potluck: "Many fancy programming names are simple concepts"](https://syntax.fm/show/709/potluck-naming-tech-generators-layers-follow-up-sick-picks-page/transcript#many-fancy-programming-names-are-simple-concepts)
+
