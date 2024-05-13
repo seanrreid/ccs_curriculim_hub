@@ -21,6 +21,20 @@ Save these in a file called `loops.py`.
 - Ask the user for an ending number, assign it to a variable.
 - Write a loop that increments the starting number by `1` until it matches the ending number.
 
+<details>
+  <summary>Solution</summary>
+  ```py
+    start = int(input("Start from: "))
+    end = int(input("End on: "))
+
+    count = start
+
+    while count <= end:
+        print(count)
+        count += 1
+  ```
+</details>
+
 ### Multi-Condition Check
 
 - Create string with at least 2 words and at least 16 characters total.
@@ -34,6 +48,19 @@ Save these in a file called `loops.py`.
   - If **both** of those conditions are met, print the value of your string at that counter position
 - The result should be only _letters_ that occur in even numbered indexes.
 
+<details>
+    <summary>Solution</summary>
+    ```py
+    title = "Green Lantern Corp"
+    counter = 0
+    while counter < len(title):
+        # print out every other letters, but leave out spaces
+        if (counter % 2) == 0 and title[counter] != " ":
+            print(title[counter])
+        counter = counter + 1
+    ```
+</details>
+
 ## Bonus
 
 - Can you write a loop that increments by more than `1`?
@@ -41,10 +68,45 @@ Save these in a file called `loops.py`.
 - Can you let the user know when they choose something out of that range?
 
 <details>
-<summary>Solution</summary>
-```python
-while count <= end:
-    print(count)
-    count += 5
-```
+    <summary>Solution</summary>
+    ```py
+    # Can you write a loop that increments by more than `1`?
+
+    while count <= end:
+        print(count)
+        count += 5
+
+
+    # Can you create a range of numbers from which the user can choose?
+
+    def check_in_range(num):
+        if num >= 1 and num <= 5:
+            return True
+        else:
+            return False
+
+    # Can you let the user know when they choose something out of that range?
+
+    def throw_error(value_type):
+        return "Please choose a different {} value".format(value_type)
+
+    running = True
+    while running == True:
+        start = int(input("Pick a number from 1-5 to start from: "))
+        end = int(input("Pick a number from 1-5 to end on: "))
+
+        if check_in_range(start) == True and check_in_range(end) == True:
+            if end <= start:
+                print(throw_error("end"))
+            while start <= end:
+                print(start)
+                start += 1
+                if start == end:
+                    running = False
+        else:
+            if check_in_range(start) == False:
+                print(throw_error("start"))
+            if check_in_range(end) == False or end >= start:
+                print(throw_error("end"))
+    ```
 </details>
