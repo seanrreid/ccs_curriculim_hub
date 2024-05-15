@@ -1,0 +1,139 @@
+---
+title: Heroes vs Goblins Part 1
+sidebar_label: Python RPG Part 1
+sidebar_position: 1
+---
+
+Starter code: [https://github.com/seanrreid/python-rpg-starter](https://github.com/seanrreid/python-rpg-starter)
+
+## Step 1
+
+Make a `Hero` class to store the health and power of the hero, and make a `Goblin` class to store the health and power of the goblin.
+Use a hero object in place of the variables `hero_health` and `hero_power` and use a goblin object in place of the variables `goblin_health` and `goblin_power`.
+
+## Step 2
+
+Take the code for the hero attacking the goblin and extract it into a method (call it `attack`) of the Hero class.
+Replace the existing code with a call to the `attack` method.
+
+:::tip
+
+The `attack` method should take in the `goblin` (enemy) as a parameter: `hero.attack(goblin)`
+
+:::
+
+## Step 3
+
+Similarly, take the code for the goblin attacking the hero and extract it into a method (also call it `attack`) of the Goblin class.
+
+Replace the existing code with a call to the attack method. It should look like `goblin.attack(hero)`.
+
+## Step 4
+
+Refactor the while condition:
+
+```py
+while goblin.health > 0 and hero.health > 0:
+```
+
+to
+
+```py
+while goblin.alive() and hero.alive():
+```
+
+The health checks should be moved to within the alive methods of `Hero` and `Goblin` respectively.
+
+## Step 5
+
+Take the code for printing the health status of the hero and move it into a method called `print_status` of `Hero`. Do the same for the goblin.
+
+## Step 6
+
+:::tip
+Do you see a lot of duplicated or similar code between `Hero` and `Goblin`?
+What if you can share the duplicated code between them?
+
+You can by using inheritance!
+:::
+
+Create a new class called `Character` and make both `Hero` and `Goblin` inherit from it.
+
+## Step 7
+
+The alive methods on `Hero` and `Goblin` should be identical. Move it into `Character`, and remove them from `Hero` and `Goblin` - now they can simply inherit it from `Character`.
+
+## Bonus Challenge
+
+The methods attack and `print_status` method in `Hero` and `Goblin` look almost identical, but not quite.
+
+Is it possible to move them into the Character class as well? Give it a try.
+
+## Solution
+
+Here is a _possible_ solution, but keep in mind this is one of many possible approaches.
+
+<details>
+    <summary>Solution</summary>
+```py
+class Character:
+    def __init__(self, name, health=10, power=5):
+        self.health = health
+        self.power = power
+
+    def attack(self, enemy):
+        # do attack stuff
+        enemy.health -= self.power
+
+    def alive(self):
+        return self.health > 0
+
+    def print_status(self):
+        print("You have %d health and %d power." % (self.health, self.power))
+
+class Hero(Character):
+    def __init__(self, health, power):
+        super().__init__(health, power)
+
+class Goblin(Character):
+    def __init__(self, health, power):
+        super().__init__(health, power)
+
+gawain = Hero("Sir Gawain", 20, 10)
+green_knight = Goblin("The Green Knight", 6, 2)
+
+def main():
+
+    while green_knight.alive() > 0 and gawain.alive() > 0:
+        gawain.print_status()
+        green_knight.print_status()
+        print("What do you want to do?")
+        print("1. fight goblin")
+        print("2. do nothing")
+        print("3. flee")
+        print("> ")
+        user_input = input()
+        if user_input == "1":
+            # Hero attacks goblin
+            gawain.attack(green_knight)
+            print("You do %d damage to the goblin." % gawain.power)
+            if green_knight.alive() == False:
+                print("The goblin is dead.")
+        elif user_input == "2":
+            pass
+        elif user_input == "3":
+            print("Goodbye.")
+            break
+        else:
+            print("Invalid input %r" % user_input)
+
+        if green_knight.health > 0:
+            # Goblin attacks hero
+            green_knight.attack(gawain)
+            print("The goblin does %d damage to you." % green_knight.power)
+            if gawain.alive() == False:
+                print("You are dead.")
+
+main()
+```
+</details>
