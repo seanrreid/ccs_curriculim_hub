@@ -78,47 +78,53 @@ Here is a _possible_ solution, but keep in mind this is one of many possible app
 ```py
 class Character:
     def __init__(self, name, health=10, power=5):
+        self.name = name
         self.health = health
         self.power = power
+        self.weapons = []
 
     def attack(self, enemy):
-        # do attack stuff
+        print(f"{self.name} attacks {enemy.name}!")
         enemy.health -= self.power
 
-    def alive(self):
+    def is_alive(self):
         return self.health > 0
 
-    def print_status(self):
-        print("You have %d health and %d power." % (self.health, self.power))
-
 class Hero(Character):
-    def __init__(self, health, power):
-        super().__init__(health, power)
+    def __init__(self, name, health, power, cape):
+        super().__init__(name, health, power)
+        self.cape = cape
 
-class Goblin(Character):
-    def __init__(self, health, power):
-        super().__init__(health, power)
+class Villain(Character):
+    def __init__(self, name, health, power):
+        super().__init__(name, health, power)
 
-gawain = Hero("Sir Gawain", 20, 10)
-green_knight = Goblin("The Green Knight", 6, 2)
+hero = Hero('Batman', 20, 8, True)
+villain = Villain('Joker', 40, 2)
+
+if hero.cape == True:
+    print(f"{hero.name} has a cape")
+else:
+    print(f"NO CAPES!")
 
 def main():
 
-    while green_knight.alive() > 0 and gawain.alive() > 0:
-        gawain.print_status()
-        green_knight.print_status()
+    while villain.health > 0 and hero.health > 0:
+        print("You have %d health and %d power." % (hero.health, hero.power))
+        print(f"The {villain.name} has {villain.health} health and {villain.power} power.")
+        print()
         print("What do you want to do?")
-        print("1. fight goblin")
+        print(f"1. fight {villain.name}")
         print("2. do nothing")
         print("3. flee")
-        print("> ")
+        print("> ",)
         user_input = input()
         if user_input == "1":
             # Hero attacks goblin
-            gawain.attack(green_knight)
-            print("You do %d damage to the goblin." % gawain.power)
-            if green_knight.alive() == False:
-                print("The goblin is dead.")
+            hero.attack(villain)
+            print("You do %d damage to the %s." % (hero.power, villain.name))
+            if not villain.is_alive():
+                print(f"The {villain.name} is dead.")
         elif user_input == "2":
             pass
         elif user_input == "3":
@@ -127,11 +133,11 @@ def main():
         else:
             print("Invalid input %r" % user_input)
 
-        if green_knight.health > 0:
+        if villain.is_alive():
             # Goblin attacks hero
-            green_knight.attack(gawain)
-            print("The goblin does %d damage to you." % green_knight.power)
-            if gawain.alive() == False:
+            villain.attack(hero)
+            print("The %s does %d damage to you." % (villain.name, villain.power))
+            if not hero.is_alive():
                 print("You are dead.")
 
 main()
