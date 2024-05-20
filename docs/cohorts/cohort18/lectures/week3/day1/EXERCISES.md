@@ -11,7 +11,7 @@ Review these before moving on to the next section.
 - [Project Management 101](/docs/lessons/front-end-foundations/project-management-101/)
 - [Chrome Dev Tools](/docs/lessons/front-end-foundations/chrome-devtools/)
 - [HTML 101](/docs/lessons/front-end-foundations/html-101/)
-= [CSS 101](/docs/lessons/front-end-foundations/css-101/)
+- [CSS 101](/docs/lessons/front-end-foundations/css-101/)
 
 ## Magic 8 Ball
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
