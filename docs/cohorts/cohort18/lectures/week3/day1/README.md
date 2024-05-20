@@ -11,7 +11,7 @@ keywords:
   - semantic markup
 ---
 
-## Cohort 17 Arcade-o-Rama
+## Cohort 18 Arcade-o-Rama
 
 ![Pinky's Arcard in Taylors Mill](./img/pinkys_arcade.jpg)
 
