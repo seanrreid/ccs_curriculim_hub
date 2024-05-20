@@ -2,6 +2,8 @@
 sidebar: auto
 ---
 
+<!-- markdownlint-disable no-inline-html -->
+
 # Project Management 101
 
 ## Learning Objectives
@@ -145,12 +147,6 @@ Standup is also a daily practice where the whole team stand around in a circle a
 ### Kanban
 
 Kanban is a visual implementation of Agile. It is a Japanese word for "card". The focus of Kanban is to break work down into small pieces and visually represent the status of the work on a board.
-
-### TODO: find image for Kanban Board
-
-```
-![kanban board](./kanban-board.png)
-```
 
 The Kanban board is the central place to store information for the project. It is made up of columns (ex: to-do, doing, done) and individual cards are taken by individual developers and moved across the board as progress is made.
 

@@ -1,15 +1,25 @@
 ---
-title: Magic 8 Ball - Step 1
+title: Welcome to the Internet
 sidebar_label: Exercises
 sidebar_position: 3
 ---
 
+## Reading
+
+Review these before moving on to the next section.
+
+- [Project Management 101](/docs/lessons/front-end-foundations/project-management-101/)
+- [Chrome Dev Tools](/docs/lessons/front-end-foundations/chrome-devtools/)
+- [HTML 101](/docs/lessons/front-end-foundations/html-101/)
+= [CSS 101](/docs/lessons/front-end-foundations/css-101/)
+
+## Magic 8 Ball
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 For this section, our project is going to be a [Magic 8 Ball](https://en.wikipedia.org/wiki/Magic_8_Ball)!
 
 You'll brainstorm together to build out the application. We'll essentially be building the same application, but each version will be custom tailored to the decisions you make today.
 
-## Questions to answer
+### Questions to answer
 
 - What are the most important items to convey to the user?
 - How do you remove "friction" (i.e. make it easy for the user to use and/or register to use the app)
@@ -21,7 +31,13 @@ Bonus:
 - What's the ideal user "path" to use the app?
 - What happens if (or, realistically, when) the user's don't use the app the way you intended?? 🤔
 
-## Design it!
+### Design it!
+
+:::info
+
+Note that we're just using today to come up with a _design_.  We'll beging to code this out tomorrow.
+
+::::
 
 Using your answers to the previous questions as a guide, find some design inspiration for your app.
 
