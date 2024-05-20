@@ -9,7 +9,7 @@ During the second week we took a deeper dive into Python, in particular:
 * Functions
 * Object Oriented Programming (classes & objects)
 
-This week we'll move on to the internt, and begin our longer Music App project.
+This week we'll move on to the internet!
 
 * How does the internet work? (Hint: it's all `request` and `response`)
 * The browser and the Document Object Model (DOM)
