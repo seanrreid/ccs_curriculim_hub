@@ -13,10 +13,7 @@ After completing this lesson, you will be able to:
 - Structure a web form for a user to enter information.
 - Use form controls to update the webpage.
 
-
-## Lesson
-
-### What are Web Forms
+## What are Web Forms
 
 > Web forms are one of the main points of interaction between a user and a web site or application. Forms allow users to enter data, which is generally sent to a web server for processing and storage, or used on the client-side to immediately update the interface in some way (for example, add another item to a list, or show or hide a UI feature). A web form's HTML is made up of one or more **form controls**, plus some additional elements to help structure the overall form - [MDN Forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form)
 
@@ -26,40 +23,66 @@ In HTML `<form>...</form>` tags are used to identify the start and the end forms
 `<form>` tags are not always needed to submit information. It is used in a way to group together several form controls for a single purpose. Form Controls can be used independently of the `<form>` tag.
 :::
 
-### Form accessibility
+## Form accessibility
 
-#### Fieldset and Legend
+### Fieldset and Legend
+
 The [`<fieldset>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) element is a good way to create groups of form controls that share the same purpose, for styling and sematic purposes. You can label a `<fieldset>` by including a `<legend>` element just below the opening `<fieldset>`
 
 Many assistive technologies, such as screen readers, will use the `<legend>` element as part of the label of each form control for each `<fieldset>` element.
 
-@/lessons/front-end-foundations/html-forms/fieldset-example.html
+```html
+<form>
+    <fieldset>
+        <legend>User Information</legend>
+        <label for="first-name"> First Name </label>
+        <input type="text" name="first-name" id="first-name" />
+
+        <label for="last-name"> Last Name </label>
+        <input type="text" name="Last-name" id="Last-name" />
+
+        <label for="address"> Home Address </label>
+        <input type="text" name="address" id="address" />
+    </fieldset>
+    <button type="submit" id="submit-button" value="submit" />
+</form>
+```
 
 In this example, we are grouping a user's information under a single label. When a screen reader would read this to a user it will allow the user to understand a little more of the context of the information that you are asking for.
 
-#### The `label` element
+### The `label` element
 
 The [`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label) element is the formal way to define a label for an HTML form widget. This is the most important element if you want to build accessible forms. Not only does this help separate and group together different form controls, it informs the user about what is needed for form control.
 
 You can associate a `label` with an `input`. For example:
 
-@/lessons/front-end-foundations/html-forms/label-example1.html
+```html
+<label for="user-name">User Name</label>
+<input type="text" id="user-name" name="user-name" />
+```
 
 With the `<label>` associated correctly with the `<input>` via its `for` attribute (which contains the `<input>` element's `id` attribute), a screen reader will read out something like "Name, edit text".
 
 You can also nest the form controls inside of the `<label>` tags. This allows for it to be associated with the use of the 'for' attribute.
 
-@/lessons/front-end-foundations/html-forms/label-example2.html
+```html
+<label>
+  User Name
+  <input type="text" id="name" name="user-name"/>
+</label>
+```
 
-### What are Form Controls
+## What are Form Controls
 
 Form controls, also called **widgets**, can be single or multi-line text fields, dropdown boxes, buttons, checkboxes, or radio buttons and are mostly created using the `<input>` element. When this data is submitted the values of these elements are sent by the browser to the server or update the web page itself.
 
-#### The many faces of `<input>`
+### The many faces of `<input>`
 
 The most common use of form controls is with the `<input>` elements `type` property, such as 'text'. Let's look at an example of this.
 
-@/lessons/front-end-foundations/html-forms/input-text-example.html
+```html
+<input type="text" />
+```
 
 This will appear in the browser like this:
 
@@ -68,7 +91,9 @@ This will appear in the browser like this:
 The text `<input>` field is the most basic form control and is the default value of the `type` property. It allows the user to type enter any kind of data.
 
 :::warning
+
 If any line-breaks are entered by the user, the browser will remove those breaks before sending the data to the server.
+
 :::
 
 The `<input>` field is one of the most flexible elements in HTML. There are many values you can assign to the `type` attribute. Here is a quick look at some of the most common and how it changes the behavior and look of the `<input>` element. You can checkout a full list here [MDN - HTML Input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
@@ -85,54 +110,76 @@ The `<input>` field is one of the most flexible elements in HTML. There are many
 
 `checkbox` and `radio` types allows for choices to be given to the user. It allows you to get a specific answer from the user versus a text field which can be open-ended. Let's look at an example.
 
-@/lessons/front-end-foundations/html-forms/input-radio-example.html
+```html
+<form>
+    <fieldset>
+        <legend>Do you like programming?</legend>
+        <label>
+            <input type="radio" id="yes" name="question" value="yes" checked /> Yes
+        </label>
+        <label>
+            <input type="radio" id="no" name="question" value="no" /> No
+        </label>
+    </fieldset>
+</form>
+```
 
 With this code your webpage will look something like this:
 
-<!--
 <fieldset>
-  <legend> Do you like programming? </legend>
-  <p>
+    <legend>Do you like programming?</legend>
     <label>
-      <input type=radio id="yes" name="question" checked> Yes
+        <input type="radio" id="yes" name="question" value="yes" checked/> Yes
     </label>
-  </p>
-  <p>
     <label>
-      <input type=radio id="no" name="question"> No
+        <input type="radio" id="no" name="question" value="no" /> No
     </label>
-  </p>
-</fieldset> -->
+</fieldset>
 
 With `type="radio"`, the user can choose one (and only one) of multiple options, in this case `yes` or `no`. You must use value for the `name` property so that the browser groups them together, allowing only one of them to be selected at any given time. The `checked` attribute at the end of the `input` tag tells the browser to have set that input as initially selected when the page loads.
 
 Now lets take a look a example with `checkbox` as the `type`:
 
-@/lessons/front-end-foundations/html-forms/input-checkbox-example.html
+```html
+<fieldset>
+  <legend> What Programming languages do you like? (Choose More than One)</legend>
+    <label>
+      <input type="checkbox" checked /> HTML
+    </label>
+
+    <label>
+      <input type="checkbox" /> CSS
+    </label>
+
+    <label>
+      <input type="checkbox" /> Javascript
+    </label>
+
+    <label>
+      <input type="checkbox" /> Python
+    </label>
+</fieldset>
+```
 
 This looks like:
 
 <fieldset>
   <legend> What Programming languages do you like? (Choose More than One)</legend>
-  <p>
     <label>
       <input type="checkbox" checked /> HTML
     </label>
-  </p>
-  <p>
+
     <label>
       <input type="checkbox" /> CSS
-    </label></p>
-  <p>
+    </label>
+
     <label>
       <input type="checkbox" /> Javascript
     </label>
-  </p>
-  <p>
+
     <label>
       <input type="checkbox" /> Python
     </label>
-  </p>
  </fieldset>
 
 Unlike the `radio` type the `checkbox` type allows the user to select more than one option. We can also apply the `checked` attribute to the `input` as well to preselect options.
@@ -143,22 +190,40 @@ Unlike the `radio` type the `checkbox` type allows the user to select more than 
 
 The `<textarea>` is a field just like the `<input type="text">` element except that it creates a multiple line text field not just one line. This allows for a user to insert line breaks to create paragraphs.
 
-@/lessons/front-end-foundations/html-forms/textarea-example.html
-
+```html
 <fieldset>
     <label for="experience-input"> Tell us about your Experience! </label>
-    <p>
-      <textarea id="experience-input" name="experience">You had a ...</textarea>
-    </p>
+    <textarea id="experience-input" rows="10" cols="50" name="experience">You had a ...</textarea>
+</fieldset>
+```
+
+<fieldset>
+    <label for="experience-input" style={{display: 'block', width: '100%'}}> Tell us about your Experience! </label>
+    <textarea id="experience-input" rows="10" cols="50" name="experience">You had a ...</textarea>
 </fieldset>
 
+<br/>
 `<textarea>` have several other properties that can be used to expand on its size and other functionality. For example, you can add `rows` and `columns` attributes to expand the area for more area for the user to type in. For more information visit [MDN - Textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
 
 #### Using Dropdowns
 
 You can add a dropdown menu into your form by using the `select` tag. This creates a dropdown menu. You fill it with choices using the `<option>` tag.
 
-@/lessons/front-end-foundations/html-forms/select-example.html
+```html
+<fieldset>
+    <label for="genre-select"> What's Your favorite movie genre? </label>
+    <select name="genre" id="genre-select">
+        <option value="" disabled selected>--Please choose an option--</option>
+        <option value="action">Action</option>
+        <option value="adventure">Adventure</option>
+        <option value="comedy">Comedy</option>
+        <option value="documentary">documentary</option>
+        <option value="horror">Horror</option>
+        <option value="mystery">Mystery</option>
+        <option value="Anime">Anime</option>
+    </select>
+</fieldset>
+```
 
 With the use of the `<select>` element we are able to give the user a ton of choices to choose from without taking up a lot of space. Each option has a `value` attribute, once selected, will allow you to save the selected `value` to a database for later use. Note that we use two attributes in the first options. `disabled` attribute prevents the user from being able to choose this option as its value is an empty string. `selected` tells the browser to select this `<option>` when the page loads.
 
@@ -167,20 +232,21 @@ When we open this in the browser are page now looks like this.
 <fieldset>
     <label for="genre-select"> What's Your favorite movie genre? </label>
     <select name="genre" id="genre-select">
-      <option value="" disabled selected>--Please choose an option--</option>
-      <option value="action">Action</option>
-      <option value="adventure">Adventure</option>
-      <option value="comedy">Comedy</option>
-      <option value="documentary">documentary</option>
-      <option value="horror">Horror</option>
-      <option value="mystery">Mystery</option>
-      <option value="Anime">Anime</option>
+        <option value="" disabled selected>--Please choose an option--</option>
+        <option value="action">Action</option>
+        <option value="adventure">Adventure</option>
+        <option value="comedy">Comedy</option>
+        <option value="documentary">documentary</option>
+        <option value="horror">Horror</option>
+        <option value="mystery">Mystery</option>
+        <option value="Anime">Anime</option>
     </select>
-  </fieldset>
+</fieldset>
 
+<br/>
 The usefulness of the `<select>` element goes beyond forms. From navigation to rendering different elements based on the choice of the user. For additional information check out [MDN - Select](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select).
 
-### Summary
+## Summary
 
 Forms are a large part of the interaction between a user and a website. It allows for users to sign up, login, creating blog posts and so much more. On the other side it allows companies and other websites to get feedback from the user and save that information into a database.
 
