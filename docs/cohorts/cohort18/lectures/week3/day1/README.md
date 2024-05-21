@@ -27,7 +27,6 @@ We'll spend the first hour or so reviewing/playing everyone's Python games!
 ## Presentations
 
 - [Welcome to the Internet](https://docs.google.com/presentation/d/1VV0ATWAFqKgDebwt4MS4SR1ptXfmXjez0aL0lnPHqJ8/edit?usp=sharing)
-- [Getting Started with HTML](https://docs.google.com/presentation/d/1vIw7mfqG3H5t8mxxDjj7BcT1gTOlPRgvSz17_rFeUKg/edit?usp=sharing)
 
 ## Types of programming
 
