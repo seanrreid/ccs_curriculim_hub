@@ -1,8 +1,7 @@
 ---
 sidebar: auto
+title: Chrome DevTools
 ---
-
-# Chrome DevTools
 
 ## Learning Objectives
 

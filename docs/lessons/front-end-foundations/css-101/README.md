@@ -1,5 +1,6 @@
 ---
 sidebar: auto
+title: CSS 101
 ---
 
 # CSS 101

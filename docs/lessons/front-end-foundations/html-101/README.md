@@ -1,8 +1,7 @@
 ---
 sidebar: auto
+title: HTML 101
 ---
-
-# HTML 101
 
 ## Learning Objectives
 

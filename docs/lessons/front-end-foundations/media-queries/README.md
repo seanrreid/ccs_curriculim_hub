@@ -1,8 +1,7 @@
 ---
 sidebar: auto
+title: Media Queries
 ---
-
-# Media Queries
 
 ## Learning Objectives
 
@@ -35,7 +34,7 @@ The Chrome Developer tools are the best available and are built into every versi
 
 This particular tool allows you to easily view your webpage as if it is one of the preset devices.
 
-<img src="./preset-devices.jpg" width="500" height="450"/>
+![Preset Devices](./preset-devices.jpg)
 
 Clicking on one of the options, setting the size manually, or using the toolbar changes the size of the viewable area (or "viewport") of the website. This lets you see what happens to the content on different screen sizes.
 

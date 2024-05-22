@@ -1,10 +1,9 @@
 ---
+title: Project Management 101
 sidebar: auto
 ---
 
 <!-- markdownlint-disable no-inline-html -->
-
-# Project Management 101
 
 ## Learning Objectives
 
