@@ -31,3 +31,7 @@ title: Additional Resources
 
 - [Senior Engineer Checklist](https://littleblah.com/post/2019-09-01-senior-engineer-checklist/)
   <br/> Solid guide for things to be on the lookout for in future teammates, as well as career paths.
+
+## General
+
+- [What users want vs what technologists think is important](https://substack.com/@gregorojstersek/note/c-48140406?r=1g0l)

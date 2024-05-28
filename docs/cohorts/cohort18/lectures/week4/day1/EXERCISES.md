@@ -24,5 +24,5 @@ sidebar_position: 3
 ## Exercises
 
 - [JS Types Practice](/docs/exercises/js-types-practice/)
-- [DOM Shopping List](/docs/exercises/dom-shopping-list)
+- [JS Functions Practice](/docs/exercises/js-functions-variables-practice/)
 - [JavaScript Promises](/docs/exercises/js-promises-practice/)
