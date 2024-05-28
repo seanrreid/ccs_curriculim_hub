@@ -21,6 +21,11 @@ sidebar_position: 3
 - [JavaScript Objects](/docs/lessons/solving-problems-using-code-js/objects-loops/)
 - [JavaScript Callbacks](/docs/lessons/solving-problems-using-code-js/callbacks/)
 
+#### Mozilla Developer Network
+
+- [MDN: Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+- [MDN: Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+
 ## Exercises
 
 - [JS Types Practice](/docs/exercises/js-types-practice/)
