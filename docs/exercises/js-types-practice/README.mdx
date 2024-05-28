@@ -11,23 +11,7 @@ The exercises below are designed to get you used to working with basic JavaScrip
 - Make a new folder called `js-types-exercise`
 - Initialize a new git repository in this folder
 - Make two files in the folder, `index.html` and `scripts.js`
-- Copy/Paste the exercise into `scripts.js`.
-
-:::tip
-Make sure you've loaded `scripts.js` in your `index.html` file!!
-:::
-
-## Exercise
-
-Your task is to open your browser `console` to view the output. You'll make changes to each function to return the desired output. Make your changes inside of the curly brackets, `{}`.
-
-:::tip
-You don't need to change the functions themselves. You'll add your code inside the `{}`
-:::
-
-Save your changes to the file, reload the browser, and view the output in the `console`.
-
-There are comments for each exercise explaining the type that should be returned. They'll get progressively more difficult with each exercise.
+- Copy/Paste the code example into `scripts.js`.
 
 ```js
 console.log('JavaScript Types Excercise');
@@ -64,6 +48,23 @@ console.log('This should be an object that has key-value pairs, key1 -> "Hello W
 console.log("This should be a boolean value that returns 'false':",exercise6());
 ```
 
+## Exercise
+
+:::tip
+Make sure you've loaded `scripts.js` in your `index.html` file!!
+:::
+
+Your task is to open your browser `console` to view the output. You'll make changes to each function to return the desired output. Make your changes inside of the curly brackets, `{}`.
+
+:::info
+You don't need to change the functions themselves. You'll add your code inside the `{}`
+:::
+
+Save your changes to the file, reload the browser, and view the output in the `console`.
+
+There are comments for each exercise explaining the type that should be returned. They'll get progressively more difficult with each exercise.
+
+
 ## CHEAT SHEET
 
 - "Declaring" a variable is done via the keywords `const`, `let`, and `var`.
@@ -72,3 +73,48 @@ console.log("This should be a boolean value that returns 'false':",exercise6());
 - An object is in curly brackets, `{}`.
 - A "key-value pair" follows the format: `key: value`.
 - The word `return` is magic ✨ (we'll discuss this more later)
+
+
+<details>
+<summary>Solution</summary>
+```js
+function exercise1() {
+  // Declare and instantiate a number and return it
+  var number = 1;
+  return number;
+}
+
+function exercise2() {
+  // Declare and instantiate a floating point number that is not a whole number and return it
+  var float = 3.14;
+  return float;
+}
+
+function exercise3() {
+  // Declare and instantiate a string "Hello World!" and return it
+  var hello = "Hello World!";
+  return hello;
+}
+
+function exercise4() {
+  // Declare and instantiate an array containing the string "Hello World!" and the number 4 and return it
+  var mixedArray = ["Hello World!", 4];
+  return mixedArray;
+}
+
+function exercise5() {
+  // Declare and instantiate an object containing the key-value pairs key1 -> "Hello World!" and key2 -> 4, and return it
+  var mixedObject = {
+    key1: "Hello World!",
+    key2: 4
+  };
+  return mixedObject;
+}
+
+function exercise6() {
+  // Declare and instantiate a boolean value 'false' and return it
+  var boolean = false;
+  return boolean;
+}
+```
+</details>
