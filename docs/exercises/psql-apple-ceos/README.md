@@ -1,7 +1,7 @@
 ---
 title: SQL - Apple CEOs pt 1
 sidebar_label: SQL - Apple CEOs
-sidebar_position: 15
+sidebar_position: 5.02
 ---
 
 ## Getting Started

@@ -1,7 +1,7 @@
 ---
 title: SQL - Intro to SQL
 sidebar_label: SQL - Intro
-sidebar_position: 13
+sidebar_position: 5
 ---
 
 <!-- markdownlint-disable no-inline-html -->

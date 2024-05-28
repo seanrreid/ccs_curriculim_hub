@@ -1,7 +1,7 @@
 ---
 title: HTML/CSS Practice
 sidebar_label: HTML/CSS
-sidebar_position: 6
+sidebar_position: 2
 ---
 
 ## Level 1

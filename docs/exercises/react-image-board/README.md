@@ -1,7 +1,7 @@
 ---
 title: React - User Image Board
 sidebar_label: React - Image Board
-sidebar_position: 25
+sidebar_position: 7.01
 ---
 
 <!-- markdownlint-disable no-inline-html -->

@@ -1,7 +1,7 @@
 ---
 title: React Intro - Tic/Tac/Toe
 sidebar_label: React - Introduction
-sidebar_position: 22
+sidebar_position: 7
 ---
 
 <!-- markdownlint-disable no-inline-html -->

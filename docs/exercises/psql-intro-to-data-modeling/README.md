@@ -1,7 +1,7 @@
 ---
 title: SQL - Data Modeling
 sidebar_label: SQL - Data Modeling
-sidebar_position: 14
+sidebar_position: 5.01
 ---
 
 This is a pen and paper exercise! :pen: :page_facing_up:

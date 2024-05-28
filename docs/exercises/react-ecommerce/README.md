@@ -1,7 +1,7 @@
 ---
 title: React - Make an Online Store with React, React Router, and the FakeStore API
 sidebar_label: React - Ecommerce
-sidebar_position: 27
+sidebar_position: 7.04
 ---
 
 <!-- markdownlint-disable no-inline-html -->

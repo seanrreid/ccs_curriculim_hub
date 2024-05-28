@@ -1,15 +1,16 @@
 ---
 title: React - OMDB Movie Review App
 sidebar_label: React - Movie Review
-sidebar_position: 25
+sidebar_position: 7.03
 ---
 
 <!-- markdownlint-disable no-inline-html -->
 
-Use the [OMDB API](https://www.omdbapi.com/) find and review movies!
+:::info
+You've done this before in HTML/CSS/JS, now it's time to try it in React!
+:::
 
-- Register for an [API Key](https://www.omdbapi.com/apikey.aspx) (There is a free version, limited to 1000 requests/day)
-- Test out the URL in Postman, examine the JSON object you get as a response
+Use the [OMDB API](https://www.omdbapi.com/) find and review movies!
 
 ## Goals
 
@@ -25,7 +26,8 @@ Use the [OMDB API](https://www.omdbapi.com/) find and review movies!
 
 ### UI
 
-- Render the movie information using "card" layout [Look here for an example](https://uxplanet.org/using-card-based-design-to-enhance-ux-51f965ab70cb)
+- Render the movie information using "card" layout
+  <br/>[Look here for an example](https://uxplanet.org/using-card-based-design-to-enhance-ux-51f965ab70cb)
 - Append new movie cards with each search.
 
 ## Level 1

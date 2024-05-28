@@ -1,7 +1,7 @@
 ---
 title: Python Warrior (RPG Game)
 sidebar_label: Python RPG
-sidebar_position: 5
+sidebar_position: 1.10
 ---
 
 ## The What
