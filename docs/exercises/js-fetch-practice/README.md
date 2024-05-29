@@ -16,14 +16,10 @@ Use these exercises to practice working with the `fetch()` APIs, promises, and u
 
 ## Choose Your Own Adventure
 
-- Use `async/await` or `fetch().then().then()` (or both?)?
-- Use arrow syntax, or `function` keyword syntax?
 - Build the entire DOM in JavaScript (i.e. `createElement()`)?
 - Lay out elements with IDs in the HTML (i.e. `querySelector()`)?
 
-## Level 1
-
-### Github Users Query
+## Github Users Query
 
 - Accept user input via a form that recieves a Github username.
 - Search for that user via the Github Users API endpoint: `https://api.github.com/users/[some_user_name]`
@@ -69,12 +65,12 @@ The response from the Github API will look something like:
 }
 ```
 
-#### Level Up: Choose one, or both, of the following
+### Level Up: Choose one, or both, of the following
 
 - **Search and Add**: Can you search for a second user and _append_ their data after the first.
 - **Search and Replace**: Can you _remove_ the first user's data and replace it with the second??
 
-### Github Issues Lookup
+## Github Issues Lookup
 
 - Query the Github Issues API for the app `create-react-app` via this endpoint: `https://api.github.com/repos/facebook/create-react-app/issues`
 - Return a list of all the issues, display the `title` and the `body` information in the DOM.
@@ -164,7 +160,7 @@ The response from the Github API will look something like:
 ]
 ```
 
-#### Level Up: Dig into an Issue
+### Level Up: Dig into an Issue
 
 **NOTE**: A new branch is highly recommended.
 
@@ -256,18 +252,6 @@ The response for a single issue will look something like:
     "state_reason": null
 }
 ```
-
-## Level 2
-
-### Movie search
-
-:::tip
-You may need an API Key for some of these API requests. Read the docs first!
-:::
-
-Create a new app that lets the user search for movies by title. Sign up for an API key and use the data from the [Open Movie Database](http://www.omdbapi.com/) or from [The Movie DB](https://www.themoviedb.org/faq/api).
-
-Provide the user with a form so that they can enter a movie title. On submit, make the `fetch()` request to the API. Add a `Reset` button that clears the form and the movie information on the page.
 
 ## Level 9000
 
