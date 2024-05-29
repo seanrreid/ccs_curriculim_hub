@@ -12,7 +12,7 @@ Use these exercises to practice working with the `fetch()` APIs, promises, and u
 - Create an `index.html` file (remember the shortcut to generate the boilerplate)
 - Create a `scripts` or `js` folder and add your JavaScript file (i.e. a file named `scripts.js`, `main.js`, or `index.js`)
 - Create a `styles` or `css` folder and add your Stylesheet (i.e. a file named `styles.css`, or `index.css`)
-- **[OPTIONAL]** Use a CSS framework for added styling (i.e. [Bulma](https://bulma.io/documentation/overview/start/) or [Tailwind](https://tailwindcss.com/docs/installation/play-cdn))
+- **[OPTIONAL]** Use a CSS framework for added styling (i.e. [Bulma](https://bulma.io/documentation/start/installation/) or [Tailwind](https://tailwindcss.com/docs/installation/play-cdn))
 
 ## Choose Your Own Adventure
 

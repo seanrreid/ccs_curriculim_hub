@@ -27,6 +27,7 @@ title: Additional Resources
 
 ## JavaScript
 
+- [Promise Chaining](https://javascript.info/promise-chaining)
 - [JavaScript Visualized: Promise Execution](https://www.lydiahallie.com/blog/promise-execution)
 - [Replacing jQuery with Vanilla ES6](https://aarontgrogg.com/blog/2021/09/29/replacing-jquery-with-vanilla-es6/)
 - [HTML "self-awareness" with sibling indexing in JavaScript](https://dev.to/cassidoo/html-self-awareness-with-sibling-indexing-in-javascript-2p94)
