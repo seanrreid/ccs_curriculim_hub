@@ -42,7 +42,9 @@ Open the Dev Tools and click on the Network panel. Press the `Escape` key to ope
 
 Enter the following code in the Console:
 
-@/lessons/building-interactive-uis/intro-to-promises/walkthrough-1.js
+```js
+fetch(`https://anapioficeandfire.com/api/characters/583`);
+```
 
 You should see something similar to this:
 
@@ -62,7 +64,11 @@ In addition, your function can expect to receive an argument. When working with 
 
 Enter the following code to retrieve the JSON data from the `response`, and then `console.log()` it. (Make sure to brush up on [arrow function syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#Function_body) before continuing.)
 
-@/lessons/building-interactive-uis/intro-to-promises/walkthrough-2.js
+```js
+fetch(`https://anapioficeandfire.com/api/characters/583`)
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+```
 
 We needed to call `.then()` twice: once to _access_ the JSON version of the data from the `response`, and a second time to _do something_ with that data.
 
@@ -83,19 +89,19 @@ But this is because `fetch()` is primarily for making network requests, and it a
 This design choice makes working with Promises flexible. Here is a modified version of the code that creates individual functions for retrieving the JSON from the `response` and for outputting the data to the Console. In addition, it adds functions that get the value of the `aliases` key and print each alias to the Console.
 
 ```js
-const getJSON = response => response.json();
+const getJSON = (response) => response.json();
 
-const logData = data => {
+const logData = (data) => {
   console.log(data);
   return data;
 };
 
-const extractAliases = character => {
-  const {aliases} = character;
+const extractAliases = (character) => {
+  const { aliases } = character;
   return aliases;
 };
 
-const printAliases = aliases => {
+const printAliases = (aliases) => {
   for (let a of aliases) {
     console.log(a);
   }
@@ -105,7 +111,7 @@ fetch(`https://anapioficeandfire.com/api/characters/583`)
   .then(getJSON)
   .then(logData)
   .then(extractAliases)
-  .then(printAliases)
+  .then(printAliases);
 ```
 
 It starts by defining helper functions, each of which does a small part of the processing of the data returned by the server. It culminates in a "Promise chain" that uses each function as part of a series of `.then()` calls.
@@ -144,20 +150,20 @@ In all of these cases, your Promise chain will need some error handling code.
 
 Add the following code that adds the `reportError()` helper function and adds it to the Promise chain using the `.catch()` method
 
-```js{19-21,23,28}
-const getJSON = response => response.json();
+```js
+const getJSON = (response) => response.json();
 
-const logData = data => {
+const logData = (data) => {
   console.log(data);
   return data;
 };
 
-const extractAliases = character => {
-  const {aliases} = character;
+const extractAliases = (character) => {
+  const { aliases } = character;
   return aliases;
 };
 
-const printAliases = aliases => {
+const printAliases = (aliases) => {
   for (let a of aliases) {
     console.log(a);
   }
@@ -172,8 +178,7 @@ fetch(`https://badbadbad.anapioficeandfire.com/api/characters/583`)
   .then(logData)
   .then(extractAliases)
   .then(printAliases)
-  .catch(reportError)
-
+  .catch(reportError);
 ```
 
 Notice that on line 23, we have intentionally set the URL to a non-existent hostname. This will trigger an Exception to be thrown, skipping over the `.then()`s and jumping to the `.catch()` on line 28.
@@ -188,20 +193,20 @@ The function you pass to `.catch()` can also `return` a value to any `.then()`s 
 
 Let's add a function to the end of the Promise chain that reports a summary of how many aliases a specific character has. Make sure to change the domain name back to the working version first.
 
-```js{17,22,25-27,35}
-const getJSON = response => response.json();
+```js
+const getJSON = (response) => response.json();
 
-const logData = data => {
+const logData = (data) => {
   console.log(data);
   return data;
 };
 
-const extractAliases = character => {
-  const {aliases} = character;
+const extractAliases = (character) => {
+  const { aliases } = character;
   return aliases;
 };
 
-const printAliases = aliases => {
+const printAliases = (aliases) => {
   for (let a of aliases) {
     console.log(a);
   }
@@ -223,8 +228,7 @@ fetch(`https://anapioficeandfire.com/api/characters/583`)
   .then(extractAliases)
   .then(printAliases)
   .catch(reportError)
-  .then(printSummary)
-
+  .then(printSummary);
 ```
 
 `printAliases` now returns the length of the `aliases` array. When there are no Exceptions thrown, the `.catch()` never runs and this value is passed to `printSummary`.
@@ -240,7 +244,7 @@ The `reportError()` function can also be modified to receive the `Error` object 
 To make sure it works, we can change value at the end of the URL so that it is outside the valid range for the API.
 
 ```js
-const getJSON = response => {
+const getJSON = (response) => {
   if (response.status === 200) {
     return response.json();
   } else {
@@ -248,17 +252,17 @@ const getJSON = response => {
   }
 };
 
-const logData = data => {
+const logData = (data) => {
   console.log(data);
   return data;
 };
 
-const extractAliases = character => {
-  const {aliases} = character;
+const extractAliases = (character) => {
+  const { aliases } = character;
   return aliases;
 };
 
-const printAliases = aliases => {
+const printAliases = (aliases) => {
   for (let a of aliases) {
     console.log(a);
   }
@@ -280,8 +284,7 @@ fetch(`https://anapioficeandfire.com/api/characters/58399`)
   .then(extractAliases)
   .then(printAliases)
   .catch(reportError)
-  .then(printSummary)
-
+  .then(printSummary);
 ```
 
 When you run this code in the Console, you should see the following:
@@ -300,7 +303,14 @@ Lets combine this with what you've just learned about custom Exceptions and fall
 
 Here's the syntax for creating a Promise:
 
-@/lessons/building-interactive-uis/intro-to-promises/walkthrough-7.js
+```js
+const promise = new Promise((resolve, reject) => {
+  resolve(42);
+});
+
+promise.then((value) => console.log(value));
+// 42
+```
 
 This Promise isn't very useful, as it only ever produces the number `42`.
 
@@ -312,7 +322,19 @@ If you call `resolve()`, the first `.then()` in the Promise chain will be trigge
 
 With that in mind, you can write a function that creates a Promise which `resolve()`s to a value retrieved from `localStorage`.
 
-@/lessons/building-interactive-uis/intro-to-promises/walkthrough-8.js
+```js
+const loadFromStorage = (key) => {
+  return new Promise((resolve, reject) => {
+    const raw = localStorage.getItem(key);
+    if (raw) {
+      const data = JSON.parse(raw);
+      resolve(data);
+    } else {
+      reject(key);
+    }
+  });
+};
+```
 
 We make sure to `return` our new Promise, so that we can chain `.then()` calls onto the end of `loadFromStorage()`.
 
@@ -324,7 +346,35 @@ If we don't find what we're looking for in `localStorage`, we need to `fetch()` 
 
 We'll use a `.catch()` instead of a `.then()` with `retreiveFromAPI()`, since it should only be called if `loadFromStorage()` needs to `reject()`.
 
-@/lessons/building-interactive-uis/intro-to-promises/walkthrough-9.js
+```js
+const loadFromStorage = (key) => {
+  return new Promise((resolve, reject) => {
+    const raw = localStorage.getItem(key);
+    if (raw) {
+      const data = JSON.parse(raw);
+      resolve(data);
+    } else {
+      reject(key);
+    }
+  });
+};
+
+const retrieveFromAPI = (key) => {
+  return fetch(`https://anapioficeandfire.com/api/characters/${key}`).then(
+    getJSON
+  );
+};
+
+//...code omitted
+
+loadFromStorage('583')
+  .catch(retrieveFromAPI)
+  .then(logData)
+  .then(extractAliases)
+  .then(printAliases)
+  .catch(reportError)
+  .then(printSummary);
+```
 
 ### When do I need to nest my functions (vs chaining)?
 
@@ -334,7 +384,22 @@ We _nest_ the call to `getJSON()` inside of our `retrieveFromAPI()` because we w
 
 You might be tempted to do the following, but it won't work:
 
-@/lessons/building-interactive-uis/intro-to-promises/walkthrough-10.js
+```js
+const retrieveFromAPI = (key) => {
+  return fetch(`https://anapioficeandfire.com/api/characters/${key}`);
+};
+
+//...code omitted
+
+loadFromStorage('583')
+  .catch(retrieveFromAPI)
+  .then(getJSON) // This will *not* work the way we expect.
+  .then(logData)
+  .then(extractAliases)
+  .then(printAliases)
+  .catch(reportError)
+  .then(printSummary);
+```
 
 Why not? If we do find the correct value in `localStorage` and we do not `reject()`, the first `.then()` is called. The problem is that the first `.then()` invokes `getJSON()` which expects to work with a `response` object.
 
@@ -342,7 +407,67 @@ Since the value coming from `localStorage()` is not a `response`, our code will 
 
 Here is the correct version of our code so far:
 
-@/lessons/building-interactive-uis/intro-to-promises/walkthrough-11.js
+```js
+const loadFromStorage = (key) => {
+  return new Promise((resolve, reject) => {
+    const raw = localStorage.getItem(key);
+    if (raw) {
+      const data = JSON.parse(raw);
+      resolve(data);
+    } else {
+      reject(key);
+    }
+  });
+};
+
+const retrieveFromAPI = (key) => {
+  return fetch(`https://anapioficeandfire.com/api/characters/${key}`).then(
+    getJSON
+  );
+};
+
+const getJSON = (response) => {
+  if (response.status === 200) {
+    return response.json();
+  } else {
+    throw new Error('Bad status code');
+  }
+};
+
+const logData = (data) => {
+  console.log(data);
+  return data;
+};
+
+const extractAliases = (character) => {
+  const { aliases } = character;
+  return aliases;
+};
+
+const printAliases = (aliases) => {
+  for (let a of aliases) {
+    console.log(a);
+  }
+  return aliases.length;
+};
+
+const reportError = (err) => {
+  console.error('There was an error', err);
+  return 0;
+};
+
+const printSummary = (howMany) => {
+  console.log(`We printed ${howMany} aliases`);
+};
+
+loadFromStorage('583')
+  .catch(retrieveFromAPI)
+  .then(logData)
+  .then(extractAliases)
+  .then(printAliases)
+  .catch(reportError)
+  .then(printSummary);
+```
 
 ### How do you wait for many Promises to provide values?
 
@@ -350,13 +475,24 @@ For the final example, imagine that you want to retrieve the allegiances (the ho
 
 First, you could write a function that can do a `fetch()` and `getJSON()` for a single house:
 
-@/lessons/building-interactive-uis/intro-to-promises/walkthrough-12a.js
+```js
+const fetchHouse = (houseURL) =>
+  fetch(`https://anapioficeandfire.com/api/houses/${houseURL}`).then(getJSON);
+```
 
 `fetchHouse()` [implicitly returns](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions#Function_body) the Promise chain produced by the `fetch()`.
 
 We can now use that function to transform an array of URLs into an array of Promises in a new `retreiveHousesFromAPI()` function.
 
-@/lessons/building-interactive-uis/intro-to-promises/walkthrough-12b.js
+```js
+const fetchHouse = (houseURL) =>
+  fetch(`https://anapioficeandfire.com/api/houses/${houseURL}`).then(getJSON);
+
+const retrieveHousesFromAPI = (houses) => {
+  const fetchArray = houses.map((houseURL) => fetchHouse(houseURL));
+  return Promise.all(fetchArray);
+};
+```
 
 Notice that the function returns the result of passing our `fetchArray` to `Promise.all()`.
 
@@ -364,7 +500,29 @@ Notice that the function returns the result of passing our `fetchArray` to `Prom
 
 The `retrieveHousesFromAPI()` function can be used in conjunction with two more functions: one to extract the `allegiances` array from a character object, and another that replaces `allegiances` with the data from the API.
 
-@/lessons/building-interactive-uis/intro-to-promises/walkthrough-12c.js
+```js
+const fetchHouse = (houseURL) =>
+  fetch(`https://anapioficeandfire.com/api/houses/${houseURL}`).then(getJSON);
+
+const retrieveHousesFromAPI = (houses) => {
+  const fetchArray = houses.map((houseURL) => fetchHouse(houseURL));
+  return Promise.all(fetchArray);
+};
+
+const extractHousesFromCharacter = (character) => {
+  const { allegiances } = character;
+  return houses;
+};
+
+const addHousesToCharacter = (character) => {
+  return retrieveHousesFromAPI(extractHousesFromCharacter(character)).then(
+    (houseArray) => {
+      character.allegiances = houseArray;
+      return character;
+    }
+  );
+};
+```
 
 In `addHousesToCharacter()`, we chain a `.then()` onto our call to `retrieveHousesFromAPI()` and pass it an anonymous function. That anonymous function receives the array that is resolved by `Promise.all()`.
 
@@ -381,9 +539,7 @@ What are some advantages and disadvantages of using Promises vs Callbacks?
 
 ## Additional Resources
 
-### Further Reading
-
-#### Articles about Promises
+### Articles about Promises
 
 - [Javascript Promises Explained](https://www.macadamian.com/learn/javascript-promises-explained/)
 - [How its implemented](https://github.com/then/promise/blob/master/src/core.js)
@@ -391,6 +547,6 @@ What are some advantages and disadvantages of using Promises vs Callbacks?
 - [Promises explained with real life analogies](https://codeburst.io/javascript-promises-explained-with-simple-real-life-analogies-dd6908092138)
 - [Promises, with runnable code](https://www.geeksforgeeks.org/javascript-promises/)
 
-##### The Event Loop (Video)
+### The Event Loop (Video)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8aGhZQkoFbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
