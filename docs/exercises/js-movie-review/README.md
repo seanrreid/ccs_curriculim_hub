@@ -1,6 +1,6 @@
 ---
 title: JavaScript - Open Movie Database Movie Review Site
-sidebar_label: JS - Movie Review
+sidebar_label: JS Movie Review
 sidebar_position: 4.08
 ---
 

@@ -1,0 +1,229 @@
+---
+title: JavaScript Array Practice
+sidebar_label: JS Arrays
+sidebar_position: 4.05
+---
+
+:::tip
+These exercises are designed to reflect things you might encounter during a technical interview!
+
+It's likely, and recommended, that you will want to come back to these from time to time for review.
+:::
+
+## Level 1
+
+1. Define a function that takes a string and an integer and creates a _new_ array of entries equal to that integer.
+   <br/>Each value is equal to the string passed in.
+    - `myFunction('sunshine', 3)` should return `['sunshine', 'sunshine', 'sunshine']`;
+
+<details>
+<summary>Solution</summary>
+```js
+function createArrayOfString(string, length) {
+    // Start with a new, empty array
+    let resultArray = [];
+    // Loop through "length" number of times
+    for (let i = 0; i < length; i++) {
+        // push() the value into the new array
+        resultArray.push(string);
+    }
+    // Return that array
+    return resultArray;
+}
+
+// Example usage
+const result = createArrayOfString('sunshine', 3);
+console.log(result);
+```
+</details>
+
+2. Define a function that takes an array and reverses all the values in an array
+The function should not mutate the original array.
+    - `[1, 2, 3, 4, 5]` should return ` [5, 4, 3, 2, 1]`
+
+<details>
+<summary>Solution</summary>
+```js
+function reverseArray(arr) {
+    // Start with a new, empty array
+    let reversedArray = [];
+    // It's just a loop, but we're going from last to first
+    for (let i = arr.length - 1; i >= 0; i--) {
+         // push() the value into the new array
+        reversedArray.push(arr[i]);
+    }
+     // Return that array
+    return reversedArray;
+}
+
+const reversedArray = reverseArray([1, 2, 3, 4, 5]);
+console.log(reversedArray);
+```
+</details>
+
+3. Define a function that takes an array and removes all falsy values from the array
+
+<details>
+<summary>Solution</summary>
+```js
+function removeFalsyValues(arr) {
+    // Start with a new, empty array
+    let truthyArray = [];
+    // Loop through the array
+    for (let i = 0; i < arr.length; i++) {
+        // Is it truthy? If so, keep it!
+        // we can test "truthy" with a simple if()!
+        if (arr[i]) {
+            // push() the value into the new array
+            truthyArray.push(arr[i]);
+        }
+    }
+    // Return that array
+    return truthyArray;
+}
+
+const myArray = [0, 1, false, '', 3, null, 'hello'];
+const result = removeFalsyValues(myArray)
+console.log(result);
+```
+</details>
+
+## Level 2
+
+1. Define a function that takes an array of nested arrays and returns an object composed of propeties equal to each nested array
+
+    For example:
+    <br/>`const myArray = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]];`
+    <br/>would return <br/>
+    `{ name: 'Charlie', color: 'brown', age: 10 };`
+
+<details>
+<summary>Solution</summary>
+```js
+function arrayToObject(array) {
+    let myObject = {};
+    for (let i = 0; i < array.length; i++) {
+        let [key, value] = array[i];
+        myObject[key] = value;
+    }
+    return myObject;
+}
+
+// Example usage
+const myArray = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]];
+const result = arrayToObject(myArray);
+console.log(result);
+
+```
+</details>
+
+2. Define a function that takes an array and removes duplicate values
+
+    **HINT**: Lookup [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+
+    - i.e. `[1,2,3,4,5,4,3]` should return `[1,2,3,4,5]`
+
+<details>
+<summary>Solution</summary>
+```js
+function removeDuplicates(array) {
+    let uniques = [];
+    for (let i = 0; i < array.length; i++) {
+        if (uniques.indexOf(array[i]) === -1) {
+            uniques.push(array[i]);
+        }
+    }
+    return uniques;
+}
+
+// Example usage
+const myArray = [1, 2, 3, 4, 5, 4, 3];
+const noDupes = removeDuplicates(myArray);
+console.log(noDupes)
+```
+</details>
+
+3. Define a function that takes two arrays and returns true if they have identical values (order does not matter), it should return false otherwise
+
+    - `[1,2,3,4]` and `[1,2,3,4]` should return `true`
+    - `[1,2,3,4,5]` and `[1,2,3,4]` should return `false`
+    - `[1,2,3,4]` and `[1,2,3,4,4]` should return `false`
+    - `[1,2,3,4]` and `[1,4,3,2]` should return `true`
+
+<details>
+<summary>Solution</summary>
+```js
+function compareArrays(arr1, arr2) {
+    // Are they the same length?
+    // If not, exit now.
+    if (arr1.length !== arr2.length) {
+        return false;
+    }
+
+    // Sort 'em!
+    const sortedArr1 = arr1.slice().sort();
+    const sortedArr2 = arr2.slice().sort();
+
+    // Compare 'em, and kick out if there's a mismatch
+    for (let i = 0; i < sortedArr1.length; i++) {
+        if (sortedArr1[i] !== sortedArr2[i]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+const array1 = [1, 2, 3, 4];
+const array2 = [1, 2, 3, 4];
+// returns true
+console.log(compareArrays(array1, array2));
+```
+</details>
+
+## Level 9000
+
+1. Define a function that takes an array and returns a new array with all sub-array elements concatenated into it (also known as "flattening" the array).
+
+    - `[0, 1, 2, [3, 4]]` should return `[0, 1, 2, 3, 4]`
+    - `[0, 1, 2, [[[3, 4]]]]` should return `[0, 1, 2, 3, 4]`
+
+:::warning
+    DO _NOT_ USE `Array.prototype.flat()`
+:::
+
+<details>
+<summary>Solution</summary>
+Hoo boy, it's time for [recursion](https://developer.mozilla.org/en-US/docs/Glossary/Recursion)!
+```js
+function flattenArray(array) {
+    let flattenedArray = [];
+
+    // Let's define a function in the scope of flattenArray
+    // It will call itself, aka "recursion"
+    function flatten(element) {
+        // Is the item an array? Time to flatten() it!
+        if (Array.isArray(element)) {
+            for (let i = 0; i < element.length; i++) {
+                // RECURSION!!
+                flatten(element[i]);
+            }
+        // Otherwise, we just want that value
+        } else {
+            flattenedArray.push(element);
+        }
+    }
+    // Let's start at the top, and loop through the original array
+    for (let i = 0; i < array.length; i++) {
+        // Take that value and flatten() it!
+        flatten(array[i]);
+    }
+
+    return flattenedArray;
+}
+
+// Example usage
+const originalArray = [0, 1, 2, [3, 4]];
+const flattenedArray = flattenArray(originalArray);
+console.log(flattenedArray); // Output: [0, 1, 2, 3, 4]
+```
+</details>

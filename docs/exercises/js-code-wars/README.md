@@ -1,7 +1,7 @@
 ---
 title: JavaScript - Codewars Array practice
 sidebar_label: JS Arrays - CodeWars
-sidebar_position: 4.05
+sidebar_position: 4.07
 ---
 
 Complete the following examples on [CodeWars](https://www.codewars.com).
