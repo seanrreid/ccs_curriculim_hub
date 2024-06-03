@@ -7,4 +7,4 @@ sidebar_position: 2
 
 ## Let's get some more practice working with APIs
 
-- Complete the [Welcome to JavaScript Air](docs/exercises/js-airlines/)
+- Complete the [Welcome to JavaScript Air](/docs/exercises/js-airlines/)
