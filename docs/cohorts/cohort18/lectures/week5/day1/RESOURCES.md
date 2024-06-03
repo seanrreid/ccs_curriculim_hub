@@ -37,6 +37,9 @@ title: Additional Resources
 
 ## JavaScript
 
+- [Promises from the Ground Up](https://www.joshwcomeau.com/javascript/promises/)
+- [Making Sense of "Senseless" JavaScript Features](https://www.smashingmagazine.com/2023/12/making-sense-of-senseless-javascript-features/)
+  <br/>This is the article that answers the question: "Why doesn't 0.1 + 0.2 = 0.3??"
 - [5 Easy Steps To Master Currying and Higher-Order Functions in JavaScript](https://betterprogramming.pub/5-easy-steps-to-master-currying-and-higher-order-functions-in-javascript-85e2a7e2c268)
   <br/>This is a solid introduction to the concept of "Functional Programming." We'll skim the surface of this topic as we progress using React.
 - [Why JavaScript is Eating HTML](https://css-tricks.com/why-javascript-is-eating-html/)
