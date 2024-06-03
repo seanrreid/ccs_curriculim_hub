@@ -12,6 +12,12 @@ keywords:
 ---
 <!-- markdownlint-disable no-trailing-punctuation -->
 
+## Let's all go to the movies!
+
+We'll start the morning doing demos of the OMDB exercises.
+
+Then...
+
 ## Ask Me Anything
 
 We're almost at the halfway point, and things aren't slowing down! Today, we'll spend most of our time debugging and doing an "Ask Me Anything."
