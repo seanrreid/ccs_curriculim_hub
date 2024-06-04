@@ -42,7 +42,7 @@ SOMETHING IS BUSTED
 ## Recommended Reading
 
 - [How does AI impact my job as a programmer?](https://chelseatroy.com/2024/05/26/how-does-ai-impact-my-job-as-a-programmer/)
-- [When to Loop? When to Recurse?](https://betterprogramming.pub/when-to-loop-when-to-recurse-b786ad8977de)
+- [When to Loop? When to Recurse?](https://medium.com/better-programming/when-to-loop-when-to-recurse-b786ad8977de)
   <br/>This question plagues me any time I need to work with complex data. Thankfully, those times have been somewhat rare 😂
 - [Byte Byte Go: EP77: My Recommended Materials for Cracking Your Next Technical Interview](https://blog.bytebytego.com/p/ep77-my-recommended-materials-for)
   <br/>This is a podcast _and_ an article. Both are highly recommended.
