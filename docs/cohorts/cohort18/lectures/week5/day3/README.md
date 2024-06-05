@@ -31,6 +31,8 @@ keywords:
 
 ## Recommended Reading
 
+- [How to Find Open Source Projects to Contribute To](https://opensauced.pizza/docs/community-resources/how-to-find-open-source-projects-to-contribute-to/)
+  <br/>This might help provide some guidance when you're looking for projects to add to your portfolio.
 - [Three Laws of Software Complexity (or: why software engineers are always grumpy)](https://maheshba.bitbucket.io/blog/2024/05/08/2024-ThreeLaws.html)
   <br/>Amusingly, this was part of a newsletter I recieved this week, and had a shout out to [Gall's Law](https://en.wikipedia.org/wiki/John_Gall_(author)#Galls_law), which was referenced in [yesterday's reading](/docs/cohorts/cohort18/lectures/week5/day2/#food-for-thought).
 - [The most valuable software developer skills to get hired now](https://www.infoworld.com/article/3583931/the-most-valuable-software-developer-skills.html)
