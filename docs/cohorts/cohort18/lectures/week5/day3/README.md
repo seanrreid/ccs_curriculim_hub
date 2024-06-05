@@ -12,7 +12,7 @@ keywords:
 
 ## Retro
 
-We're going to do a [retrospective](/docs/lessons/front-end-foundations/project-management-101/#scrum) on the music app
+We're going to do a [retrospective](/docs/lessons/front-end-foundations/project-management-101/#scrum) to gauge where we are at this point in the cohort.
 
 - We'll be using a [EasyRetro](https://easyretro.io/publicboard/mprhKPu7nQV2hfN3xnhBHsG5hA92/ed4e06bb-e3e9-451a-a923-42ebdac868b7) (click the link to the join the retro board)
 - We'll follow the [Starfish Retrospective Pattern](https://agileretrospectives.org/en/blog/starfish-exercise) to answer what we should:
