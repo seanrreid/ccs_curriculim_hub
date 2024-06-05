@@ -8,6 +8,7 @@ title: Additional Resources
 
 ## Listen
 
+- [11 Habits of Highly Effective Developers](https://syntax.fm/show/778/11-habits-of-highly-effective-developers)
 - [Shop Talk Show Episode 600: Where Will The Web Be 12 Years from Now?](https://shoptalkshow.com/600/)
 - [Go Make Things: Getting stuff done as a developer with ADHD](https://gomakethings.com/podcast/getting-stuff-done-as-a-developer-with-adhd/)
   <br/>I didn't record this, but I _could_ have, it hits on a lot of things I've experienced. I'm sharing it in case it's something that you think might be relevant.
