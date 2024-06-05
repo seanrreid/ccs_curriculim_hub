@@ -35,12 +35,12 @@ You can read about how EasyRetro recommends [running a retrospective](https://ea
 
 - [SQL Databases](/docs/lessons/databases/sql/)
 
-## Tools
+### Tools
 
 - [ElephantSQL](https://www.elephantsql.com/)
 - [PostgreSQL Cheat Sheet](./files/PostgreSQL-Cheat-Sheet.pdf)
 
-## Installation
+### Installation
 
 - **RECOMMENDED INSTALLER FOR MAC** [Postgres.app](https://postgresapp.com/downloads.html)
 - [Installing Postgres via Brew](https://gist.github.com/ibraheem4/ce5ccd3e4d7a65589ce84f2a3b7c23a3)
