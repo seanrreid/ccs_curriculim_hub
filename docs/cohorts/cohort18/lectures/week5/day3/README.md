@@ -37,7 +37,6 @@ You can read about how EasyRetro recommends [running a retrospective](https://ea
 
 ### Tools
 
-- [ElephantSQL](https://www.elephantsql.com/)
 - [PostgreSQL Cheat Sheet](./files/PostgreSQL-Cheat-Sheet.pdf)
 
 ### Installation

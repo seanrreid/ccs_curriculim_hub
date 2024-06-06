@@ -19,7 +19,6 @@ Taking a detour from Python into SQL...
 
 ### Tools
 
-- [ElephantSQL](https://www.elephantsql.com/)
 - [PostgreSQL Cheat Sheet](./files/PostgreSQL-Cheat-Sheet.pdf)
 
 ### Installation

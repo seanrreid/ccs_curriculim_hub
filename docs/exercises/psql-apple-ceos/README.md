@@ -43,7 +43,7 @@ This file will use the following information to populate the columns you defined
 
 ## Level Up
 
-- Using either your local PSQL environment, or using ElephantSQL, run the schema and see files to create and populate a database.
+- Using either your local PSQL environment run the schema and see files to create and populate a database.
 - Run queries on your database to return the list of CEOs and the years they served, in chronological order.
 - Save this query, and any others your try, in a file called `apple_ceos_queries.sql`
 
