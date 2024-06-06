@@ -13,7 +13,7 @@ title: Additional Resources
 - [Things I wish someone would have told me about configuring VSCode](https://www.bryanbraun.com/2023/08/10/things-i-wish-someone-would-have-told-me-about-configuring-vscode/)
 - [Visual Studio Code: How Microsoft's 'any OS, any programming language, any software' plan is paying off](https://www.zdnet.com/article/visual-studio-code-how-microsofts-any-os-any-programming-language-any-software-plan-is-paying-off/)
 - [How I decided to create a new projects management app](https://flaviocopes.com/new-projects-management-app/)
-  >They say "never start with an idea, start with a problem"
+  > They say "never start with an idea, start with a problem"
 - [Rage-quit: Coder unpublished 17 lines of JavaScript and “broke the Internet”](https://arstechnica.com/information-technology/2016/03/rage-quit-coder-unpublished-17-lines-of-javascript-and-broke-the-internet/)
   <br/>The perils of using someone else's published `npm` package 😬😬
 
@@ -31,10 +31,15 @@ title: Additional Resources
 
 ## FastAPI
 
-- [Structuring FastAPI Project Using 3-Tier Design Pattern](https://levelup.gitconnected.com/structuring-fastapi-project-using-3-tier-design-pattern-4d2e88a55757)
+- [Create A REST API with FastAPI, SQLAlchemy and PostgreSQL](https://www.youtube.com/watch?v=2g1ZjA6zHRo)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2g1ZjA6zHRo?si=EntI-OLAPEz3cqzm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### FastAPI Design patterns
+
 - [FastAPI Architecture](https://www.geeksforgeeks.org/fastapi-architecture/)
+- [Structuring FastAPI Project Using 3-Tier Design Pattern](https://levelup.gitconnected.com/structuring-fastapi-project-using-3-tier-design-pattern-4d2e88a55757)
 - [5 Must-Know Design Patterns for Building Scalable FastAPI Applications](https://theprimadonna.medium.com/5-must-know-design-patterns-for-building-scalable-fastapi-applications-36f9f31059fd)
-- [Django vs FastAPI](https://medium.com/@ShortHills_Tech/django-vs-fast-api-a-detailed-comparison-df8d00f3c3b2)
 
 ### FastAPI + Other Databases
 
