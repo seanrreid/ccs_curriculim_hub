@@ -4,19 +4,32 @@ sidebar_label: FastAPI - Intro Exercise
 sidebar_position: 6
 ---
 
+## Read These:
+
+- (FastAPI Starter)[https://fastapi.tiangolo.com/tutorial/first-steps/
+- (FastAPI: Path Parameters)[https://fastapi.tiangolo.com/tutorial/path-params/]
+- (FastAPI: Query Parameters)[https://fastapi.tiangolo.com/tutorial/query-params/]
+
 ## Must Haves
 
-### Setup your enviroment
+### Standard setup
 
 1. Initialize a new environment -> `python -m venv env`
 2. Don't forget to activate it  -> `source env/bin/activate`
 
-### Install the required libraries for FastAPI
+#### Install the required libraries for FastAPI
 
 - Option one: Normal install
   - `pip install fastapi uvicorn`
 - Option two: `requirements.txt`
   - `pip install -r requirements.txt`
+
+### `pipenv`
+
+1. Install libraries
+  - `python3 -m pipenv install fastapi uvicorn`
+2. Activate Shell
+  - `python3 -m pipenv shell`
 
 ## Step 1 - Root Route
 
