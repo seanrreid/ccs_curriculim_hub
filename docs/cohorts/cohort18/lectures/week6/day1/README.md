@@ -8,7 +8,15 @@ keywords:
 ---
 <!-- markdownlint-disable no-inline-html -->
 
+## Time for plumbing
+
+This week we'll connect all the pipes...
+
+![Mario Brothers](./img/mario.jpg)
+
 ## Presentations
+
+But first, Iron Man!
 
 - [Model/View/Controller (MVC)](https://docs.google.com/presentation/d/1v0l-9MRVO7CmAs74c2zHv-swL52JdJEgZBrU77iqSLU/edit?usp=sharing)
 
