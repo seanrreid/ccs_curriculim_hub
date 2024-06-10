@@ -10,9 +10,17 @@ title: Additional Resources
 
 - [How to connect ideas together](https://www.dsebastien.net/how-to-connect-ideas-together/)
 - [How a single ChatGPT mistake cost us $10,000+](https://web.archive.org/web/20240610032818/https://asim.bearblog.dev/how-a-single-chatgpt-mistake-cost-us-10000/)
-  <br/>**Spoiler**: It _wasn't_ a "ChatGPT mistake." It was a "rushing through a poorly thought out, last minute, decision, and not having proper precautions in place mistake." The "ChatGPT" parts of this error were _very_ small. Overall, it's a good lesson in properly reviewing your code and getting multiple eyes on it before you launch!
-  <br/>It's also a reminder to **NOTE OVERCOMPLICATE THINGS!**
-  <br/>You can read more discussion about this on [Hacker News](https://news.ycombinator.com/item?id=40627558)
+
+:::info
+**Spoiler**: It _wasn't_ a "ChatGPT mistake." It was a "rushing through a poorly thought out, last minute, decision, and not having proper precautions in place mistake." The "ChatGPT" parts of this error were _very_ small. Overall, it's a good lesson in properly reviewing your code and getting multiple eyes on it before you launch!
+
+It's also a reminder to **NOTE OVERCOMPLICATE THINGS!**
+
+You can read more discussion about this on [Hacker News](https://news.ycombinator.com/item?id=40627558)
+:::
+
+- [Why you shouldn't use AI to write your tests](https://swizec.com/blog/why-you-shouldnt-use-ai-to-write-your-tests/)
+  <br/>This article provides something of a counter-point to the mistakes made in the previous link.
 
 ## JavaScript
 
