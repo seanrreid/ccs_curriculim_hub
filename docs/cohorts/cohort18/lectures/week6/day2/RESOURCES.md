@@ -18,11 +18,6 @@ title: Additional Resources
 
 - [Improve your SQL skills X2 in 5 minutes](https://zaidesanton.substack.com/p/the-most-underrated-skill-sql-for)
 
-### SQLModel
-
-- :movie_camera: [FastAPI Essentials - CRUD API with a Database and SQLModel](https://www.youtube.com/watch?v=Jl39FZs-uz8)
-- :movie_camera: [FastAPI & SQLModel - Database Interaction in FastAPI apps with SQLModel](https://www.youtube.com/watch?v=pRYzMF04fLw)
-
 ### SQLAlchemy
 
 SQLModel is built on top of SQLAlchemy, tailored for FastAPI.  If you want to go deeper on SQLAlchemy, this playlist can be helpful.
