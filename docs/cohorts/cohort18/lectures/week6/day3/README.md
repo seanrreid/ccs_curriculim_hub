@@ -64,6 +64,10 @@ That's what we'll do today!
    target_metadata = SQLModel.metadata
    ```
 
+   The updated file should look something like this:
+
+   ![env.py updates](./img/env_py_updates.png)
+
 3. Generate the initial migration.
 
    ```sh
@@ -91,3 +95,5 @@ That's what we'll do today!
 Remember those last 2 steps, you'll repeat them when you make future changes to your models!
 
 :::
+
+In class version -> [FastAPI FairyTale](https://github.com/seanrreid/fastapi_sqlmodel_fairytale)
