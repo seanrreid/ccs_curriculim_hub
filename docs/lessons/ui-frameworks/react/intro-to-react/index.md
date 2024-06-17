@@ -65,14 +65,13 @@ npm install
 npm run dev
 ```
 
-This will create a new directory named `greeter-app`. Inside of it is a ready-to-customize React application, including a built-in Dev Server.
+Follow those instructions;
 
-Change directories to `greeter-app` and start the Dev Server:
-
-```sh
-cd greeter-app
-yarn start
-```
+1. Change into the new directory, `cd greeter-app`
+2. Run `npm install`
+   - You'll do this the _first time_ for every new React app.
+3. Run `npm run dev`
+   - You'll run this _every time_ you're working with a React app.
 
 ## First Steps with React
 
@@ -170,7 +169,7 @@ JSX is XML, not HTML. XML looks like HTML but is much more strict.
 
 Components can be displayed multiple times on a page:
 
-```js{5-9}
+```js
 function App() {
   return (
     <div className="App">
@@ -310,7 +309,7 @@ It's important to get comfortable with `.map()` - it's one of the most common co
 
 We'll use a `map()` to create an array of `Greeter` Components.
 
-```js{14}
+```js
 const nameArray = [
   "Melanie",
   "Emma",
