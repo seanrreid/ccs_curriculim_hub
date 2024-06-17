@@ -16,7 +16,11 @@ keywords:
 
 > AI will make “how” easy. Knowing “what” and “why” will remain difficult. - [@MDS on X](https://twitter.com/mds/status/1757762934061588885)
 
-## The story so far...
+## Show'n'Tell'n'Debug
+
+Let's kick-off this week with a demo of your API projects!
+
+## Moving on, the story so far...
 
 ### Where we've been:
 

@@ -18,6 +18,11 @@ title: Additional Resources
 - [Overreacted (Dan Abramov Blog)](https://overreacted.io/)
 - [React.dev](https://react.dev/learn)
 
+## CSS
+
+- [TEN YEARS OF A SINGLE DIV](https://lynnandtonic.com/thoughts/entries/ten-years-of-a-single-div/)
+  <br/>The type, _and amount_, of work here is :exploding_head:.  It's next level CSS!
+
 ## Javascript
 
 - [The Question of "Why?" in Single-Page-Application Frameworks](https://blog.logrocket.com/the-question-of-why-in-single-page-application-frameworks-91383446d0f5/)
