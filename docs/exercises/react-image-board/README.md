@@ -1,7 +1,7 @@
 ---
 title: React - User Image Board
 sidebar_label: React - Image Board
-sidebar_position: 7.01
+sidebar_position: 7.02
 ---
 
 <!-- markdownlint-disable no-inline-html -->
@@ -15,40 +15,24 @@ Create an image board that saves submissions to state using React
 After completing this assignment, you should...
 
 - Be able to create a boilerplate React project with Vite
-- Be able to use React components as a View layer
-
-### Performance Objectives
-
-After completing this assignment, you should be able to effectively use...
-
-- A basic React Component
-- React state
+- Use React state
 - Pass state using props
 - Hook up an event in a React component to capture user input and update state
 
-## Deliverables
+## Requirements
 
-- A repo containing a Vite project:
-- A minimum of three React components in your App.js:
+- A repo containing a Vite project
+- A component called `ImaageForm` to render the form
+- A component called `ImageList` to render the list of items
+- A component called `ImageBoard` to load the form _and_ the list
 
-```jsx
-function ImageForm() {
-    return <form>...</form>;
-}
+:::tip
 
-function ImageList() {
-    return <ul>...</ul>;
-}
+Read this [Using Files From Web Applications](https://developer.mozilla.org/en-US/docs/Web/API/File_API/Using_files_from_web_applications#example_using_object_urls_to_display_images) MDN article for a plain JavaScript example.
 
-function ImageBoard() {
-    return (
-        <div>
-            <ImageForm />
-            <ImageList />
-        </div>
-    );
-}
-```
+Also, look at the [`createObjectURL()` method documentation](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL_static`)
+
+:::
 
 ## Level 1
 

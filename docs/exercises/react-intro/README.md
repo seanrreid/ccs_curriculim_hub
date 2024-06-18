@@ -6,13 +6,6 @@ sidebar_position: 7
 
 <!-- markdownlint-disable no-inline-html -->
 
-## Must Haves
-
-- Create a new folder named the following
-  - `react-todo-app`
-- Initialize a git repository in that folder
-- Fork and clone this repo to your local machine: [Tic Tac Toe Starter](https://github.com/seanrreid/tic-tac-toe-starter)
-
 ## Learning Objectives
 
 After completing this assignment, you should…
@@ -25,7 +18,6 @@ After completing this assignment, you should…
 :::info
 :loudspeaker: The Tic-Tac-Toe app needs to be cloned locally. You'll need to run `npm install` in the folder after you've cloned it.
 :::
-
 
 ## Official React Tutorial: Tic Tac Toe
 
@@ -48,7 +40,6 @@ You'll create a tic tac toe game with React that has at least three components: 
 
 Remember: You need to run `npm run dev` after you've setup your folders to run your app
 :::
-
 
 ### Using `vite` to generate a new React app
 
