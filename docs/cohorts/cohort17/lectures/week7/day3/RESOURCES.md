@@ -15,7 +15,7 @@ title: Additional Resources
 
 - [The React Handbook by Flavio Copes](https://reacthandbook.com/)
 - [Marco Heine: What is prop drilling and how to avoid it](https://marcoheine.com/blog/what-is-prop-drilling-and-how-to-avoid-it)
-- [OverReacted: How Are Function Comoponents Different from Classes?](https://overreacted.io/how-are-function-components-different-from-classes/)
+- [OverReacted: How Are Function Components Different from Classes?](https://overreacted.io/how-are-function-components-different-from-classes/)
 
 ### Side Effects/useEffect
 

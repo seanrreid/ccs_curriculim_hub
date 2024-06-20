@@ -4,7 +4,7 @@
 
 * [Free Code Camp: The React Handbook by Flavio Copes](https://medium.com/free-code-camp/the-react-handbook-b71c27b0a795)
 * [Marco Heine: What is prop drilling and how to avoid it](https://marcoheine.com/blog/what-is-prop-drilling-and-how-to-avoid-it)
-* [OverReacted: How Are Function Comoponents Different from Classes?](https://overreacted.io/how-are-function-components-different-from-classes/)
+* [OverReacted: How Are Function Components Different from Classes?](https://overreacted.io/how-are-function-components-different-from-classes/)
 
 ## Context API
 
