@@ -22,7 +22,7 @@ After completing this assignment, you should...
 ## Requirements
 
 - A repo containing a Vite project
-- A component called `ImaageForm` to render the form
+- A component called `ImageForm` to render the form
 - A component called `ImageList` to render the list of items
 - A component called `ImageBoard` to load the form _and_ the list
 
