@@ -1,0 +1,125 @@
+---
+sidebar_position: 1
+sidebar_label: Day 1
+title: Week 8 - Day 1
+keywords:
+    - components
+    - controlled inputs
+    - useEffect
+    - fetch()
+---
+
+## Hour 1
+
+- Review last week's exercises
+- Compare React Image Board vs [Vanilla JS Version](https://github.com/seanrreid/react-without-react)
+
+## Hour 2
+
+### Ecommerce Code Along
+
+- `fetch()` and `useEffect`
+- We'll use the [MockShop API](https://mock.shop/)
+
+### Optional
+
+- Time Permitting: [Styled Components](https://styled-components.com/)
+
+## Conditional Rendering
+
+Well, this is confusing as hell!
+
+- Old React says: [If-Else in JSX](https://react-cn.github.io/react/tips/if-else-in-JSX.html)
+    > if-else statements don't work inside JSX. This is because JSX is just syntactic sugar for function calls and object construction.
+- But new React says: [Conditional Rendering](https://react.dev/learn/conditional-rendering)
+    > Your components will often need to display different things depending on different conditions. In React, you can conditionally render JSX using JavaScript syntax like if statements, &&, and ? : operators.
+
+Let's [take a look](https://stackblitz.com/edit/ccs-ternary-demo?file=src%2FApp.jsx)
+
+<iframe src='https://stackblitz.com/edit/ccs-ternary-demo?embed=1&file=src%2Fcomponents%2fToggleComponent.jsx' width='100%' style={{display: 'flex', aspectRatio: '16/9'}} />
+
+---
+
+How about [Dealing with empty arrays](https://stackblitz.com/edit/ccs-edit-arrays?file=src%2FApp.jsx)
+
+<iframe src='https://stackblitz.com/edit/ccs-edit-arrays?embed=1&file=src%2FApp.jsx' width='100%' style={{display: 'flex', aspectRatio: '16/9'}} />
+
+## In Class Demo Code
+
+<details>
+<summary>Expand the view the code from our in class demo</summary>
+
+To enable Bulma classnames, add the following line to the `index.html` file:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+```
+```jsx
+// App.jsx
+import Products from './components/Products';
+
+function App() {
+    return (
+        <main className='container'>
+            <h1 className='title'>This is going to be a store!</h1>
+            <Products />
+        </main>
+    );
+}
+
+export default App;
+
+// Products.jsx
+import { useState, useEffect } from 'react';
+import ProductDetail from './ProductDetail';
+
+function Products() {
+    const [data, setData] = useState([]);
+
+    const fetchData = async () => {
+        const url =
+            'https://mock.shop/api?query={products(first:%2020){edges%20{node%20{id%20title%20description%20featuredImage%20{id%20url}%20variants(first:%203){edges%20{node%20{price%20{amount%20currencyCode}}}}}}}}';
+        const apiData = await fetch(url).then((response) => response.json());
+        setData(apiData.data.products.edges);
+    };
+
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    return (
+        <section className='container is-medium is-flex is-flex-wrap-wrap is-flex-direction-row is-align-items-stretch'>
+            {data.map((item) => {
+                return <ProductDetail product={item} key={item.node.id} />;
+            })}
+        </section>
+    );
+}
+
+export default Products;
+
+// ProductDetail.jsx
+const ProductDetail = ({ product }) => {
+    return (
+        <div className='card' style={{width: '300px', margin: '8px'}}>
+            <div className='card-image'>
+                <figure className='image is-square'>
+                    <img
+                        src={product.node.featuredImage.url}
+                        alt={product.node.title}
+                    />
+                </figure>
+            </div>
+            <div className='card-content'>
+                <div className='content'>
+                    <h2 className='title'>{product.node.title}</h2>
+                    <p>stuff</p>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default ProductDetail;
+```
+</details>
