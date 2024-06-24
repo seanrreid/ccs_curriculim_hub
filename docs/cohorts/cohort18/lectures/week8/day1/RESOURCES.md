@@ -6,37 +6,28 @@ title: Additional Resources
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
+## Slow is Smooth
+
+![Slow is Smooth, Smooth is Fast](./img/slow_is_smooth.png)
+
+## General
+
+- [KidPix](https://kidpix.app/)
+  <br/>This is the old Mac paint app, _KidPix_, but done in HTML/JS :exploding_head:
+  <br/>The original repo can be found here -> [https://github.com/vikrum/kidpix/](https://github.com/vikrum/kidpix/)
+- [If Programming Languages Were Games [Comic]](https://toggl.com/blog/programming-languages-games)
+- [I am not a fan of heroism in the engineering industry](https://newsletter.eng-leadership.com/p/i-am-not-a-fan-of-heroism-in-the)
+  <br/>The author discusses the consistency of long-term good work vs. spikes of great work. I'm inclined to agree with the assessment.
+
+  ![Long Term Good Work vs Spikes of Great Work](./img/good_work_vs_great_work.jpg)
+
 ## Unique Identifiers
 
 :::tip
-React's `key` values can be tricky, these help solve that issue.
+React's `key` values can be tricky, these _might_ help solve that issue.
 :::
 
 - [Goodbye integers. Hello UUIDv7!](https://buildkite.com/blog/goodbye-integers-hello-uuids)
-
-## Helpful Syntax
-
-### Ternary Operators
-
-A ternary is an item that is composed of three parts.
-
-Per MDN:
-> The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement.
-
-- [MDN: Conditional (ternary) Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
-- [Flavio Copes: Ternary Operator](https://flaviocopes.com/javascript-ternary-operator/)
-
-### Nullish Coalescing
-
-- [MDN: Nullish Coalescing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)
-- [Flavio Copes: JavaScript Nullish Coalescing](https://flaviocopes.com/javascript-nullish-coalescing/)
-- [JavaScript Tutorial: JavaScript Nullish Coalescing Operator](https://www.javascripttutorial.net/es-next/javascript-nullish-coalescing-operator/)
-
-### Optional Chaining
-
-- [MDN: Optional Chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
-- [Flavio Copes: JavaScript Optional Chaining](https://flaviocopes.com/javascript-optional-chaining/)
-- [JavaScript Tutorial: JavaScript Optional Chaining Operator](https://www.javascripttutorial.net/es-next/javascript-optional-chaining-operator/)
 
 ## Single Page Applications
 
