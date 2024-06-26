@@ -39,20 +39,6 @@ We'll be leaning into the updated syntax, i.e. the `createBrowserRouter` object,
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
 
-## React Router Forms
-
-From the [React Router v6.x Tutorial](https://reactrouter.com/en/main/start/tutorial#data-writes--html-forms):
-
-> React Router emulates HTML Form navigation as the data mutation primitive, according to web development before the JavaScript cambrian explosion. It gives you the UX capabilities of client rendered apps with the simplicity of the "old school" web model.
-
-[...]
-
-> The Form component is a wrapper around a plain HTML form that emulates the browser for client side routing and data mutations. It is not a form validation/state management library like you might be used to in the React ecosystem (for that, we recommend the browser's built in HTML Form Validation and data validation on your backend server).
-
-Translation: Using the React Router `Form` component means that forms are able to work the way forms have worked since the creation of the browser, prior to the advent of Single Page Apps (SPAs). AKA, no more `preventDefault()`.
-
-Which will lead us to...
-
 ## Code Along: Modern React + React Router v6.x
 
 - We'll do a code along exercise where we'll connect to our Apple CEOs API.
