@@ -13,7 +13,7 @@ sidebar_position: 2
 
 ## CrudCo
 
-This is a pen/paper exercise :pencil: :paper:
+This is a pen/paper exercise :memo:
 
 - Map out what you think the data models will be for CRUDCo.
   - Users?
