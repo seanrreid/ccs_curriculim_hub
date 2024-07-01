@@ -6,7 +6,7 @@ title: Week 9 - Day 1
 
 <!-- markdownlint-disable no-inline-html -->
 
-## CRUDCo JWT + Auth
+## CRUDCo Shrink Ray Day 3
 
 We're going to keep working on the CRUDCo URL Shortening App.
 
