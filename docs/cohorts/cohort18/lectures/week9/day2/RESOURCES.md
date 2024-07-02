@@ -13,6 +13,13 @@ title: Additional Resources
 - [Say No to `console.log`!](https://dev.to/alishgiri/say-no-to-consolelog-556n)
   <br/>The title is a bit clickbaity, but it is helpful to know some of the other types of `console` messages.
 
+## Test Driven Development
+
+- [Learn TDD: React](https://learntdd.in/react)
+  <br/>We'll be reviewing this soon!
+- [YouTube: Test Driven Development in React](https://www.youtube.com/playlist?list=PLXXnezSEtvNMlfJFd1Z2wilxymcOaVl9Q)
+  <br/>This is a few years old now, so it won't reflect recent changes to React. However, the principles still apply!
+
 ## FastAPI
 
 - [List of FastAPI Boilerplate repos](https://github.com/topics/fastapi-boilerplate)

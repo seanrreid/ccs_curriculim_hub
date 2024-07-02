@@ -31,3 +31,10 @@ We're going to keep working on the CRUDCo URL Shortening App.
 - Let users _actually_ login
 - Handle the _actual_ redirection
 - Deploy
+
+
+ ## Good API Design
+
+ This was a LinkedIn find that does a good job of mapping out an API structure.
+
+ ![API Design Structure](./img/api_design.jpeg)
