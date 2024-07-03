@@ -4,11 +4,15 @@ sidebar_label: Day 3
 title: Week 9 - Day 3
 ---
 
+> [...] there is no right thing. There's just a thousand wrong things. Once you learn all the wrong things – and stop doing them – you can basically do whatever you want.
+
+Taken from today's [Design Hacks Newsletter](https://www.learnui.design/newsletter.html)
+
 ## CRUDCo
 
 Let's have our user's _actually_ be able to login.
 
-### Review
+## Review
 
 - Code Review
   - What worked?
@@ -20,7 +24,7 @@ Let's have our user's _actually_ be able to login.
 - Alter an existing table
 - Add in JWT and Authentication
 
-### Next Steps
+## Next Steps
 
 - Protect `POST` requests
   - Protect `GET` requests as well? Or allow "read only?"
