@@ -17,6 +17,8 @@ Time to wrap up the CRUDCo URL Shortening App.
 - What worked?
 - Where are you stuck?
 
+[Sean's working version](https://github.com/seanrreid/ccs_shrinkrayurl)
+
 ### Where we've been
 
 - Checked our Models
