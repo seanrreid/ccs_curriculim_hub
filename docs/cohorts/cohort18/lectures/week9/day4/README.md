@@ -11,13 +11,12 @@ Time to wrap up the CRUDCo URL Shortening App.
 ## Review & Debug
 
 - Fix the [Busted Shrink Ray!](https://github.com/seanrreid/busted_shrinkrayurl)
+- [Sean's working version](https://github.com/seanrreid/ccs_shrinkrayurl)
 
 ### CrudCO Review
 
 - What worked?
 - Where are you stuck?
-
-[Sean's working version](https://github.com/seanrreid/ccs_shrinkrayurl)
 
 ### Where we've been
 
