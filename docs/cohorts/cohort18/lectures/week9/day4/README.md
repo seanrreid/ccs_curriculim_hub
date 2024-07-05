@@ -27,9 +27,13 @@ Time to wrap up the CRUDCo URL Shortening App.
 - Built forms to login
 - Built forms to submit a new URL
 
+## For Monday
+
+- Prepare to share your User Stories for review on Monday!
+
 ## Final Projects
 
-Details for the [Final Project are here](/docs/cohorts/cohort17/final-project/)
+Details for the [Final Project are here](/docs/cohorts/cohort18/final-project/)
 
 :::tip
 
