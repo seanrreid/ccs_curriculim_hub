@@ -3,6 +3,7 @@ sidebar_label: Weeks 10-12
 sidebar_position: 10
 title: Final project time! Go make something rad!!
 ---
+
 <!-- markdownlint-disable no-inline-html -->
 
 :::info
@@ -49,14 +50,24 @@ You can review the [final project guidelines here](/docs/cohorts/cohort18/final-
   <br/>Those steps won't work on a Macbook or Windows machine.
 - [Implementing Supabase Auth in FastAPI](https://phillyharper.medium.com/implementing-supabase-auth-in-fastapi-63d9d8272c7b)
 
+### React
+
+- [Getting Out of Hook Hell: You Are Using React Hooks The Wrong Wa](https://everyday.codes/react/getting-out-of-hook-hell-you-are-using-react-hooks-the-wrong-way/)
+
+### React + TDD
+
+- :movie*camera: [Test Driven Development in React](https://www.youtube.com/playlist?list=PLXXnezSEtvNMlfJFd1Z2wilxymcOaVl9Q) is a 9 video series that discusses the topic of Test Driven Development (TDD). I don't require this for projects, \_BUT*, it's something you should get familiar with ASAP.
+  <br/><br/>
+  If/when you need a break, give one of these videos a watch, each one runs about an hour.
+
 ### Remix JS
 
 - If you want to use RemixJS, check out [this tutorial](https://remix.run/docs/en/main/start/tutorial)
   <br/>Spoiler Alert: It looks a _lot_ like the [React Router v6.22.3 Tutorial](https://reactrouter.com/en/main/start/tutorial)
 - There's also a [Blog tutorial](https://remix.run/docs/en/main/tutorials/blog). It's designed to be quick, they say it's about 15 minutes, but you should recognize other patterns from working with React and React Router.
 
-### React + TDD
+### General
 
-- :movie_camera: [Test Driven Development in React](https://www.youtube.com/playlist?list=PLXXnezSEtvNMlfJFd1Z2wilxymcOaVl9Q) is a 9 video series that discusses the topic of Test Driven Development (TDD). I don't require this for projects, _BUT_, it's something you should get familiar with ASAP.
-   <br/><br/>
-   If/when you need a break, give one of these videos a watch, each one runs about an hour.
+- [Progressive Web Apps (PWA): A Comprehensive Guide](https://dev.to/udoka033/progressive-web-apps-pwa-a-comprehensive-guide-57ii?ref=dailydev)
+  <br/>
+  > Did you know that your web apps built with HTML, CSS, JavaScript, or any front-end framework can become installable, and work offline providing an enhanced user experience?
