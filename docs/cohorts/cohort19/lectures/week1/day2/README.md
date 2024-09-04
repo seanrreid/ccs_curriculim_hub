@@ -25,6 +25,7 @@ keywords:
 ## Helpful Resources
 
 - [Git Cheat Sheet](./resources/git-cheat-sheet.pdf) via [Flavio Copes](https://flaviocopes.com/books/)
+  <br/>There is another cheat sheet in the [Resources](./resources/) section, but this would be my "goto" of the two.
 - [Connecting `git` and Github](/docs/resources/connecting_git_github.md)
 
 ### Git Branching Whiteboard
