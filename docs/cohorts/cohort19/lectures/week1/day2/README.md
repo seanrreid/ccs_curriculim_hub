@@ -17,11 +17,6 @@ keywords:
 
 - [GIT 101](/docs/lessons/dev-fundamentals/git-101/)
 
-### Setting up Github
-
-- [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-- [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-
 ## Helpful Resources
 
 - [Git Cheat Sheet](./resources/git-cheat-sheet.pdf) via [Flavio Copes](https://flaviocopes.com/books/)
