@@ -38,7 +38,7 @@ Since the 1950s, computer scientists have developed different kinds of short-han
 
 Essentially, programmers write code because programming the hardware of a computer would be too complex a task otherwise.
 
-### What write programs that run in the terminal?
+### Why write programs that run in the terminal?
 
 Even if your eventual goal is to build 3D games, one of the best ways to get started with programming is to build programs that only run in the terminal.
 
