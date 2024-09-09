@@ -1,7 +1,7 @@
 ---
-title: Dictionaries
-description: Dictionaries
-pubDate: 2023-12-15T13:49:22-05:00
+title: Python Dictionaries
+sidebar_label: Dictionaries
+sidebar_position: 3
 ---
 
 ## Learning Objectives

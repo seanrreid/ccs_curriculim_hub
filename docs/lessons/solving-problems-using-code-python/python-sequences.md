@@ -1,7 +1,7 @@
 ---
-title: Sequences
-description:  Sequences
-pubDate: 2023-12-15T13:49:22-05:00
+title: Sequences in Python
+sidebar_label: Sequences
+sidebar_position: 4
 ---
 
 ## Learning Objectives

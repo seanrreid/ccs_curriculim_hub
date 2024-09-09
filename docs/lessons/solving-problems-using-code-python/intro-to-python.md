@@ -1,7 +1,7 @@
 ---
-title: Intro to Python
-description: Programming Fundamentals
-pubDate: 2023-12-15T13:49:22-05:00
+title: Intro to Python - Progamming Fundamentals
+sidebar_label: Intro to Python
+sidebar_position: 1
 ---
 <!-- markdownlint-disable no-inline-html -->
 ## Learning Objectives
