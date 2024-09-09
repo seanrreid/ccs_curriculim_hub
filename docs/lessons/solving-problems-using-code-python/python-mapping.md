@@ -32,7 +32,13 @@ Here's an example of an entry you might see in an address book:
 
 This is how you would express this as a Python dictionary:
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/example-0.py
+```py
+friend_info = {
+    "Name": "Alan Turing",
+    "Cell": "555-601-7576",
+    "Birthday": "June 23",
+}
+```
 
 Each **value**, like `"June 23"`, is associated with a specific **key** (`Birthday`).
 
@@ -46,7 +52,13 @@ Python's Dictionary type lets you create a **mapping** from _keys_ to **values**
 
 Looking more closely at our first example:
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/example-0.py
+```py
+friend_info = {
+    "Name": "Alan Turing",
+    "Cell": "555-601-7576",
+    "Birthday": "June 23",
+}
+```
 
 A dictionary consists of pairs of keys and values inside of curly braces.
 
@@ -56,7 +68,9 @@ Key-value pairs are separated by a `,`.
 
 An empty dictionary can be created like so:
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/empty-dict.py
+```py
+empty_dictionary = {}
+```
 
 #### What can I use as keys?
 
@@ -72,11 +86,41 @@ You can use any immutable value as a key in a Python dictionary.
 
 Dictionary values can be any valid Python type, including lists and dictionaries.
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/values_0.py
+```py
+superhero = {
+    "name": "Wonder Woman",
+    "alias": "Diana Prince",
+    "gear": [
+        "Lasso of Truth",
+        "Bracelets of Submission"
+    ],
+    "vehicle": {
+        "title": "Invisible Jet",
+        "speed": "2000 mph",
+    }
+}
+```
 
 #### How do I retrieve data?
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/values_1.py
+```py
+superhero = {
+    "name": "Wonder Woman",
+    "alias": "Diana Prince",
+    "gear": [
+        "Lasso of Truth",
+        "Bracelets of Submission"
+    ],
+    "vehicle": {
+        "title": "Invisible Jet",
+        "speed": "2000 mph",
+    }
+}
+
+hero_name = superhero["name"]
+hero_alias = superhero.get("alias")
+hero_values = superhero.values()
+```
 
 There are three ways to retrieve data from a dictionary:
 
@@ -86,33 +130,117 @@ There are three ways to retrieve data from a dictionary:
 
 The `.get()` method takes an optional second argument. If the key does not exist in the dictionary, the second argument is returned (instead of `None`).
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/values_2.py
+```py
+superhero = {
+    "name": "Wonder Woman",
+    "alias": "Diana Prince",
+    "gear": [
+        "Lasso of Truth",
+        "Bracelets of Submission"
+    ],
+    "vehicle": {
+        "title": "Invisible Jet",
+        "speed": "2000 mph",
+    }
+}
+
+hero_weakness = superhero.get("weakness", [])
+
+```
 
 #### How do I check if a key exists?
 
 The `in` operator to see if a key exists in a dictionary:
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/membership_0.py
+```py
+superhero = {
+    "name": "Wonder Woman",
+    "alias": "Diana Prince",
+    "gear": [
+        "Lasso of Truth",
+        "Bracelets of Submission"
+    ],
+    "vehicle": {
+        "title": "Invisible Jet",
+        "speed": "2000 mph",
+    }
+}
+
+if "weakness" in superhero:
+    print("The bad guys can totally win.")
+else:
+    print("Go home, bad guys.")
+```
 
 You can also use `not in`:
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/membership_1.py
+```py
+superhero = {
+    "name": "Wonder Woman",
+    "alias": "Diana Prince",
+    "gear": [
+        "Lasso of Truth",
+        "Bracelets of Submission"
+    ],
+    "vehicle": {
+        "title": "Invisible Jet",
+        "speed": "2000 mph",
+    }
+}
+
+if "weakness" not in superhero:
+    print("Go home, bad guys.")
+```
 
 #### How do I update a value?
 
 Use the index syntax on the LHS to update a value. This can also be used to add a key/value pair to a dictionary.
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/update_0.py
+```py
+superhero = {
+    "name": "Wonder Woman",
+    "alias": "Diana Prince",
+    "gear": [
+        "Lasso of Truth",
+        "Bracelets of Submission"
+    ],
+    "vehicle": {
+        "title": "Invisible Jet",
+        "speed": "2000 mph",
+    }
+}
+
+superhero["alias"] = "Princess Diana of Themyscira"
+superhero["hometown"] = "Themyscira"
+
+
+```
 
 #### How do I iterate over a dictionary?
 
 Use the dictionary's `.items()` method. It returns a sequence of the key/value pairs:
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/iteration_0.py
+```py
+superhero = {
+    "name": "Wonder Woman",
+    "alias": "Diana Prince",
+    "gear": [
+        "Lasso of Truth",
+        "Bracelets of Submission"
+    ],
+    "vehicle": {
+        "title": "Invisible Jet",
+        "speed": "2000 mph",
+    }
+}
+
+for key, value in superhero.items():
+    print("Superhero's %s is %s" % (key, value))
+```
 
 Note that instead of providing a single looping variable, we provide two since we are iterating over pairs of values.
 
-```
+```py
 Superhero's name is Wonder Woman
 Superhero's alias is Diana Prince
 Superhero's gear is ['Lasso of Truth', 'Bracelets of Submission']
@@ -129,31 +257,114 @@ Python optimizes the data behind the scenes, which can cause the key/value pairs
 
 Use the `del` keyword to remove a key/value pair from a dictionary.
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/del_0.py
+```py
+superhero = {
+    "name": "Wonder Woman",
+    "alias": "Diana Prince",
+    "gear": [
+        "Lasso of Truth",
+        "Bracelets of Submission"
+    ],
+    "vehicle": {
+        "title": "Invisible Jet",
+        "speed": "2000 mph",
+    }
+}
+
+del superhero["vehicle"]
+print("No vehicle. It's in the shop.")
+```
 
 ### How do I access data in nested dictionaries?
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/nested_0.py
+```py
+superhero = {
+    "name": "Wonder Woman",
+    "alias": "Diana Prince",
+    "gear": [
+        "Lasso of Truth",
+        "Bracelets of Submission"
+    ],
+    "vehicle": {
+        "title": "Invisible Jet",
+        "speed": "2000 mph",
+    }
+}
+
+vehicle = superhero["vehicle"]
+vehicle_title = vehicle["title"]
+
+print(vehicle_title)
+```
 
 By indexing and assigning to variables, you can get to the data in a nested dictionary:
 
-```
+```py
 Invisible Jet
 ```
 
 Alternatively, you can omit the intermediary `vehicle` variable and just stack additional `[]` to index further and further into the dictionaries:
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/nested_1.py
+```py
+superhero = {
+    "name": "Wonder Woman",
+    "alias": "Diana Prince",
+    "gear": [
+        "Lasso of Truth",
+        "Bracelets of Submission"
+    ],
+    "vehicle": {
+        "title": "Invisible Jet",
+        "speed": "2000 mph",
+    }
+}
+
+vehicle_title = superhero["vehicle"]["title"]
+
+print(vehicle_title)
+```
 
 ### How do I access data in a list in a dictionary?
 
 To access a specific list item inside a dictionary, first use the key name for the list. Then use the numerical index for the item in the list.
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/nested_2.py
+```py
+superhero = {
+    "name": "Wonder Woman",
+    "alias": "Diana Prince",
+    "gear": [
+        "Lasso of Truth",
+        "Bracelets of Submission"
+    ],
+    "vehicle": {
+        "title": "Invisible Jet",
+        "speed": "2000 mph",
+    }
+}
+
+lasso = superhero["gear"][0]
+print(lasso)
+```
 
 You can also iterate over a list inside of a dictionary:
 
-// @TODO - embed this/lessons/solving-problems-using-code/mapping/nested_3.py
+```py
+superhero = {
+    "name": "Wonder Woman",
+    "alias": "Diana Prince",
+    "gear": [
+        "Lasso of Truth",
+        "Bracelets of Submission"
+    ],
+    "vehicle": {
+        "title": "Invisible Jet",
+        "speed": "2000 mph",
+    }
+}
+
+for item in superhero["gear"]:
+    print("%s has %s" % (superhero["name"], item))
+```
 
 ### Summary
 
