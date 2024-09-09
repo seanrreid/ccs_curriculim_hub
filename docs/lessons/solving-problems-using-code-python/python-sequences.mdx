@@ -29,7 +29,16 @@ In this lesson, you will build a simple to-do list program that lets you:
 
 In Python, a sequence is a data type that can store multiple, individual values. Examples of sequences include:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/sequence-examples.py
+```py
+# List
+programming_languages = ["bash", "Python", "HTML", "CSS", "JavaScript", "SQL"]
+
+# Tuple
+gps_coordinates = (33.848673, -84.373313)
+
+# range
+numbers_from_zero_to_a_million = range(1000000)
+```
 
 Briefly, each sequence type has a specialty:
 
@@ -41,7 +50,9 @@ Briefly, each sequence type has a specialty:
 
 Lists can hold any other type (Strings, numbers, other Lists, etc.). The easiest way to create one is to assign a List literal to a variable:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-0.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+```
 
 A List literal is:
 
@@ -72,21 +83,37 @@ that the seat numbers are numeric and start at `0`.
 
 You use the index to refer to a specific item in the List:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-1.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+first_item = todos[0]
+second_item = todos[1]
+```
 
 It is not necessary to create a variable. You can index as part of an expression:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-2.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+# first_item = todos[0]
+print("The first item is:", todos[0])
+# second_item = todos[1]
+print("The second item is:", todos[1])
+```
 
 #### What happens if I specify an invalid index?
 
 Python considers it an error if you use an index that falls outside the range of a sequence:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-2b.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+print("This item does not exist:", todos[10])
+```
 
 Specifically, `IndexError` will be thrown:
 
-```
+```py
 Traceback (most recent call last):
   File "todo-2b.py", line 3, in <module>
     print("This item does not exist:", todos[10])
@@ -95,11 +122,18 @@ IndexError: list index out of range
 
 As with any exception, you can handle it with `try/except`:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-2c.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+try:
+    print("This item does not exist:", todos[10])
+except IndexError:
+    print("You almost got an IndexError!")
+```
 
 Now a useful message appears instead of your program "erroring out":
 
-```
+```py
 You almost got an IndexError!
 ```
 
@@ -107,24 +141,39 @@ You almost got an IndexError!
 
 Python allows you to use a negative index, which tells it to start from the end instead of the beginning.
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-2d.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+print("This is the last item:", todos[-1])
+print("This is the next to last item:", todos[-2])
+```
 
 #### How do I access groups of items in a Sequence?
 
 You can access all of the items simply by using the variable name for the sequence itself:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-3.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+print("Here are your todos:")
+print(todos)
+```
 
 Which prints the following:
 
-```
+```py
 Here are your todos:
 ['pet the cat', 'go to work', 'feed the cat']
 ```
 
 You can use the _slicing_ syntax to access a subset of the items:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-4.py{4}
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+print("Here are the second and third todos:")
+print(todos[1:3])
+```
 
 When you _slice_ a List, you normally provide two number separated by a `:`
 
@@ -133,11 +182,19 @@ When you _slice_ a List, you normally provide two number separated by a `:`
 
 If you omit the starting index, Python starts the slice at the beginning (index `0`). If you omit the ending index, Python goes to the end (the last index).
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-5.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+print("Slice from the third through the end:")
+print(todos[2:]) # The third item is index 2
+
+print("Slice from the beginning up to, but not including the fourth:")
+print(todos[:3]) # The fourth item is index 3
+```
 
 Here is the output:
 
-```
+```py
 Slice from the third through the end:
 ['shop for groceries', 'go home', 'feed the cat']
 Slice from the beginning up to, but not including the fourth:
@@ -146,11 +203,16 @@ Slice from the beginning up to, but not including the fourth:
 
 You can use negative indexes with slices:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-2e.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+print("Two items up to, but not including the last:", todos[-3:-1])
+print("These are the last 3 items:", todos[-3:])
+```
 
 Which gives the following result:
 
-```
+```py
 Two items up to, but not including the last: ['shop for groceries', 'go home']
 These are the last 3 items: ['shop for groceries', 'go home', 'feed the cat']
 ```
@@ -169,7 +231,7 @@ Python provides a `len()` function that will tell you how many items are in a Se
 
 You give `len()` a Sequence; it returns an integer. We will use this as part of the condition for a while-loop.
 
-```py{3,4,7}
+```py
 todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
 
 index = 0 # Begin with index 0
@@ -191,7 +253,7 @@ Not only does incrementing move us closer to the end condition, but it lets us a
 
 When we run our program, we see the following:
 
-```
+```py
 1: pet the cat
 2: go to work
 3: shop for groceries
@@ -207,11 +269,16 @@ Often, you do not need to know the specific index of an item. You just want the 
 
 Python provides another kind of loop: the for-loop. Here is our to-do printer using this syntax, with the numerical index omitted:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-7.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+for todo in todos:
+    print(todo)
+```
 
 It's so much shorter! For-loops are a shorthand for iterating **and** accessing an item at a time.
 
-```
+```py
 pet the cat
 go to work
 shop for groceries
@@ -221,11 +288,18 @@ feed the cat
 
 If you do want to show the index (or at least number the todos) you can add a variable that you display and increment:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-7b.py{3,6}
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+count = 1
+for todo in todos:
+    print("%d: %s" % (count, todo))
+    count += 1
+```
 
 Other than looking nice next to each to-do, the `count` variable serves no other purpose in our for-loop.
 
-```
+```py
 1: pet the cat
 2: go to work
 3: shop for groceries
@@ -237,7 +311,7 @@ Other than looking nice next to each to-do, the `count` variable serves no other
 
 Lists are Python's mutable Sequence type, meaning that you can add, remove, and replace items.
 
-#### How do I add items to a List?
+### How do I add items to a List?
 
 There are three ways to add items to a List:
 
@@ -247,11 +321,21 @@ There are three ways to add items to a List:
 
 Each List has a `.append()` method that you can use like this:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-8.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+todos.append("binge watch a show")
+todos.append("go to sleep")
+
+count = 1
+for todo in todos:
+    print("%d: %s" % (count, todo))
+    count += 1
+```
 
 You can see that it adds on to our original `todos`:
 
-```
+```py
 1: pet the cat
 2: go to work
 3: shop for groceries
@@ -269,11 +353,29 @@ For example, every List has its own `.append()` method for adding on new items.
 
 Alternatively, you can use the concatenation operator `+` to combine two lists:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-8b.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+todos = todos + ["binge watch a show", "go to sleep"]
+
+count = 1
+for todo in todos:
+    print("%d: %s" % (count, todo))
+    count += 1
+```
 
 This is equivalent to using the `.extend()` method:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-8c.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+todos.extend(["binge watch a show", "go to sleep"])
+
+count = 1
+for todo in todos:
+    print("%d: %s" % (count, todo))
+    count += 1
+```
 
 :::tip
 Concatenation produces a _new_ List.
@@ -287,20 +389,45 @@ Let's modify our to-do program, prompting the user for items to add. If the user
 Try to use what you've learned so far and implement this on your own. When you're ready, please continue with the lesson.
 :::
 
-:::details Creating the program loop
+<details>
+    <summary>
+        Creating the program loops
+    </summary>
+
 Our program needs to prompt the user for input until they press `Enter` without typing anything else. That seems like a good case for a while-loop.
 
 In order to get our initial state, we need to prompt the user before the start of the while-loop. Then, in the body of our loop, we need to prompt them again. Since our code block must always move us closer to the end condition, we need to give the user a chance to press `Enter` to end the program.
 
 Here is our program:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-9.py
+```py
+todos = []
+
+# Prompt the user the first time
+new_todo = input("What do you need to do? ")
+while len(new_todo) > 0:
+    todos.append(new_todo)
+
+    # Print the current list of to-do items
+    print("To do:")
+    print("====================")
+    count = 1
+    for todo in todos:
+        print("%d: %s" % (count, todo))
+        count += 1
+
+    # Prompt the user again
+    print("\n")
+    new_todo = input("What do you need to do? ")
+
+print("Have a nice day!")
+```
 
 On the last line of the program, we have a `print()` statement that is _not_ part of the body of the while-loop. It runs **after** the while-loop has finished.
 
 Here is an example session:
 
-```
+```sh
 $ python3 todo-9.py
 What do you need to do? feed the cat
 To do:
@@ -327,27 +454,37 @@ What do you need to do?
 Have a nice day!
 ```
 
-:::
+</details>
 
-#### How do I replace items in a List?
+### How do I replace items in a List?
 
 You can use an index to refer to a specific place in a List. If you do this on the LHS of an assignment, you can replace an item:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-v2-1.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+todos[1] = "go to the grocery store"
+print(todos)
+```
 
 In this example, we have reassigned the value at index `1`:
 
-```
+```py
 ['pet the cat', 'go to the grocery store', 'shop for groceries', 'go home', 'feed the cat']
 ```
 
 If you need to replace multiple items, you can use a slice on the LHS and a List on the RHS:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-v2-2.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+todos[1:4] = ["make cat food", "cook cat food"]
+print(todos)
+```
 
 Here, we replace the items from index `1` up to, but not including index `4`:
 
-```
+```py
 ['pet the cat', 'make cat food', 'cook cat food', 'feed the cat']
 ```
 
@@ -361,16 +498,55 @@ This will be a significant change to our code, but we'll take it in steps.
 Now is another opportunity to exercise your knowledge. Try implementing another while-loop around the existing loop. This loop should ask them
 :::
 
-:::details Wrapping our program in a main menu
+#### Wrapping our program in a main menu
+
 Before moving on to the replace-item feature, let's make sure to prompt the user with a main menu. Then, based on that choice, we can run one of our existing procedures (printing or adding).
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-v2-3.py
+```py
+todos = []
+
+# Create a constant for our main menu.
+# This saves us from having to type it out twice.
+MAIN_MENU = """
+Choose an action:
+P: Print your to-do list
+A: Add a to-do item
+R: Replace a to-do item
+
+(Or press Enter to exist the program.)
+"""
+
+choice = input(MAIN_MENU)
+choice = choice.upper() # Simplifies our if-conditions
+
+# As long as they type something, keep prompting
+while len(choice) > 0:
+    if choice == "P":
+        # Print the current list of to-do items
+        print("\n\n\nTo do:")
+        print("====================")
+        count = 1
+        for todo in todos:
+            print("%d: %s" % (count, todo))
+            count += 1
+    elif choice == "A":
+        new_todo = input("What do you need to do? ")
+        if len(new_todo) > 0:
+            todos.append(new_todo)
+    else:
+        print("\n\n***Please enter a valid menu option.***")
+
+    choice = input(MAIN_MENU)
+    choice = choice.upper() # Simplifies our if-conditions
+
+print("Have a nice day!")
+```
 
 On line 15, we convert the user's input to upper-case. If we didn't do this, lines 19 and 27 would have to account for either the upper or lower-case version.
 
 Here is a brief session with our program:
 
-```
+```sh
 $ python3 todo-v2-3.py
 
 Choose an action:
@@ -420,16 +596,73 @@ Have a nice day!
 
 ```
 
-:::
+#### Replacing an item
 
-:::details Replacing an item
 We need to add another `elif` for replacing an item in the to-do list.
 
 If the user chooses to replace an item, it is a good idea to print the to-do list so that they can see the human-readable numbers.
 
 Then, we can prompt them for which number to replace and then prompt them for the new to-do item.
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-v2-4.py{31-49}
+```py
+todos = []
+
+# Create a constant for our main menu.
+# This saves us from having to type it out twice.
+MAIN_MENU = """
+Choose an action:
+P: Print your to-do list
+A: Add a to-do item
+R: Replace a to-do item
+
+(Or press Enter to exist the program.)
+"""
+
+choice = input(MAIN_MENU)
+choice = choice.upper() # Simplifies our if-conditions
+
+# As long as they type something, keep prompting
+while len(choice) > 0:
+    if choice == "P":
+        # Print the current list of to-do items
+        print("\n\n\nTo do:")
+        print("====================")
+        count = 1
+        for todo in todos:
+            print("%d: %s" % (count, todo))
+            count += 1
+    elif choice == "A":
+        new_todo = input("What do you need to do? ")
+        if len(new_todo) > 0:
+            todos.append(new_todo)
+    elif choice == "R":
+        # Print the current list of to-do items
+        print("\n\n\nTo do:")
+        print("====================")
+        count = 1
+        for todo in todos:
+            print("%d: %s" % (count, todo))
+            count += 1
+
+        which_index = input("Which to-do number? ")
+        try:
+            which_index = int(which_index)
+            which_index -= 1 # Convert from human-readable to 0-based index
+
+            if which_index >= 0 and which_index <details len(todos):
+                new_todo = input("What do you need to do? ")
+                todos[which_index] = new_todo
+        except ValueError:
+            print("\n\n***Please enter a number.***")
+    else:
+        print("\n\n***Please enter a valid menu option.***")
+
+    choice = input(MAIN_MENU)
+    choice = choice.upper() # Simplifies our if-conditions
+
+print("Have a nice day!")
+
+```
 
 Since our program shows human-readable numbers, we have to subtract `1` to get the corresponding List index.
 
@@ -441,7 +674,7 @@ Always do appropriate error checking using `try/except` and `if/else`.
 
 Here is a session that demonstrates replacing an item.
 
-```
+```sh
 $ python3 todo-v2-4.py
 
 Choose an action:
@@ -461,8 +694,6 @@ R: Replace a to-do item
 (Or press Enter to exist the program.)
 r
 
-
-
 To do:
 ====================
 1: rock the casbah
@@ -480,17 +711,25 @@ Have a nice day!
 
 ```
 
-#### How do I delete items from a List?
+### How do I delete items from a List?
 
 The syntax for removing an item from a List is different from what we've seen so far.
 
 Use the `del` keyword to tell Python to remove one or more items from a List:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-10.py
+```py
+todos = ["pet the cat", "go to work", "shop for groceries", "go home", "feed the cat"]
+
+del todos[0] # Remove the first one
+print(todos)
+
+del todos[1:3] # Remove items at index 1 up but not including index 3
+print(todos)
+```
 
 Here is the output from running the example:
 
-```
+```py
 ['go to work', 'shop for groceries', 'go home', 'feed the cat']
 ['go to work', 'feed the cat']
 ```
@@ -502,14 +741,95 @@ It will require an additional choice in our main menu as well as another `elif` 
 This is the last change to our to-do program! Give it a shot before looking at the implementation.
 :::
 
-:::details Adding "Done" feature to our to-do program
+<details>
+    <summary>
+        Adding "Done" feature to our to-do program
+    </summary>
+
 The code for removing an item is very similar the code for replacing an item. The main difference is that instead of prompting for a new to-do, we use the `del` keyword to remove the item at the specified index.
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/todo-v2-5.py{50-69}
+```py
+todos = []
+
+# Create a constant for our main menu.
+# This saves us from having to type it out twice.
+MAIN_MENU = """
+Choose an action:
+P: Print your to-do list
+A: Add a to-do item
+R: Replace a to-do item
+C: Complete a to-do item
+(Or press Enter to exist the program.)
+"""
+
+choice = input(MAIN_MENU)
+choice = choice.upper() # Simplifies our if-conditions
+
+# As long as they type something, keep prompting
+while len(choice) > 0:
+    if choice == "P":
+        # Print the current list of to-do items
+        print("\n\n\nTo do:")
+        print("====================")
+        count = 1
+        for todo in todos:
+            print("%d: %s" % (count, todo))
+            count += 1
+    elif choice == "A":
+        new_todo = input("What do you need to do? ")
+        if len(new_todo) > 0:
+            todos.append(new_todo)
+    elif choice == "R":
+        # Print the current list of to-do items
+        print("\n\n\nTo do:")
+        print("====================")
+        count = 1
+        for todo in todos:
+            print("%d: %s" % (count, todo))
+            count += 1
+
+        which_index = input("Which to-do number? ")
+        try:
+            which_index = int(which_index)
+            which_index -= 1 # Convert from human-readable to 0-based index
+
+            if which_index >= 0 and which_index < len(todos):
+                new_todo = input("What do you need to do? ")
+                todos[which_index] = new_todo
+        except ValueError:
+            print("\n\n***Please enter a number.***")
+    elif choice == "C":
+        # Print the current list of to-do items
+        print("\n\n\nTo do:")
+        print("====================")
+        count = 1
+        for todo in todos:
+            print("%d: %s" % (count, todo))
+            count += 1
+
+        which_index = input("Which to-do number? ")
+        try:
+            which_index = int(which_index)
+            which_index -= 1 # Convert from human-readable to 0-based index
+
+            if which_index >= 0 and which_index < len(todos):
+                completed_todo = todos[which_index]
+                del todos[which_index]
+                print("%s has been marked complete!" % completed_todo)
+        except ValueError:
+            print("\n\n***Please enter a number.***")
+    else:
+        print("\n\n***Please enter a valid menu option.***")
+
+    choice = input(MAIN_MENU)
+    choice = choice.upper() # Simplifies our if-conditions
+
+print("Have a nice day!")
+```
 
 Here is a session that demonstrates removing an item.
 
-```
+```py
 Choose an action:
 P: Print your to-do list
 A: Add a to-do item
@@ -559,7 +879,7 @@ Have a nice day!
 
 ```
 
-:::
+</details>
 
 ### When should I use nested loops?
 
@@ -638,14 +958,17 @@ How would you access the following item?
 </tr>
 </table>
 
-:::details Answer
+<details>
+    <summary>
+        Answer
+    </summary>
 The item on the 3rd row, in the 2nd column is accessed like so:
 
 ```py
 board[2][1]
 ```
 
-:::
+</details>
 
 #### How do I use the `range()` function to generate numbers?
 
@@ -655,11 +978,16 @@ To do that, we'll use the `range()` function. You pass `range()` a number, and i
 
 First, let's see the nested loops in action, just printing the numbers generated by `range(0)`:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/nested-0.py
+```py
+SIZE = 3
+for y in range(SIZE):
+    for x in range(SIZE):
+        print(y, x)
+```
 
 Here is our output, showing the values:
 
-```
+```py
 0 0
 0 1
 0 2
@@ -673,21 +1001,42 @@ Here is our output, showing the values:
 
 Now, instead of printing the numbers, we'll create the `board` as an empty List, then we'll `.append()` an empty List.
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/nested-1.py
+```py
+SIZE = 3
+board = [] # Start with an empty List
+for y in range(SIZE):
+    # Each element in the board will also be a List
+    board.append([])
+    for x in range(SIZE):
+        pass
+
+print(board)
+```
 
 This results in a List of empty Lists:
 
-```
+```py
 [[], [], []]
 ```
 
 And to complete the empty game board, we'll put the "coordinates" in each of the inner Lists. This can help us visualize how our loops are working:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/nested-2.py
+```py
+SIZE = 3
+board = [] # Start with an empty List
+for y in range(SIZE):
+    # Each element in the board will also be a List
+    board.append([])
+    for x in range(SIZE):
+        # Fill our inner Lists with the coordinates
+        board[y].append("[%d][%d]" % (y, x))
+
+print(board)
+```
 
 Here is what our game board looks like now:
 
-```
+```py
 [['[0][0]', '[0][1]', '[0][2]'], ['[1][0]', '[1][1]', '[1][2]'], ['[2][0]', '[2][1]', '[2][2]']]
 ```
 
@@ -697,11 +1046,26 @@ We used nested loops to generate the game board, and we can use similar code to 
 
 Instead of printing the List itself, let's print it as a grid:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/nested-3.py
+```py
+SIZE = 3
+board = [] # Start with an empty List
+for y in range(SIZE):
+    # Each element in the board will also be a List
+    board.append([])
+    for x in range(SIZE):
+        # Fill our inner Lists with the coordinates
+        board[y].append("[%d][%d]" % (y, x))
+
+# Print the board as a grid
+for row in board:
+    for column in row:
+        print("%s  " % column, end="")
+    print("\n")
+```
 
 We added nested for-loops, and since we wanted the values (instead of the indexes), we did not use the `range()` function.
 
-```
+```py
 [0][0]  [0][1]  [0][2]
 
 [1][0]  [1][1]  [1][2]
@@ -713,11 +1077,35 @@ We added nested for-loops, and since we wanted the values (instead of the indexe
 
 Adding game play is part of the exercises after the lesson, but here is an example of placing a move on the game board:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/nested-4.py
+```py
+SIZE = 3
+board = [] # Start with an empty List
+for y in range(SIZE):
+    # Each element in the board will also be a List
+    board.append([])
+    for x in range(SIZE):
+        # Fill our inner Lists with the coordinates
+        board[y].append("[%d][%d]" % (y, x))
+
+# Print the board as a grid
+for row in board:
+    for column in row:
+        print("%s  " % column, end="")
+    print("\n")
+
+print("\n\nPlayer X is moving.\n\n")
+board[0][2] = "X"
+
+# Print the board as a grid
+for row in board:
+    for column in row:
+        print("%s  " % column, end="")
+    print("\n")
+```
 
 We added nested for-loops, and since we wanted the values (instead of the indexes), we did not use the `range()` function.
 
-```
+```py
 [0][0]  [0][1]  [0][2]
 
 [1][0]  [1][1]  [1][2]
@@ -740,11 +1128,21 @@ Player X is moving.
 
 Like Lists, you can index, slice, and get the length of Strings as if though they were Lists.
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/string-0.py
+```py
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+print("The first letter is", alphabet[0])
+
+print("The first three letters are", alphabet[:3])
+
+print("Some letters in the middle are", alphabet[11:16])
+
+print("There are %d letters in the alphabet" % len(alphabet))
+```
 
 And the results of running the code:
 
-```
+```py
 The first letter is a
 The first three letters are abc
 Some letters in the middle are lmnop
@@ -755,11 +1153,16 @@ There are 26 letters in the alphabet
 
 Because you can index and get the length of a String, you can also iterate through the individual characters:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/string-1.py
+```py
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+for letter in alphabet:
+    print(letter)
+```
 
 And the results of running the code:
 
-```
+```py
 a
 b
 c
@@ -793,11 +1196,15 @@ z
 
 One notable difference between Strings and Lists is that you _cannot_ modify a String by reassigning to an index.
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/string-2.py
+```py
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+alphabet[0] = "4" # Uh oh.
+```
 
 This results in an error:
 
-```
+```py
 Traceback (most recent call last):
   File "string-2.py", line 3, in <module>
     alphabet[0] = "4" # Uh oh.
@@ -806,11 +1213,18 @@ TypeError: 'str' object does not support item assignment
 
 You would first have to convert it to a List so that you could mutate the data:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/string-3.py
+```py
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+alphalist = list(alphabet)
+alphalist[0] = "4"
+
+print(alphalist)
+```
 
 This allows you to make whatever modifications you choose:
 
-```
+```py
 ['4', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 ```
 
@@ -818,13 +1232,23 @@ This allows you to make whatever modifications you choose:
 
 There is a trick to converting your List back into a String, and it is a bit counter-intuitive at first.
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/string-4.py
+```py
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+alphalist = list(alphabet)
+alphalist[0] = "4"
+
+print(alphalist)
+
+alphabet = "".join(alphalist)
+print(alphabet)
+```
 
 You use the String method `.join()` to reconnect the items of a List.
 
 Because we used an empty String (`""`) to join the items, the resulting String has no spaces:
 
-```
+```py
 ['4', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 4bcdefghijklmnopqrstuvwxyz
 ```
@@ -835,11 +1259,21 @@ Note that we did not _mutate_ our String, but did **reassign** the variable name
 
 But, we can use any String we want to insert between the joined List items:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/string-5.py
+```py
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+alphalist = list(alphabet)
+alphalist[0] = "4"
+
+print(alphalist)
+
+alphabet = "!\n".join(alphalist)
+print(alphabet)
+```
 
 Now, our `alphabet` String has an `!` and a line break between each letter:
 
-```
+```py
 ['4', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 4!
 b!
@@ -876,27 +1310,45 @@ Note that `.join()` inserts a String **between** each List item. The `z` does no
 
 Just as with Strings, you can index, slice, and get the length of a Tuple. But you cannot modify a Tuple.
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/tuple-0.py
+```py
+coordinates = (33.848673, -84.373313)
+
+latitude = coordinates[0]
+longitude = coordinates[1]
+
+print("The latitude is %f and the longitude is %f" % (latitude, longitude))
+```
 
 This program prints the following:
 
-```
+```py
 The latitude is 33.848673 and the longitude is -84.373313
 ```
 
 :::tip
 Python supports **unpacking** syntax which allows you to assign multiple variables at a time when used with Sequences on the RHS:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/tuple-1.py
+```py
+coordinates = (33.848673, -84.373313)
+
+latitude, longitude = coordinates
+
+print("The latitude is %f and the longitude is %f" % (latitude, longitude))
+```
+
 :::
 
 Tuples are immutable:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/tuple-2.py
+```py
+coordinates = (33.848673, -84.373313)
+
+coordinates[0] = 40.741895
+```
 
 Assigning to an index of a Tuple results in an error:
 
-```
+```py
 Traceback (most recent call last):
   File "tuple-2.py", line 3, in <module>
     coordinates[0] = 40.741895
@@ -905,11 +1357,20 @@ TypeError: 'tuple' object does not support item assignment
 
 But you can concatenate to produce a new Tuple:
 
-// @TODO - embed this/lessons/solving-problems-using-code/sequences/tuple-3.py
+```py
+band_mates = ("John", "Paul", "George", "Pete")
+print(band_mates)
+
+band_mates = band_mates[:-1] # All but the last
+print(band_mates)
+
+band_mates = band_mates + ("Ringo", )
+print(band_mates)
+```
 
 This works because you are doing reassignment, not mutation.
 
-```
+```py
 ('John', 'Paul', 'George', 'Pete')
 ('John', 'Paul', 'George')
 ('John', 'Paul', 'George', 'Ringo')
@@ -919,7 +1380,7 @@ This works because you are doing reassignment, not mutation.
 To create a Tuple with a single item, you must wrap it in parentheses and add a trailing comma as shown in the previous code sample.
 :::
 
-### Summary
+## Summary
 
 In this lesson, you learned about the following Sequence types:
 
