@@ -283,7 +283,7 @@ Our final step is to use the npm scripts feature to build a custom command to ru
 
 A script is executed with `npm run {command-name}`. The "start" command is a default command expected by `npm` so you can run `npm start`.
 
-### Summary
+## Summary
 
 You have now built your first `npm` package with a dependency. As your projects get more complicated, you will install more dependencies and write more code, including some of the exercises below.
 

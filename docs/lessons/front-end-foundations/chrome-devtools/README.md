@@ -102,7 +102,7 @@ Finally, the "Application" view allows you to examine the storage, cache, backgr
 
 When building web apps, it's common to store data in local storage or handle session storage from a cookie. You can view, edit, and clear local storage and cookies from the "Application" view.
 
-### Summary
+## Summary
 
 Now you are introduced to Google's Chrome DevTools and many of the tools it offers including DOM manipulation, CSS customization, JavaScript debugging with breakpoints, device mode for testing responsive design, recording network requests, and managing application storage.
 

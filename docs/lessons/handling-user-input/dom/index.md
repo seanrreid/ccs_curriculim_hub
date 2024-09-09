@@ -297,8 +297,7 @@ In the dev tools we should see that our created elements have the proper `class`
 
 ![attributes-class-example](./attributes-class-example.jpg)
 
-
-### Summary
+## Summary
 
 The DOM can be accessed and changed in Javascript through the `document` object. The `document` object has methods and properties that can be used to interact with the DOM.
 

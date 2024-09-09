@@ -541,7 +541,7 @@ class Counter extends React.Component {
 }
 ```
 
-### Summary
+## Summary
 
 This lesson introduced the idea of state in a React application. You learned to define `this.state` in your custom Component's `constructor()` method. By defining `this.state` as an Object, your Component can manage multiple values, each with their own label.
 

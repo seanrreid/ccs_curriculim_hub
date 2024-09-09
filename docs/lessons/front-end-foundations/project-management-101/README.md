@@ -172,7 +172,7 @@ This visual representation of what is being worked on allows for high visibility
 - **Continuous improvement:** It's important for people to keep track of how the board is working for the team and make adjustments over time so you have the most effective strategy.
 - **Define processes:** It's important to clearly and explicitly define what "done" looks like, as well as what each step in the process means to the whole team. It's important everyone is on the same page so the Kanban board can be used in the best way for the team.
 
-### Summary
+## Summary
 
 There are many tools and processes when using the Agile principles. It is up to each company and team to choose which processes and tools are best for each team.
 

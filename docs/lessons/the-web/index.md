@@ -161,7 +161,7 @@ You can think of the Domain Name System like your contact list on your phone. Th
 
 Similarly, when your browser requests a website, the request first goes to a DNS Resolver. The DNS Resolver, like your contact list, will give your `request` the proper address for the server. Your `request` goes to the proper IP Address and the server will send back the corresponding `response`.
 
-### Summary
+## Summary
 
 Getting started with web development means understanding the various moving pieces that are involved with delivering a website, or web application. Understanding how a clients makes a `request` and how servers reply with a `response` provides the foundations for both front-end and back-end web development. The `request` and `response` cycle is integral in everything from a simple web "page," to more robust applications like GMail, Amazon e-commerce, or Google's search engine.
 

@@ -366,7 +366,7 @@ for item in superhero["gear"]:
     print("%s has %s" % (superhero["name"], item))
 ```
 
-### Summary
+## Summary
 
 In this lesson, you learned how to create and manipulate dictionaries, Python's mapping data type. Using key/value pairs, you can now create custom records for organizing your data.
 

@@ -616,7 +616,7 @@ To do that, we will add another key-value pair to the `this.setState()` call in 
     }
 ```
 
-### Summary
+## Summary
 
 In this lesson, you built on your knowledge of stateful components and event handlers to create interactive forms in React.
 

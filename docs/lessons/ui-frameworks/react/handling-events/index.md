@@ -50,7 +50,7 @@ class Translator extends React.Component {
             text: ''
         }
     }
-    
+
     render() {
         return (
             <div>
@@ -100,7 +100,7 @@ class Translator extends React.Component {
             text: props.initialText || ''
         }
     }
-    
+
     render() {
         return (
             <div>
@@ -128,7 +128,7 @@ class Translator extends React.Component {
             text: props.initialText || ''
         }
     }
-    
+
     render() {
         return (
             <div>
@@ -168,7 +168,7 @@ Add a helper method that will update state:
 
 ### Add the onChange handler
 
-When you worked with `button` Components, you used an `onClick` prop. For an input, you use the `onChange` prop. 
+When you worked with `button` Components, you used an `onClick` prop. For an input, you use the `onChange` prop.
 
 Set the value of `onChange` to an arrow function that:
 
@@ -392,23 +392,6 @@ This creates an unwanted constraint: `_updateText()` can only be used as an Even
 Using an anonymous function keeps `_updateText()` flexible.
 :::
 
-
-### Summary
+## Summary
 
 In this lesson, you learned how to pass your helper methods to event handler props, such as `onClick` and `onChange`. This triggers state changes in your Component, updating your UI.
-
-
-
-## Interview Questions
-
-### Fundamentals
-
-### Bugfix
-
-### Conceptual
-
-### Architect
-
-## Additional Resources
-
-

@@ -295,7 +295,7 @@ When putting `jokeJson.value` in state, set `isLoading` to `false`:
 
 After saving, the updated code is loaded into the browser. Click the `New Joke` button to make sure your loading message appears while the browser waits for the API to respond.
 
-### Summary
+## Summary
 
 You learned how to store the results of an API call in state. Like the event handling code in the previous lessons, you update state using `this.setState()` in a helper method. When using `fetch()` to communicate with an API, you move the call to `this.setState()` to a `.then()` callback.
 

@@ -89,7 +89,7 @@ A [schema](https://en.wikipedia.org/wiki/Database_schema) is a description of th
 Our `schema.sql` will hold all of our `create table` statements. Every time we make a change to this file, we'll run `npm run db:reset` to recreate the database.
 :::
 
-### Summary
+## Summary
 
 In this lesson, you learned how to create the database tables in SQL for a simple social media site. You gave the columns of your tables appropriate data types.
 
