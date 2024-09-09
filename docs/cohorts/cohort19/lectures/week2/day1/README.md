@@ -19,7 +19,6 @@ Show'n'tell'debug
 ## Presentations
 
 - [Functions](https://docs.google.com/presentation/d/1qDTa_qmtTG3parlrDLcc_RdpxF8ceJsIm7-vPRJ1I00/edit?usp=sharing)
-- [Object Oriented Programming](https://docs.google.com/presentation/d/1pqIK5nza4rjglKo3iCms3dfDZgBw2CcwI2fq7T3nmIE/edit?usp=sharing)
 
 ## Lessons
 
