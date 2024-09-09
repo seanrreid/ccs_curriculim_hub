@@ -33,11 +33,14 @@ The ingredient that it wants is a String (or something it can get a String versi
 
 Let's imagine using an `add()` function that adds two numbers.
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/add-0.py
+```py
+result = add(2, 3)
+print(result)
+```
 
 Here is the output from running that code:
 
-```
+```py
 5
 ```
 
@@ -49,11 +52,14 @@ Now that you have an idea of what a function does, it's time to build one.
 
 Here is the `add()` function mentioned above:
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/add-1.py
+```py
+def add(num1, num2):
+    return num1 + num2
+```
 
-#### A function is defined in four parts
+It can be defined in four parts:
 
-(annotated diagram a screenshot of our code.)
+![Function Diagram](./function_diagram.png)
 
 In Python, you create a function by:
 
@@ -78,11 +84,85 @@ A **function call**, or **invocation** is the act of running the body of a funct
 
 Now it's time to put your understanding of functions to use. Update your to-do program by adding a `print_todos()` function. You will use that instead of repeating the for-loop that `print()`s your to-dos.
 
-:::details Printing to-dos with a function
-// @TODO - embed this/lessons/solving-problems-using-code/functions/todo-v3-0.py{14-21}
+<details>
+    <summary>
+        Printing to-dos with a function
+    </summary>
 
 We define the new `print_todos()` function near the top of our program, **before** we try to call it. In our while-loop, we call `print_todos()` any time we want to show the user their current list of to-dos.
-:::
+
+```py
+
+todos = []
+
+# Create a constant for our main menu.
+# This saves us from having to type it out twice.
+MAIN_MENU = """
+Choose an action:
+P: Print your to-do list
+A: Add a to-do item
+R: Replace a to-do item
+C: Complete a to-do item
+(Or press Enter to exist the program.)
+"""
+
+def print_todos():
+    # Print the current list of to-do items
+    print("\n\n\nTo do:")
+    print("====================")
+    count = 1
+    for todo in todos:
+        print("%d: %s" % (count, todo))
+        count += 1
+
+choice = input(MAIN_MENU)
+choice = choice.upper() # Simplifies our if-conditions
+
+# As long as they type something, keep prompting
+while len(choice) > 0:
+    if choice == "P":
+        print_todos()
+    elif choice == "A":
+        new_todo = input("What do you need to do? ")
+        if len(new_todo) > 0:
+            todos.append(new_todo)
+    elif choice == "R":
+        print_todos()
+
+        which_index = input("Which to-do number? ")
+        try:
+            which_index = int(which_index)
+            which_index -= 1 # Convert from human-readable to 0-based index
+
+            if which_index >= 0 and which_index < len(todos):
+                new_todo = input("What do you need to do? ")
+                todos[which_index] = new_todo
+        except ValueError:
+            print("\n\n***Please enter a number.***")
+    elif choice == "C":
+        print_todos()
+
+        which_index = input("Which to-do number? ")
+        try:
+            which_index = int(which_index)
+            which_index -= 1 # Convert from human-readable to 0-based index
+
+            if which_index >= 0 and which_index < len(todos):
+                completed_todo = todos[which_index]
+                del todos[which_index]
+                print("%s has been marked complete!" % completed_todo)
+        except ValueError:
+            print("\n\n***Please enter a number.***")
+    else:
+        print("\n\n***Please enter a valid menu option.***")
+
+    choice = input(MAIN_MENU)
+    choice = choice.upper() # Simplifies our if-conditions
+
+print("Have a nice day!")
+```
+
+</details>
 
 :::tip
 Improving code by removing repetition, improving readability, and increasing flexibility are examples of _refactoring_.
@@ -110,18 +190,167 @@ One option is to write a function that only handles prompting for a number and c
 `-1` is commonly used to indicate that an index is invalid. This convention is popular in a number of languages, including Python and Java.
 :::
 
-:::details Writing a `get_todo_index()` function
+<details>
+    <summary>Writing a `get_todo_index()` function</summary>
 
 We refactor some of the old code into a new `get_todo_index()` function. Inside the function, if we determine that the index is valid, we `return` it. If it is invalid (either they didn't type a number or the number fell outside the range of valid indices), we `return -1`.
 
 Knowing that `get_todo_index()` will only return `-1` or a valid index lets us simplify the code for replacing a to-do.
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/todo-v3-1.py{23-37,53-56}
+```py
+todos = []
+
+# Create a constant for our main menu.
+# This saves us from having to type it out twice.
+MAIN_MENU = """
+Choose an action:
+P: Print your to-do list
+A: Add a to-do item
+R: Replace a to-do item
+C: Complete a to-do item
+(Or press Enter to exist the program.)
+"""
+
+def print_todos():
+    # Print the current list of to-do items
+    print("\n\n\nTo do:")
+    print("====================")
+    count = 1
+    for todo in todos:
+        print("%d: %s" % (count, todo))
+        count += 1
+
+def get_todo_index():
+    which_index = input("Which to-do number? ")
+
+    try:
+        which_index = int(which_index)
+        which_index -= 1 # Convert from human-readable to 0-based index
+
+        if which_index >= 0 and which_index < len(todos):
+            return which_index
+        else:
+            return -1
+    except ValueError:
+        print("\n\n***Please enter a number.***")
+        return -1
+
+
+choice = input(MAIN_MENU)
+choice = choice.upper() # Simplifies our if-conditions
+
+# As long as they type something, keep prompting
+while len(choice) > 0:
+    if choice == "P":
+        print_todos()
+    elif choice == "A":
+        new_todo = input("What do you need to do? ")
+        if len(new_todo) > 0:
+            todos.append(new_todo)
+    elif choice == "R":
+        print_todos()
+        which_index = get_todo_index()
+        if which_index != -1:
+            new_todo = input("What do you need to do? ")
+            todos[which_index] = new_todo
+    elif choice == "C":
+        print_todos()
+
+        which_index = input("Which to-do number? ")
+        try:
+            which_index = int(which_index)
+            which_index -= 1 # Convert from human-readable to 0-based index
+
+            if which_index >= 0 and which_index < len(todos):
+                completed_todo = todos[which_index]
+                del todos[which_index]
+                print("%s has been marked complete!" % completed_todo)
+        except ValueError:
+            print("\n\n***Please enter a number.***")
+    else:
+        print("\n\n***Please enter a valid menu option.***")
+
+    choice = input(MAIN_MENU)
+    choice = choice.upper() # Simplifies our if-conditions
+
+print("Have a nice day!")
+```
 
 We can reuse `get_todo_index()` for completing a to-do.
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/todo-v3-2.py{59-63}
-:::
+```py
+todos = []
+
+# Create a constant for our main menu.
+# This saves us from having to type it out twice.
+MAIN_MENU = """
+Choose an action:
+P: Print your to-do list
+A: Add a to-do item
+R: Replace a to-do item
+C: Complete a to-do item
+(Or press Enter to exist the program.)
+"""
+
+def print_todos():
+    # Print the current list of to-do items
+    print("\n\n\nTo do:")
+    print("====================")
+    count = 1
+    for todo in todos:
+        print("%d: %s" % (count, todo))
+        count += 1
+
+def get_todo_index():
+    which_index = input("Which to-do number? ")
+
+    try:
+        which_index = int(which_index)
+        which_index -= 1 # Convert from human-readable to 0-based index
+
+        if which_index >= 0 and which_index <details len(todos):
+            return which_index
+        else:
+            return -1
+    except ValueError:
+        print("\n\n***Please enter a number.***")
+        return -1
+
+
+choice = input(MAIN_MENU)
+choice = choice.upper() # Simplifies our if-conditions
+
+# As long as they type something, keep prompting
+while len(choice) > 0:
+    if choice == "P":
+        print_todos()
+    elif choice == "A":
+        new_todo = input("What do you need to do? ")
+        if len(new_todo) > 0:
+            todos.append(new_todo)
+    elif choice == "R":
+        print_todos()
+        which_index = get_todo_index()
+        if which_index != -1:
+            new_todo = input("What do you need to do? ")
+            todos[which_index] = new_todo
+    elif choice == "C":
+        print_todos()
+        which_index = get_todo_index()
+        if which_index != -1:
+            completed_todo = todos[which_index]
+            del todos[which_index]
+            print("%s has been marked complete!" % completed_todo)
+    else:
+        print("\n\n***Please enter a valid menu option.***")
+
+    choice = input(MAIN_MENU)
+    choice = choice.upper() # Simplifies our if-conditions
+
+print("Have a nice day!")
+```
+
+</details>
 
 #### How do I `return` multiple values?
 
@@ -129,11 +358,19 @@ You are only allowed to `return` a single value from a function. To get around t
 
 Here's an example of a `divide()` function that returns both the quotient and the remainder:
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/divide_0.py
+```py
+def divide(dividend, divisor):
+    quotient = dividend // divisor # The // operator rounds
+    remainder = dividend % divisor
+    return (quotient, remainder) # Return a tuple
+
+result = divide(5, 3)
+print(result)
+```
 
 The function appears to return multiple values, but it is really just a single tuple:
 
-```
+```py
 (1, 2)
 ```
 
@@ -141,11 +378,17 @@ The function appears to return multiple values, but it is really just a single t
 
 If you do not include a `return` statement or if you use the `return` keyword by itself, Python interprets this as returning the value `None`.
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/nothing_returned.py
+```py
+def return_nothing():
+    return
+
+result = return_nothing()
+print(result)
+```
 
 When you run this code, the `None` keyword is printed:
 
-```
+```py
 None
 ```
 
@@ -155,11 +398,22 @@ As the name implies, `None` signifies "no value".
 
 When Python encounters the `return` keyword while running a function, it _exits_ the functions. This means that none of the statements after `return` will run.
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/nothing_after_return.py
+```py
+def does_not_print():
+    print("This prints")
+    return
+    print("This does not print")
+    print("Nor does this")
+
+    print("Third time is not a charm")
+    print(":)")
+
+does_not_print()
+```
 
 The first `print()` runs, but the rest do not:
 
-```
+```py
 This prints
 ```
 
@@ -175,13 +429,19 @@ In some of the examples in this lesson, you have already seen arguments in actio
 
 In our simple `add()` function, we listed two arguments, `num1` and `num2`:
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/add-1.py
+```py
+def add(num1, num2):
+    return num1 + num2
+```
 
 In the body of the function, we use arguments the same way we use variables. In both cases, they are just labels for values.
 
 When we call a function, we provide the values that get assigned to the argument names:
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/add-0.py
+```py
+result = add(2, 3)
+print(result)
+```
 
 :::tip
 Though they are technically different, programmers often use the terms "parameter" and "argument" interchangeably.
@@ -196,11 +456,14 @@ These are the values that are used while the function body is running.
 
 If you call a function but fail to provide the correct number of arguments, an error will be thrown.
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/add-2.py
+```py
+result = add(2)
+print(result)
+```
 
 We defined the `add()` function with 2 arguments, but only passed 1. This results in a `TypeError`:
 
-```
+```py
 Traceback (most recent call last):
   File "add-2.py", line 1, in <module>
     result = add(2)
@@ -215,11 +478,20 @@ When you call a function, the order of the arguments must be the same as the fun
 
 Here is a variation of our "greeter" program:
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/name_and_title.py
+```py
+def make_formal_greeting(name, title):
+    return "This is %s, the %s!" % (name, title)
+
+result = make_formal_greeting("Rob Stark", "King in the North")
+print(result)
+
+oops = make_formal_greeting("King in the North", "Rob Stark")
+print(oops)
+```
 
 The first time we call `make_formal_greeting()`, we match the order of arguments. The second time, we do not.
 
-```
+```py
 This is Rob Stark, the King in the North!
 This is King in the North, the Rob Stark!
 ```
@@ -238,13 +510,21 @@ Local scope is when a variable is defined as part of a function body, or as one 
 
 A local variable (i.e., one with local scope) can only be accessed inside of the function where it is defined.
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/scope_1.py
+```py
+def dance():
+    kind = "silly"
+    print("I am doing a %s dance" % kind)
+
+dance()
+
+print(kind)
+```
 
 When we call `dance()`, the `print()` statement on line 3 accesses the `kind` variable. This is OK because `kind` is local to the `dance()` function.
 
 On line 7, if we try to `print(kind)`, we get an error because `kind` does not exist outside of the `dance()` function.
 
-```
+```py
 I am doing a silly dance
 Traceback (most recent call last):
   File "scope_1.py", line 7, in <module>
@@ -254,11 +534,21 @@ NameError: name 'kind' is not defined
 
 Likewise, the local scope of one function has no access to the local scope of another function.
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/scope_2.py
+```py
+def dance():
+    kind = "silly"
+    print("I am doing a %s dance" % kind)
+
+def dance2():
+    print("I want to do a %s dance" % kind)
+
+dance()
+dance2()
+```
 
 `dance()` can access `kind`, but `dance2()` cannot:
 
-```
+```py
 I am doing a silly dance
 Traceback (most recent call last):
   File "scope_2.py", line 9, in <module>
@@ -276,11 +566,17 @@ Every function has its own local scope.
 
 You can think of a parameter as a local variable whose assigned value comes from the "outside" of the function body.
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/scope_3.py
+```py
+def dance(kind="silly"):
+    print("I am doing a %s dance" % kind)
+
+dance("funky") # Totally OK.
+print(kind) # Error!
+```
 
 Therefore, the scope of a parameter and a local variable are the same.
 
-```
+```py
 I am doing a funky dance
 Traceback (most recent call last):
   File "scope_3.py", line 5, in <module>
@@ -294,11 +590,18 @@ Trying to access a parameter outside the scope of a function causes an error.
 
 The other kind of scope is the scope of the entire program file, known as global scope.
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/scope_4.py
+```py
+kind = "mesmerizing"
+def dance():
+    print("I am doing a %s dance" % kind)
+
+dance() # Totally OK.
+print(kind) # Also totally OK.
+```
 
 Therefore, the scope of a parameter and a local variable are the same.
 
-```
+```py
 I am doing a mesmerizing dance
 mesmerizing
 ```
@@ -317,7 +620,16 @@ A function that calls itself is a _recursive function_. Recursion is an alternat
 
 Here is a loop that we can convert to a recursive function:
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/recursion_0.py
+```py
+def calculate_sum(number_list):
+    result = 0
+    for number in number_list:
+        result += number
+    return result
+
+the_sum = calculate_sum(range(100))
+print(the_sum)
+```
 
 When using a loop, your function goes like this:
 
@@ -332,7 +644,16 @@ With recursion, you would approach the problem differently. Your function descri
 
 This is what that description looks like in code:
 
-// @TODO - embed this/lessons/solving-problems-using-code/functions/recursion_1.py
+```py
+def calculate_sum(number_list):
+    if len(number_list) == 0:
+        return 0
+    else:
+        return number_list[0] + calculate_sum(number_list[1:])
+
+the_sum = calculate_sum(range(100))
+print(the_sum)
+```
 
 On line 2, we check for the _base case_ - this is how the function knows that it is finished.
 
