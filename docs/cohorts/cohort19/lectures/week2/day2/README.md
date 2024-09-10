@@ -28,7 +28,6 @@ Today will be a mix of demo + code along. I'm sharing the presentation link agai
 
 - [Object Oriented Programming(OOP)](/docs/lessons/solving-problems-using-code-python/python-oop)
 
-<!--
 ## In Class Solution
 
 Here's the in-class version of the Hotel Manager app
@@ -85,4 +84,4 @@ concierge = True
 while concierge:
     in_or_out = input("Are you checking, or out? ").lower()
     concierge = check_in_or_out(in_or_out)
-``` -->
+```
