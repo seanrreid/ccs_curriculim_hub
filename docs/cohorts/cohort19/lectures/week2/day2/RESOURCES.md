@@ -20,7 +20,7 @@ title: Additional Resources
 ## Git
 
 - [Creating a Git commit: The Hard Way](https://avestura.dev/blog/creating-a-git-commit-the-hard-way)
-  <br>This is great if you want a deeper dive into `git` and commit messages!
+  <br/>This is great if you want a deeper dive into `git` and commit messages!
 
 ## General
 

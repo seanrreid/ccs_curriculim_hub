@@ -25,5 +25,5 @@ Starter code: [https://github.com/seanrreid/python-rpg-starter](https://github.c
 
 The exercise is broken into two parts
 
-- Start with [Part 1](/docs/exercises/python-rpg/part-1/)
-- Then continuie with [Part 2](/docs/exercises/python-rpg/part-2/)
+- Start with [Part 1](./part-1/)
+- Then continuie with [Part 2](./part-2/)
