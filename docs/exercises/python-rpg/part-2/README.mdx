@@ -72,7 +72,7 @@ A tonic will add 2 to the hero's health wherease a sword will add 2 power.
 import random
 import time
 
-class Character(object):
+class Character():
     def __init__(self):
         self.name = '<undefined>'
         self.health = 10
@@ -135,7 +135,7 @@ class Wizard(Character):
         if swap_power:
             self.power, enemy.power = enemy.power, self.power
 
-class Battle(object):
+class Battle():
     def do_battle(self, hero, enemy):
         print("=====================")
         print("Hero faces the %s" % enemy.name)
@@ -169,21 +169,21 @@ class Battle(object):
             print("YOU LOSE!")
             return False
 
-class Tonic(object):
+class Tonic():
     cost = 5
     name = 'tonic'
     def apply(self, character):
         character.health += 2
         print("%s's health increased to %d." % (character.name, character.health))
 
-class Sword(object):
+class Sword():
     cost = 10
     name = 'sword'
     def apply(self, hero):
         hero.power += 2
         print("%s's power increased to %d." % (hero.name, hero.power))
 
-class Store(object):
+class Store():
     # If you define a variable in the scope of a class:
     # This is a class variable and you can access it like
     # Store.items => [Tonic, Sword]
