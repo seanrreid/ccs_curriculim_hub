@@ -73,7 +73,6 @@ The `<html>` element is the top parent, then `<head>` and `<body>` are direct ch
 
 ## Additional Resources
 
-- [HTML Cheat Sheet](https://hostingreviewbox.com/wp-content/uploads/2016/02/html5-cheat-sheet-1.png)
 - [w3schools HTML elements reference](https://www.w3schools.com/html/html_elements.asp)
 - [MDN web docs - HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 - [The History of HTML and How It Revolutionized the Internet](https://www.thoughtco.com/history-of-html-1991418)
