@@ -51,7 +51,7 @@ and marked it up to resemble something like like this...
 - [Old CSS, new CSS](https://eev.ee/blog/2020/02/01/old-css-new-css/)
 - [The Cassette Tap as Responsive Design](https://needmoredesigns.com/early-responsive-design/)
 - [Solved by Flexbox](https://philipwalton.github.io/solved-by-flexbox/)
-- [Media Queries (Examples of Responsive Designs)](https://mediaqueri.es/)
+- [Media Queries (Examples of Responsive Designs, Archive.org link)](https://web.archive.org/web/20240110044613/https://mediaqueri.es/)
 - [30-plus years of HyperCard, the missing link to the Web](https://arstechnica.com/gadgets/2019/05/25-years-of-hypercard-the-missing-link-to-the-web/)
   <br/>This article was originally published in 2012, then republished in 2019. HyperCard turns 37 in 2024, it would have been about 6 years old when I first worked with it! :exploding_head:
 
