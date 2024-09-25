@@ -12,7 +12,6 @@ title: Additional Resources
   <br/>The title seems ominous, but don't let that dissuade you. This is a good examination of the role AI might play in frontend development.
 - [Visualizing Frontend Architecture](https://frontendatscale.com/issues/17/)
 
-
 ## HTTP
 
 - [Understanding the Basics of HTTP Status Codes](https://dev.to/vidyarathna/understanding-the-basics-of-http-status-codes-40b9)
