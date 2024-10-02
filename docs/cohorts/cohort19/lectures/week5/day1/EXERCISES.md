@@ -14,7 +14,7 @@ sidebar_position: 2
 
 ## Project Overview
 
-This is part 1 of a multi-part application.  Today, we'll focus primarily on the User Interface, i.e. HTML and _some_ of the JavaScript.
+This is part 1 of a multi-part application. Today, we'll focus primarily on the User Interface, i.e. HTML and _some_ of the JavaScript.
 
 :::info
 This project is setup with quite a few "you choose" options. This is by design. I want you to decide _how_ this should be built, using the requirements outlined below.
@@ -23,7 +23,7 @@ This project is setup with quite a few "you choose" options. This is by design. 
 The goal is to create an app to rank a student's understanding of the following topics (more will be added later!):
 
 | Topic      |
-| -------    |
+| ---------- |
 | HTML       |
 | CSS        |
 | JavaScript |
@@ -31,7 +31,7 @@ The goal is to create an app to rank a student's understanding of the following 
 A student can rank their skill level using following scale:
 
 | Ranking  | Value |
-| -------  | ----- |
+| -------- | ----- |
 | Awesome  | 5     |
 | Great    | 4     |
 | Good     | 3     |
@@ -69,6 +69,10 @@ Maybe `select` elements to create dropdowns?
 ![Dropdowns](./img/dropdowns.png)
 
 Or maybe `radio` buttons?
+
+:::info
+Remember the `<fieldset>` and `<legend>` elements make using `<radio>` buttons easier/more semantic.
+:::
 
 ![Radio](./img/radio-buttons.png)
 
