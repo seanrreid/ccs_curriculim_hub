@@ -6,12 +6,21 @@ title: Additional Resources
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
+## Job Hunt
+
+- [Actually try on your job applications](https://dev.to/cassidoo/actually-try-on-your-job-applications-2h9g)
+  <br/>Cassidy Williams is a _great_ blogger, developer, and advocate for folks getting into tech. Her advice is absolutely worth following!
+
 ## Listen
 
 - [11 Habits of Highly Effective Developers](https://syntax.fm/show/778/11-habits-of-highly-effective-developers)
 - [Shop Talk Show Episode 600: Where Will The Web Be 12 Years from Now?](https://shoptalkshow.com/600/)
 - [Go Make Things: Getting stuff done as a developer with ADHD](https://gomakethings.com/podcast/getting-stuff-done-as-a-developer-with-adhd/)
   <br/>I didn't record this, but I _could_ have, it hits on a lot of things I've experienced. I'm sharing it in case it's something that you think might be relevant.
+
+## Helpful Tools
+
+- [OpenFreeMap: OpenFreeMap lets you display custom maps on your website and apps for free.](https://openfreemap.org/)
 
 ## JavaScript
 
