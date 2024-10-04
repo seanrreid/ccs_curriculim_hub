@@ -12,24 +12,32 @@ sidebar_position: 6
 
 ## Must Haves
 
-### Standard setup
+### Without `pipenv` using `venv`
 
 1. Initialize a new environment -> `python -m venv env`
 2. Don't forget to activate it  -> `source env/bin/activate`
 
-#### Install the required libraries for FastAPI
+#### Install the required libraries with `pip`
 
 - Option one: Normal install
   - `pip install fastapi uvicorn`
 - Option two: `requirements.txt`
   - `pip install -r requirements.txt`
 
-### `pipenv`
+### With `pipenv`
 
-1. Install libraries
-  - `python3 -m pipenv install fastapi uvicorn`
-2. Activate Shell
-  - `python3 -m pipenv shell`
+:::info
+This is _strongly_ recommended
+:::
+
+### Install required libraries with `pipenv`
+
+1. Activate Shell
+  - `pipenv shell`
+  - If you get an error running `pipenv`, try `python3 -m pipenv shell`
+2. Install libraries
+  - `pipenv install fastapi uvicorn`
+  - IIf you get an error running `pipenv`, try `python3 -m pipenv install fastapi uvicorn`
 
 ## Step 1 - Root Route
 
