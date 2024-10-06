@@ -6,17 +6,14 @@ sidebar_position: 6.01
 
 ## Must Haves
 
-### Setup your enviroment
+### Install required libraries with `pipenv`
 
-1. Initialize a new environment -> `python -m venv env`
-2. Don't forget to activate it  -> `source env/bin/activate`
-
-### Install the required libraries for FastAPI
-
-- Option one: Normal install
-  - `pip install fastapi uvicorn psycopg2`
-- Option two: `requirements.txt`
-  - `pip install -r requirements.txt`
+1. Activate Shell
+  - `pipenv shell`
+  - If you get an error running `pipenv`, try `python3 -m pipenv shell`
+2. Install libraries
+  - `pipenv install fastapi uvicorn`
+  - IIf you get an error running `pipenv`, try `python3 -m pipenv install fastapi uvicorn`
 
 ## Time for CRUD
 
@@ -94,7 +91,7 @@ url = URL.create(
     drivername="postgresql",
     username=[your username],
     password=[your password, or empty string],
-    host="localhost",
+    host=[your remote db host or 'localhost']
     database=[your database name],
     port=5432
 )
