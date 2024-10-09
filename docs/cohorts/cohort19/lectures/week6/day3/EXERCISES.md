@@ -6,9 +6,9 @@ sidebar_position: 2
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
-## School Exercise, continued
+## Pigs, continued
 
-- Extend the [School Exercise](/docs/exercises/fastapi-psql/) to add/update/remove students and classes.
+- Extend the Fairytale exercise to add/update/remove pigs, wolves, houses.
 
 ## Build Your Own Database, CRUDtinued...
 
