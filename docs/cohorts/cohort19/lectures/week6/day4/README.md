@@ -44,7 +44,7 @@ It's been a busy week, so let's review and debug.
 - Database Migrations are changes to a schema
 - Alembic is a tool built around SQLAlchemy (and related tools) to manage migrations
 
-## CRUD
+### CRUD
 
 | Operation | Description              |
 | :-------- | :----------------------- |
@@ -53,7 +53,7 @@ It's been a busy week, so let's review and debug.
 | UPDATE    | "I want to change stuff" |
 | DELETE    | "I want to remove stuff" |
 
-### CRUD Routes
+#### CRUD Routes
 
 | Route                | Description                                  |
 | :------------------- | :------------------------------------------- |
