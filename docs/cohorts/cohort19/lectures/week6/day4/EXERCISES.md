@@ -1,12 +1,12 @@
 ---
-title: Class Survey, pt 2
+title: Revenge of the Magic 8 Ball!!
 sidebar_label: Exercises
 sidebar_position: 2
 ---
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
-## Project Overview - Revenge of the Magic 8 Ball!!
+## Project Overview
 
 - It's like Magic 8 Ball, but with an API!
 - Write an API to return responses to a user's questions
