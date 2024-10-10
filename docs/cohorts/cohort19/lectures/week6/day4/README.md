@@ -44,6 +44,11 @@ It's been a busy week, so let's review and debug.
 - Database Migrations are changes to a schema
 - Alembic is a tool built around SQLAlchemy (and related tools) to manage migrations
 
+### Swagger/ReDoc
+
+- Tools built into FastAPI to document how your API works
+- Creates a UI for testing endpoints while providing information on them
+
 ### CRUD
 
 | Operation | Description              |
