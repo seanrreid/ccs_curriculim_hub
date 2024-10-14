@@ -13,23 +13,23 @@ After completing this assignment, you should…
 - Know how to create React components
 - Use event listeners in React
 
-## Getting Started
-
-:::info
-:loudspeaker: The Tic-Tac-Toe app needs to be cloned locally. You'll need to run `npm install` in the folder after you've cloned it.
-:::
-
 ## Official React Tutorial: Tic Tac Toe
 
 You'll create a tic tac toe game with React that has at least three components: Game, Board, and Square.
 
-- Make sure you've cloned the [Starter Repo](https://github.com/seanrreid/tic-tac-toe-starter)
 - Use the official React Tutorial to walk you through the process: [Tutorial: Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe)
 - Complete the tutorial up through _Completing the Game_.
 - When you see this below, you're finished:
   > Congratulations! You now have a working tic-tac-toe game. And you’ve just learned the basics of React too. So you are the real winner here
 
 ## Mozilla Developer Network:  TODO List
+
+### Read These
+
+- [Understanding client-side JavaScript frameworks](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks)
+- [Getting started with React](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
+
+### Then do this
 
 - [MDN: React TODO App](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_todo_list_beginning)
 
