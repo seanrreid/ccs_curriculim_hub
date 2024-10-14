@@ -6,22 +6,18 @@ title: Additional Resources
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
+## Bookmark These
+
+- [Overreacted (Dan Abramov Blog)](https://overreacted.io/)
+- [React.dev](https://react.dev/learn)
+
 ## General
 
 - [Write it Down](https://dev.to/wraith/write-it-down-404h)
   <br/>
   > Not only does writing down your thoughts and lessons allow you teach others and share those lessons, but it also helps you to solidify that knowledge in your brain. When you teach something, you end up learning that thing much more thoroughly.
 - [Polymorphism in Python (With Examples)](https://medium.com/@codingcampus/polymorphism-in-python-with-examples-887e2d45327a)
-
-## Bookmark These
-
-- [Overreacted (Dan Abramov Blog)](https://overreacted.io/)
-- [React.dev](https://react.dev/learn)
-
-## CSS
-
-- [TEN YEARS OF A SINGLE DIV](https://lynnandtonic.com/thoughts/entries/ten-years-of-a-single-div/)
-  <br/>The type, _and amount_, of work here is :exploding_head:.  It's next level CSS!
+- [3 Lessons from the Smartest Developers I’ve Worked With](https://brianjenney.medium.com/3-lessons-from-the-smartest-developers-ive-worked-with-5b233f51fc15)
 
 ## Javascript
 
@@ -33,13 +29,18 @@ title: Additional Resources
 - [Learning React? Start Small.](https://daveceddia.com/learning-react-start-small/)
 - [Mistakes Junior React Developers Make](https://medium.com/frontend-digest/mistakes-junior-react-developers-make-c546b1af187d)
 - [Overreacted: A Chain Reaction](https://overreacted.io/a-chain-reaction/)
-    <br/>This is a really interesting deep(ish) dive into JSX
+  <br/>This is a really interesting deep(ish) dive into JSX
 - [React 18 Release: A Deep Dive Into New Features and Updates](https://www.scalablepath.com/react/react-18-release-features)
 
 ## State
 
 - [Immutable State](https://www.bekk.christmas/post/2023/18/immutable-state)
 - [The Evolution of Signals in JavaScript](https://dev.to/this-is-learning/the-evolution-of-signals-in-javascript-8ob)
+
+## CSS
+
+- [TEN YEARS OF A SINGLE DIV](https://lynnandtonic.com/thoughts/entries/ten-years-of-a-single-div/)
+  <br/>The type, _and amount_, of work here is :exploding_head:. It's next level CSS!
 
 ## Web Performance
 
