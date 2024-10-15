@@ -6,10 +6,12 @@ sidebar_position: 2
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
-Start here:
+## Revenge OMDB
 
-- [React Shopping List](/docs/exercises/react-shopping-list)
+- Redo the OMDB exercise, but with React [React OMDB](/docs/exercises/react-movie-review)
 
-If you've finished those first two, move on to this:
+:::info
+DO NOT INCLUDE THE SEARCH FORM!
 
-- [React Image Board](/docs/exercises/react-image-board/)
+Start with with hardcoded movies, perhaps an array of them?
+:::
