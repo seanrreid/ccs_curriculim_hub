@@ -10,9 +10,12 @@ title: Additional Resources
 
 - [A Brief History of Airbnb’s Architecture](https://blog.bytebytego.com/p/a-brief-history-of-airbnbs-architecture?r=1g0l&utm_campaign=post&utm_medium=web)
   <br/>This is a great historical look at how AirBnb was built when it launched, and how it scaled as it grew.
+- [Web Browser Engineering](https://browser.engineering/index.html)
 - :movie_camera:[Web Dev Simplified: I'm Ditching Try/Catch for Good!](https://www.youtube.com/watch?v=AdmGHwvgaVs)
   <br/>I'm not sure if I completely agree with this take, but I also don't think the author is off base.
-- [Web Browser Engineering](https://browser.engineering/index.html)
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/AdmGHwvgaVs?si=ZQ0AzY8liNq6GaQj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## React
 
