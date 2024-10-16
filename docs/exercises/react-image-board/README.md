@@ -1,12 +1,14 @@
 ---
-title: React - User Image Board
-sidebar_label: React - Image Board
+title: REACTstagram
+sidebar_label: REACTstagram
 sidebar_position: 7.02
 ---
 
 <!-- markdownlint-disable no-inline-html -->
 
-Create an image board that saves submissions to state using React
+Create an image board that saves submissions to state using React, it's REACTstagram!!
+
+(credit to Jordan Bulmahater)
 
 ## Objectives
 
