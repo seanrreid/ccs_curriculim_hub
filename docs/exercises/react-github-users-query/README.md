@@ -8,13 +8,13 @@ sidebar_position: 7.03
 
 ## Objectives
 
-For this exercise you'll query the Github Users API for profile information on a specific user.
-You'll create a form that submits a username to the API and return the results on the same page.
+This is a React-ified version of the [JS Fetch Exercise](/docs/exercises/js-fetch-practice/).
+<br/>You'll create a form that submits a username, then you'll query the Github Users API for profile information on that user.
 
-The Github API URL is: `https://api.github.com/users/[username]`
+The Github Users API URL is: `https://api.github.com/users/[username]`
 
 :::info
-Replace `[username]` with an actual username, no brackets!
+REMINDER: Replace `[username]` with an actual username, no brackets!
 :::
 
 ### Learning Objectives
@@ -30,13 +30,15 @@ After completing this assignment, you should...
 ## Requirements
 
 - A repo containing a Vite project
-- A component called `UserCardList` - Accepts an array of user data as a `prop`
-- A component called `UserCard` - Accepts a single user's information as a `prop`
+- A component called `UserCardList`
+  - Accepts an array of user data as a `prop`
+- A component called `UserCard`
+  - Accepts a single user's information as a `prop`
 
 ## Level 1
 
-- The page loads you see the form, but no user info
-- Type a username into the input and click "submit"
+- The page loads a form without any user data
+- Submit a username via the form
 - A user's information populates the page
 - Additional users are added to the page with subsequent searches
 
