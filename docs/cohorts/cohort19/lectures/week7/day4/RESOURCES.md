@@ -51,6 +51,7 @@ Per MDN:
 ## CSS
 
 - [A deep dive into CSS Module](https://blog.logrocket.com/a-deep-dive-into-css-modules/)
+- [CSS Modules: Welcome to the Future](https://glenmaddern.com/articles/css-modules)
 - [Close, Exit, Cancel: How to End User Interactions Well](https://css-tricks.com/close-exit-cancel-how-to-end-user-interactions-well/)
 - [Inner Display vs Outer Display](https://css-tip.com/inner-outer-display/)
 - :movie_camera: [This new CSS property just solved animating to height auto](https://www.youtube.com/watch?v=JN-nme9oF10)
