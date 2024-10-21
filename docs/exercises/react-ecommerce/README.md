@@ -23,7 +23,7 @@ After completing this assignment, you should…
 
 ## Level 1
 
-- Use the [FakeStore API](https://fakestoreapi.com/docs) as your backend to populate your store.
+- Use the [FakeStore API](https://fakestoreapi.com/) as your backend to populate your store.
 - Use [React-Router](https://reactrouter.com/en/main/start/tutorial) to allow browsing.
 
 ### Product Browsing
