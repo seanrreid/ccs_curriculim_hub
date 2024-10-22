@@ -6,6 +6,10 @@ sidebar_position: 2
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
+## eCommerce Level Up
+
+- Take your products page, and render the products sorted by category.
+
 ## Reading
 
 Read all of the following in prepartion for later this week.  We will put _many_ (all?) of these strategies to use in our full stack app.

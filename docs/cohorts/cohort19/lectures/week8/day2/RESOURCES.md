@@ -6,8 +6,6 @@ title: Additional Resources
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
-## Do cool things
-
 ## General
 
 - [Data Fetching Patterns in Single-Page Applications](https://martinfowler.com/articles/data-fetch-spa.html)
