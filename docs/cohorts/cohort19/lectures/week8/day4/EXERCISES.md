@@ -16,7 +16,6 @@ sidebar_position: 2
   - `pipenv install fastapi uvicorn psycopg2-binary sqlmodel alembic`
 - Make a `models` folder in `fastapi-ecommerce` and start writing models for your store.
 
-
 :::tip
 Use the [FakeStore API models as a guide!](https://github.com/keikaavousi/fake-store-api/blob/master/model/product.js)
 :::
