@@ -6,13 +6,13 @@ sidebar_position: 1
 
 <!-- markdownlint-disable no-duplicate-heading no-inline-html -->
 
-## FULL TIME PROGRAM
-
-## Weekl Schedule Outline
+## Weekly Schedule Outline
 
 This is loosely structured to line up for 9 weeks of lecture, followed by 3 weeks for the Capstone Project.
 
 There are 9 sections. However, it's important to note that each section doesn't necessarily correspond to a week. Some content will be shorter than one week, others will be longer.
+
+---
 
 ## 1. Developer Fundamentals
 

@@ -14,8 +14,6 @@ There will be a total of 12 projects throughout the 20 weeks. Regular check-ins 
 
 The course goal is to deliver a structured, yet flexible, learning experience that accommodates diverse student schedules.
 
-## PART TIME PROGRAM
-
 ## Weekly Schedule Outline
 
 ### Monday and Thursday: Introduction and Review
@@ -31,6 +29,8 @@ Regular check-ins will occur during Office Hours. Office Hours will consist of 3
 Assignments work will take 2-4 hours per day, and weekend projects are expected to take 8-12 hours to complete.
 
 Face-to-face time will be at least 240 hours total over the course of 16 weeks, and classwork will run between 160-320 hours total. Over the course of the program students can expect a maximum of 560 hours.
+
+---
 
 ## 1. Developer Fundamentals
 
