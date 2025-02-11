@@ -1,7 +1,7 @@
 ---
 title:  Web Development Immersive - Approximate Weekly Schedule
-sidebar_label: Weekly Schedule
-sidebar_position: 2
+sidebar_label: Immersive Weekly Schedule
+sidebar_position: 99
 ---
 
 This is a rough guide covering all the topics discussed in the 12 week immersive program.
