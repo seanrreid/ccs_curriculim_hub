@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Carolina Code School Curriculum Hub',
+    title: 'Build Carolina Academy Curriculum Hub',
     tagline: 'Take charge of your career.',
     favicon: 'img/favicon.ico',
 
@@ -55,10 +55,10 @@ const config = {
             // Replace with your project's social card
             image: 'img/docusaurus-social-card.jpg',
             navbar: {
-                title: 'Carolina Code School',
+                title: 'Build Carolina Academy',
                 logo: {
-                    alt: 'Carolina Code School',
-                    src: 'img/ccs_logo.png',
+                    alt: 'Build Carolina',
+                    src: 'img/build_carolina_logo.png',
                 },
                 items: [
                     {
@@ -83,7 +83,7 @@ const config = {
                     //     ],
                     // },
                 ],
-                copyright: `Carolina Code School is a program of BC Corp., a South Carolina not-for-profit corporation and a registered 501(c)3 organization. &copy; ${new Date().getFullYear()}`,
+                copyright: `Build Carolina Acadmey is a program of BC Corp., a South Carolina not-for-profit corporation and a registered 501(c)3 organization. &copy; ${new Date().getFullYear()}`,
             },
             prism: {
                 theme: prismThemes.synthwave84,
