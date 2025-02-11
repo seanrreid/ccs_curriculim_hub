@@ -12,8 +12,6 @@ This is loosely structured to line up for 9 weeks of lecture, followed by 3 week
 
 There are 9 sections. However, it's important to note that each section doesn't necessarily correspond to a week. Some content will be shorter than one week, others will be longer.
 
----
-
 ## 1. Developer Fundamentals
 
 ### Learning Objectives
