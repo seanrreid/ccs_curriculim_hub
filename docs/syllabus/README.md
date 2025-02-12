@@ -1,7 +1,7 @@
 ---
-title: Web Application Development Part Time Program
-sidebar_label: Part Time Program Syllabus
-sidebar_position: 1
+title: Web Application Development Syllabus
+sidebar_label: Program Syllabus
+sidebar_position: 3
 ---
 
 <!-- markdownlint-disable no-duplicate-heading no-inline-html -->

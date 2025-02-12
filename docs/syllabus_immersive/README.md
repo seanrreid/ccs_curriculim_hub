@@ -1,6 +1,6 @@
 ---
 title: Full Stack Web Development Immersive Program
-sidebar_label: (Inactive) Immersive Program Syllabus
+sidebar_label: Immersive Program Syllabus
 sidebar_position: 98
 ---
 
