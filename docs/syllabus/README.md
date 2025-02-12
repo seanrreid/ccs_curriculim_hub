@@ -14,27 +14,27 @@ There will be a total of 12 projects throughout the 20 weeks. Regular check-ins 
 
 The course goal is to deliver a structured, yet flexible, learning experience that accommodates diverse student schedules.
 
-## Weekly Schedule Outline
+## Daily Schedule/Hours
 
-### Monday and Thursday: Introduction and Review
+Monday and Thursday: Introduction and Review
 
-Introduction and review meetings will run 3 hours, for a total of 6 hours per week for 16 weeks (96 total hours).
+- Required lecture attendance
+- 3 hours per day
 
-### Tuesday, Wednesday, Friday: Office Hours
+Tuesday, Wednesday, Friday: Open Office Hours/Lab\*
 
-Regular check-ins will occur during Office Hours. Office Hours will consist of 3 hour blocks on each day (144). Times will be determined based on students' availability, and designed to provide times that meet the needs for all the students.
+- Tuesday & Wednesdays: 2.5 hour blocks
+- Fridays: 3 hour blocks
 
-### Assignments/Classwork
+Assignments/Classwork
 
-Assignments work will take 2-4 hours per day, and weekend projects are expected to take 8-12 hours to complete.
+Assignment work will take at least 1-2 hours per weekday. Projects are expected to take at least 12 hours to complete.
 
-Face-to-face time will be at least 240 hours total over the course of 16 weeks, and classwork will run between 160-320 hours total. Over the course of the program students can expect a maximum of 560 hours.
+## Weekly Schedule
 
----
+### Week 1: Developer Fundamentals
 
-## 1. Developer Fundamentals
-
-### The Terminal
+The Terminal
 
 - Unix Philosophy: "Each tool should do one thing, do it well, and work together with other tools."
 - Run basic commands
@@ -43,81 +43,89 @@ Face-to-face time will be at least 240 hours total over the course of 16 weeks, 
 - Process Management
 - Shell Scripts
 
-### File Systems
+File Systems
 
 - File I/O
 - Permissions
 - Streams
 - Storage optimization
 
-### Version control
+Version control
 
 - Create Git repositories
 - Create, merge and rebase branches
 - Clone, push, pull and make pull requests to and from GitHub
 - Resolve merge conflicts
 
-### Code Organization
+Code Organization
 
 - Naming Conventions
 - Logical grouping
 - Clear hierarchy
 
-### Code Review Principles
+Code Review Principles
 
 - Readability
 - Maintainability
 - Documentation needs
 
-## 2. Problem Solving
+### Weeks 2 & 3: Problem Solving Fundamentals
 
-### Algorithmic Thinking
+Algorithmic Thinking
 
 - Breaking problems into smaller parts
 - Identifying patterns
 - Creating reusable solutions
 
-### Logical Reasoning
+Logical Reasoning
 
 - Conditionals (if/else)
 - Cause and effect
 - Edge case consideration
 
-## 3. Universal Design Principles
+### Weeks 4 & 5: Universal Design Principles
 
-### DRY (Don't Repeat Yourself)
+DRY (Don't Repeat Yourself)
 
 - Applies to code, documentation, and processes
 - Valid in any development context
 - Don't OVERDRY
 
-### Separation of Concerns
+SOLID
+
+- S: Single-responsibility Principle
+- O: Open-closed Principle
+- L: Liskov Substitution Principle
+- I: Interface Segregation Principle
+- D: Dependency Inversion Principle
+
+Separation of Concerns
 
 - Modular thinking
 - Component isolation
 
-## 4. Problem solving with code
+### Weeks 6 & 7: Solving Problems Using Code
 
-- Create, edit, run, and debug programs in a variety of languages
+Create, edit, run, and debug programs
 
-### Imperative Programming
+Imperative Programming
 
 - Implement simple algorithms with variables, loops, and conditionals
 - Use collections of data
   - Python: Lists and Dictionaries
   - JavaScript: Arrays and Objects
 
-### Modularization
+Modularization
 
 - Organize code into functions and modules
 - Import modules from the standard library and third-party libraries
 
-### Object-Oriented Programming
+Object-Oriented Programming
 
 - Create classes and instantiate objects
 - Reuse code via inheritance
 
-#### Core OOP Concepts
+Object-Oriented Programming Concepts
 
 - Abstraction
 - Encapsulation
@@ -127,7 +135,7 @@ Face-to-face time will be at least 240 hours total over the course of 16 weeks, 
 - Aggregation
 - Composition
 
-### Programming Patterns
+:::tip Programming Patterns
 
 You'll notice there are some similarities between JavaScript and Python.
 Here are some examples things you've likely already encountered.
@@ -164,28 +172,29 @@ Here are some examples things you've likely already encountered.
    - Functions are called by their name and passing arguments (if any).
 
 <sup>1</sup> There is alternate syntax in JavaScript that doesn't explicitly use the `function` keyword, but we'll get to that later.
+:::
 
-## 5. Architecture Concepts
+### Week 8: Architecture Concepts
 
-### Data Flow
+Data Flow
 
 - Input → Process → Output patterns
 - State management
 - Data transformation
 
-### System Boundaries
+System Boundaries
 
 - Interface definitions
 - API design principles
 - Component communication
 
-### Testing Mentality
+Testing Mentality
 
 - Validation strategies
 - Error handling patterns
 - Edge case thinking
 
-### These concepts are particularly valuable because they
+These concepts are particularly valuable because they
 
 - Work in any programming paradigm
 - Apply across frontend, backend, or full-stack development
@@ -194,7 +203,7 @@ Here are some examples things you've likely already encountered.
 - Help in understanding any codebase
 - Guide architectural decisions at any scale
 
-## 6. The Web
+### Weeks 9 & 10: The Web
 
 - How do networks transmit data across the internet?
 - What does it mean when a client makes a request?
@@ -203,47 +212,41 @@ Here are some examples things you've likely already encountered.
 - How are requests and responses received?
 - What is the Domain Name System (DNS)?
 
-## 7. Working in the Browser
+### Week 11: Working in the Browser
 
 - How to use Google Chrome’s Developer Tools
+- HTML
+  - Create tags and elements
+  - Write a valid HTML document
+  - Construct hierarchy
+  - Embed Images
+  - Create Links
+- CSS
+  - Style HTML elements with selectors
+  - CSS specificity and how to use it
+  - Color
+  - Fonts
+  - Box model
+  - Positioning
+  - Viewports and media queries
+  - Introduction to CSS naming conventions
+  - Creating web layout with flexbox
+  - Basics of web accessibility
 
-### HTML
-
-- Create tags and elements
-- Write a valid HTML document
-- Construct hierarchy
-- Embed Images
-- Create Links
-
-### CSS
-
-- Style HTML elements with selectors
-- CSS specificity and how to use it
-- Color
-- Fonts
-- Box model
-- Positioning
-- Viewports and media queries
-- Introduction to CSS naming conventions
-- Creating web layout with flexbox
-- Basics of web accessibility
-
-## 8. User Interface (UI) Foundations
+### Weeks 12 & 13: User Interface (UI) Foundations
 
 - DOM Programming
 - Forms and Validation
+- Asynchronous Programming
+  - Understand JavaScript’s Event Loop
+  - Use callbacks to add interactivity to web pages
 
-### Asynchronous Programming
-
-- Understand JavaScript’s Event Loop
-- Use callbacks to add interactivity to web pages
-
-### JavaScript gotchas
+JavaScript gotchas
 
 - Avoid common pitfalls related to scoping and hoisting
 - Take advantage of implicit and explicit type coercion
 
-### ES6
+ES6
 
 - Arrow functions
 - Object literals
@@ -254,66 +257,66 @@ Here are some examples things you've likely already encountered.
 - [Iterators & Generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators) (aka "loops and functions")
 - Template literals
 
-### Beyond the DOM
+Beyond the DOM
 
 - JavaScript Prototypes
 - Inheritance vs Composion
 - The `class` keyword in JavaScript
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)
 
-### AJAX and RESTful Web APIs
+AJAX and RESTful Web APIs
 
 - Use `fetch()` to work with data from remote web services
 - Process data asynchronously using Promises
 - Array Methods
   - Use map, filter, and reduce to work with arrays of objects, DOM elements, and Promises
 
-### Design Patterns
+Design Patterns
 
 - MVC/MVVM: Separating concerns in application layers
 - Observer Pattern: For event handling and state management
 - Singleton: For shared resources
 - Factory: For object creation
 
-## 9. API Foundations
+### Weeks 14 & 15: API Foundations
 
-### Core Data Structures
+Core Data Structures
 
 - Arrays/Lists: For storing ordered collections
 - Hash Tables/Maps: For key-value storage and quick lookups
 - Trees: For hierarchical data (like DOM manipulation)
 - Stacks/Queues: For managing async operations and event handling
 
-### Key Algorithms
+Key Algorithms
 
 - Sorting: For organizing data efficiently
 - Searching: Binary search, depth/breadth-first search
 - Time/Space Complexity: Understanding Big O notation
 
-### HTTP Protocol
+HTTP Protocol
 
 - Request/Response cycle
 - HTTP methods (GET, POST, PUT, DELETE)
 - Status codes and their meanings
 - Headers and their purposes
 
-### API Design
+API Design
 
 - RESTful principles
 - GraphQL basics
 - WebSocket communication
 - API versioning
 
-### Security
+Security
 
 - SSL/TLS
 - CORS
 - Content Security Policy
 - Network security headers
 
-## 10. Databases
+### Week 16: Databases
 
-### Data modeling
+Data modeling
 
 - Create tables that describe a problem domain
 - Entity-Relationship diagrams
@@ -322,58 +325,57 @@ Here are some examples things you've likely already encountered.
 - Schema design
 - Indexing strategies
 
-### Querying
+Querying
 
 - Modify the contents of database tables by inserting, updating, and deleting
 - Efficiently retrieve data by selecting, filtering, grouping, and joining data from tables
 
-### Database management
+Database management
 
 - Modify the structure of tables
 - Optimize databases with indexes
 - Export and import data
 
-### Database Types
+Database Types
 
 - When to use SQL vs NoSQL
 - Document stores (MongoDB)
 - Key-value stores (Redis)
 - Graph databases
 
-## 11. UI Frameworks
+### Week 17: UI Frameworks
 
 - State management in frontend frameworks
 - Optimizing API response handling
 - Efficient DOM traversal
 - Cache implementation
+- Create complex, front-end applications with a JavaScript framework
+- React
+  - Using Vite to scaffold a React application
+  - JSX
+  - React Dev Tools
+  - Elements
+  - Components and Props
+  - State and Lifecycle
+  - Events
+  - React Design Patterns
+  - Lists and Keys
+  - Forms
+  - React Router
+  - Hooks
 
-### Create complex, front-end applications with a JavaScript framework
-
-#### React
-
-- Using Vite to scaffold a React application
-- JSX
-- React Dev Tools
-- Elements
-- Components and Props
-- State and Lifecycle
-- Events
-- React Design Patterns
-- Lists and Keys
-- Forms
-- React Router
-- Hooks
-
-## 12. App Development
+### Weeks 18, 19 & 20: App Development
 
 - Create APIs to manage data
 - Create UI to consume the data
   - Create a UI that works across multiple platforms
 - Handle User Authentication
 
-## 13. Relevant Topics throughout the course
+## Additional Learning Objectives
 
-### Data Structures
+These are integrated throughout the course but not necessarily tied to specific weeks.
+
+Data Structures
 
 - Arrays: Manipulations (e.g., two-pointer techniques, sliding windows).
 - Strings: Pattern matching, anagrams, palindromes.
@@ -390,7 +392,7 @@ Here are some examples things you've likely already encountered.
   - Connected components.
 - Heaps/Priority Queues: Top-k elements, merging sorted lists.
 
-### Algorithms
+Algorithms
 
 - Sorting: QuickSort, MergeSort, custom sort logic.
 - Searching: Binary Search, modified binary search (e.g., in rotated arrays).
@@ -404,24 +406,24 @@ Here are some examples things you've likely already encountered.
   - Merge intervals.
 - Bit Manipulation: XOR operations, bit counting.
 
-### Math & Logic
+Math & Logic
 
 - Prime numbers, greatest common divisors (GCD), least common multiples (LCM).
 - Modular arithmetic and combinatorics.
 - Geometry problems (e.g., determining points inside shapes).
 
-### System Design (Advanced)
+System Design (Advanced)
 
 - Designing scalable systems or simple components (e.g., URL shorteners, key-value stores).
 - API design and basic database schema design.
 
-### Programming Paradigms
+Programming Paradigms
 
 - Recursion: Factorials, tree traversals.
 - Iterative Approaches: Converting recursive solutions into iterative ones.
 - Object-Oriented Programming: Small design questions focusing on inheritance or polymorphism.
 
-### Optimization
+Optimization
 
 - Identifying time and space complexity.
 - Reducing brute-force solutions using efficient algorithms or data structures.
