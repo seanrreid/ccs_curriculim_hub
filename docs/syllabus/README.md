@@ -26,7 +26,9 @@ Tuesday, Wednesday, Friday: Open Office Hours/Lab\*
 - Tuesday & Wednesdays: 2.5 hour blocks
 - Fridays: 3 hour blocks
 
-Assignments/Classwork
+*_Times will be determined based on the class availability/location_
+
+### Assignments/Classwork
 
 Assignment work will take at least 1-2 hours per weekday. Projects are expected to take at least 12 hours to complete.
 

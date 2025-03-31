@@ -6,27 +6,36 @@ published: 2024-01-03 15:30:00
 revised: 2024-01-03 15:30:00
 ---
 
+<!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
+
 ## Here are a variety of resources that students have found helpful
 
-* [Boomkarks (Sean's Bookmark Tracker)](https://boomkarks-remix.netlify.app/)
+<!-- - [Boomkarks (Sean's Bookmark Tracker)](https://boomkarks-remix.netlify.app/) -->
+
+- Boomkarks (currently offline :sob: )
 
 ### Podcasts
 
-* [Syntax.FM](https://syntax.fm/)
-* [The ChangeLog](https://changelog.com/podcast)
-* [JS Party](https://changelog.com/jsparty)
-* [JavaScript Jabber](https://topenddevs.com/podcasts/javascript-jabber)
-* [Shop Talk Show](https://shoptalkshow.com/)
-* [Frontend Happy Hour](https://www.frontendhappyhour.com/)
+- [Syntax.FM](https://syntax.fm/)
+- [Frontend.FM](https://frontend.fm/)
+- [The ChangeLog](https://changelog.com/podcast)
+- [JavaScript Jabber](https://topenddevs.com/podcasts/javascript-jabber)
+- [Shop Talk Show](https://shoptalkshow.com/)
+- [Frontend Happy Hour](https://www.frontendhappyhour.com/)
 
 ### Sites
 
-* [CSS Tricks](https://css-tricks.com/)
-* [Smashing Magazine](https://www.smashingmagazine.com/)
-* [Flavio Copes](https://flaviocopes.com/)
-* [Wes Bos](https://wesbos.com/)
-* [Level Up Video](https://levelup.video/)
-* [Overreacted - Dan Abramov](https://overreacted.io/)
+- [CSS Tricks](https://css-tricks.com/)
+- [Smashing Magazine](https://www.smashingmagazine.com/)
+- [Flavio Copes](https://flaviocopes.com/)
+- [Wes Bos](https://wesbos.com/)
+- [Level Up Video](https://levelup.video/)
+- [Overreacted - Dan Abramov](https://overreacted.io/)
+
+### Cheat Sheeets
+
+- [Git Cheat Sheet (Flavio Copes)](./git-cheat-sheet.pdf)
+- [JavaScript Cheat Sheet (Cloudaffle)](./cloudaffle_js_cheat_sheet.pdf)
 
 ### Quotables
 

@@ -34,6 +34,8 @@ sidebar_position: 2
   <br/>Students can join the online classroom for help/Q&A.
   <br/>Students may schedule private 1:1 sessions in advance. Students may be asked to join a private 1:1 session for progress review, etc.
 
+*NOTE*: Office hours schedules might be adjusted in accordance with student's locations/schedules whenever possible.
+
 ### What are the weekly time commitments?
 
 - Required lecture attendance: Monday and Thursday, 3 hours each day (6 hours/week, 120 hours total).
@@ -49,12 +51,12 @@ sidebar_position: 2
 
 ### What is the cost of the program?
 
-- $12,000. There is an early access discount of $2000 if paid in full by the end of February.
-- $1000 discount if deposit is paid by the end of February.
+- The total is $12,000
+- There are early access discounts available if paid in full early
 
 ### Is financing available?
 
-- Yes, financing is available through Climb Credit: [https://climbcredit.com/apply/ccs?page=create-account\&schoolId=CA1013044886617](https://climbcredit.com/apply/ccs?page=create-account)
+- Yes, financing is available through [Climb Credit](https://climbcredit.com/apply/ccs?page=create-account)
 
 ### Is a deposit required?
 
@@ -92,7 +94,7 @@ sidebar_position: 2
 ### Camera On/Off Policy?
 
 - We encourage our students to be “camera-on” as much as possible, but we understand there may be many reasons that one might need to be off-camera from time to time.
-  <br/>We ask that you communicate with your instructor to let them know if you’ll be off-camera, and continue to participate actively if off-camera.
+- We ask that you communicate with your instructor to let them know if you’ll be off-camera, and continue to participate actively if off-camera.
 
 ### What are the minimum hardware requirements?
 
