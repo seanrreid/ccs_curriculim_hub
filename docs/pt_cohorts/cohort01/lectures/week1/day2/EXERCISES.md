@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Read This
 
-- [Intro to Python](/docs/exercises/python-intro/)
+- [Intro to Python](/docs/lessons/solving-problems-using-code-python/intro-to-python)
 
 ## Do These
 
