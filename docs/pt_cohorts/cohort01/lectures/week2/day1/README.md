@@ -23,15 +23,15 @@ keywords:
 
 - [Python 2](https://docs.google.com/presentation/d/1iUGwn6k04hNc9DL8oQwm8q2di-kwaIAsxJzABcX8N7Y/edit?usp=sharing)
 - [Python 3](https://docs.google.com/presentation/d/1ufwxiwSQGWGOIr7b-1ox7YLit93ECu9LZvDdi7YJH5E/edit?usp=sharing)
-- [Python 4](https://docs.google.com/presentation/d/1kUeP5SxEEna1wmnmXYeN7O77zoAZdVyxtuRn-r1MIkY/edit?usp=sharing)
+<!-- - [Python 4](https://docs.google.com/presentation/d/1kUeP5SxEEna1wmnmXYeN7O77zoAZdVyxtuRn-r1MIkY/edit?usp=sharing) -->
 
 ## Lessons
 
-- [Functions](/docs/lessons/solving-problems-using-code-python/python-functions)
+- [Sequences](/docs/lessons/solving-problems-using-code-python/python-sequences)
 
 We might _not_ have time to cover these in class, but I'm adding them to the reading for the week.
 
-- [Sequences](/docs/lessons/solving-problems-using-code-python/python-sequences)
+- [Functions](/docs/lessons/solving-problems-using-code-python/python-functions)
 - [Dictionaries](/docs/lessons/solving-problems-using-code-python/python-mapping)
 
 ## Read this
