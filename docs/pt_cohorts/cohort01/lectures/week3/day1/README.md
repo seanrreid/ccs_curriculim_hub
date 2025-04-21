@@ -26,3 +26,7 @@ keywords:
 
 - [Functions](/docs/lessons/solving-problems-using-code-python/python-functions)
 - [Object Oriented Programming(OOP)](/docs/lessons/solving-problems-using-code-python/python-oop)
+
+## Optimization?
+
+![Optimization?](./img/140-optimization.png)
