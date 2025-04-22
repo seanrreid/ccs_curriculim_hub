@@ -6,7 +6,7 @@ title: Exercises
 
 ## Lessons
 
-- [Python OOP](/docs/lessons/solving-problems-using-code-python/python-oopx)
+- [Python OOP](/docs/lessons/solving-problems-using-code-python/python-oop)
 
 ### Additional Reading
 
