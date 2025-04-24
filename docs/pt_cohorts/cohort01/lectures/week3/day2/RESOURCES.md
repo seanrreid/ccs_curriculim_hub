@@ -11,6 +11,9 @@ title: Additional Resources
 - [O'Reilly - Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 - [Python's F-String for String Interpolation and Formatting](https://realpython.com/python-f-strings/)
+- [Python's new t-strings](https://davepeck.org/2025/04/11/pythons-new-t-strings/)
+  <br/>`t-strings` are a _brand new_ kind of string interpolation method that's being added to Python starting with version 3.14.
+  <br/>This is the kind of thing that demonstrates how much these languages are still in active development.
 
 ### OOP
 
