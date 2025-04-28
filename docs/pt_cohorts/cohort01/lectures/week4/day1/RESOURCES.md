@@ -6,6 +6,12 @@ title: Additional Resources
 
 <!-- markdownlint-disable no-inline-html -->
 
+## Python
+
+- [The next big thing in Python](https://www.bitecode.dev/p/the-next-big-thing-in-python)
+  <br/>Python is somehow _30_ years old?? It doesn't appear to be slowing down any time soon though!
+  <br/>Curious about Python's launch, [here is a Google Groups post from 1994 promoting the language](https://groups.google.com/g/comp.lang.misc/c/_QUzdEGFwCo/m/KIFdu0-Dv7sJ?pli=1)
+
 ## Career
 
 - [The Caring Techie Newsletter: How to avoid sleepwalking into irrelevance in the age of AI](https://www.thecaringtechie.com/p/how-to-avoid-sleepwalking-into-irrelevance)
