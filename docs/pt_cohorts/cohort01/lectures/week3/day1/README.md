@@ -30,3 +30,8 @@ keywords:
 ## Optimization?
 
 ![Optimization?](./img/140-optimization.png)
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/15PdNu6KpFsZSEw-ONN9-0VjVzI9bXnQbj5h2YnFgJAA/edit?usp=drive_link)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/14-q1qd-APPMS-CE-hZnY_PWINxcBIMgh/view?usp=drive_link)

@@ -76,3 +76,8 @@ _We might not get to all of these today!!_
 
 Not specifically about software development, but asbolutely worth reading. Trust me, read it, it's short:
 [Creativity is like Breathing](https://theoatmeal.com/comics/creativity_breathing)
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1O7cl2hHQgh-Kjcw64TCvOOMaKHPaXzbxu0VzAG_-v48/edit?usp=drive_link)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1PjKuYgMDek5GfaDkOh005qsurDOGzZH8/view?usp=drive_link)

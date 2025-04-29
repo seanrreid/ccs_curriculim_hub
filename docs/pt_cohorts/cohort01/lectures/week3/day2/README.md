@@ -3,18 +3,18 @@ title: Day 2 - OOPs all OOP
 sidebar_label: Day 2
 sidebar_position: 1
 keywords:
- - python
- - object-oriented programming
- - OOP
- - class keyword
+  - python
+  - object-oriented programming
+  - OOP
+  - class keyword
 ---
 
 ## Goals
 
-* Show'n'Tell'n'Review
-  * [Hotel Manager](/docs/exercises/python-hotel-manager/)
-  * [OOP exercises](/docs/exercises/python-oop/)
-* Group exercise
+- Show'n'Tell'n'Review
+  - [Hotel Manager](/docs/exercises/python-hotel-manager/)
+  - [OOP exercises](/docs/exercises/python-oop/)
+- Group exercise
 
 Today we'll be setting the stage to get started on the Role Playing Game (RPG).
 
@@ -56,4 +56,9 @@ print_contact_info(sonny)
 
 ## Lessons
 
-* [Object Oriented Programming(OOP)](/docs/lessons/solving-problems-using-code-python/python-oop)
+- [Object Oriented Programming(OOP)](/docs/lessons/solving-problems-using-code-python/python-oop)
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1DwuyUzK2FbYC4pkxM24_AZ0TnR5CzlnSwy2GQRMsXuM/edit?usp=drive_link)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1R1nu5y6-zn-7K0XCGfHmoFcykuOgBTGN/view?usp=drive_link)

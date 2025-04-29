@@ -14,10 +14,10 @@ keywords:
 
 ## Let's Review!
 
-- [Intro to Python](/docs/lessons/solving-problems-using-code-python/intro-to-python) *
+- [Intro to Python](/docs/lessons/solving-problems-using-code-python/intro-to-python) \*
 - [Python 101](/docs/exercises/python-101/)
 
-*Note: This link was incorrect on last week's exercises. I've fixed it there, and adding it here.
+\*Note: This link was incorrect on last week's exercises. I've fixed it there, and adding it here.
 
 ## Presentations
 
@@ -48,3 +48,8 @@ I can confirm, these are pretty much all on :dart:
 > A tuple is a very scary sounding name for an array where you know the length and the item types are known. So if you have an array of an ID and a person, and the 1st item is the ID and 2nd item is a person, that's a tuple.
 
 - [SyntaxFM 709 Potluck: "Many fancy programming names are simple concepts"](https://syntax.fm/show/709/potluck-naming-tech-generators-layers-follow-up-sick-picks-page/transcript#many-fancy-programming-names-are-simple-concepts)
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1qF9qOmCdanNqAFu4WkJ1Kf2VV9jAKcdkYu7etzzO3LQ/edit?usp=drive_link)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1CBkKg_tpwDfFTB34qFj0IHx2iwYf52M1/view?usp=drive_link)

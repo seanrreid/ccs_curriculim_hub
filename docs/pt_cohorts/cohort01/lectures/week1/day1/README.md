@@ -42,3 +42,8 @@ Here is a list of VSCode tips compiled from previous teaching assistants: [VS Co
 ## Gitignore global settings
 
 You can download the [global gitignore file here](https://github.com/seanrreid/global_gitignore/blob/main/gitignore_global).
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1crSmae-T3YPB6B36rqeF7oqtpI2EOyoFG-BgRwMjhwc/edit?usp=drive_link)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1Hr9f2o8T2AervpyYS0aUotoDBw5fw1dB/view?usp=drive_link)

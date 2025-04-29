@@ -33,3 +33,8 @@ keywords:
 
 - [Dictionaries](/docs/lessons/solving-problems-using-code-python/python-mapping)
 - [Functions](/docs/lessons/solving-problems-using-code-python/python-functions)
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1chnonRVt0dPS1nqOdmQAtuzBAX9MQg-GqhrUX9weGEs/edit?usp=drive_link)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1pSP-lIsfoYrt2h8Q-hBDRPmwklBDK6CU/view?usp=drive_link)
