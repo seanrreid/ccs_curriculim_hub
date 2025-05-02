@@ -28,3 +28,8 @@ keywords:
 - Discuss _one_ struggle and _two_ victories that you experienced during the process of creating your game.
   <br/> :warning: We will do this step with every presentation! The ratio is always _two_ victories for each struggle.
 - Demo game play!
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1rSqWg7Bt44kHFm46j6TNzWVg7xJUaZRERu-V6JI66iI/edit?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1T9sGvNwhGbL-2DbEl9nH39b0Q4tTIMum/view?usp=sharing)
