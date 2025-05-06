@@ -28,7 +28,7 @@ You'll brainstorm to build out the application and use that to determine how to 
 Bonus:
 
 - What's the ideal user "path" to use the app?
-- What happens if (or, realistically, when) the user's don't use the app the way you intended?? 🤔
+- What happens if (or, realistically, when) the users don't use the app the way you intended?? 🤔
 
 ### Design it!
 

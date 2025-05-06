@@ -38,3 +38,7 @@ Let's break down a design and build it out in HTML
 |       ![Awesome Tunes courtesy of https://dribbble.com/shots/23271135-Landing-page-design](./img/site_design.png)        |
 | :----------------------------------------------------------------------------------------------------------------------: |
 | _[Via Dribbble: Landing page design by Daniella for heartbeat](https://dribbble.com/shots/23271135-Landing-page-design)_ |
+
+## Finished Diagram
+
+![Finished Awesome Tunes Diagram/Markup](./img/site_design-2.jpg)
