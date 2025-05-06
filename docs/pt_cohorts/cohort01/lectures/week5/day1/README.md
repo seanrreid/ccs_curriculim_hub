@@ -42,3 +42,8 @@ Let's break down a design and build it out in HTML
 ## Finished Diagram
 
 ![Finished Awesome Tunes Diagram/Markup](./img/site_design-2.jpg)
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1lff6j-ivmEQQyxGTbUoKSOqub1jrErY9fwagmDf6HbM/edit?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1iSLdksxTC0JZKl85m-x96dPKuQoZEPRn/view?usp=sharing)
