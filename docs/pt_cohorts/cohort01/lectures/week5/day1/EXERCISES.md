@@ -8,7 +8,7 @@ sidebar_position: 3
 
 ## Reading
 
-- [An Introduction to Meta Viewport and @viewport](https://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/)
+- [HTML Forms](/docs/lessons/front-end-foundations/html-forms/) :star: (This link was added in place of the broken `meta viewport` article link)
 - [MDN: CSS Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
 - [CSS Specifishity](https://specifishity.com/)
 
