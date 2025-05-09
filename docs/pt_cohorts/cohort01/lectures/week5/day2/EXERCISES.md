@@ -13,9 +13,12 @@ sidebar_position: 3
 - [HTML 101](/docs/lessons/front-end-foundations/html-101/)
 - [CSS 101](/docs/lessons/front-end-foundations/css-101/)
 - [The DOM](/docs/lessons/handling-user-input/dom/)
+- [MDN: CSS Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
+- [CSS Specifishity](https://specifishity.com/)
 
 ### New
 
+- [HTML Forms](/docs/lessons/front-end-foundations/html-forms/)
 - [Media Queries](/docs/lessons/front-end-foundations/media-queries/)
 - [Old CSS, new CSS](https://eev.ee/blog/2020/02/01/old-css-new-css/)
 - [The Cassette Tap as Responsive Design](https://www.needmoredesigns.com/post/early-responsive-design)
