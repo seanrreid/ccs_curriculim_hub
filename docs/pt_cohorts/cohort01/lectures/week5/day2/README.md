@@ -41,3 +41,8 @@ and marked it up to resemble something like like this...
 ## Challenge
 
 - [100 Days CSS Challenges](https://100dayscss.com/)
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1UM9KlZXNgmEyuPoJ4mVv0eRDpgRkBoahFtA2yQVLKq4/edit?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/12YP1dkJXoIfjLD_YOahNBETuSq-xkaJ9/view?usp=sharing)
