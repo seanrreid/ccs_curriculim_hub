@@ -24,8 +24,16 @@ sidebar_position: 3
 
 - [Type Coercion in Javascript](https://medium.com/codezillas/let-me-coerce-you-into-liking-javascripts-dynamic-typing-system-3cd22c19cb64)
 
+## Exercises
+
+- [JS Intro](/docs/exercises/js-intro-practice/)
+- [JS Types](/docs/exercises/js-types-practice/)
+- [JS Functions](/docs/exercises/js-functions-variables-practice/)
+
+<!--
 ## Make some Magic
 
 - Add/Update an HTML Form to accept a user's input: "What is your question??"
 - Add JavaScript to process the form input values
 - Return a result to the user
+-->
