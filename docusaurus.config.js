@@ -83,7 +83,7 @@ const config = {
           //     ],
           // },
         ],
-        copyright: `Build Carolina Acadmey is a program of BC Corp., a South Carolina not-for-profit corporation and a registered 501(c)3 organization. &copy; ${new Date().getFullYear()}`,
+        copyright: `Build Carolina Academy is a program of BC Corp., a South Carolina not-for-profit corporation and a registered 501(c)3 organization. &copy; ${new Date().getFullYear()}`,
       },
       prism: {
         theme: prismThemes.synthwave84,
