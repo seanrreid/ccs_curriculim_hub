@@ -30,7 +30,6 @@ What we've covered so far is compiled in this [review document](./REVIEW.md)
 - [Getting Started - JavaScript](https://docs.google.com/presentation/d/11ZHGJUsXGunhmpRjoqzE_gTNst1RHx52m7M-aYDUyN4/edit?usp=sharing)
 - [Programming Patterns](/docs/lessons/programming_patterns/)
 
-
 ## Notes and Video
 
 - [Class Notes](https://docs.google.com/document/d/1pP2oA0OisFU4TPF1HOI8x_xwIpYSvkx2Ka5VrvS3Tzs/edit?usp=sharing)
