@@ -55,3 +55,9 @@ title: Additional Resources
 - [MDN: The Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [MDN: Using the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [MDN: Working with json](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/14HIzT5tkO0GLqJiXDB89YUBRuQqEIWplXyBVnUntfVA/edit?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1eECg1G_8elJScGTl9jV8Uj852qXRU3Kb/view?usp=sharing)
