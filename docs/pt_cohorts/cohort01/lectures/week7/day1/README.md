@@ -35,9 +35,6 @@ You'll definitely want to download [Bruno](https://www.usebruno.com/)
 - [AJAX 101](/docs/lessons/building-interactive-uis/ajax-101/)
 - [Intro to Promises](/docs/lessons/building-interactive-uis/intro-to-promises/)
 
-## Helpful Links
-
-
 ## The Event Loop
 
 - **VIDEO**: [What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
