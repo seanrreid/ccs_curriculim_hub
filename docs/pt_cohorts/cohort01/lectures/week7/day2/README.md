@@ -19,11 +19,6 @@ keywords:
 
 - [Our journey so far...(HTML/CSS/JS)](https://forms.gle/GRASEkB3aK1LcPv38)
 
-## In Class
-
-- Today we'll query the [Chuck Norris API](https://api.chucknorris.io/) for categories and quotes.
-- Our code along repo is here: [https://github.com/seanrreid/chuck_fall_2024](https://github.com/seanrreid/chuck_fall_2024)
-
 ## Presentations
 
 - [Array Methods](https://docs.google.com/presentation/d/13dzQbhA2quzLvJ5Rgt24eYwqKWU0WPcVxzgjiZMtQrc/edit?usp=sharing)
@@ -32,7 +27,8 @@ keywords:
 
 ![Array Methods, with food](./img/array_methods_food.png)
 
-## Lessons
+## In Class
 
-- [AJAX 101](/docs/lessons/building-interactive-uis/ajax-101/)
-- [JavaScript Objects, Arrays, Booleans, Loops](/docs/lessons/solving-problems-using-code-js/objects-loops/)
+- First, we'll install [`nvm`](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating) to setup [Node](https://nodejs.org/en)
+- Then we'll make sure [Bruno](https://www.usebruno.com/) is working
+- Today we'll query the [Fake Store API](https://fakestoreapi.com/docs)

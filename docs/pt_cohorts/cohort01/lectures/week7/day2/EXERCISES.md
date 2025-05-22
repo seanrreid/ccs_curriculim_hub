@@ -4,6 +4,13 @@ sidebar_label: Exercises
 sidebar_position: 2
 ---
 
+## Reading
+
+Read or review the following lessons before continuing with the other exercises
+
+- [AJAX 101](/docs/lessons/building-interactive-uis/ajax-101/)
+- [JavaScript Objects, Arrays, Booleans, Loops](/docs/lessons/solving-problems-using-code-js/objects-loops/)
+
 ## Array Practice
 
 - Complete these [JS Array Exercises](/docs/exercises/js-arrays/)
