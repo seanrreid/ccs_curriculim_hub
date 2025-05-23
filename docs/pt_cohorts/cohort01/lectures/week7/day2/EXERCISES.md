@@ -13,7 +13,6 @@ Read or review the following lessons before continuing with the other exercises
 
 ## Array Practice
 
-- Complete these [JS Array Exercises](/docs/exercises/js-arrays/)
 - Jump into working with JSON data in the [JS Arrays Flight Log](/docs/exercises/js-arrays-flight-log/)
 
 ## Bonus Practice
