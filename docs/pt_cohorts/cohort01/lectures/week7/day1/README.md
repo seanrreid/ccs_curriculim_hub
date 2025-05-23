@@ -47,3 +47,8 @@ You'll definitely want to download [Bruno](https://www.usebruno.com/)
 
 [Alexi Pappas, _Bravey_](https://a.co/d/0WbHuSh)
 <br/>(emphasis added)
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/14HIzT5tkO0GLqJiXDB89YUBRuQqEIWplXyBVnUntfVA/edit?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1eECg1G_8elJScGTl9jV8Uj852qXRU3Kb/view?usp=sharing)
