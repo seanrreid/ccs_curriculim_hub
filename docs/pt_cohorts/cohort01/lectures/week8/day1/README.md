@@ -23,3 +23,8 @@ We're going to work with the following exercises in class as a group:
 
 - [JS Array Exercises](/docs/exercises/js-arrays/)
 - [JS Arrays Flight Log](/docs/exercises/js-arrays-flight-log/)
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/12Q8yMnuz8aV0aIc5KLaHKp0PHMlluL4Fd1SpvRH_uqE/edit?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/11aECR1BjS8L6g9y8f1eCw3sgHfTSDi7o/view?usp=sharing)
