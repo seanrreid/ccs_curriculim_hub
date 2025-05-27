@@ -22,6 +22,7 @@ Today is Memorial Day, and I've decided to move things around a bit...
 We're going to work with the following exercises in class as a group:
 
 - [JS Array Exercises](/docs/exercises/js-arrays/)
+  - Solutions with explanations can be found here: [https://github.com/seanrreid/js-array-practice/blob/solutions/exercises.js](https://github.com/seanrreid/js-array-practice/blob/solutions/exercises.js)
 - [JS Arrays Flight Log](/docs/exercises/js-arrays-flight-log/)
 
 ## Notes and Video
