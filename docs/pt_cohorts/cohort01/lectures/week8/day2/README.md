@@ -25,11 +25,12 @@ The [Shopping List Exercise](https://github.com/seanrreid/busted_shopping_DOM) i
 ### Discussion
 
 - Review & debug the [JS Airlines Exercise](/docs/exercises/js-airlines/)
+- Here is [my solution to the JS Airlines Exercise](https://github.com/seanrreid/js-airlines-solution)
 
 ## Time Permitting:
 
 - [_JS is Weird_: The JavaScript Quiz You'll Love to Hate](https://jsisweird.com/)
-<!-- - Answers from our quiz are here -> [JS Is Weird Answers](./JS_Is_Weird_answers.pdf) -->
+- Answers from our quiz are here -> [JS Is Weird Answers](./JS_ss_Weird.pdf)
 
 ## Reference
 
