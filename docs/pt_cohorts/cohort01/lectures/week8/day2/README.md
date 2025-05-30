@@ -36,3 +36,8 @@ The [Shopping List Exercise](https://github.com/seanrreid/busted_shopping_DOM) i
 
 - [WTF JavaScript Repo](https://github.com/denysdovhan/wtfjs?tab=readme-ov-file#what-the-fck-javascript)
   <br/>This is a collection of things people find odd in JavaScript, including explanations for **why** things are that way (many of which made up the _JS is Weird_ quiz!).
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1HqJ6FOZeP5ZjWgdGqDwaFN1mjbREHagRs5g_i3GIH8I/edit?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1Uq7e1W3CXcoZO1os-DTX00l2A5gb_SxA/view?usp=sharing)
