@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 sidebar_label: Day 1
-title: Week 5 - Day 1 - AMA
+title: Week 9 - Day 1 - Digging deeper into JavaScript, React is coming!
 keywords:
     - javascript
     - APIs
