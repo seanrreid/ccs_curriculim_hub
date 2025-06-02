@@ -40,17 +40,16 @@ title: Additional Resources
 
 ## JavaScript
 
-- [Promises from the Ground Up](https://www.joshwcomeau.com/javascript/promises/)
+- [Why are 2025/05/28 and 2025-05-28 different days in JavaScript?](https://brandondong.github.io/blog/javascript_dates/?utm_source=tldrwebdev)
 - [Making Sense of "Senseless" JavaScript Features](https://www.smashingmagazine.com/2023/12/making-sense-of-senseless-javascript-features/)
   <br/>This is the article that answers the question: "Why doesn't 0.1 + 0.2 = 0.3??"
-- [5 Easy Steps To Master Currying and Higher-Order Functions in JavaScript](https://betterprogramming.pub/5-easy-steps-to-master-currying-and-higher-order-functions-in-javascript-85e2a7e2c268)
-  <br/>This is a solid introduction to the concept of "Functional Programming." We'll skim the surface of this topic as we progress using React.
-- [Why JavaScript is Eating HTML](https://css-tricks.com/why-javascript-is-eating-html/)
-  <br/>This will be particularly relevant in a few weeks.
-- [Create Element JavaScript: The Power of Dynamic Web Elements](https://log4javascript.org/create-element-javascript/)
 - [Making Sense Of “Senseless” JavaScript Features](https://www.smashingmagazine.com/2023/12/making-sense-of-senseless-javascript-features/)
   <br/>This is a great follow up after the "JS is Weird" quiz on Thursday.
 - [JavaScript Design Patterns: Building a Mental Model](https://medium.com/launch-school/javascript-design-patterns-building-a-mental-model-68c2d4356538)
+- [Create Element JavaScript: The Power of Dynamic Web Elements](https://log4javascript.org/create-element-javascript/)
+- [Promises from the Ground Up](https://www.joshwcomeau.com/javascript/promises/)
+- [Why JavaScript is Eating HTML](https://css-tricks.com/why-javascript-is-eating-html/)
+  <br/>This will be particularly relevant soon.
 
 ## Food for thought
 
