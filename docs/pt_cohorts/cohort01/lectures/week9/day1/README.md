@@ -43,3 +43,8 @@ Source: [Brain Food Newsletter](https://fs.blog/newsletter/)
 A few of you are, or will be, in this position. Keep going!
 
 ![Do it Anyway](./img/do_it_anyway.jpg)
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1X99rB8Whkk_JJQE4G4XcjhyFZuKeQ6B2KFFXshGWpCQ/edit?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1r43Dt_4GEWKqQRgE1FCM1gxgz4E92KLA/view?usp=sharing)
