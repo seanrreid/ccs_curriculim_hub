@@ -38,3 +38,12 @@ Notably, we're moving in the realm of "Single Page Applications" aka "SPA."
 ## Presentations
 
 - [React Intro Presentation](https://docs.google.com/presentation/d/1MTh94D-G39Dtt6_3L4jqTjcuGOkzyidTt5bX_9lIi0A/edit?usp=sharing)
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1AjZ4CpREgYFQGL081p_HtluQ3U4EPK8oAOoVf2G3cKA/edit?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1gyXsW-_PIeYwmpygMfh-DWO6MMl5RtlS/view?usp=sharing)
+
+## OMDB Solution
+
+- Here is Sean's [OMDB Solution](https://github.com/seanrreid/omdb_solution) that was displayed in class.
