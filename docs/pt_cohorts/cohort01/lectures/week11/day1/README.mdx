@@ -8,3 +8,38 @@ keywords:
     - components
     - controlled inputs
 ---
+
+## Reactive 8 Ball Review
+
+- Let's show'n'tell'n'debug your React-ified Magic 8 Ball Projects
+
+## Fetching Data in React
+
+- Then we'll work on how/where/when to `fetch()` data in a React app (hint: it's mostly `useEffect`)
+- We'll query the Shrink Ray API [https://bzzt.fun/api/urls](https://bzzt.fun/api/urls)
+
+## Conditional Rendering
+
+Well, this is confusing as hell!
+
+- Old React says: [If-Else in JSX](https://react-cn.github.io/react/tips/if-else-in-JSX.html)
+    > if-else statements don't work inside JSX. This is because JSX is just syntactic sugar for function calls and object construction.
+- But new React says: [Conditional Rendering](https://react.dev/learn/conditional-rendering)
+    > Your components will often need to display different things depending on different conditions. In React, you can conditionally render JSX using JavaScript syntax like if statements, &&, and ? : operators.
+
+:::tip
+NOTE: Part of the confusion with `if-then` statements rises from using them _inside_ of the component's JSX, which _doesn't_ work.
+However, you _can_ use `if-then` statements to _return_ different JSX values!
+:::
+
+Let's [take a look](https://stackblitz.com/edit/ccs-ternary-demo?file=src%2FApp.jsx)
+
+<iframe src='https://stackblitz.com/edit/ccs-ternary-demo?embed=1&file=src%2Fcomponents%2fToggleComponent.jsx' width='100%' style={{display: 'flex', aspectRatio: '16/9'}} />
+
+---
+
+How about [Dealing with empty arrays](https://stackblitz.com/edit/ccs-edit-arrays?file=src%2FApp.jsx)
+
+<iframe src='https://stackblitz.com/edit/ccs-edit-arrays?embed=1&file=src%2FApp.jsx' width='100%' style={{display: 'flex', aspectRatio: '16/9'}} />
+import React from 'react'
+
