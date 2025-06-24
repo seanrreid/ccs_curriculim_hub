@@ -48,3 +48,8 @@ React Router moves _quickly_ and I've had major version changes 3 or 4 times now
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1SxoE6yA0AaFF5-z_2BGUvT-Jp6b6RHiHQIvU0tiMNz0/view?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1FSvqRA65CQnHEDvteR_1APutoI7bYfY2/view?usp=sharing)
