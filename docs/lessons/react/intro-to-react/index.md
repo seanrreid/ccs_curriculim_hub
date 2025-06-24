@@ -1,7 +1,7 @@
 ---
 title: Introduction to React
 sidebar_label: React - Intro
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ## Learning Objectives
