@@ -37,3 +37,8 @@ Current status can be found in the [Shrink Ray UI Repo](https://github.com/seanr
 
 - I wrote some high-level guidelines regarding [how to write React apps](/docs/lessons/react/react-guidelines/)
 - I also wrote a [Cheatsheet of common React patterns](./CHEATSHEET.md)
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1MPPCzolDt943t7tAi5xfGJZCE2iOE9yyTTh1sddvXmg/view?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1N91EU9S_KXw-Bmcqw3CUKNIdYaFgPUP7/view?usp=drive_link)
