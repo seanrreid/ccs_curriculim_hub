@@ -18,3 +18,9 @@ keywords:
 So far, we've used `fetch()` to make `GET` requests.  Today, we'll switch things up and use `fetch` to `POST` requests.
 
 In short, we'll be sending _and_ receiving data from the Shrink Ray API.
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/19uSZrJsq-9vBaebL7704rFjZc0fY9EbWsZz6KuK1K8U/view?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1qPbPsOp7drU6SzwqUe4SdWUxV9ngLNzt/view?usp=drive_link)
+- [Shrink Ray UI Repo](https://github.com/seanrreid/shrinkray_ui)
