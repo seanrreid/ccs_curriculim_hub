@@ -10,11 +10,6 @@ These are exercises hosted on other platforms.
 
 They were selected to give you a "sandboxed" (not live) environment to practice SQL syntax.
 
-## Data School Online Practice
-
-- [Data School: Quick Introductory SQL Concepts](https://dataschool.com/learn-sql/introduction/) :link:
-- Start with the Introduction, and complete up through the `LIMIT` section.
-
 ## SQLBolt
 
 ### Part 1
