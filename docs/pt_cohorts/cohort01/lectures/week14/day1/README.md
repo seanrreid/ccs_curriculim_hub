@@ -23,10 +23,6 @@ keywords:
 
 - [PostgreSQL Cheat Sheet](./files/PostgreSQL-Cheat-Sheet.pdf)
 
-### Installation
+## Supabase
 
-- **RECOMMENDED INSTALLER FOR MAC** [Postgres.app](https://postgresapp.com/downloads.html)
-- [Installing Postgres via Brew](https://gist.github.com/ibraheem4/ce5ccd3e4d7a65589ce84f2a3b7c23a3)
-
-## Recommended Reading
-
+- [Register using your Github Login](https://supabase.com/dashboard/sign-up?returnTo=%2Forg)
