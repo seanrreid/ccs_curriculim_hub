@@ -23,6 +23,9 @@ keywords:
 
 - [PostgreSQL Cheat Sheet](./files/PostgreSQL-Cheat-Sheet.pdf)
 
-## Supabase
+## Supabase + Positico
 
 - [Register using your Github Login](https://supabase.com/dashboard/sign-up?returnTo=%2Forg)
+- [Postico v1 Legacy Download](https://eggerapps.at/postico/v1.php)
+  <br/>This version is older, but shouldn't nag you for payment.
+  <br/>If you use the app after class, you can [download and purchase a copy of Postico 2](https://eggerapps.at/postico2/).
