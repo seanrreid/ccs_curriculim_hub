@@ -1,10 +1,14 @@
 ---
-title: Sites, Videos, Blog Posts, etc..
+title: Support Links, Videos, Blog Posts, etc..
 sidebar_position: 1
 sidebar_label: Helpful Links
 published: 2024-01-03 15:30:00
 revised: 2024-01-03 15:30:00
 ---
+
+## Support Options
+
+- [Chris Guirl Office Hours](https://calendar.app.google/HPYVPM24nDCuV47F6)
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 

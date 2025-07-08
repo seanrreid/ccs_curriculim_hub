@@ -32,6 +32,10 @@ Tuesday, Wednesday, Friday: Open Office Hours/Lab\*
 
 Assignment work will take at least 1-2 hours per weekday. Projects are expected to take at least 12 hours to complete.
 
+## Additional Support Options
+
+- [Chris Guirl Office Hours](https://calendar.app.google/HPYVPM24nDCuV47F6)
+
 ## Weekly Schedule
 
 ### Week 1: Developer Fundamentals
