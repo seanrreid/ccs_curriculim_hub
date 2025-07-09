@@ -29,3 +29,8 @@ keywords:
 - [Postico v1 Legacy Download](https://eggerapps.at/postico/v1.php)
   <br/>This version is older, but shouldn't nag you for payment.
   <br/>If you use the app after class, you can [download and purchase a copy of Postico 2](https://eggerapps.at/postico2/).
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1eqAZxmAgaJWuVIoa-5JUpviDHLzfeyxR2ZnkLZIy7d8/view?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1a3p77lGarcSA2Dgp9RiOlDAFVFLL3EwY/view?usp=drive_link)
