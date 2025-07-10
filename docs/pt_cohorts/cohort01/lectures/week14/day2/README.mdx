@@ -1,0 +1,134 @@
+---
+sidebar_position: 2
+sidebar_label: Day 2
+title: Week 14 - Day 2 - PSQL + FastAPI Intro
+keywords:
+    - FastAPI
+    - PostgreSQL
+---
+{/* markdownlint-disable no-inline-html */}
+
+Today we'll be learning our _last_ new thing (SQL) and making our way back to Python.
+
+## Presentations
+
+- [SQL Joins](https://docs.google.com/presentation/d/1h9lCxZWfUjkmq81ZpfRek6MUxIi_JhCpRjmCVhFpb9c/edit?usp=sharing)
+
+## Lessons
+
+- [SQL Databases](/docs/lessons/databases/sql/)
+
+## Schools -> Courses -> Students
+
+:::info
+We'll be using Supabase for these exercises!
+:::
+
+We're going to look at `JOIN` statements, and a many-to-many relationship.
+
+To do this, we'll create a database called Crud University. It will involve the following steps:
+
+1. Create a database called `crud_university`
+2. Create a `schema.sql` file and define three tables
+  - `students`
+  - `courses`
+  - `enrollments`
+3. Create a `seed.sql` file with some test data.
+
+#### Run some queries!
+
+1. List _all_ students.
+2. List _all_ courses.
+3. List all _enrolled_ students.
+4. List all the enrolled students by name _and_ the courses in which they're enrolled.
+
+<details>
+<summary>Solution</summary>
+
+`schema.sql`
+
+```sql
+CREATE DATABASE crud_university;
+
+CREATE TABLE students (
+    id serial PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+CREATE TABLE courses (
+    id serial PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+-- many-to-many,
+-- Enrollments tracks students & courses
+CREATE TABLE enrollments (
+    enrollment_id serial PRIMARY KEY,
+    student_id INT,
+    course_id INT,
+    enrollment_date DATE,
+    FOREIGN KEY (student_id) REFERENCES students(id),
+    FOREIGN KEY (course_id) REFERENCES courses(id)
+);
+
+```
+
+seed.sql
+
+```sql
+-- Let's add some students
+INSERT INFO students (name)
+    VALUES("Charlie Day"),
+      ("Jason Voorhies"),
+      ("Michael Myers"),
+      ("Freddy Krueger"),
+      ("Darth Vader"),
+      ("Luke Skywalker"),
+      ("Leia Organa"),
+      ("Han Solo"),
+      ("Obi-Wan Kenobi"),
+      ("Frodo Baggins"),
+      ("Samwise Gamgee"),
+      ("Bilbo Baggins");
+
+
+-- Let's add some courses
+INSERT INFO courses (name)
+  VALUES("Science"),
+    ("Math"),
+    ("History"),
+    ("Art"),
+    ("Music"),
+    ("Physical Education"),
+    ("Computer Science"),
+    ("Literature"),
+    ("Philosophy"),
+    ("Psychology");
+
+```
+
+`JOIN` Statements
+
+```sql
+-- Let's use a JOIN statement to handle our lookup
+SELECT
+  students.name,
+  courses.name
+FROM enrollments
+INNER JOIN students
+  ON students.id = enrollments.student_id
+INNER JOIN courses
+  ON courses.id = enrollments.course_id;
+```
+</details>
+
+## Comparing CRUD, Routes, and SQL Commands
+
+This table illustrates how a usual CRUD (Create, Read, Update, Delete) application corresponds to application routes, and ultimately the SQL statements that might be triggered by those routes.
+
+| CRUD   | ROUTES | SQL    |
+| ------ | ------ | ------ |
+| CREATE | POST   | INSERT |
+| READ   | GET    | SELECT |
+| UPDATE | PUT    | UPDATE |
+| DELETE | DELETE | DELETE |
