@@ -75,33 +75,33 @@ seed.sql
 
 ```sql
 -- Let's add some students
-INSERT INFO students (name)
-    VALUES("Charlie Day"),
-      ("Jason Voorhies"),
-      ("Michael Myers"),
-      ("Freddy Krueger"),
-      ("Darth Vader"),
-      ("Luke Skywalker"),
-      ("Leia Organa"),
-      ("Han Solo"),
-      ("Obi-Wan Kenobi"),
-      ("Frodo Baggins"),
-      ("Samwise Gamgee"),
-      ("Bilbo Baggins");
+INSERT INTO students (name)
+    VALUES ('Charlie Day'),
+      ('Jason Voorhies'),
+      ('Michael Myers'),
+      ('Freddy Krueger'),
+      ('Darth Vader'),
+      ('Luke Skywalker'),
+      ('Leia Organa'),
+      ('Han Solo'),
+      ('Obi-Wan Kenobi'),
+      ('Frodo Baggins'),
+      ('Samwise Gamgee'),
+      ('Bilbo Baggins');
 
 
 -- Let's add some courses
-INSERT INFO courses (name)
-  VALUES("Science"),
-    ("Math"),
-    ("History"),
-    ("Art"),
-    ("Music"),
-    ("Physical Education"),
-    ("Computer Science"),
-    ("Literature"),
-    ("Philosophy"),
-    ("Psychology");
+INSERT INTO courses (name)
+  VALUES ('Science'),
+    ('Math'),
+    ('History'),
+    ('Art'),
+    ('Music'),
+    ('Physical Education'),
+    ('Computer Science'),
+    ('Literature'),
+    ('Philosophy'),
+    ('Psychology');
 
 ```
 
@@ -110,8 +110,8 @@ INSERT INFO courses (name)
 ```sql
 -- Let's use a JOIN statement to handle our lookup
 SELECT
-  students.name,
-  courses.name
+  students.name AS student_name,
+  courses.name AS course_name
 FROM enrollments
 INNER JOIN students
   ON students.id = enrollments.student_id
