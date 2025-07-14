@@ -6,8 +6,21 @@ title: Additional Resources
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
-## General
+## API Development and Design Patterns
 
+- [Key Topics to Learn API Development](https://newsletter.systemdesigncodex.com/p/key-topics-to-learn-api-development?ref=dailydev)
+- [Geeks for Geeks: Difference between MVC and MVT design patterns](https://www.geeksforgeeks.org/difference-between-mvc-and-mvt-design-patterns/)
+  <br/>This isn't specifically related to Python, but these are the two design patterns that most closely align with Django (MVT) and FastAPI (MVC-ish)
+- [Design Patterns: MVC vs MVVM](https://medium.com/@madelinecorman/design-patterns-mvc-vs-mvvm-f680183646f9)
+
+## FastAPI Documentation
+
+- [FastAPI Middleware](https://fastapi.tiangolo.com/tutorial/middleware/)
+- [FastAPI CORS Middleware](https://fastapi.tiangolo.com/tutorial/cors/)
+- [Pydantic Docs](https://docs.pydantic.dev/2.6/)
+- [SQLAlchemy Docs](https://docs.sqlalchemy.org/en/20/intro.html)
+
+## General
 
 - [How a single ChatGPT mistake cost us $10,000+](https://web.archive.org/web/20240610032818/https://asim.bearblog.dev/how-a-single-chatgpt-mistake-cost-us-10000/)
 
@@ -21,16 +34,3 @@ You can read more discussion about this on [Hacker News](https://news.ycombinato
 
 - [Why you shouldn't use AI to write your tests](https://swizec.com/blog/why-you-shouldnt-use-ai-to-write-your-tests/)
   <br/>This article provides something of a counter-point to the mistakes made in the previous link.
-
-## FastAPI Documentation
-
-- [FastAPI Middleware](https://fastapi.tiangolo.com/tutorial/middleware/)
-- [FastAPI CORS Middleware](https://fastapi.tiangolo.com/tutorial/cors/)
-- [Pydantic Docs](https://docs.pydantic.dev/2.6/)
-- [SQLAlchemy Docs](https://docs.sqlalchemy.org/en/20/intro.html)
-
-## Design Patterns
-
-- [MVC vs MVT Architectural Pattern](https://medium.com/dsc-umit/mvc-vs-mvt-architectural-pattern-d306a56dce55)
-- [Geeks for Geeks: Difference between MVC and MVT design patterns](https://www.geeksforgeeks.org/difference-between-mvc-and-mvt-design-patterns/)
-- [Design Patterns: MVC vs MVVM](https://medium.com/@madelinecorman/design-patterns-mvc-vs-mvvm-f680183646f9)
