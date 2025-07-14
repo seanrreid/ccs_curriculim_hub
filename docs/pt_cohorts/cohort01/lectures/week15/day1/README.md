@@ -7,9 +7,15 @@ keywords:
   - PostgreSQL
 ---
 
-<!-- markdownlint-disable no-inline-html -->
+<!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
-## Time for plumbing
+## First: Career Services Talk + Guest Speaker
+
+- TODAY: Kaity Miller will be joining us to discuss Career Services.
+- TOMORROW: We'll have a guest speaker during office hours from 5:00-6:00 PM tomorrow.
+  <br/>Here's a [direct link](https://meet.google.com/zhr-rsgq-toz) to the Google Meet (it's also the same one we use for class).
+
+## Then, time for plumbing!
 
 This week we'll connect all the pipes...
 
