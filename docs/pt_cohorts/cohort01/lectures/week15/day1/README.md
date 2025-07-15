@@ -80,3 +80,11 @@ This table illustrates how a usual CRUD (Create, Read, Update, Delete) applicati
 | READ   | GET    | SELECT |
 | UPDATE | PUT    | UPDATE |
 | DELETE | DELETE | DELETE |
+
+
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1x52aJ33OL-hiDlnwffNTc0I-oybgIKTtoFKrB93WH98/view?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1AYjRVqF6AnnNNBH1YE0DwYzYGZ9avx5g/view?usp=sharing)
+- [Shrink Ray API Repo](https://github.com/buildcarolina/shrinkray_api)
