@@ -10,34 +10,55 @@ sidebar_position: 6
 - [FastAPI: Path Parameters](https://fastapi.tiangolo.com/tutorial/path-params/)
 - [FastAPI: Query Parameters](https://fastapi.tiangolo.com/tutorial/query-params/)
 
-## Must Haves
-
-### Without `pipenv` using `venv`
-
-1. Initialize a new environment -> `python -m venv env`
-2. Don't forget to activate it  -> `source env/bin/activate`
-
-#### Install the required libraries with `pip`
-
-- Option one: Normal install
-  - `pip install fastapi uvicorn`
-- Option two: `requirements.txt`
-  - `pip install -r requirements.txt`
+## Setup your environment and install dependencies
 
 ### With `pipenv`
 
-:::info
-This is _strongly_ recommended
+:::warning
+This is recommended, but does require a working install of `pipenv`.
+
+If your `pipenv` command isn't working, then use the `pip3` install instructions.
 :::
 
-### Install required libraries with `pipenv`
+#### Install required libraries with `pipenv`
 
 1. Activate Shell
-  - `pipenv shell`
-  - If you get an error running `pipenv`, try `python3 -m pipenv shell`
+
+- `pipenv shell`
+- If you get an error running `pipenv`, try `python3 -m pipenv shell`
+
 2. Install libraries
-  - `pipenv install fastapi uvicorn`
-  - IIf you get an error running `pipenv`, try `python3 -m pipenv install fastapi uvicorn`
+
+- `pipenv install fastapi uvicorn`
+- IIf you get an error running `pipenv`, try `python3 -m pipenv install fastapi uvicorn`
+
+
+### Using `pip3` and `venv` (_without_ `pipenv`)
+
+1. Initialize a new environment -> `python -m venv env`
+2. Don't forget to activate it -> `source env/bin/activate`
+
+#### Install the required libraries with `pip3`
+
+- `pip3 install fastapi uvicorn`
+- `pip3 freeze > requirements.txt`
+
+## Run the API
+
+- Create a file called `main.py`
+- Add the following code to `main.py`:
+
+```python
+from fastapi import FastAPI
+app = FastAPI()
+```
+
+Be sure to add the following so you can start the server when you run `python3 main.py`
+
+```python
+if __name__ == '__main__':
+  uivcorn.run('main:app', host='localhost', port=8000, reload=True)
+```
 
 ## Step 1 - Root Route
 
@@ -99,6 +120,7 @@ eg. `http://127.0.0.1:8000/users/42/items/?skip=5&limit=10`
 <summary>Solution</summary>
 
 ```python
+import uvicorn
 from fastapi import FastAPI
 
 app = FastAPI()
@@ -136,8 +158,11 @@ def read_user_items(user_id):
 def read_user_items(user_id, skip, limit):
     return {"user_id": user_id, "skip": skip, "limit": limit}
 
-# Use this command to run the api locally
-# uvicorn main:app --reload
+# Add this to run the api locally when you call python3 main.py
+
+if __name__ == '__main__':
+  uivcorn.run('main:app', host='localhost', port=8000, reload=True)
 
 ```
+
 </details>
