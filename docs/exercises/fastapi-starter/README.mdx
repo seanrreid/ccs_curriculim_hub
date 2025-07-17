@@ -161,7 +161,7 @@ def read_user_items(user_id, skip, limit):
 # Add this to run the api locally when you call python3 main.py
 
 if __name__ == '__main__':
-  uivcorn.run('main:app', host='localhost', port=8000, reload=True)
+  uvicorn.run('main:app', host='localhost', port=8000, reload=True)
 
 ```
 
