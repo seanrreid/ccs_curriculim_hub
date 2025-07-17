@@ -36,7 +36,7 @@ Using `pipenv`
 
 ```bash
 pipenv shell
-pipenv install alembic sqlmodel psycopg2 python-dotenv
+pipenv install alembic sqlmodel psycopg2-binary python-dotenv
 ```
 
 OR
@@ -45,7 +45,7 @@ Using `venv` and `pip3`
 
 ```bash
 source env/bin/activate
-pip3 install alembic sqlmodel psycopg2 python-dotenv
+pip3 install alembic sqlmodel psycopg2-binary python-dotenv
 ```
 
 ### Add a `.env` file
