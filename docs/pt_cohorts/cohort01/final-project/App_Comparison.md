@@ -5,11 +5,11 @@ sidebar_position: 2
 
 ## Final Project vs Class Project
 
-Here is a comparison between the CrudCo ShrinkRay app and an example final app.
+Here is a comparison between the ShrinkRay and an example final app.
 
 ### Backend
 
-| CrudCo ShrinkRay                       | Your Project
+|  ShrinkRay                             | Your Project
 | -----------------------------------    | ------------------------------------
 | Fast API                               | FastAPI
 |   ---                                  |   ---

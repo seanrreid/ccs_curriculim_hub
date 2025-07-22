@@ -5,7 +5,13 @@ sidebar_position: 2
 
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
-## Interjection by Sean
+:::info
+Use [Seans' Calendly link](https://calendly.com/sean-i9y/final-project-planning) to schedule a meeting with Sean to discuss your final project ideas.
+
+Use [Chris' calendar link](https://calendar.app.google/HPYVPM24nDCuV47F6) to schedule a meeting with Chris to discuss your final project ideas.
+:::
+
+## The gist...
 
 :sparkles: **GO BUILD SOMETHING RAD!** :rainbow:
 
@@ -21,7 +27,7 @@ The proverbial "sweet spot" is an app that does _both_ of those things.
 
 So, start there, and see where you go!
 
-## We now return you to the regularly scheduled README, already in progress
+## The rest...
 
 The purpose of the final project is to showcase your abilities as a developer, not to create the Next Big Thing (but if you can do both, go for it!). Make sure to decide beforehand what you think your greatest strengths are, and use your application and presentation as a platform to showcase those strengths. Together, your final project and portfolio should tell a story about what sets you apart from other developers, so that you can stand out when seeking employment.
 
@@ -31,15 +37,18 @@ For example, if you have a graphic design background, you should nail the graphi
 
 ### Project Management
 
-1. Make regular commits each day _(at least one commit per person per day)_
-2. Before starting development, it's recommended that you create wireframes
+1. Make sure you're storing all your work in a Github repository!
+   - "Branches will save your time and sanity, I promise." - _Sean_
+2. Make regular commits each day (_it's recommended to make at least one commit per day_)
+3. Before starting development, it's recommended that you create wireframes
    - These can be hand sketches or digital designs in Figma, Illustrator, etc.
-3. Document [User Stories](https://www.atlassian.com/agile/project-management/user-stories) about your app
+4. Document [User Stories](https://www.atlassian.com/agile/project-management/user-stories) about your app
    - "As an admin user, I want the ability to create courses so that learners can see what courses are available."
    - User stories follow this structure: "As a **\_\_\_\_** I want **\_\_\_** so that **\_\_\_\_**"
-4. You must write a README that lists all the technologies and APIs used in the project.
-   - Your README is usually the first thing employers see about your project/portfolio. _Don't blow this off!_ It's a big opportunity to show how professionally you can communicate in a technical setting.
-5. Be prepared to explain your project with an [elevator pitch](https://www.universitylabpartners.org/blog/how-to-write-a-winning-elevator-pitch):
+5. You must write a README that lists all the technologies and APIs used in the project.
+   - Your README is usually the first thing employers see about your project/portfolio.
+   - _Don't blow this off!_ It's a big opportunity to show how professionally you can communicate in a technical setting.
+6. Be prepared to explain your project with an [elevator pitch](https://www.universitylabpartners.org/blog/how-to-write-a-winning-elevator-pitch):
    - 15 to 25 words of what your app does
 
 ### Backend
@@ -49,14 +58,17 @@ For example, if you have a graphic design background, you should nail the graphi
 3. Build a RESTful API.
    - FastAPI is recommended.
    - You can try others, but know that time is limited so you'll need to account for learning time!
-4. Include at least one image or file upload
 
 ### Frontend
 
 1. Build a responsive UI that works across various screen sizes.
    - React is recommended
-   - You can try others (i.e. Remix, NextJS) but be sure to account for learning time in your estimates.
+   - You can try others (i.e. Svelte, NextJS) but be sure to account for learning time in your estimates.
 2. Implement CRUD functionality
+   - Create (a new entry)
+   - Read (existing entries)
+   - Update (an existing entry/value)
+   - Delete (an entry/value)
 
 ### Level Up
 
@@ -73,8 +85,6 @@ We have seen many web developers succeed within these requirements and we know y
 **Additional allowances or changed requirements must be agreed upon before you proceed working on them.** Submitting a project that is unexpectedly outside these bounds risks forfeiting both graduation and career support.
 
 ## Pitching The Projects
-
-Start thinking about final projects ahead of time, and meet with your instructor if you're devoid of ideas.
 
 Make sure your projects are centered around things you truly care about; bee-keeping, beer, dancing, hiking, basketball, etc. This makes a huge difference and can make the project a lot of fun! Chat with your classmates if you need help coming up with fun ideas.
 
@@ -98,17 +108,27 @@ This is also helpful while developing, so you're not constantly hitting an API o
 
 ## Final Project Q&A
 
-1. Where do we have to be during final projects? In the lab? Home?
-   - Monday through Thursday, be at Carolina Code School's campus by 9:00 AM for a short standup meeting. We will be holding small lectures about relevant topics as the class needs, and the instructional staff will be onsite to answer questions and provide guidance. **If you don't show up, ask questions, and drive your project in this crucial 3-week period, you won't receive career support.**
-   - On Fridays we will continue to have huddles at 9 AM, followed by a short standup meeting.
-2. How often will lectures happen, and will they be optional?
-   - There is no set lecture schedule during final projects. Instructional staff (including TAs) may hold impromptu lectures to fill in gaps when multiple students are struggling with the same topic.
-   - Students will be notified in class communication channels ahead of time if a lecture is planned. No lecture during this time is mandatory, but you will be responsible for project requirements even if you miss a relevant lecture. **We strongly suggest attending any lecture opportunities during this time.**
-3. How often do we check in with the instructor?
-   - You must check in with your instructor and/or campus coordinator each morning during standup.
-   - There will be a final "Demo Day Ready" check-in ~2 days before Demo Day.
+- How do we do check-ins for class?
+  - You will be expected to check in with a "standup" report Monday through Friday, between 5:00 PM and 7:00 PM.
+  - You will answer 3 questions
+      1. What did you do yesterday?
+      2. What will you do today?
+      3. What, if anything, is blocking your progress?
+- What support is available during projects?
+  - Office Hours will be from 5:00 PM - 7:00 PM every day.
+  - In addition to your standup report, this is an opportunity to work with your instructor to resolve any blockers
+  - Other times can be scheduled as needed throughout the three project weeks.
+  - The [#codehelp channel](https://buildcarolina.slack.com/archives/CM857C3K7) in Slack is also helpful for reaching help from others staff and/or alumni.
+  - **NOTE**: If you use [#codehelp](https://buildcarolina.slack.com/archives/CM857C3K7), make sure you explain what you're working on and share a link to your Github repo!
+- How often will lectures happen, and will they be optional?
+  - There is no set lecture schedule during final projects. Instructional staff (including TAs) may hold impromptu lectures to fill in gaps when multiple students are struggling with the same topic.
+  - Students will be notified in class communication channels ahead of time if a lecture is planned. No lecture during this time is mandatory, but you will be responsible for project requirements even if you miss a relevant lecture.
+  - **We strongly suggest attending any lecture/guest speaker opportunities during this time.**
+- How often do we check in with the instructor?
+  - You must check in with your instructor and/or campus coordinator _every day_ during standup.
+  - There will be a final "Demo Day Ready" check-in ~2 days before Demo Day.
      <br/> i.e. If Demo Day is on Friday, this means your project is **feature complete by Wednesday.**
-   - Your project must be functioning and demoed for the instructional team at this time.
+  - Be prepared to show a functioning version of your project to the instructional team at this time.
 
 ## Resources
 
