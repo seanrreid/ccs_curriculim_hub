@@ -8,4 +8,4 @@ sidebar_position: 2
 
 No new exercises today!
 
-Instead, your priority is making sure you're caught up with the work done in the [Shrink Ray API](https://github.com/buildcarolina/shrinkray_api).
+Instead, your priority is making sure you're caught up with the work done in the [Shrink Ray API](https://github.com/buildcarolina/shrinkray_api) _and_ the [Shrink Ray UI](https://github.com/buildcarolina/shrinkray_ui).
