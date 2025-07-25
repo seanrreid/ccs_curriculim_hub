@@ -33,3 +33,9 @@ There are services like [Supabase Auth](https://supabase.com/docs/guides/auth) a
 <br/>It's not a task you, as a new developer, want to handle on your own.
 
 :::
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/131Yw8Lbi9vhMcaSGwqYMuzNMsWY_jRXBGt3s3RaJtZc/view?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/17CNK0yjh8pTOlz82c4reQEVWdUzrFVwg/view?usp=sharing)
+- [Shrink Ray API Repo](https://github.com/buildcarolina/shrinkray_api)
