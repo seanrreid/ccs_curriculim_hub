@@ -28,7 +28,7 @@ title: Week 17 - Day 1
 
 - We'll follow [this guide](./API_UPDATES.md) to add the necessary models/routes/services/libraries to our API.
 
-## Relevant XKCD Comic
+### Relevant XKCD Comic
 
 ![xkcd:Password Strength](https://imgs.xkcd.com/comics/password_strength.png)
 
