@@ -1,7 +1,7 @@
 ---
 title: Connecting `git` to Github.com
 sidebar_label: Git & Gitub
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 <!-- markdownlint-disable no-inline-html -->
