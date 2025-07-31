@@ -22,7 +22,7 @@ Taken from the [Design Hacks Newsletter](https://www.learnui.design/newsletter.h
 
 Let's have our user's _actually_ be able to login.
 
-## Where we've been...
+### Where we've been...
 
 - Code Review
   - What worked?
@@ -33,7 +33,7 @@ Let's have our user's _actually_ be able to login.
 - Add users/tokens models
 - Add in JWT and Authentication
 
-## ...where we are going
+### ...where we are going
 
 - Protect `POST` requests
   - Protect `GET` requests as well? Or allow "read only?"
