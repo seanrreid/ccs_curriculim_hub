@@ -8,7 +8,7 @@ title: Week 17 - Day 2
 
 > [...] there is no right thing. There's just a thousand wrong things. Once you learn all the wrong things – and stop doing them – you can basically do whatever you want.
 
-Taken from today's [Design Hacks Newsletter](https://www.learnui.design/newsletter.html)
+Taken from the [Design Hacks Newsletter](https://www.learnui.design/newsletter.html)
 
 ## Shrink Ray
 
@@ -30,7 +30,8 @@ Let's have our user's _actually_ be able to login.
 - Protect `POST` requests
   - Protect `GET` requests as well? Or allow "read only?"
 - Add some users and data
-- Continue work on frontend
-  - Build forms to login
-  - Build forms to submit a new URL
-- Handle the _actual_ redirection!
+- Build forms to login/register
+- Update form to submit a new URL
+- (Time Permitting) Handle the _actual_ redirection!
+
+We'll reference the [API/UI Updates](./API_UI_UPDATES.md) doc for this round of changes
