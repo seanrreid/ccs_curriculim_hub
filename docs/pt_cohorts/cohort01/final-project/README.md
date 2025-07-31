@@ -11,6 +11,12 @@ Use [Seans' Calendly link](https://calendly.com/sean-i9y/final-project-planning)
 Use [Chris' calendar link](https://calendar.app.google/HPYVPM24nDCuV47F6) to schedule a meeting with Chris to discuss your final project ideas.
 :::
 
+## Web Application Development Graduation Celebration
+
+- **When:** Monday, August 25th, 5:30 - 7 pm
+- **Where:** Virtually, via Google Meet
+- **What**: Focus on celebrating the accomplishment of completing the 20-week course, and let the grads share the overview of the projects.
+
 ## The gist...
 
 :sparkles: **GO BUILD SOMETHING RAD!** :rainbow:

@@ -14,9 +14,14 @@ Taken from the [Design Hacks Newsletter](https://www.learnui.design/newsletter.h
 
 ### Web Application Development Graduation Celebration
 
-**When:** Monday, August 25th, 5:30 - 7 pm
-**Where:** Virtually, via Google Meet
-**What**: Focus on celebrating the accomplishment of completing the 20-week course, and let the grads share the overview of the projects.
+- **When:** Monday, August 25th, 5:30 - 7 pm
+- **Where:** Virtually, via Google Meet
+- **What**: Focus on celebrating the accomplishment of completing the 20-week course, and let the grads share the overview of the projects.
+
+## Matt McNeill's Machine Learning Talk
+
+- Here are the notes from Matt's Presentation - [Matt McNeill: Machine Learning (notes/transcript)](https://docs.google.com/document/d/1c4YDAj12_EPqJWD5Qfxjd8bMxhWXnNmjg-e7Mazu4bA/edit?usp=sharing)
+- :movie_camera: Here is the video - [Matt McNeill: Machine Learning (recording)](https://drive.google.com/file/d/1UXToyIWgMkf3qbghGs1EEHduS8Ay25xF/view?usp=sharing)
 
 ## Shrink Ray
 

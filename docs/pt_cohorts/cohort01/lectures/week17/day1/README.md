@@ -37,3 +37,10 @@ title: Week 17 - Day 1
 This is something I found via LinkedIn, it does a good job of mapping out an API structure.
 
 ![API Design Structure](./img/api_design.jpeg)
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1_RnmqRPlNF1FsnsMhb6tvp3LK4qUrnnoH4P6sBii6Tg/view?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1e1g51P-FB3vREcxTN4U0jsIZnXvwgONk/view?usp=sharing)
+- [Shrink Ray API Repo](https://github.com/buildcarolina/shrinkray_api)
+- [Shrink Ray UI Repo](https://github.com/buildcarolina/shrinkray_ui)
