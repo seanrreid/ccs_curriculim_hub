@@ -1,6 +1,6 @@
 ---
 title: App Comparison
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Final Project vs Class Project

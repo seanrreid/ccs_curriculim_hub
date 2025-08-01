@@ -6,9 +6,21 @@ sidebar_position: 2
 <!-- markdownlint-disable no-inline-html no-trailing-punctuation -->
 
 :::info
-Use [Seans' Calendly link](https://calendly.com/sean-i9y/final-project-planning) to schedule a meeting with Sean to discuss your final project ideas.
 
-Use [Chris' calendar link](https://calendar.app.google/HPYVPM24nDCuV47F6) to schedule a meeting with Chris to discuss your final project ideas.
+## Career Support Schedule
+
+| Date       | Time                | Presenter(s)                                   | Topic                                         |
+|------------|---------------------|------------------------------------------------|-----------------------------------------------|
+| 7/14/2025  | 5:30-8:30 PM EST    | Kaity Miller                                   | CS Kick Off                                   |
+| 7/15/2025  | 5:30-8:30 PM EST    | Guest Speaker: Caleb Craigo                    | Working in Tech                               |
+| 7/29/2025  | 5:30-8:30 PM EST    | Guest Speaker: Matt McNeill                    | Intro to Machine Learning                     |
+| 8/4/2025   | 5:30-8:30 PM EST    | Lauren McGlamery                               | LinkedIn & Networking                         |
+| 8/7/2025   | 5:30-8:30 PM EST    | Kaity Miller & Cara Davis Anderson             | Live Resume Review                            |
+| 8/11/2025  | 5:30-8:30 PM EST    | Chris Guirl                                    | Craftsmanship in the LLM age, Portfolio Polish|
+| 8/14/2025  | 5:30-8:30 PM EST    | Cara Davis                                     | Mock Interview Slots                          |
+| 8/18/2025  | 5:30-8:30 PM EST    | Cara Davis Anderson                            | Mock Interview Slots                          |
+| 8/21/2025  | 5:30-8:30 PM EST    | Megan Marson                                   | Freelancing/Contract Work                     |
+
 :::
 
 ## Web Application Development Graduation Celebration
@@ -32,6 +44,10 @@ OR
 The proverbial "sweet spot" is an app that does _both_ of those things.
 
 So, start there, and see where you go!
+
+:::tip
+You can find tools, tutorials, videos, on the [Resources](./RESOURCES.md) page!
+:::
 
 ## The rest...
 
@@ -128,6 +144,7 @@ This is also helpful while developing, so you're not constantly hitting an API o
   - **NOTE**: If you use [#codehelp](https://buildcarolina.slack.com/archives/CM857C3K7), make sure you explain what you're working on and share a link to your Github repo!
 - How often will lectures happen, and will they be optional?
   - There is no set lecture schedule during final projects. Instructional staff (including TAs) may hold impromptu lectures to fill in gaps when multiple students are struggling with the same topic.
+  - There _will_ be
   - Students will be notified in class communication channels ahead of time if a lecture is planned. No lecture during this time is mandatory, but you will be responsible for project requirements even if you miss a relevant lecture.
   - **We strongly suggest attending any lecture/guest speaker opportunities during this time.**
 - How often do we check in with the instructor?
