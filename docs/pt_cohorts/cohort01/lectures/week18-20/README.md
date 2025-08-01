@@ -7,6 +7,23 @@ title: Final project time! Go make something rad!!
 <!-- markdownlint-disable no-inline-html -->
 
 :::info
+
+## Career Support Schedule
+
+| Date      | Time             | Presenter(s)                       | Topic                                          |
+| --------- | ---------------- | ---------------------------------- | ---------------------------------------------- |
+| 7/14/2025 | 5:30-8:30 PM EST | Kaity Miller                       | CS Kick Off                                    |
+| 7/15/2025 | 5:30-8:30 PM EST | Guest Speaker: Caleb Craigo        | Working in Tech                                |
+| 7/29/2025 | 5:30-8:30 PM EST | Guest Speaker: Matt McNeill        | Intro to Machine Learning                      |
+| 8/4/2025  | 5:30-8:30 PM EST | Lauren McGlamery                   | LinkedIn & Networking                          |
+| 8/7/2025  | 5:30-8:30 PM EST | Kaity Miller & Cara Davis Anderson | Live Resume Review                             |
+| 8/11/2025 | 5:30-8:30 PM EST | Chris Guirl                        | Craftsmanship in the LLM age, Portfolio Polish |
+| 8/14/2025 | 5:30-8:30 PM EST | Cara Davis                         | Mock Interview Slots                           |
+| 8/18/2025 | 5:30-8:30 PM EST | Cara Davis Anderson                | Mock Interview Slots                           |
+| 8/21/2025 | 5:30-8:30 PM EST | Megan Marson                       | Freelancing/Contract Work                      |
+
+## Daily Standup
+
 Reminder, standup status updates are _required_ between 5:00 PM - 7:00 PM, Monday through Friday.
 <br/>This is up to, and including the final day of class on August 22nd.
 

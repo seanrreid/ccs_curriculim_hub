@@ -3,6 +3,8 @@ title: Frequently Asked Questions
 sidebar_position: 2
 ---
 
+<!-- markdownlint-disable no-inline-html -->
+
 ## Final Project FAQ
 
 - How do we do check-ins for class?

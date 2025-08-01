@@ -48,3 +48,10 @@ Let's have our user's _actually_ be able to login.
 - (Time Permitting) Handle the _actual_ redirection!
 
 We'll reference the [API/UI Updates](./API_UI_UPDATES.md) doc for this round of changes
+
+## Notes and Video
+
+- [Class Notes](https://docs.google.com/document/d/1srmojfhR3TXDKPqYFD3r17KWzMy8IVhymJgaQ4vtrN4/view?usp=sharing)
+- [Class Video :movie_camera:](https://drive.google.com/file/d/1IHIv8qoeuurcuHGBJHGmI3YpQSFjpvLd/view?usp=sharing)
+- [Shrink Ray API Repo](https://github.com/buildcarolina/shrinkray_api)
+- [Shrink Ray UI Repo](https://github.com/buildcarolina/shrinkray_ui)
