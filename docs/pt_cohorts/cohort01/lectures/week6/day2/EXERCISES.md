@@ -21,7 +21,7 @@ sidebar_position: 3
 
 We've been using the Magic 8 Ball as our reference. But, not the _only_ fortune teller out there.
 
-Get creative, what other kind of fortune teller interface can you come up wiht?
+Get creative, what other kind of fortune teller interface can you come up with?
 
 Examples:
 

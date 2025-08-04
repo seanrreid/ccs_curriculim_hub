@@ -25,7 +25,7 @@ title: Final project time! Go make something rad!!
 ## Scheduling
 
 - You can book time with Kaity via [Kaity's scheduling link](https://calendar.app.google/Th5KdtoTWhhJCdX36)
-- You can book time wiht Cara vis [Cara's scheduling link](https://calendar.app.google/iRfUcFZ6BK5gcZTK7)
+- You can book time with Cara via [Cara's scheduling link](https://calendar.app.google/iRfUcFZ6BK5gcZTK7)
 
 ## Daily Standup
 
