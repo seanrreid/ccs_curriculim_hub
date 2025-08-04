@@ -22,6 +22,11 @@ title: Final project time! Go make something rad!!
 | 8/18/2025 | 5:30-8:30 PM EST | Cara Davis Anderson                | Mock Interview Slots                           |
 | 8/21/2025 | 5:30-8:30 PM EST | Megan Marson                       | Freelancing/Contract Work                      |
 
+## Scheduling
+
+- You can book time with Kaity via [Kaity's scheduling link](https://calendar.app.google/Th5KdtoTWhhJCdX36)
+- You can book time wiht Cara vis [Cara's scheduling link](https://calendar.app.google/iRfUcFZ6BK5gcZTK7)
+
 ## Daily Standup
 
 Reminder, standup status updates are _required_ between 5:00 PM - 7:00 PM, Monday through Friday.

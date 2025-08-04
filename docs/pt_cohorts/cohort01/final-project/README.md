@@ -21,6 +21,11 @@ sidebar_position: 2
 | 8/18/2025 | 5:30-8:30 PM EST | Cara Davis Anderson                | Mock Interview Slots                           |
 | 8/21/2025 | 5:30-8:30 PM EST | Megan Marson                       | Freelancing/Contract Work                      |
 
+## Scheduling
+
+- You can book time with Kaity via [Kaity's scheduling link](https://calendar.app.google/Th5KdtoTWhhJCdX36)
+- You can book time wiht Cara vis [Cara's scheduling link](https://calendar.app.google/iRfUcFZ6BK5gcZTK7)
+
 :::
 
 ## Web Application Development Graduation Celebration

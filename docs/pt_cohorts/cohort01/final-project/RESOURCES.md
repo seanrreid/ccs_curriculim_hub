@@ -19,6 +19,15 @@ sidebar_position: 3
 | 8/18/2025 | 5:30-8:30 PM EST | Cara Davis Anderson                | Mock Interview Slots                           |
 | 8/21/2025 | 5:30-8:30 PM EST | Megan Marson                       | Freelancing/Contract Work                      |
 
+:::info
+
+## Scheduling with Kaity and/or Cara
+
+- You can book time with Kaity via [Kaity's scheduling link](https://calendar.app.google/Th5KdtoTWhhJCdX36)
+- You can book time wiht Cara vis [Cara's scheduling link](https://calendar.app.google/iRfUcFZ6BK5gcZTK7)
+
+:::
+
 ## Presentations
 
 - Check out these [TED Talks](https://www.ted.com/playlists/226/before_public_speaking) to help you get ready to speak in front of a crowd.
