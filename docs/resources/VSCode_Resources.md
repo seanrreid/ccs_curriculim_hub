@@ -1,7 +1,7 @@
 ---
 title: VSCode Tips & Tricks
 sidebar_label: VS Code Tips
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 We will be using Visual Studio Code as our IDE (Integrated Development Environment). It is available for Mac, PC, and Linux systems.

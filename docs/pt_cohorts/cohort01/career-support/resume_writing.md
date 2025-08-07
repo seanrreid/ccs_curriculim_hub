@@ -1,6 +1,6 @@
 ---
 title: Crafting your Résumé
-sidebar_position: 3
+sidebar_position: 1
 sidebar_label: Résumé Writing
 published: 2025-07-31 14:21:00
 revised: 2025-07-31 14:21:00

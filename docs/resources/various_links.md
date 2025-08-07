@@ -1,6 +1,6 @@
 ---
 title: Support Links, Videos, Blog Posts, etc..
-sidebar_position: 2
+sidebar_position: 5
 sidebar_label: Helpful Links
 published: 2024-01-03 15:30:00
 revised: 2024-01-03 15:30:00
