@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 sidebar_label: Day 1
-title: Week 6 - Day 1 - FastAPI x PSQL
+title: Week 15 - Day 1 - FastAPI x PSQL
 keywords:
   - FastAPI
   - PostgreSQL
