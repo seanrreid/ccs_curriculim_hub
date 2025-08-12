@@ -37,5 +37,10 @@ sidebar_position: 3
 
 ### Demo Videos/LinkedIn Networking
 
-- :move_camera:[Demo Video/Linked Networking Recording](https://drive.google.com/file/d/1MvglrJJwzJM9QHiTx2A--7uAR6eCTqeg/view)
+- :movie_camera:[Demo Video/Linked Networking Recording](https://drive.google.com/file/d/1MvglrJJwzJM9QHiTx2A--7uAR6eCTqeg/view)
 = [Demo Video/LinkedIn Networking Notes & Transcript](https://docs.google.com/document/d/1eyb6D8aZfr0rSKzax9_y5uOWVevEUO-6UUy_d4amP3I/view)
+
+### Craftsmanship in the LLM age, Portfolio Polish
+
+- :movie_camera:[Craftsmanship in the LLM age, Portfolio Polis Recording](https://drive.google.com/file/d/1MNi0dD8lYcFpAgK28YfK4JH-Rp5jhieP/view?usp=sharing)
+- [Craftsmanship in the LLM age, Portfolio Polish Notes & Transcript](https://docs.google.com/document/d/1KzKh6EXvAVkQjSSZNXhqYS79iaPsQAkKi2jW2LPRpBI/view?usp=sharing)
