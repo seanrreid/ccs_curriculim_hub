@@ -17,12 +17,6 @@ sidebar_position: 3
 | 8/11/2025 | 5:30-8:30 PM EST | Chris Guirl                        | Craftsmanship in the LLM age, Portfolio Polish |
 | 8/14/2025 | 5:30-8:30 PM EST | Cara Davis Anderson                | Mock Interview Slots [Cara's Schedule link](https://calendar.app.google/SbSeV8kFLBuqqgjJ6)|
 | 8/18/2025 | 5:30-8:30 PM EST | Cara Davis Anderson                | Mock Interview Slots [Cara's scheduling link](https://calendar.app.google/SbSeV8kFLBuqqgjJ6)|
-| 8/21/2025 | 5:30-8:30 PM EST | Megan Marson                       | Freelancing/Contract Work                      |
-
-## Scheduling
-
-- You can book time with Kaity via [Kaity's scheduling link](https://calendar.app.google/Th5KdtoTWhhJCdX36)
-- You can book time with Cara via [Cara's scheduling link](https://calendar.app.google/SbSeV8kFLBuqqgjJ6)
 
 ## Videos and Transcripts
 
